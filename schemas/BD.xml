@@ -1,0 +1,159 @@
+<seances>
+	<seance refmat="1" refprom="01" refsal="C1405">
+		<date>
+			<datedebut>11/02/11 9:00:00</datedebut>
+			<datefin>11/02/11 12:00:00</datefin>
+		</date>
+	</seance>
+	<seance refmat="2" refprom="01" refsal="C1405">
+		<date>
+			<datedebut>11/02/11 14:00:00</datedebut>
+			<datefin>11/02/11 17:00:00</datefin>
+		</date>
+	</seance>
+	<seance refmat="3" refprom="01" refsal="C1405">
+		<date>
+			<datedebut>14/02/11 09:00:00</datedebut>
+			<datefin>14/02/11 12:00:00</datefin>
+		</date>
+	</seance>
+</seances>
+
+<promotions>
+	<promotion id="01">
+		<matieres_promo>
+			<matiere refmat="1"/>
+			<matiere refmat="2"/>
+			<matiere refmat="3"/>
+		</matieres_promo>
+		<nompromotion>Licence MIAGE</nompromotion>
+		<nbreffectif>35</nbreffectif>
+		<anneepromotion>2013</anneepromotion>
+	</promotion>
+	<promotion id="02">
+		<matieres_promo>
+			<matiere refmat="4"/>
+			<matiere refmat="5"/>
+			<matiere refmat="6"/>
+		</matieres_promo>
+		<nompromotion>M1 MIAGE</nompromotion>
+		<nbreffectif>25</nbreffectif>
+		<anneepromotion>2012</anneepromotion>
+	</promotion>
+	<promotion id="03">
+		<matieres_promo>
+			<matiere refmat="7"/>
+			<matiere refmat="8"/>
+			<matiere refmat="9"/>
+		</matieres_promo>
+		<nompromotion>M2 MIAGE</nompromotion>
+		<nbreffectif>30</nbreffectif>
+		<anneepromotion>2011</anneepromotion>
+	</promotion>
+</promotions>
+
+<matieres>
+	<matiere id="1">
+		<nom>ISI4</nom>
+	</matiere>
+	<matiere id="2">
+		<nom>ISI3</nom>
+	</matiere>
+	<matiere id="3">
+		<nom>INF3</nom>
+	</matiere>
+	<matiere id="4">
+		<nom>MM2</nom>
+	</matiere>
+	<matiere id="5">
+		<nom>MM3</nom>
+	</matiere>
+</matieres>
+
+<salles>
+	<salle id="C1305">
+		<etage>13</etage>
+		<UFR>UFR 27</UFR>
+	</salle>
+	<salle id="C1405">
+		<etage>14</etage>
+		<UFR>UFR 27</UFR>
+	</salle>
+	<salle id="C1013">
+		<etage>10</etage>
+		<UFR>UFR 27</UFR>
+	</salle>
+</salles>
+
+<utilisateurs>
+	<utilisateur id="001" type="Etudiant">
+		<nom>RANGA</nom>
+		<prenom>Sathiya</prenom>
+		<login>ranga</login>
+		<password>pass1</password>
+		<mail>sathiya@gmail.com</mail>
+		<tel>015254545</tel>
+		<avatar>C://documents/pf.gif</avatar>
+		<datenaissance>13/05/1988</datenaissance>
+		<adresse>70 rue .....</adresse>
+	</utilisateur>
+	<utilisateur id="007" type="Etudiant">
+			<nom>BLANDIN</nom>
+			<prenom>Willy</prenom>
+			<login>Willy</login>
+			<password>pass3</password>
+			<mail>Willy@gmail.com</mail>
+			<tel>015254545</tel>
+			<avatar>C://documents/pf.gif</avatar>
+			<datenaissance>13/05/1988</datenaissance>
+			<adresse>70 rue .....</adresse>
+	</utilisateur>
+	<utilisateur id="002" type="Etudiant">
+			<nom>SHAN</nom>
+			<prenom>Suresh</prenom>
+			<login>Suresh</login>
+			<password>pass2</password>
+			<mail>Suresh@gmail.com</mail>
+			<tel>015254545</tel>
+			<avatar>C://documents/pf.gif</avatar>
+			<datenaissance>13/05/1988</datenaissance>
+			<adresse>70 rue .....</adresse>
+	</utilisateur>
+	<utilisateur id="004" type="Enseignant">
+			<matieres_ens>
+				<matiere refmat="1"/>
+				<matiere refmat="2"/>
+				<matiere refmat="3"/>
+				<matiere refmat="4"/>
+			</matieres_ens>
+			<nom>Denecker</nom>
+			<prenom>Rebbecca</prenom>
+			<login>rebbecca</login>
+			<password>pass4</password>
+			<mail>rebbecca@gmail.com</mail>
+			<tel>015254545</tel>
+			<avatar>C://documents/pf.gif</avatar>
+			<fax>015454545</fax>
+			<statut>Maître de conférence</statut>
+			<adressebureau>70 rue .....</adressebureau>
+			<telbureau>0152545565</telbureau>
+			<ufr>UFR 27</ufr>
+	</utilisateur>
+	<utilisateur id="008" type="Enseignant">
+			<matieres_ens>
+				<matiere refmat="1"/>
+			</matieres_ens>
+			<nom>Pinheiro</nom>
+			<prenom>Manuelle</prenom>
+			<login>manuelle</login>
+			<password>pass8</password>
+			<mail>emmanuelle@gmail.com</mail>
+			<tel>015254545</tel>
+			<avatar>C://documents/pf.gif</avatar>
+			<fax>015454545</fax>
+			<statut>Maître de conférence</statut>
+			<adressebureau>70 rue .....</adressebureau>
+			<telbureau>0152545565</telbureau>
+			<ufr>UFR 27</ufr>
+	</utilisateur>
+</utilisateurs>
