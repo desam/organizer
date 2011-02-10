@@ -1,0 +1,3 @@
+existtest:
+    pattern:  /exlol
+    defaults: { _controller: CalendarBundle:Calendar:index }
