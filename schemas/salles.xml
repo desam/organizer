@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='ISO-8859-1' ?>
+<!DOCTYPE  salles [
+<!ELEMENT salles (salle*)>
+<!ELEMENT salle (etage, UFR)>
+<!ATTLIST salle id  ID   #REQUIRED>
+<!ELEMENT etage  (#PCDATA)>
+<!ELEMENT UFR  (#PCDATA)>
+]>
+
+<salles>
+	<salle id="B1302">
+		<etage>13</etage>
+		<UFR>UFR 27</UFR>
+	</salle>
+	<salle id="C401">
+		<etage>4</etage>
+		<UFR>UFR 27</UFR>
+	</salle>
+	<salle id="C1304">
+		<etage>13</etage>
+		<UFR>UFR 27</UFR>
+	</salle>
+	<salle id="C1307">
+		<etage>13</etage>
+		<UFR>UFR 27</UFR>
+	</salle>
+	<salle id="C1401">
+		<etage>14</etage>
+		<UFR>UFR 27</UFR>
+	</salle>	
+	<salle id="C1305">
+		<etage>13</etage>
+		<UFR>UFR 27</UFR>
+	</salle>
+	<salle id="C1405">
+		<etage>14</etage>
+		<UFR>UFR 27</UFR>
+	</salle>
+	<salle id="C1408">
+		<etage>14</etage>
+		<UFR>UFR 27</UFR>
+	</salle>
+	<salle id="C1501">
+		<etage>15</etage>
+		<UFR>UFR 27</UFR>
+	</salle>
+	<salle id="T404">
+		<etage>4</etage>
+		<UFR>UFR 27</UFR>
+	</salle>
+	<salle id="Amphi J">
+		<etage>RC</etage>
+		<UFR>UFR 27</UFR>
+	</salle>
+	<salle id="Amphi L">
+		<etage>RC</etage>
+		<UFR>UFR 27</UFR>
+	</salle>
+</salles>
+

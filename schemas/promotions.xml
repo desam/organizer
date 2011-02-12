@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='ISO-8859-1' ?>
+<!DOCTYPE  promotions [
+<!ELEMENT promotions ( promotion*)>
+
+<!ELEMENT promotion (matieres_promo,nompromotion,nbreffectif,anneepromotion)>
+<!ATTLIST promotion id  ID   #REQUIRED>
+
+<!ELEMENT matieres_promo (matieres*)>
+<!ATTLIST matieres  refmat IDREF  #REQUIRED>
+
+<!ELEMENT nompromotion (#PCDATA)>
+<!ELEMENT nbreffectif (#PCDATA)>
+<!ELEMENT anneepromotion (#PCDATA)>
+]>
+
+<promotions>
+	<promotion id="01">
+		<matieres_promo>
+			<matiere refmat="1"/>
+			<matiere refmat="2"/>
+			<matiere refmat="3"/>
+			<matiere refmat="4"/>
+			<matiere refmat="5"/>
+			<matiere refmat="6"/>
+			<matiere refmat="7"/>
+			<matiere refmat="8"/>
+			<matiere refmat="9"/>
+			<matiere refmat="10"/>
+			<matiere refmat="11"/>
+			<matiere refmat="12"/>
+			<matiere refmat="13"/>
+			<matiere refmat="14"/>
+			<matiere refmat="15"/>
+			<matiere refmat="16"/>
+			<matiere refmat="17"/>
+			<matiere refmat="18"/>
+			<matiere refmat="19"/>
+			<matiere refmat="20"/>
+			<matiere refmat="21"/>
+			<matiere refmat="22"/>
+			<matiere refmat="23"/>
+		</matieres_promo>
+		<nompromotion>Licence 3 MIAGE</nompromotion>
+		<nbreffectif>35</nbreffectif>
+		<anneepromotion>2013</anneepromotion>
+	</promotion>
+	<promotion id="02">
+		<matieres_promo>
+			<matiere refmat="24"/>
+			<matiere refmat="25"/>
+			<matiere refmat="26"/>
+			<matiere refmat="27"/>
+			<matiere refmat="28"/>
+			<matiere refmat="29"/>
+			<matiere refmat="30"/>
+			<matiere refmat="31"/>
+			<matiere refmat="32"/>
+			<matiere refmat="33"/>
+			<matiere refmat="34"/>
+			<matiere refmat="35"/>
+			<matiere refmat="36"/>
+			<matiere refmat="37"/>
+			<matiere refmat="38"/>
+			<matiere refmat="39"/>
+			<matiere refmat="40"/>
+			<matiere refmat="41"/>
+			<matiere refmat="42"/>
+			<matiere refmat="43"/>
+			<matiere refmat="44"/>						
+		</matieres_promo>
+		<nompromotion>Master 1 MIAGE</nompromotion>
+		<nbreffectif>25</nbreffectif>
+		<anneepromotion>2012</anneepromotion>
+	</promotion>
+	<promotion id="03">
+		<matieres_promo>
+			<matiere refmat="45"/>
+			<matiere refmat="46"/>
+			<matiere refmat="47"/>
+			<matiere refmat="48"/>
+			<matiere refmat="49"/>
+			<matiere refmat="50"/>
+			<matiere refmat="51"/>
+			<matiere refmat="52"/>
+			<matiere refmat="53"/>
+			<matiere refmat="54"/>
+			<matiere refmat="55"/>
+			<matiere refmat="56"/>
+			<matiere refmat="57"/>			
+		</matieres_promo>
+		<nompromotion>Master 2 MIAGE</nompromotion>
+		<nbreffectif>30</nbreffectif>
+		<anneepromotion>2011</anneepromotion>
+	</promotion>
+</promotions>
+
