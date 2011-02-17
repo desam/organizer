@@ -41,7 +41,7 @@
 			<datenaissance>13/05/1988</datenaissance>
 			<adresse>70 rue .....</adresse>
 	</utilisateur>
-	<utilisateur id="002" type="Etudiant">
+	<utilisateur id="003" type="Etudiant">
 			<nom>SHAN</nom>
 			<prenom>Suresh</prenom>
 			<login>Suresh</login>
@@ -54,10 +54,7 @@
 	</utilisateur>
 	<utilisateur id="004" type="Enseignant">
 			<matieres_ens>
-				<matiere refmat="1"/>
-				<matiere refmat="2"/>
-				<matiere refmat="3"/>
-				<matiere refmat="4"/>
+				<matiere refmat="31"/>				
 			</matieres_ens>
 			<nom>Denecker</nom>
 			<prenom>Rebbecca</prenom>
@@ -72,15 +69,15 @@
 			<telbureau>0152545565</telbureau>
 			<ufr>UFR 27</ufr>
 	</utilisateur>
-	<utilisateur id="008" type="Enseignant">
+	<utilisateur id="005" type="Enseignant">
 			<matieres_ens>
-				<matiere refmat="1"/>
+				<matiere refmat="24"/>
 			</matieres_ens>
-			<nom>Pinheiro</nom>
-			<prenom>Manuelle</prenom>
-			<login>manuelle</login>
+			<nom>Iacovelli</nom>
+			<prenom>Adrian</prenom>
+			<login>adrian</login>
 			<password>pass8</password>
-			<mail>emmanuelle@gmail.com</mail>
+			<mail>adrian@gmail.com</mail>
 			<tel>015254545</tel>
 			<avatar>C://documents/pf.gif</avatar>
 			<fax>015454545</fax>
@@ -89,4 +86,159 @@
 			<telbureau>0152545565</telbureau>
 			<ufr>UFR 27</ufr>
 	</utilisateur>
+	<utilisateur id="006" type="Enseignant">
+			<matieres_ens>
+				<matiere refmat="25"/>
+			</matieres_ens>
+			<nom>Mehaoua</nom>
+			<prenom>Ahmed</prenom>
+			<login>ahmed</login>
+			<password>pass8</password>
+			<mail>ahamed@gmail.com</mail>
+			<tel>015254545</tel>
+			<avatar>C://documents/pf.gif</avatar>
+			<fax>015454545</fax>
+			<statut>Maître de conférence</statut>
+			<adressebureau>70 rue .....</adressebureau>
+			<telbureau>0152545565</telbureau>
+			<ufr>UFR 27</ufr>
+	</utilisateur>
+	<utilisateur id="008" type="Enseignant">
+			<matieres_ens>
+				<matiere refmat="34"/>
+			</matieres_ens>
+			<nom>Gire</nom>
+			<prenom>Francoise</prenom>
+			<login>gire</login>
+			<password>pass8</password>
+			<mail>gire@gmail.com</mail>
+			<tel>015254545</tel>
+			<avatar>C://documents/pf.gif</avatar>
+			<fax>015454545</fax>
+			<statut>Maître de conférence</statut>
+			<adressebureau>70 rue .....</adressebureau>
+			<telbureau>0152545565</telbureau>
+			<ufr>UFR 27</ufr>
+	</utilisateur>
+	<utilisateur id="009" type="Enseignant">
+			<matieres_ens>
+				<matiere refmat="35"/>
+			</matieres_ens>
+			<nom>Guibert</nom>
+			<prenom>Mélanie</prenom>
+			<login>melanie</login>
+			<password>pass8</password>
+			<mail>mélanie@gmail.com</mail>
+			<tel>015254545</tel>
+			<avatar>C://documents/pf.gif</avatar>
+			<fax>015454545</fax>
+			<statut>Maître de conférence</statut>
+			<adressebureau>70 rue .....</adressebureau>
+			<telbureau>0152545565</telbureau>
+			<ufr>UFR 27</ufr>
+	</utilisateur>
+	<utilisateur id="010" type="Enseignant">
+			<matieres_ens>
+				<matiere refmat="36"/>
+			</matieres_ens>
+			<nom>Jean-Toussaint</nom>
+			<prenom>Pindi</prenom>
+			<login>pindi</login>
+			<password>pass8</password>
+			<mail>pindi@gmail.com</mail>
+			<tel>015254545</tel>
+			<avatar>C://documents/pf.gif</avatar>
+			<fax>015454545</fax>
+			<statut>Maître de conférence</statut>
+			<adressebureau>70 rue .....</adressebureau>
+			<telbureau>0152545565</telbureau>
+			<ufr>UFR 27</ufr>
+	</utilisateur>
+	<utilisateur id="011" type="Enseignant">
+			<matieres_ens>
+				<matiere refmat="27"/>
+			</matieres_ens>
+			<nom>Diaz</nom>
+			<prenom>Daniel</prenom>
+			<login>diaz</login>
+			<password>pass8</password>
+			<mail>diaz@gmail.com</mail>
+			<tel>015254545</tel>
+			<avatar>C://documents/pf.gif</avatar>
+			<fax>015454545</fax>
+			<statut>Maître de conférence</statut>
+			<adressebureau>70 rue .....</adressebureau>
+			<telbureau>0152545565</telbureau>
+			<ufr>UFR 27</ufr>
+	</utilisateur>
+	<utilisateur id="011" type="Enseignant">
+			<matieres_ens>
+				<matiere refmat="37"/>
+				<matiere refmat="38"/>
+			</matieres_ens>
+			<nom>Gabrisch</nom>
+			<prenom>Gabrisch</prenom>
+			<login>Gabrisch</login>
+			<password>pass8</password>
+			<mail>Gabrisch@gmail.com</mail>
+			<tel>015254545</tel>
+			<avatar>C://documents/pf.gif</avatar>
+			<fax>015454545</fax>
+			<statut>Maître de conférence</statut>
+			<adressebureau>70 rue .....</adressebureau>
+			<telbureau>0152545565</telbureau>
+			<ufr>UFR 27</ufr>
+	</utilisateur>
+	<utilisateur id="011" type="Enseignant">
+			<matieres_ens>
+				<matiere refmat="38"/>
+			</matieres_ens>
+			<nom>Skoda</nom>
+			<prenom>Skoda</prenom>
+			<login>Skoda</login>
+			<password>pass8</password>
+			<mail>Skoda@gmail.com</mail>
+			<tel>015254545</tel>
+			<avatar>C://documents/pf.gif</avatar>
+			<fax>015454545</fax>
+			<statut>Maître de conférence</statut>
+			<adressebureau>70 rue .....</adressebureau>
+			<telbureau>0152545565</telbureau>
+			<ufr>UFR 27</ufr>
+	</utilisateur>
+	<utilisateur id="011" type="Enseignant">
+			<matieres_ens>
+				<matiere refmat="40"/>
+			</matieres_ens>
+			<nom>Cherif</nom>
+			<prenom>héla</prenom>
+			<login>cherif</login>
+			<password>pass8</password>
+			<mail>chérif@gmail.com</mail>
+			<tel>015254545</tel>
+			<avatar>C://documents/pf.gif</avatar>
+			<fax>015454545</fax>
+			<statut>Maître de conférence</statut>
+			<adressebureau>70 rue .....</adressebureau>
+			<telbureau>0152545565</telbureau>
+			<ufr>UFR 27</ufr>
+	</utilisateur>
+	<utilisateur id="011" type="Enseignant">
+			<matieres_ens>
+				<matiere refmat="40"/>
+			</matieres_ens>
+			<nom>Debacker</nom>
+			<prenom>Pascale</prenom>
+			<login>debacker</login>
+			<password>pass8</password>
+			<mail>debacker@gmail.com</mail>
+			<tel>015254545</tel>
+			<avatar>C://documents/pf.gif</avatar>
+			<fax>015454545</fax>
+			<statut>Maître de conférence</statut>
+			<adressebureau>70 rue .....</adressebureau>
+			<telbureau>0152545565</telbureau>
+			<ufr>UFR 27</ufr>
+	</utilisateur>
+	
 </utilisateurs>
