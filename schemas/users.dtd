@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT users (user*)>
+
+<!ELEMENT user (login, password, firstname, surname, mail, phone, avatar)>
+<!ATTLIST
+	user id IDREF #REQUIRED
+>
+
+<!ELEMENT login (#PCDATA)>
+<!ELEMENT password (#PCDATA)>
+<!ELEMENT firstname (#PCDATA)>
+<!ELEMENT surname (#PCDATA)>
+<!ELEMENT mail (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+<!ELEMENT avatar (#PCDATA)>

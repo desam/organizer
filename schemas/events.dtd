@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT events (event+)>
+
+<!ELEMENT event (from, to, location, guest*)>
+<!ATTLIST
+	event refgrp IDREF #REQUIRED
+>
+
+<!ELEMENT from (#PCDATA)>
+<!ELEMENT to (#PCDATA)>
+<!ELEMENT location (#PCDATA)>
+<!ELEMENT guest>
+<!ATTLIST guest refuser IDREF #REQUIRED>

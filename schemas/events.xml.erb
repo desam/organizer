@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE events SYSTEM "events.dtd" >
+<events>
+  <% require 'date'
+  require 'date/delta'
+  d1 = DateTime.new(2010, 9, 23, 9, 00)
+  d2 = DateTime.new(2011, 5, 30, 9, 00)
+
+  # everyday from d1 to d2
+  d1.step(d2, 1) do |d| %>
+    <event refgrp="<%= rand(2) + 1 %>">
+      <from><%= d.strftime('%Y-%m-%d %H:%M') %></from>
+      <to><%= (d + Date::Delta.hours(3)).strftime('%Y-%m-%d %H:%M') %></to>
+      <location>location<%= rand(3) %></location>
+      <% if rand() < 0.2 %>
+        <guest refuser="<%= rand(100) %>" />
+        <% if rand() < 0.7 %>
+          <guest refuser="<%= rand(100) %>" />
+        <% end %>
+      <% end %>
+    </event>
+
+    <% d += Date::Delta.hours(5) %>
+    <event refgrp="<%= rand(2) + 1 %>">
+      <from><%= d.strftime('%Y-%m-%d %H:%M') %></from>
+      <to><%= (d + Date::Delta.hours(3)).strftime('%Y-%m-%d %H:%M') %></to>
+      <location>location<%= rand(3) %></location>
+      <% if rand() < 0.2 %>
+      <guest refuser="<%= rand(100) %>" />
+      <% if rand() < 0.7 %>
+      <guest refuser="<%= rand(100) %>" />
+      <% end %>
+      <% end %>
+    </event>
+
+<% end %>
+</events>
+

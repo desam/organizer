@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE groups SYSTEM "groups.dtd" >
+<groups>
+  <% 1.upto 100 do |i| -%>
+    <group id="<%= i %>">
+      <name>name<%= i %></name>
+      <description>(<%= i %>) <%= `fortune`.strip %></description>
+    </group>
+
+  <% end -%>
+</groups>
+
