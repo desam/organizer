@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE categories [
+<!ELEMENT categories (categorie*)>
+<!ELEMENT categorie (#PCDATA)>
+<!ATTLIST 
+	categorie idc IDREF #REQUIRED>
+]>
+<categories>
+	<categorie idc="1">News</categorie>
+	<categorie idc="2">Evenements</categorie>
+	<categorie idc="3">Notes</categorie>
+</categories>
