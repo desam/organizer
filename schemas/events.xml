@@ -1,3172 +1,3429 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE events SYSTEM "events.dtd" >
 <events>
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>Why You Can't Run When</title>
       <from>2010-09-23 09:00</from>
       <to>2010-09-23 12:00</to>
-      <location>location2</location>
+      <location>location1</location>
     </event>
 
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>Where am I? Who am</title>
       <from>2010-09-23 14:00</from>
       <to>2010-09-23 17:00</to>
       <location>location2</location>
     </event>
-
     <event refgrp="1">
+      <title>You know you've been spending</title>
       <from>2010-09-24 09:00</from>
       <to>2010-09-24 12:00</to>
-      <location>location1</location>
+      <location>location2</location>
     </event>
 
     <event refgrp="1">
+      <title>Everyone wants results, but no</title>
       <from>2010-09-24 14:00</from>
       <to>2010-09-24 17:00</to>
-      <location>location1</location>
+      <location>location2</location>
     </event>
-
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>Home centers are designed for</title>
       <from>2010-09-25 09:00</from>
       <to>2010-09-25 12:00</to>
-      <location>location2</location>
+      <location>location1</location>
+        <guest refuser="0" />
+          <guest refuser="46" />
     </event>
 
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>Truth is the most valuable</title>
       <from>2010-09-25 14:00</from>
       <to>2010-09-25 17:00</to>
-      <location>location2</location>
-      <guest refuser="19" />
-      <guest refuser="28" />
+      <location>location1</location>
+      <guest refuser="41" />
     </event>
-
     <event refgrp="2">
+      <title>An efficient and a successful</title>
       <from>2010-09-26 09:00</from>
       <to>2010-09-26 12:00</to>
-      <location>location2</location>
-    </event>
-
-    <event refgrp="2">
-      <from>2010-09-26 14:00</from>
-      <to>2010-09-26 17:00</to>
-      <location>location0</location>
-    </event>
-
-    <event refgrp="2">
-      <from>2010-09-27 09:00</from>
-      <to>2010-09-27 12:00</to>
-      <location>location0</location>
-    </event>
-
-    <event refgrp="2">
-      <from>2010-09-27 14:00</from>
-      <to>2010-09-27 17:00</to>
       <location>location1</location>
     </event>
 
     <event refgrp="2">
+      <title>QOTD: "Like this rose, our</title>
+      <from>2010-09-26 14:00</from>
+      <to>2010-09-26 17:00</to>
+      <location>location2</location>
+    </event>
+    <event refgrp="2">
+      <title>A fanatic is one who</title>
+      <from>2010-09-27 09:00</from>
+      <to>2010-09-27 12:00</to>
+      <location>location2</location>
+        <guest refuser="23" />
+          <guest refuser="19" />
+    </event>
+
+    <event refgrp="1">
+      <title>:Duff's device: /n./ The most</title>
+      <from>2010-09-27 14:00</from>
+      <to>2010-09-27 17:00</to>
+      <location>location0</location>
+    </event>
+    <event refgrp="2">
+      <title>All other things being equal,</title>
       <from>2010-09-28 09:00</from>
       <to>2010-09-28 12:00</to>
       <location>location1</location>
     </event>
 
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>T-shirt: Life is *not* a</title>
       <from>2010-09-28 14:00</from>
       <to>2010-09-28 17:00</to>
+      <location>location0</location>
+      <guest refuser="56" />
+      <guest refuser="74" />
+    </event>
+    <event refgrp="1">
+      <title>"We are on the verge:</title>
+      <from>2010-09-29 09:00</from>
+      <to>2010-09-29 12:00</to>
       <location>location1</location>
-      <guest refuser="12" />
-      <guest refuser="66" />
     </event>
 
     <event refgrp="2">
-      <from>2010-09-29 09:00</from>
-      <to>2010-09-29 12:00</to>
-      <location>location0</location>
-    </event>
-
-    <event refgrp="1">
+      <title>You can get much further</title>
       <from>2010-09-29 14:00</from>
       <to>2010-09-29 17:00</to>
-      <location>location0</location>
-      <guest refuser="33" />
+      <location>location2</location>
+      <guest refuser="41" />
+      <guest refuser="67" />
     </event>
-
     <event refgrp="1">
+      <title>Take the folks at Coca-Cola.</title>
       <from>2010-09-30 09:00</from>
       <to>2010-09-30 12:00</to>
       <location>location2</location>
     </event>
 
     <event refgrp="1">
+      <title>Of course there's no reason</title>
       <from>2010-09-30 14:00</from>
       <to>2010-09-30 17:00</to>
       <location>location2</location>
     </event>
-
     <event refgrp="1">
+      <title>"My name is Sue! How</title>
       <from>2010-10-01 09:00</from>
       <to>2010-10-01 12:00</to>
       <location>location0</location>
     </event>
 
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>Godwin's Law (prov. [Usenet]): As</title>
       <from>2010-10-01 14:00</from>
       <to>2010-10-01 17:00</to>
-      <location>location0</location>
+      <location>location1</location>
     </event>
-
     <event refgrp="2">
+      <title>Woody: Hey, Mr. Peterson, Jack</title>
       <from>2010-10-02 09:00</from>
       <to>2010-10-02 12:00</to>
       <location>location1</location>
     </event>
 
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>Why, every one as they</title>
       <from>2010-10-02 14:00</from>
       <to>2010-10-02 17:00</to>
-      <location>location2</location>
-      <guest refuser="1" />
-      <guest refuser="54" />
+      <location>location1</location>
     </event>
-
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>There was a young lady</title>
       <from>2010-10-03 09:00</from>
       <to>2010-10-03 12:00</to>
-      <location>location2</location>
+      <location>location1</location>
     </event>
 
     <event refgrp="2">
+      <title>Fortune finishes the great quotations,</title>
       <from>2010-10-03 14:00</from>
       <to>2010-10-03 17:00</to>
       <location>location2</location>
     </event>
-
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>Peace, n: In international affairs,</title>
       <from>2010-10-04 09:00</from>
       <to>2010-10-04 12:00</to>
-      <location>location0</location>
+      <location>location1</location>
+        <guest refuser="48" />
+          <guest refuser="2" />
     </event>
 
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>It is ridiculous to call</title>
       <from>2010-10-04 14:00</from>
       <to>2010-10-04 17:00</to>
       <location>location2</location>
     </event>
-
     <event refgrp="2">
+      <title>"I may appear to be</title>
       <from>2010-10-05 09:00</from>
       <to>2010-10-05 12:00</to>
       <location>location0</location>
     </event>
 
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>"Violence accomplishes nothing." What a</title>
       <from>2010-10-05 14:00</from>
       <to>2010-10-05 17:00</to>
-      <location>location0</location>
-      <guest refuser="45" />
+      <location>location2</location>
     </event>
-
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>To get something done, a</title>
       <from>2010-10-06 09:00</from>
       <to>2010-10-06 12:00</to>
-      <location>location1</location>
-    </event>
-
-    <event refgrp="2">
-      <from>2010-10-06 14:00</from>
-      <to>2010-10-06 17:00</to>
       <location>location2</location>
     </event>
 
+    <event refgrp="2">
+      <title>brain, v: [as in "to</title>
+      <from>2010-10-06 14:00</from>
+      <to>2010-10-06 17:00</to>
+      <location>location1</location>
+    </event>
     <event refgrp="1">
+      <title>"...[Linux's] capacity to talk via</title>
       <from>2010-10-07 09:00</from>
       <to>2010-10-07 12:00</to>
       <location>location2</location>
+        <guest refuser="68" />
+          <guest refuser="92" />
     </event>
 
     <event refgrp="2">
+      <title>There is always someone worse</title>
       <from>2010-10-07 14:00</from>
       <to>2010-10-07 17:00</to>
+      <location>location2</location>
+    </event>
+    <event refgrp="1">
+      <title>No problem is so formidable</title>
+      <from>2010-10-08 09:00</from>
+      <to>2010-10-08 12:00</to>
       <location>location0</location>
     </event>
 
     <event refgrp="2">
-      <from>2010-10-08 09:00</from>
-      <to>2010-10-08 12:00</to>
-      <location>location2</location>
-    </event>
-
-    <event refgrp="2">
+      <title>This system will self-destruct in</title>
       <from>2010-10-08 14:00</from>
       <to>2010-10-08 17:00</to>
       <location>location0</location>
     </event>
-
     <event refgrp="2">
+      <title>There once was a lady</title>
       <from>2010-10-09 09:00</from>
       <to>2010-10-09 12:00</to>
-      <location>location0</location>
-    </event>
-
-    <event refgrp="2">
-      <from>2010-10-09 14:00</from>
-      <to>2010-10-09 17:00</to>
-      <location>location0</location>
-      <guest refuser="97" />
-      <guest refuser="44" />
+      <location>location1</location>
     </event>
 
     <event refgrp="1">
+      <title>So the documentary-makers stick with</title>
+      <from>2010-10-09 14:00</from>
+      <to>2010-10-09 17:00</to>
+      <location>location1</location>
+      <guest refuser="31" />
+      <guest refuser="24" />
+    </event>
+    <event refgrp="1">
+      <title>"It's all so painfully empty</title>
       <from>2010-10-10 09:00</from>
       <to>2010-10-10 12:00</to>
-      <location>location0</location>
+      <location>location2</location>
     </event>
 
     <event refgrp="2">
+      <title>A bad marriage is like</title>
       <from>2010-10-10 14:00</from>
       <to>2010-10-10 17:00</to>
       <location>location1</location>
     </event>
-
     <event refgrp="2">
+      <title>667: The neighbor of the</title>
       <from>2010-10-11 09:00</from>
       <to>2010-10-11 12:00</to>
       <location>location0</location>
     </event>
 
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>:cookie file: /n./ A collection</title>
       <from>2010-10-11 14:00</from>
       <to>2010-10-11 17:00</to>
-      <location>location2</location>
+      <location>location0</location>
+      <guest refuser="98" />
+      <guest refuser="18" />
     </event>
-
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>He has not acquired a</title>
       <from>2010-10-12 09:00</from>
       <to>2010-10-12 12:00</to>
-      <location>location0</location>
+      <location>location1</location>
     </event>
 
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>Toothpaste never hurts the taste</title>
       <from>2010-10-12 14:00</from>
       <to>2010-10-12 17:00</to>
-      <location>location1</location>
-      <guest refuser="8" />
+      <location>location2</location>
     </event>
-
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>Mike: "The Fourth Dimension is</title>
       <from>2010-10-13 09:00</from>
       <to>2010-10-13 12:00</to>
-      <location>location1</location>
+      <location>location0</location>
+        <guest refuser="54" />
+          <guest refuser="11" />
     </event>
 
     <event refgrp="1">
+      <title>Class: when they're running you</title>
       <from>2010-10-13 14:00</from>
       <to>2010-10-13 17:00</to>
-      <location>location1</location>
+      <location>location0</location>
     </event>
-
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>The only possible interpretation of</title>
       <from>2010-10-14 09:00</from>
       <to>2010-10-14 12:00</to>
-      <location>location2</location>
-        <guest refuser="56" />
-          <guest refuser="48" />
+      <location>location0</location>
     </event>
 
     <event refgrp="2">
+      <title>Universities are places of knowledge.</title>
       <from>2010-10-14 14:00</from>
       <to>2010-10-14 17:00</to>
-      <location>location0</location>
+      <location>location1</location>
     </event>
-
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>Death before dishonor. But neither</title>
       <from>2010-10-15 09:00</from>
       <to>2010-10-15 12:00</to>
-      <location>location0</location>
+      <location>location2</location>
     </event>
 
     <event refgrp="2">
+      <title>In defeat, unbeatable; in victory,</title>
       <from>2010-10-15 14:00</from>
       <to>2010-10-15 17:00</to>
       <location>location0</location>
     </event>
-
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>Most people are unable to</title>
       <from>2010-10-16 09:00</from>
       <to>2010-10-16 12:00</to>
-      <location>location1</location>
+      <location>location0</location>
+        <guest refuser="98" />
     </event>
 
     <event refgrp="2">
+      <title>Q. How do you keep</title>
       <from>2010-10-16 14:00</from>
       <to>2010-10-16 17:00</to>
       <location>location1</location>
     </event>
-
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>Business will be either better</title>
       <from>2010-10-17 09:00</from>
       <to>2010-10-17 12:00</to>
-      <location>location1</location>
+      <location>location0</location>
     </event>
 
     <event refgrp="1">
+      <title>Old MacDonald had an agricultural</title>
       <from>2010-10-17 14:00</from>
       <to>2010-10-17 17:00</to>
-      <location>location0</location>
-      <guest refuser="13" />
-      <guest refuser="23" />
+      <location>location1</location>
     </event>
-
     <event refgrp="1">
+      <title>"No one gets too old</title>
       <from>2010-10-18 09:00</from>
       <to>2010-10-18 12:00</to>
       <location>location0</location>
     </event>
 
     <event refgrp="2">
+      <title>Education is an admirable thing,</title>
       <from>2010-10-18 14:00</from>
       <to>2010-10-18 17:00</to>
-      <location>location1</location>
+      <location>location0</location>
     </event>
-
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>Our little systems have their</title>
       <from>2010-10-19 09:00</from>
       <to>2010-10-19 12:00</to>
       <location>location0</location>
     </event>
 
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>bureaucrat, n: A politician who</title>
       <from>2010-10-19 14:00</from>
       <to>2010-10-19 17:00</to>
-      <location>location1</location>
+      <location>location0</location>
     </event>
-
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>After watching an extremely attractive</title>
       <from>2010-10-20 09:00</from>
       <to>2010-10-20 12:00</to>
-      <location>location1</location>
-    </event>
-
-    <event refgrp="2">
-      <from>2010-10-20 14:00</from>
-      <to>2010-10-20 17:00</to>
-      <location>location1</location>
-      <guest refuser="42" />
-      <guest refuser="12" />
+      <location>location2</location>
     </event>
 
     <event refgrp="1">
+      <title>Every young man should have</title>
+      <from>2010-10-20 14:00</from>
+      <to>2010-10-20 17:00</to>
+      <location>location2</location>
+    </event>
+    <event refgrp="1">
+      <title>If you fail to plan,</title>
       <from>2010-10-21 09:00</from>
       <to>2010-10-21 12:00</to>
       <location>location0</location>
     </event>
 
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>Nowlan's Theory: He who hesitates</title>
       <from>2010-10-21 14:00</from>
       <to>2010-10-21 17:00</to>
-      <location>location0</location>
-      <guest refuser="62" />
+      <location>location1</location>
+      <guest refuser="36" />
       <guest refuser="47" />
+    </event>
+    <event refgrp="1">
+      <title>A biologist, a statistician, a</title>
+      <from>2010-10-22 09:00</from>
+      <to>2010-10-22 12:00</to>
+      <location>location0</location>
+    </event>
+
+    <event refgrp="2">
+      <title>For fools rush in where</title>
+      <from>2010-10-22 14:00</from>
+      <to>2010-10-22 17:00</to>
+      <location>location2</location>
+    </event>
+    <event refgrp="1">
+      <title>A [golf] ball sliced or</title>
+      <from>2010-10-23 09:00</from>
+      <to>2010-10-23 12:00</to>
+      <location>location2</location>
     </event>
 
     <event refgrp="1">
-      <from>2010-10-22 09:00</from>
-      <to>2010-10-22 12:00</to>
+      <title>Don't worry, nobody really LISTENS</title>
+      <from>2010-10-23 14:00</from>
+      <to>2010-10-23 17:00</to>
+      <location>location1</location>
+    </event>
+    <event refgrp="2">
+      <title>You scratch my tape, and</title>
+      <from>2010-10-24 09:00</from>
+      <to>2010-10-24 12:00</to>
       <location>location1</location>
     </event>
 
     <event refgrp="2">
-      <from>2010-10-22 14:00</from>
-      <to>2010-10-22 17:00</to>
-      <location>location2</location>
-      <guest refuser="51" />
-      <guest refuser="10" />
-    </event>
-
-    <event refgrp="2">
-      <from>2010-10-23 09:00</from>
-      <to>2010-10-23 12:00</to>
-      <location>location0</location>
-    </event>
-
-    <event refgrp="2">
-      <from>2010-10-23 14:00</from>
-      <to>2010-10-23 17:00</to>
-      <location>location2</location>
-    </event>
-
-    <event refgrp="1">
-      <from>2010-10-24 09:00</from>
-      <to>2010-10-24 12:00</to>
-      <location>location0</location>
-        <guest refuser="67" />
-          <guest refuser="66" />
-    </event>
-
-    <event refgrp="1">
+      <title>ASCII a stupid question, you</title>
       <from>2010-10-24 14:00</from>
       <to>2010-10-24 17:00</to>
       <location>location2</location>
     </event>
-
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>I'm not proud.</title>
       <from>2010-10-25 09:00</from>
       <to>2010-10-25 12:00</to>
-      <location>location0</location>
+      <location>location2</location>
     </event>
 
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>Stop searching forever. Happiness is</title>
       <from>2010-10-25 14:00</from>
       <to>2010-10-25 17:00</to>
-      <location>location1</location>
+      <location>location2</location>
     </event>
-
     <event refgrp="2">
+      <title>A rock pile ceases to</title>
       <from>2010-10-26 09:00</from>
       <to>2010-10-26 12:00</to>
-      <location>location1</location>
-        <guest refuser="86" />
-    </event>
-
-    <event refgrp="2">
-      <from>2010-10-26 14:00</from>
-      <to>2010-10-26 17:00</to>
-      <location>location0</location>
+      <location>location2</location>
+        <guest refuser="29" />
     </event>
 
     <event refgrp="1">
+      <title>kern, v: 1. To pack</title>
+      <from>2010-10-26 14:00</from>
+      <to>2010-10-26 17:00</to>
+      <location>location2</location>
+    </event>
+    <event refgrp="2">
+      <title>The absent ones are always</title>
       <from>2010-10-27 09:00</from>
       <to>2010-10-27 12:00</to>
       <location>location1</location>
-        <guest refuser="18" />
-          <guest refuser="53" />
     </event>
 
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>A gleekzorp without a tornpee</title>
       <from>2010-10-27 14:00</from>
       <to>2010-10-27 17:00</to>
-      <location>location0</location>
+      <location>location1</location>
     </event>
-
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>You can't mend a wristwatch</title>
       <from>2010-10-28 09:00</from>
       <to>2010-10-28 12:00</to>
       <location>location1</location>
     </event>
 
     <event refgrp="2">
+      <title>Mate, this parrot wouldn't VOOM</title>
       <from>2010-10-28 14:00</from>
       <to>2010-10-28 17:00</to>
-      <location>location0</location>
+      <location>location2</location>
     </event>
-
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>When the lodge meeting broke</title>
       <from>2010-10-29 09:00</from>
       <to>2010-10-29 12:00</to>
-      <location>location1</location>
-        <guest refuser="25" />
-          <guest refuser="4" />
+      <location>location2</location>
     </event>
 
     <event refgrp="1">
+      <title>It is easier for a</title>
       <from>2010-10-29 14:00</from>
       <to>2010-10-29 17:00</to>
-      <location>location2</location>
+      <location>location1</location>
     </event>
-
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>Good day to avoid cops.</title>
       <from>2010-10-30 09:00</from>
       <to>2010-10-30 12:00</to>
-      <location>location2</location>
-        <guest refuser="77" />
-          <guest refuser="2" />
+      <location>location0</location>
     </event>
 
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>A box without hinges, key,</title>
       <from>2010-10-30 14:00</from>
       <to>2010-10-30 17:00</to>
+      <location>location2</location>
+    </event>
+    <event refgrp="1">
+      <title>Q: How many lawyers does</title>
+      <from>2010-10-31 09:00</from>
+      <to>2010-10-31 12:00</to>
       <location>location0</location>
     </event>
 
     <event refgrp="2">
-      <from>2010-10-31 09:00</from>
-      <to>2010-10-31 12:00</to>
-      <location>location1</location>
-    </event>
-
-    <event refgrp="2">
+      <title>Adult, n.: One old enough</title>
       <from>2010-10-31 14:00</from>
       <to>2010-10-31 17:00</to>
-      <location>location1</location>
+      <location>location0</location>
     </event>
-
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>The three best things about</title>
       <from>2010-11-01 09:00</from>
       <to>2010-11-01 12:00</to>
-      <location>location2</location>
+      <location>location0</location>
+        <guest refuser="79" />
     </event>
 
     <event refgrp="1">
+      <title>I will honour Christmas in</title>
       <from>2010-11-01 14:00</from>
       <to>2010-11-01 17:00</to>
       <location>location2</location>
     </event>
-
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>The entire work force of</title>
       <from>2010-11-02 09:00</from>
       <to>2010-11-02 12:00</to>
       <location>location2</location>
     </event>
 
     <event refgrp="2">
+      <title>Excess on occasion is exhilarating.</title>
       <from>2010-11-02 14:00</from>
       <to>2010-11-02 17:00</to>
       <location>location0</location>
-      <guest refuser="18" />
     </event>
-
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>Think of your family tonight.</title>
       <from>2010-11-03 09:00</from>
       <to>2010-11-03 12:00</to>
       <location>location0</location>
     </event>
 
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>Life is not for everyone.</title>
       <from>2010-11-03 14:00</from>
       <to>2010-11-03 17:00</to>
-      <location>location2</location>
+      <location>location1</location>
     </event>
-
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>"Plaese porrf raed." -- Prof.</title>
       <from>2010-11-04 09:00</from>
       <to>2010-11-04 12:00</to>
       <location>location0</location>
     </event>
 
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>The world is full of</title>
       <from>2010-11-04 14:00</from>
       <to>2010-11-04 17:00</to>
-      <location>location2</location>
+      <location>location0</location>
+      <guest refuser="56" />
     </event>
-
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>There are many intelligent species</title>
       <from>2010-11-05 09:00</from>
       <to>2010-11-05 12:00</to>
-      <location>location0</location>
-    </event>
-
-    <event refgrp="1">
-      <from>2010-11-05 14:00</from>
-      <to>2010-11-05 17:00</to>
       <location>location1</location>
     </event>
 
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>Death is a spirit leaving</title>
+      <from>2010-11-05 14:00</from>
+      <to>2010-11-05 17:00</to>
+      <location>location0</location>
+    </event>
+    <event refgrp="1">
+      <title>snappy repartee: What you'd say</title>
       <from>2010-11-06 09:00</from>
       <to>2010-11-06 12:00</to>
       <location>location2</location>
-        <guest refuser="2" />
+        <guest refuser="10" />
+          <guest refuser="66" />
     </event>
 
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>Illiterate? Write today, for free</title>
       <from>2010-11-06 14:00</from>
       <to>2010-11-06 17:00</to>
-      <location>location0</location>
+      <location>location1</location>
     </event>
-
     <event refgrp="1">
+      <title>You can measure a programmer's</title>
       <from>2010-11-07 09:00</from>
       <to>2010-11-07 12:00</to>
-      <location>location0</location>
-    </event>
-
-    <event refgrp="1">
-      <from>2010-11-07 14:00</from>
-      <to>2010-11-07 17:00</to>
-      <location>location2</location>
-    </event>
-
-    <event refgrp="1">
-      <from>2010-11-08 09:00</from>
-      <to>2010-11-08 12:00</to>
       <location>location2</location>
     </event>
 
     <event refgrp="2">
+      <title>You've heard of the bishop</title>
+      <from>2010-11-07 14:00</from>
+      <to>2010-11-07 17:00</to>
+      <location>location0</location>
+    </event>
+    <event refgrp="1">
+      <title>"Not Hercules could have knock'd</title>
+      <from>2010-11-08 09:00</from>
+      <to>2010-11-08 12:00</to>
+      <location>location0</location>
+    </event>
+
+    <event refgrp="1">
+      <title>When the going gets weird,</title>
       <from>2010-11-08 14:00</from>
       <to>2010-11-08 17:00</to>
       <location>location0</location>
+      <guest refuser="78" />
     </event>
-
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>Nice guys finish last, but</title>
       <from>2010-11-09 09:00</from>
       <to>2010-11-09 12:00</to>
-      <location>location0</location>
+      <location>location2</location>
     </event>
 
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>FORTUNE'S FUN FACTS TO KNOW</title>
       <from>2010-11-09 14:00</from>
       <to>2010-11-09 17:00</to>
       <location>location2</location>
     </event>
-
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>QOTD: "I won't say he's</title>
       <from>2010-11-10 09:00</from>
       <to>2010-11-10 12:00</to>
-      <location>location2</location>
-        <guest refuser="37" />
-          <guest refuser="86" />
+      <location>location1</location>
+        <guest refuser="47" />
+          <guest refuser="74" />
     </event>
 
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>No one can make you</title>
       <from>2010-11-10 14:00</from>
       <to>2010-11-10 17:00</to>
       <location>location1</location>
     </event>
-
     <event refgrp="1">
+      <title>I'd really like to see</title>
       <from>2010-11-11 09:00</from>
       <to>2010-11-11 12:00</to>
-      <location>location0</location>
-        <guest refuser="59" />
-          <guest refuser="89" />
-    </event>
-
-    <event refgrp="2">
-      <from>2010-11-11 14:00</from>
-      <to>2010-11-11 17:00</to>
       <location>location1</location>
     </event>
 
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>A bunch of the boys</title>
+      <from>2010-11-11 14:00</from>
+      <to>2010-11-11 17:00</to>
+      <location>location2</location>
+    </event>
+    <event refgrp="2">
+      <title>Calvin: "I wonder where we</title>
       <from>2010-11-12 09:00</from>
       <to>2010-11-12 12:00</to>
       <location>location2</location>
     </event>
 
     <event refgrp="2">
+      <title>If something has not yet</title>
       <from>2010-11-12 14:00</from>
       <to>2010-11-12 17:00</to>
-      <location>location0</location>
+      <location>location1</location>
     </event>
-
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>If mathematically you end up</title>
       <from>2010-11-13 09:00</from>
       <to>2010-11-13 12:00</to>
       <location>location1</location>
     </event>
 
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>:PostScript:: /n./ A Page Description</title>
       <from>2010-11-13 14:00</from>
       <to>2010-11-13 17:00</to>
-      <location>location1</location>
+      <location>location0</location>
     </event>
-
     <event refgrp="2">
+      <title>Life is a sexually transferred</title>
       <from>2010-11-14 09:00</from>
       <to>2010-11-14 12:00</to>
       <location>location2</location>
     </event>
 
     <event refgrp="2">
+      <title>This login session: $13.99</title>
       <from>2010-11-14 14:00</from>
       <to>2010-11-14 17:00</to>
-      <location>location2</location>
-      <guest refuser="49" />
-      <guest refuser="51" />
+      <location>location0</location>
     </event>
-
     <event refgrp="1">
+      <title>Cahn's Axiom: When all else</title>
       <from>2010-11-15 09:00</from>
       <to>2010-11-15 12:00</to>
       <location>location2</location>
     </event>
 
     <event refgrp="1">
+      <title>A young man and his</title>
       <from>2010-11-15 14:00</from>
       <to>2010-11-15 17:00</to>
-      <location>location1</location>
-      <guest refuser="32" />
-      <guest refuser="37" />
+      <location>location0</location>
     </event>
-
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>:vi: /V-I/, *not* /vi:/ and</title>
       <from>2010-11-16 09:00</from>
       <to>2010-11-16 12:00</to>
-      <location>location2</location>
-    </event>
-
-    <event refgrp="1">
-      <from>2010-11-16 14:00</from>
-      <to>2010-11-16 17:00</to>
-      <location>location2</location>
-      <guest refuser="63" />
-      <guest refuser="48" />
-    </event>
-
-    <event refgrp="2">
-      <from>2010-11-17 09:00</from>
-      <to>2010-11-17 12:00</to>
-      <location>location2</location>
-    </event>
-
-    <event refgrp="1">
-      <from>2010-11-17 14:00</from>
-      <to>2010-11-17 17:00</to>
       <location>location0</location>
     </event>
 
     <event refgrp="2">
+      <title>The next person to mention</title>
+      <from>2010-11-16 14:00</from>
+      <to>2010-11-16 17:00</to>
+      <location>location1</location>
+    </event>
+    <event refgrp="1">
+      <title>It is now pitch dark.</title>
+      <from>2010-11-17 09:00</from>
+      <to>2010-11-17 12:00</to>
+      <location>location0</location>
+    </event>
+
+    <event refgrp="1">
+      <title>On the Internet, nobody knows</title>
+      <from>2010-11-17 14:00</from>
+      <to>2010-11-17 17:00</to>
+      <location>location1</location>
+      <guest refuser="91" />
+      <guest refuser="66" />
+    </event>
+    <event refgrp="1">
+      <title>Safety Third.</title>
       <from>2010-11-18 09:00</from>
       <to>2010-11-18 12:00</to>
       <location>location2</location>
     </event>
 
     <event refgrp="2">
+      <title>Scintillation is not always identification</title>
       <from>2010-11-18 14:00</from>
       <to>2010-11-18 17:00</to>
-      <location>location2</location>
+      <location>location0</location>
+      <guest refuser="98" />
     </event>
-
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>"I'd love to go out</title>
       <from>2010-11-19 09:00</from>
       <to>2010-11-19 12:00</to>
-      <location>location2</location>
-    </event>
-
-    <event refgrp="1">
-      <from>2010-11-19 14:00</from>
-      <to>2010-11-19 17:00</to>
-      <location>location2</location>
-      <guest refuser="30" />
-      <guest refuser="3" />
+      <location>location0</location>
     </event>
 
     <event refgrp="2">
+      <title>Elevators smell different to midgets.</title>
+      <from>2010-11-19 14:00</from>
+      <to>2010-11-19 17:00</to>
+      <location>location0</location>
+      <guest refuser="84" />
+      <guest refuser="12" />
+    </event>
+    <event refgrp="2">
+      <title>QOTD: I looked out my</title>
       <from>2010-11-20 09:00</from>
       <to>2010-11-20 12:00</to>
       <location>location2</location>
     </event>
 
     <event refgrp="1">
+      <title>Where will it all end?</title>
       <from>2010-11-20 14:00</from>
       <to>2010-11-20 17:00</to>
-      <location>location2</location>
-      <guest refuser="12" />
-      <guest refuser="34" />
+      <location>location0</location>
     </event>
-
     <event refgrp="1">
+      <title>Cthulhu Cthucks!</title>
       <from>2010-11-21 09:00</from>
       <to>2010-11-21 12:00</to>
-      <location>location1</location>
+      <location>location2</location>
     </event>
 
     <event refgrp="1">
+      <title>"If you don't want your</title>
       <from>2010-11-21 14:00</from>
       <to>2010-11-21 17:00</to>
       <location>location2</location>
+      <guest refuser="80" />
+      <guest refuser="54" />
     </event>
-
     <event refgrp="2">
+      <title>Things are more like they</title>
       <from>2010-11-22 09:00</from>
       <to>2010-11-22 12:00</to>
-      <location>location2</location>
+      <location>location1</location>
     </event>
 
     <event refgrp="1">
+      <title>:spoiler: /n./ [Usenet] 1. A</title>
       <from>2010-11-22 14:00</from>
       <to>2010-11-22 17:00</to>
-      <location>location0</location>
+      <location>location1</location>
+      <guest refuser="2" />
+      <guest refuser="53" />
     </event>
-
     <event refgrp="1">
+      <title>Absence makes the heart go</title>
       <from>2010-11-23 09:00</from>
       <to>2010-11-23 12:00</to>
       <location>location1</location>
-        <guest refuser="35" />
+        <guest refuser="7" />
     </event>
 
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>:flame: 1. /vi./ To post</title>
       <from>2010-11-23 14:00</from>
       <to>2010-11-23 17:00</to>
-      <location>location0</location>
+      <location>location1</location>
+      <guest refuser="7" />
     </event>
-
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>:cascade: /n./ 1. A huge</title>
       <from>2010-11-24 09:00</from>
       <to>2010-11-24 12:00</to>
-      <location>location2</location>
+      <location>location0</location>
     </event>
 
     <event refgrp="2">
+      <title>:trap door: /n./ (alt. `trapdoor')</title>
       <from>2010-11-24 14:00</from>
       <to>2010-11-24 17:00</to>
-      <location>location0</location>
-      <guest refuser="42" />
-      <guest refuser="18" />
+      <location>location2</location>
     </event>
-
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>Remember, in 2039, MOUSSE &amp;</title>
       <from>2010-11-25 09:00</from>
       <to>2010-11-25 12:00</to>
       <location>location0</location>
     </event>
 
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>Marriage always demands the greatest</title>
       <from>2010-11-25 14:00</from>
       <to>2010-11-25 17:00</to>
-      <location>location0</location>
+      <location>location2</location>
+      <guest refuser="57" />
+      <guest refuser="77" />
     </event>
-
     <event refgrp="1">
+      <title>unix soit qui mal y</title>
       <from>2010-11-26 09:00</from>
       <to>2010-11-26 12:00</to>
       <location>location0</location>
-    </event>
-
-    <event refgrp="2">
-      <from>2010-11-26 14:00</from>
-      <to>2010-11-26 17:00</to>
-      <location>location0</location>
-    </event>
-
-    <event refgrp="2">
-      <from>2010-11-27 09:00</from>
-      <to>2010-11-27 12:00</to>
-      <location>location2</location>
-        <guest refuser="98" />
-          <guest refuser="79" />
+        <guest refuser="54" />
+          <guest refuser="54" />
     </event>
 
     <event refgrp="1">
+      <title>There are worse things in</title>
+      <from>2010-11-26 14:00</from>
+      <to>2010-11-26 17:00</to>
+      <location>location1</location>
+    </event>
+    <event refgrp="1">
+      <title>MACINTOSH Most Applications Crash; If</title>
+      <from>2010-11-27 09:00</from>
+      <to>2010-11-27 12:00</to>
+      <location>location0</location>
+    </event>
+
+    <event refgrp="1">
+      <title>The typewriting machine, when played</title>
       <from>2010-11-27 14:00</from>
       <to>2010-11-27 17:00</to>
       <location>location2</location>
     </event>
-
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>For every credibility gap, there</title>
       <from>2010-11-28 09:00</from>
       <to>2010-11-28 12:00</to>
       <location>location2</location>
+        <guest refuser="51" />
     </event>
 
     <event refgrp="1">
+      <title>Snow Day -- stay home.</title>
       <from>2010-11-28 14:00</from>
       <to>2010-11-28 17:00</to>
-      <location>location0</location>
+      <location>location2</location>
     </event>
-
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>:bag on the side: /n./</title>
       <from>2010-11-29 09:00</from>
       <to>2010-11-29 12:00</to>
-      <location>location1</location>
-    </event>
-
-    <event refgrp="2">
-      <from>2010-11-29 14:00</from>
-      <to>2010-11-29 17:00</to>
       <location>location2</location>
     </event>
 
     <event refgrp="2">
+      <title>The eternal feminine draws us</title>
+      <from>2010-11-29 14:00</from>
+      <to>2010-11-29 17:00</to>
+      <location>location1</location>
+      <guest refuser="41" />
+      <guest refuser="90" />
+    </event>
+    <event refgrp="1">
+      <title>"The eleventh commandment was `Thou</title>
       <from>2010-11-30 09:00</from>
       <to>2010-11-30 12:00</to>
       <location>location1</location>
-        <guest refuser="36" />
-          <guest refuser="58" />
     </event>
 
     <event refgrp="2">
+      <title>"The chain which can be</title>
       <from>2010-11-30 14:00</from>
       <to>2010-11-30 17:00</to>
       <location>location0</location>
-      <guest refuser="1" />
-      <guest refuser="83" />
     </event>
-
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>There was a young girl</title>
       <from>2010-12-01 09:00</from>
       <to>2010-12-01 12:00</to>
-      <location>location1</location>
+      <location>location0</location>
     </event>
 
     <event refgrp="2">
+      <title>Health nuts are going to</title>
       <from>2010-12-01 14:00</from>
       <to>2010-12-01 17:00</to>
-      <location>location1</location>
+      <location>location2</location>
+      <guest refuser="57" />
+      <guest refuser="26" />
     </event>
-
     <event refgrp="2">
+      <title>fortune: cannot execute. Out of</title>
       <from>2010-12-02 09:00</from>
       <to>2010-12-02 12:00</to>
-      <location>location1</location>
-    </event>
-
-    <event refgrp="2">
-      <from>2010-12-02 14:00</from>
-      <to>2010-12-02 17:00</to>
       <location>location0</location>
-      <guest refuser="62" />
-      <guest refuser="14" />
     </event>
 
     <event refgrp="1">
+      <title>You're dead, Jim. -- McCoy,</title>
+      <from>2010-12-02 14:00</from>
+      <to>2010-12-02 17:00</to>
+      <location>location2</location>
+    </event>
+    <event refgrp="2">
+      <title>If you have never been</title>
       <from>2010-12-03 09:00</from>
       <to>2010-12-03 12:00</to>
       <location>location1</location>
     </event>
 
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>Dealing with the problem of</title>
       <from>2010-12-03 14:00</from>
       <to>2010-12-03 17:00</to>
-      <location>location2</location>
+      <location>location1</location>
     </event>
-
     <event refgrp="1">
+      <title>Men have a much better</title>
       <from>2010-12-04 09:00</from>
       <to>2010-12-04 12:00</to>
-      <location>location0</location>
-    </event>
-
-    <event refgrp="2">
-      <from>2010-12-04 14:00</from>
-      <to>2010-12-04 17:00</to>
       <location>location1</location>
     </event>
 
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>QOTD: "I tried buying a</title>
+      <from>2010-12-04 14:00</from>
+      <to>2010-12-04 17:00</to>
+      <location>location2</location>
+      <guest refuser="39" />
+    </event>
+    <event refgrp="1">
+      <title>If you give Congress a</title>
       <from>2010-12-05 09:00</from>
       <to>2010-12-05 12:00</to>
       <location>location2</location>
+        <guest refuser="69" />
     </event>
 
     <event refgrp="1">
+      <title>At a dance, a girl</title>
       <from>2010-12-05 14:00</from>
       <to>2010-12-05 17:00</to>
-      <location>location1</location>
-      <guest refuser="6" />
-      <guest refuser="73" />
+      <location>location0</location>
     </event>
-
     <event refgrp="1">
+      <title>There are three possible parts</title>
       <from>2010-12-06 09:00</from>
       <to>2010-12-06 12:00</to>
-      <location>location1</location>
+      <location>location0</location>
+        <guest refuser="92" />
     </event>
 
     <event refgrp="2">
+      <title>Sun in the night, everyone</title>
       <from>2010-12-06 14:00</from>
       <to>2010-12-06 17:00</to>
+      <location>location1</location>
+    </event>
+    <event refgrp="1">
+      <title>In every hierarchy the cream</title>
+      <from>2010-12-07 09:00</from>
+      <to>2010-12-07 12:00</to>
       <location>location2</location>
     </event>
 
     <event refgrp="2">
-      <from>2010-12-07 09:00</from>
-      <to>2010-12-07 12:00</to>
-      <location>location1</location>
-    </event>
-
-    <event refgrp="2">
+      <title>Swipple's Rule of Order: He</title>
       <from>2010-12-07 14:00</from>
       <to>2010-12-07 17:00</to>
+      <location>location1</location>
+    </event>
+    <event refgrp="1">
+      <title>I know how to do</title>
+      <from>2010-12-08 09:00</from>
+      <to>2010-12-08 12:00</to>
       <location>location0</location>
     </event>
 
-    <event refgrp="2">
-      <from>2010-12-08 09:00</from>
-      <to>2010-12-08 12:00</to>
-      <location>location1</location>
-    </event>
-
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>It's a small world, but</title>
       <from>2010-12-08 14:00</from>
       <to>2010-12-08 17:00</to>
       <location>location1</location>
     </event>
-
     <event refgrp="2">
+      <title>And earnest young woman in</title>
       <from>2010-12-09 09:00</from>
       <to>2010-12-09 12:00</to>
+      <location>location2</location>
+        <guest refuser="25" />
+          <guest refuser="49" />
+    </event>
+
+    <event refgrp="1">
+      <title>It was raining heavily, and</title>
+      <from>2010-12-09 14:00</from>
+      <to>2010-12-09 17:00</to>
+      <location>location2</location>
+    </event>
+    <event refgrp="1">
+      <title>A diplomat is a person</title>
+      <from>2010-12-10 09:00</from>
+      <to>2010-12-10 12:00</to>
       <location>location2</location>
     </event>
 
     <event refgrp="2">
-      <from>2010-12-09 14:00</from>
-      <to>2010-12-09 17:00</to>
-      <location>location0</location>
-    </event>
-
-    <event refgrp="2">
-      <from>2010-12-10 09:00</from>
-      <to>2010-12-10 12:00</to>
-      <location>location1</location>
-    </event>
-
-    <event refgrp="1">
+      <title>Those who do not do</title>
       <from>2010-12-10 14:00</from>
       <to>2010-12-10 17:00</to>
       <location>location2</location>
     </event>
-
     <event refgrp="1">
+      <title>Beauty is one of the</title>
       <from>2010-12-11 09:00</from>
       <to>2010-12-11 12:00</to>
-      <location>location2</location>
-        <guest refuser="37" />
-          <guest refuser="72" />
+      <location>location0</location>
     </event>
 
     <event refgrp="1">
+      <title>There is no doubt that</title>
       <from>2010-12-11 14:00</from>
       <to>2010-12-11 17:00</to>
       <location>location2</location>
-      <guest refuser="89" />
+      <guest refuser="49" />
+      <guest refuser="11" />
     </event>
-
     <event refgrp="1">
+      <title>E = MC ** 2</title>
       <from>2010-12-12 09:00</from>
       <to>2010-12-12 12:00</to>
       <location>location2</location>
     </event>
 
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>GREAT MOMENTS IN HISTORY (#7):</title>
       <from>2010-12-12 14:00</from>
       <to>2010-12-12 17:00</to>
       <location>location1</location>
+      <guest refuser="30" />
     </event>
-
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>If life isn't what you</title>
       <from>2010-12-13 09:00</from>
       <to>2010-12-13 12:00</to>
-      <location>location1</location>
+      <location>location0</location>
+        <guest refuser="1" />
+          <guest refuser="94" />
     </event>
 
     <event refgrp="1">
+      <title>Things will be bright in</title>
       <from>2010-12-13 14:00</from>
       <to>2010-12-13 17:00</to>
-      <location>location0</location>
+      <location>location1</location>
     </event>
-
     <event refgrp="2">
+      <title>If he should ever change</title>
       <from>2010-12-14 09:00</from>
       <to>2010-12-14 12:00</to>
       <location>location0</location>
-        <guest refuser="40" />
-          <guest refuser="80" />
     </event>
 
     <event refgrp="1">
+      <title>:GECOS:: /jee'kohs/ /n./ See {{GCOS}}.</title>
       <from>2010-12-14 14:00</from>
       <to>2010-12-14 17:00</to>
-      <location>location1</location>
+      <location>location0</location>
+      <guest refuser="54" />
     </event>
-
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>A sharper perspective on this</title>
       <from>2010-12-15 09:00</from>
       <to>2010-12-15 12:00</to>
-      <location>location0</location>
-    </event>
-
-    <event refgrp="2">
-      <from>2010-12-15 14:00</from>
-      <to>2010-12-15 17:00</to>
-      <location>location1</location>
-      <guest refuser="76" />
-      <guest refuser="39" />
+      <location>location2</location>
     </event>
 
     <event refgrp="1">
+      <title>There was a young fellow</title>
+      <from>2010-12-15 14:00</from>
+      <to>2010-12-15 17:00</to>
+      <location>location2</location>
+    </event>
+    <event refgrp="1">
+      <title>We are the people our</title>
       <from>2010-12-16 09:00</from>
       <to>2010-12-16 12:00</to>
       <location>location1</location>
+        <guest refuser="47" />
+          <guest refuser="42" />
     </event>
 
     <event refgrp="2">
+      <title>Those lovable Brits department: They</title>
       <from>2010-12-16 14:00</from>
       <to>2010-12-16 17:00</to>
       <location>location0</location>
     </event>
-
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>Has anyone realized that the</title>
       <from>2010-12-17 09:00</from>
       <to>2010-12-17 12:00</to>
       <location>location2</location>
     </event>
 
     <event refgrp="2">
+      <title>Johnson's law: Systems resemble the</title>
       <from>2010-12-17 14:00</from>
       <to>2010-12-17 17:00</to>
-      <location>location0</location>
+      <location>location1</location>
     </event>
-
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>Rule the Empire through force.</title>
       <from>2010-12-18 09:00</from>
       <to>2010-12-18 12:00</to>
-      <location>location1</location>
-    </event>
-
-    <event refgrp="2">
-      <from>2010-12-18 14:00</from>
-      <to>2010-12-18 17:00</to>
-      <location>location1</location>
-    </event>
-
-    <event refgrp="1">
-      <from>2010-12-19 09:00</from>
-      <to>2010-12-19 12:00</to>
-      <location>location1</location>
-        <guest refuser="25" />
-    </event>
-
-    <event refgrp="1">
-      <from>2010-12-19 14:00</from>
-      <to>2010-12-19 17:00</to>
       <location>location0</location>
     </event>
 
+    <event refgrp="2">
+      <title>ALL NEW: Parts not interchangeable</title>
+      <from>2010-12-18 14:00</from>
+      <to>2010-12-18 17:00</to>
+      <location>location0</location>
+      <guest refuser="58" />
+      <guest refuser="54" />
+    </event>
     <event refgrp="1">
+      <title>Marriage, n: The evil aye.</title>
+      <from>2010-12-19 09:00</from>
+      <to>2010-12-19 12:00</to>
+      <location>location0</location>
+    </event>
+
+    <event refgrp="2">
+      <title>The default Magic Word, "Abracadabra",</title>
+      <from>2010-12-19 14:00</from>
+      <to>2010-12-19 17:00</to>
+      <location>location1</location>
+    </event>
+    <event refgrp="2">
+      <title>There is no Father Christmas.</title>
       <from>2010-12-20 09:00</from>
       <to>2010-12-20 12:00</to>
       <location>location2</location>
     </event>
 
     <event refgrp="2">
+      <title>What's so funny?</title>
       <from>2010-12-20 14:00</from>
       <to>2010-12-20 17:00</to>
-      <location>location0</location>
+      <location>location2</location>
     </event>
-
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>There was a young man</title>
       <from>2010-12-21 09:00</from>
       <to>2010-12-21 12:00</to>
       <location>location1</location>
     </event>
 
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>"Have you lived here all</title>
       <from>2010-12-21 14:00</from>
       <to>2010-12-21 17:00</to>
-      <location>location0</location>
+      <location>location2</location>
     </event>
-
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>:one-banana problem: /n./ At mainframe</title>
       <from>2010-12-22 09:00</from>
       <to>2010-12-22 12:00</to>
-      <location>location0</location>
-        <guest refuser="80" />
-          <guest refuser="13" />
+      <location>location2</location>
     </event>
 
     <event refgrp="1">
+      <title>People don't usually make the</title>
       <from>2010-12-22 14:00</from>
       <to>2010-12-22 17:00</to>
-      <location>location0</location>
+      <location>location1</location>
     </event>
-
     <event refgrp="2">
+      <title>The Rabbits The Cow Here</title>
       <from>2010-12-23 09:00</from>
       <to>2010-12-23 12:00</to>
       <location>location1</location>
     </event>
 
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>Newlan's Truism: An "acceptable" level</title>
       <from>2010-12-23 14:00</from>
       <to>2010-12-23 17:00</to>
       <location>location0</location>
+      <guest refuser="1" />
     </event>
-
     <event refgrp="1">
+      <title>There once was a lady</title>
       <from>2010-12-24 09:00</from>
       <to>2010-12-24 12:00</to>
-      <location>location2</location>
+      <location>location1</location>
     </event>
 
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>You need no longer worry</title>
       <from>2010-12-24 14:00</from>
       <to>2010-12-24 17:00</to>
-      <location>location0</location>
+      <location>location1</location>
+    </event>
+    <event refgrp="1">
+      <title>ASCII a stupid question, you</title>
+      <from>2010-12-25 09:00</from>
+      <to>2010-12-25 12:00</to>
+      <location>location1</location>
+        <guest refuser="92" />
+          <guest refuser="1" />
     </event>
 
     <event refgrp="2">
-      <from>2010-12-25 09:00</from>
-      <to>2010-12-25 12:00</to>
+      <title>Logic doesn't apply to the</title>
+      <from>2010-12-25 14:00</from>
+      <to>2010-12-25 17:00</to>
+      <location>location1</location>
+    </event>
+    <event refgrp="1">
+      <title>My haircut is totally traditional!</title>
+      <from>2010-12-26 09:00</from>
+      <to>2010-12-26 12:00</to>
       <location>location2</location>
     </event>
 
     <event refgrp="2">
-      <from>2010-12-25 14:00</from>
-      <to>2010-12-25 17:00</to>
-      <location>location0</location>
-      <guest refuser="34" />
+      <title>There's no such thing as</title>
+      <from>2010-12-26 14:00</from>
+      <to>2010-12-26 17:00</to>
+      <location>location1</location>
+      <guest refuser="92" />
+      <guest refuser="84" />
     </event>
-
     <event refgrp="2">
-      <from>2010-12-26 09:00</from>
-      <to>2010-12-26 12:00</to>
-      <location>location0</location>
+      <title>Rule #1: The Boss is</title>
+      <from>2010-12-27 09:00</from>
+      <to>2010-12-27 12:00</to>
+      <location>location2</location>
+        <guest refuser="59" />
     </event>
 
     <event refgrp="1">
-      <from>2010-12-26 14:00</from>
-      <to>2010-12-26 17:00</to>
-      <location>location2</location>
-    </event>
-
-    <event refgrp="2">
-      <from>2010-12-27 09:00</from>
-      <to>2010-12-27 12:00</to>
-      <location>location0</location>
-        <guest refuser="55" />
-          <guest refuser="67" />
-    </event>
-
-    <event refgrp="2">
+      <title>Eloquence is logic on fire.</title>
       <from>2010-12-27 14:00</from>
       <to>2010-12-27 17:00</to>
       <location>location0</location>
     </event>
-
     <event refgrp="2">
+      <title>Rule 46, Oxford Union Society,</title>
       <from>2010-12-28 09:00</from>
       <to>2010-12-28 12:00</to>
-      <location>location0</location>
-    </event>
-
-    <event refgrp="2">
-      <from>2010-12-28 14:00</from>
-      <to>2010-12-28 17:00</to>
       <location>location2</location>
     </event>
 
     <event refgrp="2">
+      <title>Lazlo's Chinese Relativity Axiom: No</title>
+      <from>2010-12-28 14:00</from>
+      <to>2010-12-28 17:00</to>
+      <location>location1</location>
+    </event>
+    <event refgrp="2">
+      <title>"If a team is in</title>
       <from>2010-12-29 09:00</from>
       <to>2010-12-29 12:00</to>
       <location>location2</location>
+        <guest refuser="6" />
+          <guest refuser="14" />
     </event>
 
     <event refgrp="1">
+      <title>:go root: /vi./ [Unix] To</title>
       <from>2010-12-29 14:00</from>
       <to>2010-12-29 17:00</to>
-      <location>location0</location>
-      <guest refuser="72" />
-      <guest refuser="62" />
-    </event>
-
-    <event refgrp="2">
-      <from>2010-12-30 09:00</from>
-      <to>2010-12-30 12:00</to>
-      <location>location0</location>
-        <guest refuser="40" />
-          <guest refuser="18" />
-    </event>
-
-    <event refgrp="1">
-      <from>2010-12-30 14:00</from>
-      <to>2010-12-30 17:00</to>
-      <location>location0</location>
-    </event>
-
-    <event refgrp="1">
-      <from>2010-12-31 09:00</from>
-      <to>2010-12-31 12:00</to>
       <location>location1</location>
     </event>
+    <event refgrp="2">
+      <title>These days the necessities of</title>
+      <from>2010-12-30 09:00</from>
+      <to>2010-12-30 12:00</to>
+      <location>location2</location>
+        <guest refuser="45" />
+          <guest refuser="66" />
+    </event>
+
+    <event refgrp="1">
+      <title>Thirteen at a table is</title>
+      <from>2010-12-30 14:00</from>
+      <to>2010-12-30 17:00</to>
+      <location>location2</location>
+    </event>
+    <event refgrp="1">
+      <title>:Compu$erve: /n./ See {CI$}. Synonyms</title>
+      <from>2010-12-31 09:00</from>
+      <to>2010-12-31 12:00</to>
+      <location>location2</location>
+    </event>
 
     <event refgrp="2">
+      <title>A man wrapped up in</title>
       <from>2010-12-31 14:00</from>
       <to>2010-12-31 17:00</to>
       <location>location1</location>
     </event>
-
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>It looks like it's up</title>
       <from>2011-01-01 09:00</from>
       <to>2011-01-01 12:00</to>
       <location>location2</location>
+        <guest refuser="7" />
+          <guest refuser="1" />
     </event>
 
     <event refgrp="2">
+      <title>LIVING YOUR LIFE: A task</title>
       <from>2011-01-01 14:00</from>
       <to>2011-01-01 17:00</to>
-      <location>location1</location>
+      <location>location0</location>
     </event>
-
     <event refgrp="1">
+      <title>In Tennessee, it is illegal</title>
       <from>2011-01-02 09:00</from>
       <to>2011-01-02 12:00</to>
-      <location>location1</location>
+      <location>location2</location>
+        <guest refuser="18" />
+          <guest refuser="9" />
     </event>
 
     <event refgrp="2">
+      <title>I had to hit him</title>
       <from>2011-01-02 14:00</from>
       <to>2011-01-02 17:00</to>
+      <location>location1</location>
+    </event>
+    <event refgrp="1">
+      <title>Would you like to be</title>
+      <from>2011-01-03 09:00</from>
+      <to>2011-01-03 12:00</to>
       <location>location0</location>
     </event>
 
-    <event refgrp="1">
-      <from>2011-01-03 09:00</from>
-      <to>2011-01-03 12:00</to>
-      <location>location1</location>
-        <guest refuser="56" />
-    </event>
-
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>A consultant is a person</title>
       <from>2011-01-03 14:00</from>
       <to>2011-01-03 17:00</to>
       <location>location0</location>
     </event>
-
     <event refgrp="2">
+      <title>By doing just a little</title>
       <from>2011-01-04 09:00</from>
       <to>2011-01-04 12:00</to>
-      <location>location1</location>
+      <location>location0</location>
     </event>
 
     <event refgrp="1">
+      <title>There was a young man</title>
       <from>2011-01-04 14:00</from>
       <to>2011-01-04 17:00</to>
       <location>location2</location>
-      <guest refuser="17" />
-      <guest refuser="72" />
     </event>
-
     <event refgrp="2">
+      <title>Neutrinos are into physicists.</title>
       <from>2011-01-05 09:00</from>
       <to>2011-01-05 12:00</to>
-      <location>location1</location>
-        <guest refuser="32" />
+      <location>location2</location>
     </event>
 
     <event refgrp="2">
+      <title>I don't need no arms</title>
       <from>2011-01-05 14:00</from>
       <to>2011-01-05 17:00</to>
       <location>location2</location>
-      <guest refuser="7" />
-      <guest refuser="93" />
     </event>
-
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>I used to be such</title>
       <from>2011-01-06 09:00</from>
       <to>2011-01-06 12:00</to>
-      <location>location1</location>
-    </event>
-
-    <event refgrp="1">
-      <from>2011-01-06 14:00</from>
-      <to>2011-01-06 17:00</to>
-      <location>location2</location>
+      <location>location0</location>
+        <guest refuser="15" />
+          <guest refuser="13" />
     </event>
 
     <event refgrp="2">
+      <title>If only you had a</title>
+      <from>2011-01-06 14:00</from>
+      <to>2011-01-06 17:00</to>
+      <location>location0</location>
+      <guest refuser="95" />
+    </event>
+    <event refgrp="2">
+      <title>"I used to get high</title>
       <from>2011-01-07 09:00</from>
       <to>2011-01-07 12:00</to>
       <location>location2</location>
-        <guest refuser="32" />
-          <guest refuser="7" />
     </event>
 
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>I've got all the money</title>
       <from>2011-01-07 14:00</from>
       <to>2011-01-07 17:00</to>
+      <location>location2</location>
+    </event>
+    <event refgrp="2">
+      <title>:alpha particles: /n./ See {bit</title>
+      <from>2011-01-08 09:00</from>
+      <to>2011-01-08 12:00</to>
       <location>location1</location>
     </event>
 
     <event refgrp="2">
-      <from>2011-01-08 09:00</from>
-      <to>2011-01-08 12:00</to>
-      <location>location2</location>
-        <guest refuser="71" />
-          <guest refuser="40" />
-    </event>
-
-    <event refgrp="1">
+      <title>Have an adequate day.</title>
       <from>2011-01-08 14:00</from>
       <to>2011-01-08 17:00</to>
-      <location>location1</location>
-      <guest refuser="83" />
-      <guest refuser="59" />
+      <location>location2</location>
     </event>
-
     <event refgrp="1">
+      <title>Fortune finishes the great quotations,</title>
       <from>2011-01-09 09:00</from>
       <to>2011-01-09 12:00</to>
       <location>location1</location>
     </event>
 
     <event refgrp="1">
+      <title>serendipity, n.: The process by</title>
       <from>2011-01-09 14:00</from>
       <to>2011-01-09 17:00</to>
+      <location>location2</location>
+    </event>
+    <event refgrp="1">
+      <title>He was part of my</title>
+      <from>2011-01-10 09:00</from>
+      <to>2011-01-10 12:00</to>
       <location>location0</location>
     </event>
 
-    <event refgrp="2">
-      <from>2011-01-10 09:00</from>
-      <to>2011-01-10 12:00</to>
-      <location>location1</location>
-        <guest refuser="42" />
-          <guest refuser="98" />
-    </event>
-
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>poverty, n.: An unfortunate state</title>
       <from>2011-01-10 14:00</from>
       <to>2011-01-10 17:00</to>
       <location>location0</location>
-      <guest refuser="41" />
-      <guest refuser="34" />
+      <guest refuser="94" />
     </event>
-
     <event refgrp="2">
+      <title>Howe's Law: Everyone has a</title>
       <from>2011-01-11 09:00</from>
       <to>2011-01-11 12:00</to>
       <location>location0</location>
     </event>
 
     <event refgrp="2">
+      <title>Well, here it is, 1983,</title>
       <from>2011-01-11 14:00</from>
       <to>2011-01-11 17:00</to>
-      <location>location0</location>
+      <location>location2</location>
     </event>
-
     <event refgrp="1">
+      <title>Armor's Axiom: Virtue is the</title>
       <from>2011-01-12 09:00</from>
       <to>2011-01-12 12:00</to>
-      <location>location1</location>
-    </event>
-
-    <event refgrp="1">
-      <from>2011-01-12 14:00</from>
-      <to>2011-01-12 17:00</to>
       <location>location2</location>
     </event>
 
     <event refgrp="2">
+      <title>Reclaimer, spare that tree! Take</title>
+      <from>2011-01-12 14:00</from>
+      <to>2011-01-12 17:00</to>
+      <location>location0</location>
+    </event>
+    <event refgrp="1">
+      <title>The end of the human</title>
       <from>2011-01-13 09:00</from>
       <to>2011-01-13 12:00</to>
       <location>location0</location>
     </event>
 
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>Q: What's the difference between</title>
       <from>2011-01-13 14:00</from>
       <to>2011-01-13 17:00</to>
+      <location>location0</location>
+      <guest refuser="70" />
+      <guest refuser="66" />
+    </event>
+    <event refgrp="1">
+      <title>There was a young lady</title>
+      <from>2011-01-14 09:00</from>
+      <to>2011-01-14 12:00</to>
       <location>location0</location>
     </event>
 
     <event refgrp="2">
-      <from>2011-01-14 09:00</from>
-      <to>2011-01-14 12:00</to>
-      <location>location1</location>
-    </event>
-
-    <event refgrp="2">
+      <title>Most people have two reasons</title>
       <from>2011-01-14 14:00</from>
       <to>2011-01-14 17:00</to>
       <location>location1</location>
-      <guest refuser="25" />
-      <guest refuser="14" />
     </event>
-
     <event refgrp="1">
+      <title>Cosmotronic Software Unlimited Inc. does</title>
       <from>2011-01-15 09:00</from>
       <to>2011-01-15 12:00</to>
       <location>location2</location>
     </event>
 
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>Gravity brings me down.</title>
       <from>2011-01-15 14:00</from>
       <to>2011-01-15 17:00</to>
-      <location>location2</location>
+      <location>location0</location>
     </event>
-
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>You know your apartment is</title>
       <from>2011-01-16 09:00</from>
       <to>2011-01-16 12:00</to>
       <location>location2</location>
     </event>
 
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>It's the RINSE CYCLE!! They've</title>
       <from>2011-01-16 14:00</from>
       <to>2011-01-16 17:00</to>
       <location>location2</location>
     </event>
-
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>There are no winners in</title>
       <from>2011-01-17 09:00</from>
       <to>2011-01-17 12:00</to>
-      <location>location0</location>
-    </event>
-
-    <event refgrp="2">
-      <from>2011-01-17 14:00</from>
-      <to>2011-01-17 17:00</to>
-      <location>location1</location>
-    </event>
-
-    <event refgrp="2">
-      <from>2011-01-18 09:00</from>
-      <to>2011-01-18 12:00</to>
-      <location>location0</location>
-    </event>
-
-    <event refgrp="2">
-      <from>2011-01-18 14:00</from>
-      <to>2011-01-18 17:00</to>
       <location>location2</location>
     </event>
 
+    <event refgrp="1">
+      <title>Love is being stupid together.</title>
+      <from>2011-01-17 14:00</from>
+      <to>2011-01-17 17:00</to>
+      <location>location2</location>
+    </event>
     <event refgrp="2">
-      <from>2011-01-19 09:00</from>
-      <to>2011-01-19 12:00</to>
-      <location>location1</location>
+      <title>Important letters which contain no</title>
+      <from>2011-01-18 09:00</from>
+      <to>2011-01-18 12:00</to>
+      <location>location0</location>
+        <guest refuser="58" />
     </event>
 
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>Peter's hungry, time to eat</title>
+      <from>2011-01-18 14:00</from>
+      <to>2011-01-18 17:00</to>
+      <location>location0</location>
+    </event>
+    <event refgrp="2">
+      <title>DeVries's Dilemma: If you hit</title>
+      <from>2011-01-19 09:00</from>
+      <to>2011-01-19 12:00</to>
+      <location>location0</location>
+    </event>
+
+    <event refgrp="2">
+      <title>"If you understand what you're</title>
       <from>2011-01-19 14:00</from>
       <to>2011-01-19 17:00</to>
       <location>location0</location>
-      <guest refuser="50" />
     </event>
-
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>New York is real. The</title>
       <from>2011-01-20 09:00</from>
       <to>2011-01-20 12:00</to>
       <location>location0</location>
     </event>
 
     <event refgrp="1">
+      <title>If God had meant for</title>
       <from>2011-01-20 14:00</from>
       <to>2011-01-20 17:00</to>
       <location>location0</location>
     </event>
-
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>Consider the postage stamp: its</title>
       <from>2011-01-21 09:00</from>
       <to>2011-01-21 12:00</to>
       <location>location0</location>
-        <guest refuser="11" />
     </event>
 
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>LASER: Failed death ray.</title>
       <from>2011-01-21 14:00</from>
       <to>2011-01-21 17:00</to>
       <location>location0</location>
     </event>
-
     <event refgrp="1">
+      <title>I gave my love an</title>
       <from>2011-01-22 09:00</from>
       <to>2011-01-22 12:00</to>
-      <location>location1</location>
+      <location>location0</location>
+        <guest refuser="3" />
     </event>
 
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>Women, when they have made</title>
       <from>2011-01-22 14:00</from>
       <to>2011-01-22 17:00</to>
       <location>location2</location>
     </event>
-
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>No problem is so formidable</title>
       <from>2011-01-23 09:00</from>
       <to>2011-01-23 12:00</to>
       <location>location0</location>
+        <guest refuser="76" />
+          <guest refuser="0" />
     </event>
 
     <event refgrp="2">
+      <title>:code grinder: /n./ 1. A</title>
       <from>2011-01-23 14:00</from>
       <to>2011-01-23 17:00</to>
+      <location>location2</location>
+    </event>
+    <event refgrp="2">
+      <title>Q: Why haven't you graduated</title>
+      <from>2011-01-24 09:00</from>
+      <to>2011-01-24 12:00</to>
       <location>location1</location>
     </event>
 
     <event refgrp="1">
-      <from>2011-01-24 09:00</from>
-      <to>2011-01-24 12:00</to>
-      <location>location0</location>
-    </event>
-
-    <event refgrp="2">
+      <title>Anybody who doesn't cut his</title>
       <from>2011-01-24 14:00</from>
       <to>2011-01-24 17:00</to>
-      <location>location0</location>
-      <guest refuser="5" />
+      <location>location2</location>
     </event>
-
     <event refgrp="1">
+      <title>I have never understood this</title>
       <from>2011-01-25 09:00</from>
       <to>2011-01-25 12:00</to>
       <location>location1</location>
     </event>
 
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>Substitute "damn" every time you're</title>
       <from>2011-01-25 14:00</from>
       <to>2011-01-25 17:00</to>
       <location>location0</location>
     </event>
-
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>Seems like this duck waddles</title>
       <from>2011-01-26 09:00</from>
       <to>2011-01-26 12:00</to>
       <location>location0</location>
     </event>
 
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>For those of you who</title>
       <from>2011-01-26 14:00</from>
       <to>2011-01-26 17:00</to>
-      <location>location2</location>
+      <location>location0</location>
+      <guest refuser="45" />
+      <guest refuser="96" />
     </event>
-
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>:drool-proof paper: /n./ Documentation that</title>
       <from>2011-01-27 09:00</from>
       <to>2011-01-27 12:00</to>
       <location>location2</location>
     </event>
 
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>Psychology. Mind over matter. Mind</title>
       <from>2011-01-27 14:00</from>
       <to>2011-01-27 17:00</to>
+      <location>location2</location>
+    </event>
+    <event refgrp="1">
+      <title>Rules for Writers: Avoid run-on</title>
+      <from>2011-01-28 09:00</from>
+      <to>2011-01-28 12:00</to>
       <location>location1</location>
     </event>
 
-    <event refgrp="1">
-      <from>2011-01-28 09:00</from>
-      <to>2011-01-28 12:00</to>
-      <location>location2</location>
-    </event>
-
     <event refgrp="2">
+      <title>Straw? No, too stupid a</title>
       <from>2011-01-28 14:00</from>
       <to>2011-01-28 17:00</to>
       <location>location1</location>
-      <guest refuser="33" />
+      <guest refuser="0" />
+      <guest refuser="69" />
     </event>
-
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>:mickey: /n./ The resolution unit</title>
       <from>2011-01-29 09:00</from>
       <to>2011-01-29 12:00</to>
-      <location>location0</location>
-    </event>
-
-    <event refgrp="2">
-      <from>2011-01-29 14:00</from>
-      <to>2011-01-29 17:00</to>
       <location>location2</location>
-    </event>
-
-    <event refgrp="2">
-      <from>2011-01-30 09:00</from>
-      <to>2011-01-30 12:00</to>
-      <location>location2</location>
-    </event>
-
-    <event refgrp="2">
-      <from>2011-01-30 14:00</from>
-      <to>2011-01-30 17:00</to>
-      <location>location1</location>
-    </event>
-
-    <event refgrp="2">
-      <from>2011-01-31 09:00</from>
-      <to>2011-01-31 12:00</to>
-      <location>location1</location>
     </event>
 
     <event refgrp="1">
+      <title>:beam: /vt./ [from Star Trek</title>
+      <from>2011-01-29 14:00</from>
+      <to>2011-01-29 17:00</to>
+      <location>location0</location>
+    </event>
+    <event refgrp="2">
+      <title>O, it is excellent To</title>
+      <from>2011-01-30 09:00</from>
+      <to>2011-01-30 12:00</to>
+      <location>location1</location>
+    </event>
+
+    <event refgrp="2">
+      <title>:web pointer: /n./ A World</title>
+      <from>2011-01-30 14:00</from>
+      <to>2011-01-30 17:00</to>
+      <location>location2</location>
+    </event>
+    <event refgrp="2">
+      <title>Other women cloy The appetites</title>
+      <from>2011-01-31 09:00</from>
+      <to>2011-01-31 12:00</to>
+      <location>location2</location>
+    </event>
+
+    <event refgrp="1">
+      <title>Decisions of the judges will</title>
       <from>2011-01-31 14:00</from>
       <to>2011-01-31 17:00</to>
       <location>location0</location>
     </event>
-
     <event refgrp="2">
+      <title>Gratitude and treachery are merely</title>
       <from>2011-02-01 09:00</from>
       <to>2011-02-01 12:00</to>
+      <location>location0</location>
+    </event>
+
+    <event refgrp="2">
+      <title>The eyes of taxes are</title>
+      <from>2011-02-01 14:00</from>
+      <to>2011-02-01 17:00</to>
+      <location>location1</location>
+    </event>
+    <event refgrp="2">
+      <title>A team effort is a</title>
+      <from>2011-02-02 09:00</from>
+      <to>2011-02-02 12:00</to>
       <location>location1</location>
     </event>
 
     <event refgrp="1">
-      <from>2011-02-01 14:00</from>
-      <to>2011-02-01 17:00</to>
-      <location>location2</location>
-    </event>
-
-    <event refgrp="1">
-      <from>2011-02-02 09:00</from>
-      <to>2011-02-02 12:00</to>
-      <location>location0</location>
-    </event>
-
-    <event refgrp="1">
+      <title>Every four seconds a woman</title>
       <from>2011-02-02 14:00</from>
       <to>2011-02-02 17:00</to>
-      <location>location0</location>
+      <location>location1</location>
     </event>
-
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>Remember Darwin; building a better</title>
       <from>2011-02-03 09:00</from>
       <to>2011-02-03 12:00</to>
       <location>location1</location>
     </event>
 
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>Big M, Little M, many</title>
       <from>2011-02-03 14:00</from>
       <to>2011-02-03 17:00</to>
-      <location>location0</location>
+      <location>location1</location>
     </event>
-
     <event refgrp="1">
+      <title>I have learned To spell</title>
       <from>2011-02-04 09:00</from>
       <to>2011-02-04 12:00</to>
-      <location>location2</location>
-    </event>
-
-    <event refgrp="2">
-      <from>2011-02-04 14:00</from>
-      <to>2011-02-04 17:00</to>
-      <location>location0</location>
+      <location>location1</location>
     </event>
 
     <event refgrp="1">
+      <title>Depart in pieces, i.e., split.</title>
+      <from>2011-02-04 14:00</from>
+      <to>2011-02-04 17:00</to>
+      <location>location1</location>
+    </event>
+    <event refgrp="2">
+      <title>People respond to people who</title>
       <from>2011-02-05 09:00</from>
       <to>2011-02-05 12:00</to>
       <location>location1</location>
     </event>
 
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>A lad, at his first</title>
       <from>2011-02-05 14:00</from>
       <to>2011-02-05 17:00</to>
       <location>location1</location>
-      <guest refuser="40" />
     </event>
-
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>Our father who art in</title>
       <from>2011-02-06 09:00</from>
       <to>2011-02-06 12:00</to>
-      <location>location2</location>
-    </event>
-
-    <event refgrp="1">
-      <from>2011-02-06 14:00</from>
-      <to>2011-02-06 17:00</to>
       <location>location0</location>
-      <guest refuser="66" />
-      <guest refuser="73" />
+        <guest refuser="77" />
+          <guest refuser="29" />
     </event>
 
     <event refgrp="2">
+      <title>An Ada exception is when</title>
+      <from>2011-02-06 14:00</from>
+      <to>2011-02-06 17:00</to>
+      <location>location2</location>
+    </event>
+    <event refgrp="2">
+      <title>Finagle's Eighth Law: If an</title>
       <from>2011-02-07 09:00</from>
       <to>2011-02-07 12:00</to>
       <location>location2</location>
+        <guest refuser="93" />
+          <guest refuser="90" />
     </event>
 
     <event refgrp="1">
+      <title>So many beautiful women and</title>
       <from>2011-02-07 14:00</from>
       <to>2011-02-07 17:00</to>
-      <location>location2</location>
+      <location>location1</location>
     </event>
-
     <event refgrp="2">
+      <title>Winny and I lived in</title>
       <from>2011-02-08 09:00</from>
       <to>2011-02-08 12:00</to>
       <location>location0</location>
     </event>
 
     <event refgrp="1">
+      <title>Circumstances rule men; men do</title>
       <from>2011-02-08 14:00</from>
       <to>2011-02-08 17:00</to>
-      <location>location2</location>
-      <guest refuser="26" />
-      <guest refuser="9" />
+      <location>location0</location>
+    </event>
+    <event refgrp="2">
+      <title>Logic is a systematic method</title>
+      <from>2011-02-09 09:00</from>
+      <to>2011-02-09 12:00</to>
+      <location>location0</location>
     </event>
 
     <event refgrp="1">
-      <from>2011-02-09 09:00</from>
-      <to>2011-02-09 12:00</to>
-      <location>location2</location>
-        <guest refuser="21" />
-          <guest refuser="82" />
-    </event>
-
-    <event refgrp="2">
+      <title>In an orderly world, there's</title>
       <from>2011-02-09 14:00</from>
       <to>2011-02-09 17:00</to>
-      <location>location0</location>
+      <location>location2</location>
     </event>
-
     <event refgrp="2">
+      <title>Gloffing is a state of</title>
       <from>2011-02-10 09:00</from>
       <to>2011-02-10 12:00</to>
-      <location>location0</location>
+      <location>location1</location>
     </event>
 
     <event refgrp="2">
+      <title>The trouble with eating Italian</title>
       <from>2011-02-10 14:00</from>
       <to>2011-02-10 17:00</to>
       <location>location1</location>
     </event>
-
     <event refgrp="2">
+      <title>If the code and the</title>
       <from>2011-02-11 09:00</from>
       <to>2011-02-11 12:00</to>
-      <location>location1</location>
+      <location>location0</location>
+        <guest refuser="2" />
+          <guest refuser="6" />
     </event>
 
     <event refgrp="2">
+      <title>Nobody suffers the pain of</title>
       <from>2011-02-11 14:00</from>
       <to>2011-02-11 17:00</to>
-      <location>location1</location>
+      <location>location0</location>
     </event>
-
     <event refgrp="1">
+      <title>They just buzzed and buzzed...buzzed.</title>
       <from>2011-02-12 09:00</from>
       <to>2011-02-12 12:00</to>
-      <location>location1</location>
-        <guest refuser="98" />
+      <location>location2</location>
     </event>
 
     <event refgrp="2">
+      <title>A cocksucking steno named Beeman</title>
       <from>2011-02-12 14:00</from>
       <to>2011-02-12 17:00</to>
       <location>location2</location>
     </event>
-
     <event refgrp="1">
+      <title>Now is the time for</title>
       <from>2011-02-13 09:00</from>
       <to>2011-02-13 12:00</to>
-      <location>location1</location>
-    </event>
-
-    <event refgrp="1">
-      <from>2011-02-13 14:00</from>
-      <to>2011-02-13 17:00</to>
       <location>location0</location>
     </event>
 
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>Marriage is the only adventure</title>
+      <from>2011-02-13 14:00</from>
+      <to>2011-02-13 17:00</to>
+      <location>location1</location>
+    </event>
+    <event refgrp="1">
+      <title>Necessity has no law. --</title>
       <from>2011-02-14 09:00</from>
       <to>2011-02-14 12:00</to>
       <location>location0</location>
     </event>
 
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>I despise the pleasure of</title>
       <from>2011-02-14 14:00</from>
       <to>2011-02-14 17:00</to>
       <location>location0</location>
     </event>
-
     <event refgrp="1">
+      <title>It's not the fall that</title>
       <from>2011-02-15 09:00</from>
       <to>2011-02-15 12:00</to>
-      <location>location2</location>
+      <location>location1</location>
     </event>
 
     <event refgrp="1">
+      <title>Those of you who think</title>
       <from>2011-02-15 14:00</from>
       <to>2011-02-15 17:00</to>
-      <location>location2</location>
+      <location>location0</location>
     </event>
-
     <event refgrp="1">
+      <title>My doctorate's in Literature, but</title>
       <from>2011-02-16 09:00</from>
       <to>2011-02-16 12:00</to>
       <location>location0</location>
     </event>
 
     <event refgrp="1">
+      <title>I know you're in search</title>
       <from>2011-02-16 14:00</from>
       <to>2011-02-16 17:00</to>
-      <location>location0</location>
+      <location>location1</location>
     </event>
-
     <event refgrp="1">
+      <title>To lose weight, eat less;</title>
       <from>2011-02-17 09:00</from>
       <to>2011-02-17 12:00</to>
-      <location>location0</location>
+      <location>location2</location>
     </event>
 
     <event refgrp="1">
+      <title>When a woman gives me</title>
       <from>2011-02-17 14:00</from>
       <to>2011-02-17 17:00</to>
-      <location>location1</location>
+      <location>location2</location>
     </event>
-
     <event refgrp="2">
+      <title>Showing up is 80% of</title>
       <from>2011-02-18 09:00</from>
       <to>2011-02-18 12:00</to>
-      <location>location0</location>
-    </event>
-
-    <event refgrp="1">
-      <from>2011-02-18 14:00</from>
-      <to>2011-02-18 17:00</to>
-      <location>location1</location>
-      <guest refuser="56" />
-      <guest refuser="5" />
-    </event>
-
-    <event refgrp="2">
-      <from>2011-02-19 09:00</from>
-      <to>2011-02-19 12:00</to>
-      <location>location1</location>
-    </event>
-
-    <event refgrp="2">
-      <from>2011-02-19 14:00</from>
-      <to>2011-02-19 17:00</to>
       <location>location2</location>
     </event>
 
     <event refgrp="2">
+      <title>It was a Roman who</title>
+      <from>2011-02-18 14:00</from>
+      <to>2011-02-18 17:00</to>
+      <location>location2</location>
+    </event>
+    <event refgrp="2">
+      <title>When I saw a sign</title>
+      <from>2011-02-19 09:00</from>
+      <to>2011-02-19 12:00</to>
+      <location>location0</location>
+    </event>
+
+    <event refgrp="2">
+      <title>((lambda (foo) (bar foo)) (baz))</title>
+      <from>2011-02-19 14:00</from>
+      <to>2011-02-19 17:00</to>
+      <location>location1</location>
+    </event>
+    <event refgrp="2">
+      <title>At the source of every</title>
       <from>2011-02-20 09:00</from>
       <to>2011-02-20 12:00</to>
       <location>location2</location>
     </event>
 
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>FORTUNE'S FUN FACTS TO KNOW</title>
       <from>2011-02-20 14:00</from>
       <to>2011-02-20 17:00</to>
-      <location>location1</location>
+      <location>location2</location>
     </event>
-
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>Walters' Rule: All airline flights</title>
       <from>2011-02-21 09:00</from>
       <to>2011-02-21 12:00</to>
       <location>location2</location>
     </event>
 
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>Ashes to ashes, dust to</title>
       <from>2011-02-21 14:00</from>
       <to>2011-02-21 17:00</to>
       <location>location2</location>
+      <guest refuser="76" />
+      <guest refuser="42" />
     </event>
-
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>At no time is freedom</title>
       <from>2011-02-22 09:00</from>
       <to>2011-02-22 12:00</to>
       <location>location2</location>
     </event>
 
     <event refgrp="2">
+      <title>There once was a man</title>
       <from>2011-02-22 14:00</from>
       <to>2011-02-22 17:00</to>
       <location>location1</location>
     </event>
-
     <event refgrp="2">
+      <title>Work continues in this area.</title>
       <from>2011-02-23 09:00</from>
       <to>2011-02-23 12:00</to>
-      <location>location0</location>
+      <location>location1</location>
     </event>
 
     <event refgrp="1">
+      <title>To restore a sense of</title>
       <from>2011-02-23 14:00</from>
       <to>2011-02-23 17:00</to>
-      <location>location0</location>
+      <location>location1</location>
     </event>
-
     <event refgrp="1">
+      <title>For a young man, not</title>
       <from>2011-02-24 09:00</from>
       <to>2011-02-24 12:00</to>
       <location>location2</location>
     </event>
 
     <event refgrp="1">
+      <title>Nothing ever becomes real till</title>
       <from>2011-02-24 14:00</from>
       <to>2011-02-24 17:00</to>
-      <location>location1</location>
+      <location>location0</location>
     </event>
-
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>Not drinking, chasing women, or</title>
       <from>2011-02-25 09:00</from>
       <to>2011-02-25 12:00</to>
       <location>location2</location>
-        <guest refuser="89" />
-          <guest refuser="27" />
     </event>
 
     <event refgrp="1">
+      <title>:slim: /n./ A small, derivative</title>
       <from>2011-02-25 14:00</from>
       <to>2011-02-25 17:00</to>
-      <location>location0</location>
+      <location>location2</location>
+      <guest refuser="16" />
+      <guest refuser="86" />
     </event>
-
     <event refgrp="2">
+      <title>Q: How was Thomas J.</title>
       <from>2011-02-26 09:00</from>
       <to>2011-02-26 12:00</to>
-      <location>location1</location>
+      <location>location2</location>
     </event>
 
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>Ever Onward! Ever Onward! We're</title>
       <from>2011-02-26 14:00</from>
       <to>2011-02-26 17:00</to>
-      <location>location1</location>
+      <location>location0</location>
     </event>
-
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>:widget: /n./ 1. A meta-thing.</title>
       <from>2011-02-27 09:00</from>
       <to>2011-02-27 12:00</to>
-      <location>location2</location>
+      <location>location0</location>
+        <guest refuser="79" />
+          <guest refuser="29" />
     </event>
 
     <event refgrp="1">
+      <title>Q: What do you call</title>
       <from>2011-02-27 14:00</from>
       <to>2011-02-27 17:00</to>
-      <location>location2</location>
-      <guest refuser="82" />
-      <guest refuser="37" />
+      <location>location0</location>
     </event>
-
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>Barach's Rule: An alcoholic is</title>
       <from>2011-02-28 09:00</from>
       <to>2011-02-28 12:00</to>
       <location>location2</location>
-        <guest refuser="72" />
-    </event>
-
-    <event refgrp="2">
-      <from>2011-02-28 14:00</from>
-      <to>2011-02-28 17:00</to>
-      <location>location1</location>
     </event>
 
     <event refgrp="1">
+      <title>Our policy is, when in</title>
+      <from>2011-02-28 14:00</from>
+      <to>2011-02-28 17:00</to>
+      <location>location2</location>
+    </event>
+    <event refgrp="2">
+      <title>There was a young girl</title>
       <from>2011-03-01 09:00</from>
       <to>2011-03-01 12:00</to>
       <location>location2</location>
     </event>
 
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>I'm not laughing with you,</title>
       <from>2011-03-01 14:00</from>
       <to>2011-03-01 17:00</to>
-      <location>location2</location>
+      <location>location1</location>
+      <guest refuser="14" />
+      <guest refuser="74" />
     </event>
-
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>Meantime, in the slums below</title>
       <from>2011-03-02 09:00</from>
       <to>2011-03-02 12:00</to>
-      <location>location1</location>
+      <location>location2</location>
     </event>
 
     <event refgrp="1">
+      <title>Youth is not a time</title>
       <from>2011-03-02 14:00</from>
       <to>2011-03-02 17:00</to>
-      <location>location2</location>
-    </event>
-
-    <event refgrp="1">
-      <from>2011-03-03 09:00</from>
-      <to>2011-03-03 12:00</to>
-      <location>location0</location>
-    </event>
-
-    <event refgrp="1">
-      <from>2011-03-03 14:00</from>
-      <to>2011-03-03 17:00</to>
-      <location>location0</location>
-      <guest refuser="95" />
-      <guest refuser="51" />
-    </event>
-
-    <event refgrp="2">
-      <from>2011-03-04 09:00</from>
-      <to>2011-03-04 12:00</to>
-      <location>location2</location>
-    </event>
-
-    <event refgrp="2">
-      <from>2011-03-04 14:00</from>
-      <to>2011-03-04 17:00</to>
       <location>location1</location>
     </event>
+    <event refgrp="2">
+      <title>Never trust anyone who says</title>
+      <from>2011-03-03 09:00</from>
+      <to>2011-03-03 12:00</to>
+      <location>location2</location>
+    </event>
 
     <event refgrp="2">
+      <title>You see, I consider that</title>
+      <from>2011-03-03 14:00</from>
+      <to>2011-03-03 17:00</to>
+      <location>location2</location>
+    </event>
+    <event refgrp="1">
+      <title>Cropp's Law: The amount of</title>
+      <from>2011-03-04 09:00</from>
+      <to>2011-03-04 12:00</to>
+      <location>location1</location>
+        <guest refuser="23" />
+    </event>
+
+    <event refgrp="2">
+      <title>The Great Bald Swamp Hedgehog:</title>
+      <from>2011-03-04 14:00</from>
+      <to>2011-03-04 17:00</to>
+      <location>location2</location>
+    </event>
+    <event refgrp="1">
+      <title>Nobody ever died from oven</title>
       <from>2011-03-05 09:00</from>
       <to>2011-03-05 12:00</to>
       <location>location2</location>
     </event>
 
     <event refgrp="2">
+      <title>Q: Why did the germ</title>
       <from>2011-03-05 14:00</from>
       <to>2011-03-05 17:00</to>
+      <location>location1</location>
+    </event>
+    <event refgrp="1">
+      <title>Nothing takes the taste out</title>
+      <from>2011-03-06 09:00</from>
+      <to>2011-03-06 12:00</to>
+      <location>location2</location>
+    </event>
+
+    <event refgrp="1">
+      <title>There can be no daily</title>
+      <from>2011-03-06 14:00</from>
+      <to>2011-03-06 17:00</to>
+      <location>location1</location>
+    </event>
+    <event refgrp="1">
+      <title>All bad precedents began as</title>
+      <from>2011-03-07 09:00</from>
+      <to>2011-03-07 12:00</to>
+      <location>location0</location>
+        <guest refuser="33" />
+    </event>
+
+    <event refgrp="2">
+      <title>Forgive him, for he believes</title>
+      <from>2011-03-07 14:00</from>
+      <to>2011-03-07 17:00</to>
+      <location>location2</location>
+    </event>
+    <event refgrp="2">
+      <title>Q: Why don't lawyers go</title>
+      <from>2011-03-08 09:00</from>
+      <to>2011-03-08 12:00</to>
       <location>location0</location>
     </event>
 
-    <event refgrp="2">
-      <from>2011-03-06 09:00</from>
-      <to>2011-03-06 12:00</to>
-      <location>location1</location>
-    </event>
-
     <event refgrp="1">
-      <from>2011-03-06 14:00</from>
-      <to>2011-03-06 17:00</to>
-      <location>location2</location>
-    </event>
-
-    <event refgrp="1">
-      <from>2011-03-07 09:00</from>
-      <to>2011-03-07 12:00</to>
-      <location>location2</location>
-    </event>
-
-    <event refgrp="2">
-      <from>2011-03-07 14:00</from>
-      <to>2011-03-07 17:00</to>
-      <location>location1</location>
-    </event>
-
-    <event refgrp="1">
-      <from>2011-03-08 09:00</from>
-      <to>2011-03-08 12:00</to>
-      <location>location2</location>
-    </event>
-
-    <event refgrp="1">
+      <title>Q: How many IBM CPU's</title>
       <from>2011-03-08 14:00</from>
       <to>2011-03-08 17:00</to>
       <location>location2</location>
+      <guest refuser="35" />
       <guest refuser="40" />
-      <guest refuser="65" />
     </event>
-
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>There are people so addicted</title>
       <from>2011-03-09 09:00</from>
       <to>2011-03-09 12:00</to>
-      <location>location1</location>
-        <guest refuser="97" />
+      <location>location0</location>
+        <guest refuser="91" />
+          <guest refuser="54" />
     </event>
 
     <event refgrp="1">
+      <title>Some people say a front-engine</title>
       <from>2011-03-09 14:00</from>
       <to>2011-03-09 17:00</to>
-      <location>location0</location>
+      <location>location1</location>
+    </event>
+    <event refgrp="1">
+      <title>Whip it, whip it good!</title>
+      <from>2011-03-10 09:00</from>
+      <to>2011-03-10 12:00</to>
+      <location>location2</location>
+        <guest refuser="66" />
     </event>
 
     <event refgrp="1">
-      <from>2011-03-10 09:00</from>
-      <to>2011-03-10 12:00</to>
+      <title>Genius may have its limitations,</title>
+      <from>2011-03-10 14:00</from>
+      <to>2011-03-10 17:00</to>
+      <location>location2</location>
+    </event>
+    <event refgrp="1">
+      <title>Es brilig war. Die schlichte</title>
+      <from>2011-03-11 09:00</from>
+      <to>2011-03-11 12:00</to>
       <location>location1</location>
     </event>
 
-    <event refgrp="1">
-      <from>2011-03-10 14:00</from>
-      <to>2011-03-10 17:00</to>
-      <location>location0</location>
-    </event>
-
-    <event refgrp="1">
-      <from>2011-03-11 09:00</from>
-      <to>2011-03-11 12:00</to>
-      <location>location0</location>
-    </event>
-
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>An old maid who had</title>
       <from>2011-03-11 14:00</from>
       <to>2011-03-11 17:00</to>
       <location>location2</location>
     </event>
-
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>Real Programmers don't eat quiche.</title>
       <from>2011-03-12 09:00</from>
       <to>2011-03-12 12:00</to>
       <location>location1</location>
     </event>
 
     <event refgrp="1">
+      <title>"It's bad luck to be</title>
       <from>2011-03-12 14:00</from>
       <to>2011-03-12 17:00</to>
       <location>location2</location>
     </event>
-
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>"Are you sure you're not</title>
       <from>2011-03-13 09:00</from>
       <to>2011-03-13 12:00</to>
-      <location>location1</location>
+      <location>location2</location>
     </event>
 
     <event refgrp="1">
+      <title>Yow! I want to mail</title>
       <from>2011-03-13 14:00</from>
       <to>2011-03-13 17:00</to>
       <location>location0</location>
     </event>
-
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>The night passes quickly when</title>
       <from>2011-03-14 09:00</from>
       <to>2011-03-14 12:00</to>
-      <location>location0</location>
-        <guest refuser="28" />
-    </event>
-
-    <event refgrp="2">
-      <from>2011-03-14 14:00</from>
-      <to>2011-03-14 17:00</to>
       <location>location2</location>
     </event>
 
     <event refgrp="1">
+      <title>Health is merely the slowest</title>
+      <from>2011-03-14 14:00</from>
+      <to>2011-03-14 17:00</to>
+      <location>location1</location>
+    </event>
+    <event refgrp="1">
+      <title>My own dear love, he</title>
       <from>2011-03-15 09:00</from>
       <to>2011-03-15 12:00</to>
-      <location>location0</location>
-    </event>
-
-    <event refgrp="2">
-      <from>2011-03-15 14:00</from>
-      <to>2011-03-15 17:00</to>
       <location>location1</location>
     </event>
 
     <event refgrp="2">
+      <title>Ankh if you love Isis.</title>
+      <from>2011-03-15 14:00</from>
+      <to>2011-03-15 17:00</to>
+      <location>location2</location>
+      <guest refuser="98" />
+    </event>
+    <event refgrp="2">
+      <title>ONE SIZE FITS ALL: Doesn't</title>
       <from>2011-03-16 09:00</from>
       <to>2011-03-16 12:00</to>
       <location>location0</location>
+        <guest refuser="89" />
+          <guest refuser="13" />
     </event>
 
     <event refgrp="2">
+      <title>It is better for civilization</title>
       <from>2011-03-16 14:00</from>
       <to>2011-03-16 17:00</to>
       <location>location2</location>
     </event>
-
     <event refgrp="1">
+      <title>After a number of decimal</title>
       <from>2011-03-17 09:00</from>
       <to>2011-03-17 12:00</to>
-      <location>location0</location>
+      <location>location2</location>
     </event>
 
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>The day advanced as if</title>
       <from>2011-03-17 14:00</from>
       <to>2011-03-17 17:00</to>
+      <location>location2</location>
+      <guest refuser="87" />
+    </event>
+    <event refgrp="2">
+      <title>The Heineken Uncertainty Principle: You</title>
+      <from>2011-03-18 09:00</from>
+      <to>2011-03-18 12:00</to>
       <location>location0</location>
     </event>
 
     <event refgrp="2">
-      <from>2011-03-18 09:00</from>
-      <to>2011-03-18 12:00</to>
-      <location>location1</location>
-    </event>
-
-    <event refgrp="1">
+      <title>Chinese saying: "He who speak</title>
       <from>2011-03-18 14:00</from>
       <to>2011-03-18 17:00</to>
       <location>location1</location>
-    </event>
-
-    <event refgrp="1">
-      <from>2011-03-19 09:00</from>
-      <to>2011-03-19 12:00</to>
-      <location>location0</location>
-    </event>
-
-    <event refgrp="1">
-      <from>2011-03-19 14:00</from>
-      <to>2011-03-19 17:00</to>
-      <location>location2</location>
+      <guest refuser="67" />
       <guest refuser="59" />
     </event>
-
     <event refgrp="2">
+      <title>Living in LA is like</title>
+      <from>2011-03-19 09:00</from>
+      <to>2011-03-19 12:00</to>
+      <location>location2</location>
+    </event>
+
+    <event refgrp="1">
+      <title>"There was a boy called</title>
+      <from>2011-03-19 14:00</from>
+      <to>2011-03-19 17:00</to>
+      <location>location0</location>
+    </event>
+    <event refgrp="2">
+      <title>Quit worrying about your health.</title>
       <from>2011-03-20 09:00</from>
       <to>2011-03-20 12:00</to>
-      <location>location1</location>
-        <guest refuser="96" />
+      <location>location2</location>
     </event>
 
     <event refgrp="2">
+      <title>The American Dental Association announced</title>
       <from>2011-03-20 14:00</from>
       <to>2011-03-20 17:00</to>
       <location>location2</location>
     </event>
-
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>A computer lets you make</title>
       <from>2011-03-21 09:00</from>
       <to>2011-03-21 12:00</to>
       <location>location1</location>
+        <guest refuser="75" />
+          <guest refuser="6" />
     </event>
 
     <event refgrp="2">
+      <title>Peace be to this house,</title>
       <from>2011-03-21 14:00</from>
       <to>2011-03-21 17:00</to>
+      <location>location2</location>
+      <guest refuser="68" />
+    </event>
+    <event refgrp="1">
+      <title>A prominent broadcaster, on a</title>
+      <from>2011-03-22 09:00</from>
+      <to>2011-03-22 12:00</to>
       <location>location2</location>
     </event>
 
     <event refgrp="1">
-      <from>2011-03-22 09:00</from>
-      <to>2011-03-22 12:00</to>
-      <location>location0</location>
-        <guest refuser="63" />
-    </event>
-
-    <event refgrp="1">
+      <title>cerebral atrophy, n: The phenomena</title>
       <from>2011-03-22 14:00</from>
       <to>2011-03-22 17:00</to>
-      <location>location0</location>
+      <location>location2</location>
     </event>
-
     <event refgrp="2">
+      <title>f u cn rd ths,</title>
       <from>2011-03-23 09:00</from>
       <to>2011-03-23 12:00</to>
       <location>location2</location>
     </event>
 
     <event refgrp="2">
+      <title>I'm going to Vietnam at</title>
       <from>2011-03-23 14:00</from>
       <to>2011-03-23 17:00</to>
       <location>location1</location>
+      <guest refuser="24" />
+      <guest refuser="70" />
     </event>
-
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>Marriage causes dating problems.</title>
       <from>2011-03-24 09:00</from>
       <to>2011-03-24 12:00</to>
-      <location>location1</location>
+      <location>location0</location>
+        <guest refuser="14" />
+          <guest refuser="71" />
     </event>
 
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>:dump: /n./ 1. An undigested</title>
       <from>2011-03-24 14:00</from>
       <to>2011-03-24 17:00</to>
       <location>location1</location>
     </event>
-
     <event refgrp="2">
+      <title>Blessed is he who expects</title>
       <from>2011-03-25 09:00</from>
       <to>2011-03-25 12:00</to>
+      <location>location1</location>
+    </event>
+
+    <event refgrp="2">
+      <title>At the foot of the</title>
+      <from>2011-03-25 14:00</from>
+      <to>2011-03-25 17:00</to>
+      <location>location1</location>
+    </event>
+    <event refgrp="2">
+      <title>Ideas don't stay in some</title>
+      <from>2011-03-26 09:00</from>
+      <to>2011-03-26 12:00</to>
       <location>location2</location>
-        <guest refuser="85" />
-          <guest refuser="76" />
+    </event>
+
+    <event refgrp="2">
+      <title>Never have children, only grandchildren.</title>
+      <from>2011-03-26 14:00</from>
+      <to>2011-03-26 17:00</to>
+      <location>location1</location>
+    </event>
+    <event refgrp="2">
+      <title>You may easily play a</title>
+      <from>2011-03-27 09:00</from>
+      <to>2011-03-27 12:00</to>
+      <location>location1</location>
+    </event>
+
+    <event refgrp="2">
+      <title>What on earth would a</title>
+      <from>2011-03-27 14:00</from>
+      <to>2011-03-27 17:00</to>
+      <location>location2</location>
+    </event>
+    <event refgrp="2">
+      <title>:chad: /chad/ /n./ 1. The</title>
+      <from>2011-03-28 09:00</from>
+      <to>2011-03-28 12:00</to>
+      <location>location0</location>
     </event>
 
     <event refgrp="1">
-      <from>2011-03-25 14:00</from>
-      <to>2011-03-25 17:00</to>
-      <location>location2</location>
-    </event>
-
-    <event refgrp="2">
-      <from>2011-03-26 09:00</from>
-      <to>2011-03-26 12:00</to>
-      <location>location0</location>
-    </event>
-
-    <event refgrp="2">
-      <from>2011-03-26 14:00</from>
-      <to>2011-03-26 17:00</to>
-      <location>location2</location>
-    </event>
-
-    <event refgrp="2">
-      <from>2011-03-27 09:00</from>
-      <to>2011-03-27 12:00</to>
-      <location>location2</location>
-    </event>
-
-    <event refgrp="2">
-      <from>2011-03-27 14:00</from>
-      <to>2011-03-27 17:00</to>
-      <location>location0</location>
-    </event>
-
-    <event refgrp="2">
-      <from>2011-03-28 09:00</from>
-      <to>2011-03-28 12:00</to>
-      <location>location2</location>
-    </event>
-
-    <event refgrp="2">
+      <title>:Chernobyl packet: /cher-noh'b*l pak'*t/ /n./</title>
       <from>2011-03-28 14:00</from>
       <to>2011-03-28 17:00</to>
       <location>location1</location>
-      <guest refuser="40" />
     </event>
-
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>There was an old Indian</title>
       <from>2011-03-29 09:00</from>
       <to>2011-03-29 12:00</to>
-      <location>location2</location>
-    </event>
-
-    <event refgrp="1">
-      <from>2011-03-29 14:00</from>
-      <to>2011-03-29 17:00</to>
-      <location>location2</location>
-    </event>
-
-    <event refgrp="2">
-      <from>2011-03-30 09:00</from>
-      <to>2011-03-30 12:00</to>
       <location>location0</location>
     </event>
 
     <event refgrp="1">
+      <title>Let's just say that where</title>
+      <from>2011-03-29 14:00</from>
+      <to>2011-03-29 17:00</to>
+      <location>location1</location>
+      <guest refuser="8" />
+    </event>
+    <event refgrp="2">
+      <title>Happiness makes up in height</title>
+      <from>2011-03-30 09:00</from>
+      <to>2011-03-30 12:00</to>
+      <location>location2</location>
+    </event>
+
+    <event refgrp="1">
+      <title>"What are you doing?" "Examining</title>
       <from>2011-03-30 14:00</from>
       <to>2011-03-30 17:00</to>
       <location>location2</location>
     </event>
-
     <event refgrp="1">
+      <title>Birds and bees have as</title>
       <from>2011-03-31 09:00</from>
       <to>2011-03-31 12:00</to>
-      <location>location0</location>
+      <location>location2</location>
     </event>
 
     <event refgrp="1">
+      <title>Several years ago, some smart</title>
       <from>2011-03-31 14:00</from>
       <to>2011-03-31 17:00</to>
-      <location>location2</location>
+      <location>location1</location>
     </event>
-
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>I appreciate the fact that</title>
       <from>2011-04-01 09:00</from>
       <to>2011-04-01 12:00</to>
-      <location>location1</location>
-        <guest refuser="10" />
-          <guest refuser="90" />
-    </event>
-
-    <event refgrp="2">
-      <from>2011-04-01 14:00</from>
-      <to>2011-04-01 17:00</to>
-      <location>location2</location>
-      <guest refuser="41" />
-      <guest refuser="97" />
-    </event>
-
-    <event refgrp="2">
-      <from>2011-04-02 09:00</from>
-      <to>2011-04-02 12:00</to>
       <location>location0</location>
     </event>
 
+    <event refgrp="2">
+      <title>Experience is not what happens</title>
+      <from>2011-04-01 14:00</from>
+      <to>2011-04-01 17:00</to>
+      <location>location1</location>
+    </event>
     <event refgrp="1">
+      <title>A true artist will let</title>
+      <from>2011-04-02 09:00</from>
+      <to>2011-04-02 12:00</to>
+      <location>location2</location>
+        <guest refuser="75" />
+          <guest refuser="94" />
+    </event>
+
+    <event refgrp="2">
+      <title>I had another dream the</title>
       <from>2011-04-02 14:00</from>
       <to>2011-04-02 17:00</to>
       <location>location1</location>
-      <guest refuser="3" />
-      <guest refuser="87" />
+      <guest refuser="46" />
+      <guest refuser="37" />
     </event>
-
     <event refgrp="2">
+      <title>If a putt passes over</title>
       <from>2011-04-03 09:00</from>
       <to>2011-04-03 12:00</to>
-      <location>location2</location>
-        <guest refuser="94" />
-          <guest refuser="38" />
-    </event>
-
-    <event refgrp="1">
-      <from>2011-04-03 14:00</from>
-      <to>2011-04-03 17:00</to>
-      <location>location0</location>
-    </event>
-
-    <event refgrp="1">
-      <from>2011-04-04 09:00</from>
-      <to>2011-04-04 12:00</to>
-      <location>location0</location>
-        <guest refuser="58" />
-          <guest refuser="7" />
-    </event>
-
-    <event refgrp="1">
-      <from>2011-04-04 14:00</from>
-      <to>2011-04-04 17:00</to>
-      <location>location1</location>
-    </event>
-
-    <event refgrp="1">
-      <from>2011-04-05 09:00</from>
-      <to>2011-04-05 12:00</to>
       <location>location1</location>
     </event>
 
     <event refgrp="2">
+      <title>Burnt Sienna. That's the best</title>
+      <from>2011-04-03 14:00</from>
+      <to>2011-04-03 17:00</to>
+      <location>location2</location>
+      <guest refuser="73" />
+      <guest refuser="76" />
+    </event>
+    <event refgrp="1">
+      <title>People never lie so much</title>
+      <from>2011-04-04 09:00</from>
+      <to>2011-04-04 12:00</to>
+      <location>location1</location>
+    </event>
+
+    <event refgrp="1">
+      <title>No guest is so welcome</title>
+      <from>2011-04-04 14:00</from>
+      <to>2011-04-04 17:00</to>
+      <location>location2</location>
+    </event>
+    <event refgrp="1">
+      <title>There was a young woman</title>
+      <from>2011-04-05 09:00</from>
+      <to>2011-04-05 12:00</to>
+      <location>location0</location>
+    </event>
+
+    <event refgrp="1">
+      <title>Half-done: This is the best</title>
       <from>2011-04-05 14:00</from>
       <to>2011-04-05 17:00</to>
+      <location>location0</location>
+      <guest refuser="14" />
+      <guest refuser="95" />
+    </event>
+    <event refgrp="1">
+      <title>This is the first numerical</title>
+      <from>2011-04-06 09:00</from>
+      <to>2011-04-06 12:00</to>
       <location>location2</location>
     </event>
 
-    <event refgrp="1">
-      <from>2011-04-06 09:00</from>
-      <to>2011-04-06 12:00</to>
-      <location>location0</location>
-        <guest refuser="30" />
-          <guest refuser="73" />
-    </event>
-
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>Finagle's Creed: Science is true.</title>
       <from>2011-04-06 14:00</from>
       <to>2011-04-06 17:00</to>
       <location>location0</location>
     </event>
-
     <event refgrp="2">
+      <title>ACCEPTANCE TESTING: An unsuccessful attempt</title>
       <from>2011-04-07 09:00</from>
       <to>2011-04-07 12:00</to>
       <location>location2</location>
-        <guest refuser="48" />
-          <guest refuser="8" />
     </event>
 
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>A black cat crossing your</title>
       <from>2011-04-07 14:00</from>
       <to>2011-04-07 17:00</to>
-      <location>location2</location>
+      <location>location0</location>
+      <guest refuser="54" />
     </event>
-
     <event refgrp="2">
+      <title>QOTD: "You're so dumb you</title>
       <from>2011-04-08 09:00</from>
       <to>2011-04-08 12:00</to>
-      <location>location0</location>
-    </event>
-
-    <event refgrp="2">
-      <from>2011-04-08 14:00</from>
-      <to>2011-04-08 17:00</to>
-      <location>location0</location>
-    </event>
-
-    <event refgrp="1">
-      <from>2011-04-09 09:00</from>
-      <to>2011-04-09 12:00</to>
       <location>location2</location>
     </event>
 
+    <event refgrp="2">
+      <title>The use of COBOL cripples</title>
+      <from>2011-04-08 14:00</from>
+      <to>2011-04-08 17:00</to>
+      <location>location2</location>
+    </event>
     <event refgrp="1">
+      <title>I am the wandering glitch</title>
+      <from>2011-04-09 09:00</from>
+      <to>2011-04-09 12:00</to>
+      <location>location0</location>
+    </event>
+
+    <event refgrp="1">
+      <title>One toke over the line,</title>
       <from>2011-04-09 14:00</from>
       <to>2011-04-09 17:00</to>
       <location>location0</location>
     </event>
-
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>QOTD: "I used to be</title>
       <from>2011-04-10 09:00</from>
       <to>2011-04-10 12:00</to>
-      <location>location2</location>
+      <location>location0</location>
+        <guest refuser="37" />
+          <guest refuser="35" />
     </event>
 
     <event refgrp="1">
+      <title>The executioner is, I hear,</title>
       <from>2011-04-10 14:00</from>
       <to>2011-04-10 17:00</to>
       <location>location2</location>
     </event>
-
     <event refgrp="1">
+      <title>Some men are alive simply</title>
       <from>2011-04-11 09:00</from>
       <to>2011-04-11 12:00</to>
-      <location>location1</location>
+      <location>location2</location>
+        <guest refuser="28" />
+          <guest refuser="92" />
     </event>
 
     <event refgrp="1">
+      <title>You can't have everything. Where</title>
       <from>2011-04-11 14:00</from>
       <to>2011-04-11 17:00</to>
-      <location>location1</location>
+      <location>location0</location>
+      <guest refuser="99" />
+      <guest refuser="69" />
     </event>
-
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>"I may appear to be</title>
       <from>2011-04-12 09:00</from>
       <to>2011-04-12 12:00</to>
-      <location>location0</location>
+      <location>location2</location>
     </event>
 
     <event refgrp="2">
+      <title>Don't guess -- check your</title>
       <from>2011-04-12 14:00</from>
       <to>2011-04-12 17:00</to>
-      <location>location0</location>
+      <location>location2</location>
+      <guest refuser="7" />
+      <guest refuser="61" />
     </event>
-
     <event refgrp="1">
+      <title>"The illegal we do immediately.</title>
       <from>2011-04-13 09:00</from>
       <to>2011-04-13 12:00</to>
-      <location>location0</location>
+      <location>location1</location>
     </event>
 
     <event refgrp="1">
+      <title>Parents often talk about the</title>
       <from>2011-04-13 14:00</from>
       <to>2011-04-13 17:00</to>
+      <location>location0</location>
+    </event>
+    <event refgrp="1">
+      <title>"Nirvana? Thats the place where</title>
+      <from>2011-04-14 09:00</from>
+      <to>2011-04-14 12:00</to>
       <location>location2</location>
     </event>
 
     <event refgrp="1">
-      <from>2011-04-14 09:00</from>
-      <to>2011-04-14 12:00</to>
-      <location>location0</location>
-    </event>
-
-    <event refgrp="1">
+      <title>The bogosity meter just pegged.</title>
       <from>2011-04-14 14:00</from>
       <to>2011-04-14 17:00</to>
       <location>location0</location>
     </event>
-
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>77. HO HUM -- The</title>
       <from>2011-04-15 09:00</from>
       <to>2011-04-15 12:00</to>
-      <location>location2</location>
-    </event>
-
-    <event refgrp="2">
-      <from>2011-04-15 14:00</from>
-      <to>2011-04-15 17:00</to>
       <location>location0</location>
     </event>
 
     <event refgrp="1">
+      <title>Earl Wiener, 55, a University</title>
+      <from>2011-04-15 14:00</from>
+      <to>2011-04-15 17:00</to>
+      <location>location1</location>
+    </event>
+    <event refgrp="1">
+      <title>Hanlon's Razor: Never attribute to</title>
       <from>2011-04-16 09:00</from>
       <to>2011-04-16 12:00</to>
-      <location>location2</location>
+      <location>location1</location>
     </event>
 
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>QOTD: "It was so cold</title>
       <from>2011-04-16 14:00</from>
       <to>2011-04-16 17:00</to>
-      <location>location2</location>
+      <location>location1</location>
     </event>
-
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>The only really good place</title>
       <from>2011-04-17 09:00</from>
       <to>2011-04-17 12:00</to>
       <location>location0</location>
     </event>
 
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>One expresses well the love</title>
       <from>2011-04-17 14:00</from>
       <to>2011-04-17 17:00</to>
       <location>location1</location>
+      <guest refuser="86" />
+      <guest refuser="68" />
     </event>
-
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>Extract from Official Sweepstakes Rules:</title>
       <from>2011-04-18 09:00</from>
       <to>2011-04-18 12:00</to>
       <location>location2</location>
     </event>
 
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>I always wake up at</title>
       <from>2011-04-18 14:00</from>
       <to>2011-04-18 17:00</to>
-      <location>location0</location>
+      <location>location2</location>
     </event>
-
     <event refgrp="2">
+      <title>Providence, New Jersey, is one</title>
       <from>2011-04-19 09:00</from>
       <to>2011-04-19 12:00</to>
       <location>location0</location>
     </event>
 
     <event refgrp="1">
+      <title>Be regular and orderly in</title>
       <from>2011-04-19 14:00</from>
       <to>2011-04-19 17:00</to>
+      <location>location1</location>
+      <guest refuser="0" />
+      <guest refuser="68" />
+    </event>
+    <event refgrp="1">
+      <title>All say, "How hard it</title>
+      <from>2011-04-20 09:00</from>
+      <to>2011-04-20 12:00</to>
       <location>location2</location>
     </event>
 
-    <event refgrp="1">
-      <from>2011-04-20 09:00</from>
-      <to>2011-04-20 12:00</to>
-      <location>location0</location>
-        <guest refuser="90" />
-    </event>
-
     <event refgrp="2">
+      <title>America is the country where</title>
       <from>2011-04-20 14:00</from>
       <to>2011-04-20 17:00</to>
-      <location>location0</location>
+      <location>location1</location>
+      <guest refuser="55" />
+      <guest refuser="62" />
     </event>
-
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>:delta: /n./ 1. [techspeak] A</title>
       <from>2011-04-21 09:00</from>
       <to>2011-04-21 12:00</to>
       <location>location2</location>
     </event>
 
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>There is no substitute for</title>
       <from>2011-04-21 14:00</from>
       <to>2011-04-21 17:00</to>
-      <location>location0</location>
+      <location>location1</location>
     </event>
-
     <event refgrp="2">
+      <title>If at first you don't</title>
       <from>2011-04-22 09:00</from>
       <to>2011-04-22 12:00</to>
       <location>location2</location>
-        <guest refuser="88" />
-          <guest refuser="25" />
-    </event>
-
-    <event refgrp="2">
-      <from>2011-04-22 14:00</from>
-      <to>2011-04-22 17:00</to>
-      <location>location2</location>
-    </event>
-
-    <event refgrp="2">
-      <from>2011-04-23 09:00</from>
-      <to>2011-04-23 12:00</to>
-      <location>location1</location>
-    </event>
-
-    <event refgrp="2">
-      <from>2011-04-23 14:00</from>
-      <to>2011-04-23 17:00</to>
-      <location>location0</location>
-      <guest refuser="82" />
-      <guest refuser="17" />
-    </event>
-
-    <event refgrp="2">
-      <from>2011-04-24 09:00</from>
-      <to>2011-04-24 12:00</to>
-      <location>location0</location>
-    </event>
-
-    <event refgrp="2">
-      <from>2011-04-24 14:00</from>
-      <to>2011-04-24 17:00</to>
-      <location>location1</location>
     </event>
 
     <event refgrp="1">
+      <title>Good news from afar can</title>
+      <from>2011-04-22 14:00</from>
+      <to>2011-04-22 17:00</to>
+      <location>location1</location>
+      <guest refuser="14" />
+      <guest refuser="74" />
+    </event>
+    <event refgrp="1">
+      <title>I guess the Little League</title>
+      <from>2011-04-23 09:00</from>
+      <to>2011-04-23 12:00</to>
+      <location>location0</location>
+    </event>
+
+    <event refgrp="2">
+      <title>:life: /n./ 1. A cellular-automata</title>
+      <from>2011-04-23 14:00</from>
+      <to>2011-04-23 17:00</to>
+      <location>location0</location>
+    </event>
+    <event refgrp="1">
+      <title>You will find me drinking</title>
+      <from>2011-04-24 09:00</from>
+      <to>2011-04-24 12:00</to>
+      <location>location0</location>
+        <guest refuser="23" />
+          <guest refuser="84" />
+    </event>
+
+    <event refgrp="1">
+      <title>Waiter: "Tea or coffee, gentlemen?"</title>
+      <from>2011-04-24 14:00</from>
+      <to>2011-04-24 17:00</to>
+      <location>location2</location>
+    </event>
+    <event refgrp="2">
+      <title>COMPUTER SCIENCE: 1) A study</title>
       <from>2011-04-25 09:00</from>
       <to>2011-04-25 12:00</to>
       <location>location1</location>
     </event>
 
     <event refgrp="1">
+      <title>What does it mean if</title>
       <from>2011-04-25 14:00</from>
       <to>2011-04-25 17:00</to>
-      <location>location0</location>
+      <location>location1</location>
     </event>
-
     <event refgrp="2">
+      <title>A newspaper is a circulating</title>
       <from>2011-04-26 09:00</from>
       <to>2011-04-26 12:00</to>
-      <location>location2</location>
-    </event>
-
-    <event refgrp="1">
-      <from>2011-04-26 14:00</from>
-      <to>2011-04-26 17:00</to>
       <location>location1</location>
     </event>
 
     <event refgrp="1">
+      <title>A lonely young lad of</title>
+      <from>2011-04-26 14:00</from>
+      <to>2011-04-26 17:00</to>
+      <location>location2</location>
+    </event>
+    <event refgrp="2">
+      <title>A graduate student named Zac</title>
       <from>2011-04-27 09:00</from>
       <to>2011-04-27 12:00</to>
-      <location>location0</location>
+      <location>location1</location>
     </event>
 
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>Silence is the element in</title>
       <from>2011-04-27 14:00</from>
       <to>2011-04-27 17:00</to>
       <location>location1</location>
+      <guest refuser="59" />
+    </event>
+    <event refgrp="2">
+      <title>Woody: What's the story, Mr.</title>
+      <from>2011-04-28 09:00</from>
+      <to>2011-04-28 12:00</to>
+      <location>location0</location>
     </event>
 
     <event refgrp="2">
-      <from>2011-04-28 09:00</from>
-      <to>2011-04-28 12:00</to>
-      <location>location2</location>
-    </event>
-
-    <event refgrp="1">
+      <title>"I didn't know it was</title>
       <from>2011-04-28 14:00</from>
       <to>2011-04-28 17:00</to>
-      <location>location2</location>
+      <location>location0</location>
     </event>
-
     <event refgrp="1">
+      <title>Good night to spend with</title>
       <from>2011-04-29 09:00</from>
       <to>2011-04-29 12:00</to>
       <location>location1</location>
     </event>
 
     <event refgrp="2">
+      <title>Anoint, v.: To grease a</title>
       <from>2011-04-29 14:00</from>
       <to>2011-04-29 17:00</to>
       <location>location1</location>
     </event>
-
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>There was a young man</title>
       <from>2011-04-30 09:00</from>
       <to>2011-04-30 12:00</to>
-      <location>location1</location>
-        <guest refuser="32" />
-          <guest refuser="99" />
+      <location>location2</location>
     </event>
 
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>I may kid around about</title>
       <from>2011-04-30 14:00</from>
       <to>2011-04-30 17:00</to>
-      <location>location0</location>
-      <guest refuser="67" />
+      <location>location2</location>
+      <guest refuser="88" />
+      <guest refuser="77" />
     </event>
-
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>I'd rather push my Harley</title>
       <from>2011-05-01 09:00</from>
       <to>2011-05-01 12:00</to>
-      <location>location2</location>
-        <guest refuser="69" />
-          <guest refuser="74" />
-    </event>
-
-    <event refgrp="1">
-      <from>2011-05-01 14:00</from>
-      <to>2011-05-01 17:00</to>
-      <location>location1</location>
+      <location>location0</location>
     </event>
 
     <event refgrp="2">
+      <title>Microsoft is not the answer.</title>
+      <from>2011-05-01 14:00</from>
+      <to>2011-05-01 17:00</to>
+      <location>location2</location>
+    </event>
+    <event refgrp="1">
+      <title>It would save me a</title>
       <from>2011-05-02 09:00</from>
       <to>2011-05-02 12:00</to>
       <location>location1</location>
     </event>
 
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>Committee, n.: A group of</title>
       <from>2011-05-02 14:00</from>
       <to>2011-05-02 17:00</to>
       <location>location0</location>
     </event>
-
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>One of the major difficulties</title>
       <from>2011-05-03 09:00</from>
       <to>2011-05-03 12:00</to>
       <location>location1</location>
     </event>
 
     <event refgrp="1">
+      <title>Dow's Law: In a hierarchical</title>
       <from>2011-05-03 14:00</from>
       <to>2011-05-03 17:00</to>
-      <location>location1</location>
+      <location>location2</location>
     </event>
-
     <event refgrp="2">
+      <title>A journey of a thousand</title>
       <from>2011-05-04 09:00</from>
       <to>2011-05-04 12:00</to>
-      <location>location0</location>
-    </event>
-
-    <event refgrp="2">
-      <from>2011-05-04 14:00</from>
-      <to>2011-05-04 17:00</to>
       <location>location1</location>
     </event>
 
     <event refgrp="1">
+      <title>Money isn't everything -- but</title>
+      <from>2011-05-04 14:00</from>
+      <to>2011-05-04 17:00</to>
+      <location>location1</location>
+    </event>
+    <event refgrp="1">
+      <title>Tip of the Day: Never</title>
       <from>2011-05-05 09:00</from>
       <to>2011-05-05 12:00</to>
       <location>location2</location>
     </event>
 
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>Fortune finishes the great quotations,</title>
       <from>2011-05-05 14:00</from>
       <to>2011-05-05 17:00</to>
-      <location>location0</location>
+      <location>location1</location>
+      <guest refuser="32" />
+      <guest refuser="53" />
     </event>
-
     <event refgrp="2">
+      <title>If you want your spouse</title>
       <from>2011-05-06 09:00</from>
       <to>2011-05-06 12:00</to>
-      <location>location0</location>
+      <location>location1</location>
     </event>
 
     <event refgrp="2">
+      <title>Sodd's Second Law: Sooner or</title>
       <from>2011-05-06 14:00</from>
       <to>2011-05-06 17:00</to>
       <location>location2</location>
-      <guest refuser="43" />
+    </event>
+    <event refgrp="2">
+      <title>Kirkland, Illinois, law forbids bees</title>
+      <from>2011-05-07 09:00</from>
+      <to>2011-05-07 12:00</to>
+      <location>location0</location>
     </event>
 
     <event refgrp="1">
-      <from>2011-05-07 09:00</from>
-      <to>2011-05-07 12:00</to>
-      <location>location2</location>
-    </event>
-
-    <event refgrp="2">
+      <title>AQUARIUS (Jan. 20 to Feb.</title>
       <from>2011-05-07 14:00</from>
       <to>2011-05-07 17:00</to>
       <location>location2</location>
+      <guest refuser="45" />
     </event>
-
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>Decision maker, n.: The person</title>
       <from>2011-05-08 09:00</from>
       <to>2011-05-08 12:00</to>
-      <location>location0</location>
-    </event>
-
-    <event refgrp="1">
-      <from>2011-05-08 14:00</from>
-      <to>2011-05-08 17:00</to>
-      <location>location0</location>
-    </event>
-
-    <event refgrp="1">
-      <from>2011-05-09 09:00</from>
-      <to>2011-05-09 12:00</to>
       <location>location2</location>
     </event>
 
     <event refgrp="1">
-      <from>2011-05-09 14:00</from>
-      <to>2011-05-09 17:00</to>
+      <title>I shall give a propagandist</title>
+      <from>2011-05-08 14:00</from>
+      <to>2011-05-08 17:00</to>
+      <location>location2</location>
+    </event>
+    <event refgrp="1">
+      <title>Artistic ventures highlighted. Rob a</title>
+      <from>2011-05-09 09:00</from>
+      <to>2011-05-09 12:00</to>
       <location>location0</location>
-      <guest refuser="69" />
-      <guest refuser="84" />
     </event>
 
     <event refgrp="2">
+      <title>Take everything in stride. Trample</title>
+      <from>2011-05-09 14:00</from>
+      <to>2011-05-09 17:00</to>
+      <location>location2</location>
+      <guest refuser="86" />
+      <guest refuser="64" />
+    </event>
+    <event refgrp="2">
+      <title>What we cannot speak about</title>
       <from>2011-05-10 09:00</from>
       <to>2011-05-10 12:00</to>
-      <location>location2</location>
+      <location>location0</location>
     </event>
 
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>Fast, cheap, good: pick two.</title>
       <from>2011-05-10 14:00</from>
       <to>2011-05-10 17:00</to>
       <location>location0</location>
+      <guest refuser="32" />
     </event>
-
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>:NSP: /N-S-P/ /n./ Common abbreviation</title>
       <from>2011-05-11 09:00</from>
       <to>2011-05-11 12:00</to>
-      <location>location0</location>
-    </event>
-
-    <event refgrp="2">
-      <from>2011-05-11 14:00</from>
-      <to>2011-05-11 17:00</to>
       <location>location2</location>
     </event>
 
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>What the large print giveth,</title>
+      <from>2011-05-11 14:00</from>
+      <to>2011-05-11 17:00</to>
+      <location>location0</location>
+    </event>
+    <event refgrp="2">
+      <title>FORTUNE DISCUSSES THE OBSCURE FILMS:</title>
       <from>2011-05-12 09:00</from>
       <to>2011-05-12 12:00</to>
       <location>location1</location>
     </event>
 
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>Make it right before you</title>
       <from>2011-05-12 14:00</from>
       <to>2011-05-12 17:00</to>
-      <location>location2</location>
-      <guest refuser="25" />
-      <guest refuser="85" />
+      <location>location1</location>
+      <guest refuser="13" />
+      <guest refuser="40" />
     </event>
-
     <event refgrp="2">
+      <title>Please come home with me</title>
       <from>2011-05-13 09:00</from>
       <to>2011-05-13 12:00</to>
-      <location>location0</location>
+      <location>location2</location>
     </event>
 
     <event refgrp="2">
+      <title>There was a young fellow</title>
       <from>2011-05-13 14:00</from>
       <to>2011-05-13 17:00</to>
       <location>location2</location>
     </event>
-
     <event refgrp="1">
+      <title>ABSENTEE: A person with an</title>
       <from>2011-05-14 09:00</from>
       <to>2011-05-14 12:00</to>
-      <location>location2</location>
-    </event>
-
-    <event refgrp="1">
-      <from>2011-05-14 14:00</from>
-      <to>2011-05-14 17:00</to>
       <location>location1</location>
-      <guest refuser="14" />
-      <guest refuser="68" />
+        <guest refuser="40" />
+          <guest refuser="25" />
     </event>
 
     <event refgrp="2">
+      <title>A man goes to a</title>
+      <from>2011-05-14 14:00</from>
+      <to>2011-05-14 17:00</to>
+      <location>location0</location>
+      <guest refuser="1" />
+      <guest refuser="80" />
+    </event>
+    <event refgrp="1">
+      <title>Uh-oh -- I've let the</title>
       <from>2011-05-15 09:00</from>
       <to>2011-05-15 12:00</to>
       <location>location0</location>
     </event>
 
     <event refgrp="2">
+      <title>There once was a Scot</title>
       <from>2011-05-15 14:00</from>
       <to>2011-05-15 17:00</to>
-      <location>location1</location>
+      <location>location2</location>
     </event>
-
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>Deliberation, n.: The act of</title>
       <from>2011-05-16 09:00</from>
       <to>2011-05-16 12:00</to>
       <location>location2</location>
     </event>
 
     <event refgrp="1">
+      <title>There is nothing wrong with</title>
       <from>2011-05-16 14:00</from>
       <to>2011-05-16 17:00</to>
-      <location>location1</location>
+      <location>location0</location>
     </event>
-
     <event refgrp="2">
+      <title>There are strange things done</title>
       <from>2011-05-17 09:00</from>
       <to>2011-05-17 12:00</to>
       <location>location1</location>
     </event>
 
     <event refgrp="1">
+      <title>Just give Alice some pencils</title>
       <from>2011-05-17 14:00</from>
       <to>2011-05-17 17:00</to>
-      <location>location1</location>
+      <location>location2</location>
+    </event>
+    <event refgrp="1">
+      <title>Custer committed Siouxicide.</title>
+      <from>2011-05-18 09:00</from>
+      <to>2011-05-18 12:00</to>
+      <location>location0</location>
+        <guest refuser="50" />
+          <guest refuser="16" />
     </event>
 
     <event refgrp="1">
-      <from>2011-05-18 09:00</from>
-      <to>2011-05-18 12:00</to>
+      <title>Economics is extremely useful as</title>
+      <from>2011-05-18 14:00</from>
+      <to>2011-05-18 17:00</to>
+      <location>location0</location>
+    </event>
+    <event refgrp="2">
+      <title>By trying we can easily</title>
+      <from>2011-05-19 09:00</from>
+      <to>2011-05-19 12:00</to>
       <location>location2</location>
     </event>
 
     <event refgrp="2">
-      <from>2011-05-18 14:00</from>
-      <to>2011-05-18 17:00</to>
-      <location>location1</location>
-    </event>
-
-    <event refgrp="1">
-      <from>2011-05-19 09:00</from>
-      <to>2011-05-19 12:00</to>
-      <location>location1</location>
-    </event>
-
-    <event refgrp="1">
+      <title>I know the answer! The</title>
       <from>2011-05-19 14:00</from>
       <to>2011-05-19 17:00</to>
+      <location>location0</location>
+    </event>
+    <event refgrp="2">
+      <title>:soft boot: /n./ See {boot}.</title>
+      <from>2011-05-20 09:00</from>
+      <to>2011-05-20 12:00</to>
       <location>location1</location>
     </event>
 
     <event refgrp="1">
-      <from>2011-05-20 09:00</from>
-      <to>2011-05-20 12:00</to>
-      <location>location0</location>
-        <guest refuser="16" />
-          <guest refuser="14" />
-    </event>
-
-    <event refgrp="1">
+      <title>If you think the problem</title>
       <from>2011-05-20 14:00</from>
       <to>2011-05-20 17:00</to>
       <location>location2</location>
     </event>
-
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>"If you've done six impossible</title>
       <from>2011-05-21 09:00</from>
       <to>2011-05-21 12:00</to>
       <location>location0</location>
     </event>
 
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>I really had to act;</title>
       <from>2011-05-21 14:00</from>
       <to>2011-05-21 17:00</to>
-      <location>location0</location>
-      <guest refuser="2" />
-      <guest refuser="99" />
+      <location>location1</location>
     </event>
-
     <event refgrp="2">
+      <title>Maj. Bloodnok: Seagoon, you're a</title>
       <from>2011-05-22 09:00</from>
       <to>2011-05-22 12:00</to>
-      <location>location1</location>
+      <location>location2</location>
     </event>
 
     <event refgrp="2">
+      <title>Life is divided into the</title>
       <from>2011-05-22 14:00</from>
       <to>2011-05-22 17:00</to>
-      <location>location1</location>
+      <location>location2</location>
     </event>
-
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>:KIPS: /kips/ /n./ [abbreviation, by</title>
       <from>2011-05-23 09:00</from>
       <to>2011-05-23 12:00</to>
-      <location>location1</location>
-        <guest refuser="92" />
-          <guest refuser="83" />
+      <location>location0</location>
     </event>
 
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>Kansas state law requires pedestrians</title>
       <from>2011-05-23 14:00</from>
       <to>2011-05-23 17:00</to>
       <location>location2</location>
     </event>
-
     <event refgrp="2">
+      <title>MOCK APPLE PIE (No Apples</title>
       <from>2011-05-24 09:00</from>
       <to>2011-05-24 12:00</to>
-      <location>location1</location>
+      <location>location2</location>
     </event>
 
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>Support your local church or</title>
       <from>2011-05-24 14:00</from>
       <to>2011-05-24 17:00</to>
       <location>location1</location>
     </event>
-
     <event refgrp="2">
+      <title>Pig, n.: An animal (Porcus</title>
       <from>2011-05-25 09:00</from>
       <to>2011-05-25 12:00</to>
-      <location>location1</location>
-        <guest refuser="33" />
-          <guest refuser="56" />
+      <location>location0</location>
     </event>
 
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>When in doubt, do it.</title>
       <from>2011-05-25 14:00</from>
       <to>2011-05-25 17:00</to>
-      <location>location2</location>
+      <location>location1</location>
     </event>
-
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>Every path has its puddle.</title>
       <from>2011-05-26 09:00</from>
       <to>2011-05-26 12:00</to>
-      <location>location2</location>
-    </event>
-
-    <event refgrp="2">
-      <from>2011-05-26 14:00</from>
-      <to>2011-05-26 17:00</to>
       <location>location1</location>
     </event>
 
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>A great nation is any</title>
+      <from>2011-05-26 14:00</from>
+      <to>2011-05-26 17:00</to>
+      <location>location2</location>
+    </event>
+    <event refgrp="2">
+      <title>The best defense against logic</title>
       <from>2011-05-27 09:00</from>
       <to>2011-05-27 12:00</to>
       <location>location2</location>
     </event>
 
-    <event refgrp="1">
+    <event refgrp="2">
+      <title>Beauty is truth, truth beauty,</title>
       <from>2011-05-27 14:00</from>
       <to>2011-05-27 17:00</to>
-      <location>location0</location>
-      <guest refuser="86" />
+      <location>location2</location>
     </event>
-
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>What is worth doing is</title>
       <from>2011-05-28 09:00</from>
       <to>2011-05-28 12:00</to>
       <location>location2</location>
     </event>
 
-    <event refgrp="2">
+    <event refgrp="1">
+      <title>ROMEO: Courage, man; the hurt</title>
       <from>2011-05-28 14:00</from>
       <to>2011-05-28 17:00</to>
       <location>location1</location>
     </event>
-
     <event refgrp="2">
+      <title>All my friends and I</title>
       <from>2011-05-29 09:00</from>
       <to>2011-05-29 12:00</to>
-      <location>location1</location>
-        <guest refuser="55" />
-          <guest refuser="71" />
-    </event>
-
-    <event refgrp="2">
-      <from>2011-05-29 14:00</from>
-      <to>2011-05-29 17:00</to>
-      <location>location1</location>
+      <location>location2</location>
+        <guest refuser="54" />
+          <guest refuser="38" />
     </event>
 
     <event refgrp="1">
+      <title>No snowflake in an avalanche</title>
+      <from>2011-05-29 14:00</from>
+      <to>2011-05-29 17:00</to>
+      <location>location0</location>
+    </event>
+    <event refgrp="2">
+      <title>Biology grows on you.</title>
       <from>2011-05-30 09:00</from>
       <to>2011-05-30 12:00</to>
-      <location>location1</location>
+      <location>location0</location>
     </event>
 
     <event refgrp="2">
+      <title>If one cannot enjoy reading</title>
       <from>2011-05-30 14:00</from>
       <to>2011-05-30 17:00</to>
       <location>location0</location>
     </event>
-
 </events>
 

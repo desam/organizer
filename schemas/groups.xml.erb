@@ -4,7 +4,7 @@
   <% 1.upto 100 do |i| -%>
     <group id="<%= i %>">
       <name>name<%= i %></name>
-      <description>(<%= i %>) <%= `fortune`.strip %></description>
+      <description>(<%= i %>) <%= `fortune | xml esc`.strip %></description>
     </group>
 
   <% end -%>

@@ -3,8 +3,8 @@
 <!ELEMENT groups (group*)>
 
 <!ELEMENT group (name, description)>
-<!ATTLIST
-	group id IDREF #REQUIRED
+<!ATTLIST group
+  id IDREF #REQUIRED
 >
 
 <!ELEMENT name (#PCDATA)>

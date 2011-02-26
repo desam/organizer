@@ -2,13 +2,16 @@
 
 <!ELEMENT events (event+)>
 
-<!ELEMENT event (from, to, location, guest*)>
-<!ATTLIST
-	event refgrp IDREF #REQUIRED
+<!ELEMENT event (title, from, to, location, guest*)>
+<!ATTLIST event
+  refgrp IDREF #REQUIRED
 >
 
+<!ELEMENT title (#PCDATA)>
 <!ELEMENT from (#PCDATA)>
 <!ELEMENT to (#PCDATA)>
 <!ELEMENT location (#PCDATA)>
 <!ELEMENT guest>
-<!ATTLIST guest refuser IDREF #REQUIRED>
+<!ATTLIST guest
+  refuser IDREF #REQUIRED
+>

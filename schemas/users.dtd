@@ -3,8 +3,8 @@
 <!ELEMENT users (user*)>
 
 <!ELEMENT user (login, password, firstname, surname, mail, phone, avatar)>
-<!ATTLIST
-	user id IDREF #REQUIRED
+<!ATTLIST user 
+  id IDREF #REQUIRED
 >
 
 <!ELEMENT login (#PCDATA)>
