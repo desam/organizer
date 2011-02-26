@@ -4,6 +4,7 @@
 
 <!ELEMENT event (title, from, to, location, guest*)>
 <!ATTLIST event
+  id IDREF #REQUIRED
   refgrp IDREF #REQUIRED
 >
 

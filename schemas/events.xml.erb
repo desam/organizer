@@ -3,12 +3,13 @@
 <events>
   <% require 'date'
   require 'date/delta'
+  i = 1
   d1 = DateTime.new(2010, 9, 23, 9, 00)
   d2 = DateTime.new(2011, 5, 30, 9, 00)
 
   # everyday from d1 to d2
   d1.step(d2, 1) do |d| %>
-    <event refgrp="<%= rand(2) + 1 %>">
+    <event refgrp="<%= rand(2) + 1 %>" id="<%= i %>">
       <title><%= `fortune | xml esc`.strip.split.shift(5).join(' ') %></title>
       <from><%= d.strftime('%Y-%m-%d %H:%M') %></from>
       <to><%= (d + Date::Delta.hours(3)).strftime('%Y-%m-%d %H:%M') %></to>
@@ -22,7 +23,7 @@
     </event>
 
     <% d += Date::Delta.hours(5) %>
-    <event refgrp="<%= rand(2) + 1 %>">
+    <event refgrp="<%= rand(2) + 1 %>" id="<%= i + 1 %>">
       <title><%= `fortune | xml esc`.strip.split.shift(5).join(' ') %></title>
       <from><%= d.strftime('%Y-%m-%d %H:%M') %></from>
       <to><%= (d + Date::Delta.hours(3)).strftime('%Y-%m-%d %H:%M') %></to>
@@ -34,6 +35,8 @@
       <% end %>
       <% end %>
     </event>
+    <% i += 2 -%>
+
 <% end %>
 </events>
 
