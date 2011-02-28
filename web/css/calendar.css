@@ -19,7 +19,7 @@ ul, li {
     border-top: 1px black solid;
     border-bottom: 1px black solid;
     float: left;
-    width: 150px;
+    width: 13%;
 }
 
 #calendar div.calumn > h5 {
@@ -44,5 +44,5 @@ ul, li {
 
 #first_calumn {
     border: 1px black solid;
-    width: 75px !important;
+    width: inherit !important;
 }
