@@ -1,9 +1,9 @@
 {% extends "::base.html.twig" %}
 
 {% block title %}Calendar!{% endblock %}
-{% block body %}
 
-<h4 id="caltitle">From {{ dates[0].format('Y-m-d, D') }} to {{ dates[6].format('Y-m-d, D') }}</h4>
+{% block body %}
+<h4 id="caltitle">From {{ dates[0].format('Y-m-d, D') }} to {{ dates[1].format('Y-m-d, D') }}</h4>
 <p><a id="prev" href=":D">&lt;--</a> <a id="next" href="ㅎㅎ">--&gt;</a></p>
 <div id="calendar">
     <div id="first_calumn" class="calumn">

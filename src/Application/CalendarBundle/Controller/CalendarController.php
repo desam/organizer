@@ -12,21 +12,14 @@ class CalendarController extends Controller
 {
     public function indexAction($group, $start)
     {
-        // $group = "1";
-        // $start = "2010-09-25";
-        $howlong = 7;
-
-        //build a one-week array
         $dates = array();
-        $dates[] = new \DateTime($start);
-        for($i = 1; $i < $howlong; $i++) {
-            $dates[$i] = clone($dates[0]);
-            $dates[$i]->add(new \DateInterval('P'. $i .'D'));
-        }
+        $dates[0] = new \DateTime($start);
+        $dates[1] = clone($dates[0]);
+        $dates[1]->add(new \DateInterval('P'. 6 .'D'));
 
         if($this->get('request')->isXmlHttpRequest()) {
             $events = EventManager::getByGroupAndDate(
-                $group, $dates[0]->format('Y-m-d'), $dates[6]->format('Y-m-d').' 23:59');
+                $group, $dates[0]->format('Y-m-d'), $dates[1]->format('Y-m-d').' 23:59');
             $events = EventManager::toJSON($events);
 
             $response = new Response($events);
