@@ -1,0 +1,48 @@
+ul, li {
+    padding: 0px;
+}
+
+#next, #prev {
+    color: inherit;
+    font-style: normal;
+    padding: 10px;
+    text-decoration: none;
+}
+
+#calendar {
+    font-family: "arial", "sans serif";
+    text-align: center;
+}
+
+#calendar div.calumn {
+    border-right: 1px black solid;
+    border-top: 1px black solid;
+    border-bottom: 1px black solid;
+    float: left;
+    width: 150px;
+}
+
+#calendar div.calumn > h5 {
+    margin: 8px;
+}
+
+#calendar ul {
+    border-top: 1px black solid;
+    margin-top: 0px;
+    padding-top: 10px;
+}
+
+#calendar div.calumn li.row {
+    display: block;
+    font-size: 0.9em;
+    height: 25px;
+}
+
+#calendar .info {
+    font-size: 0.9em;
+}
+
+#first_calumn {
+    border: 1px black solid;
+    width: 75px !important;
+}

@@ -1,0 +1,19 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}Calendar!{% endblock %}
+{% block body %}
+
+<h4 id="caltitle">From {{ dates[0].format('Y-m-d, D') }} to {{ dates[6].format('Y-m-d, D') }}</h4>
+<p><a id="prev" href=":D">&lt;--</a> <a id="next" href="ㅎㅎ">--&gt;</a></p>
+<div id="calendar">
+    <div id="first_calumn" class="calumn">
+        <h5>{{ dates[0].format('Y') }}</h5>
+        <ul>
+            {% for j in 0..23 %}
+            <li class="row">{{ j }}:00</li>
+            <li class="row">{{ j }}:30</li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+{% endblock %}

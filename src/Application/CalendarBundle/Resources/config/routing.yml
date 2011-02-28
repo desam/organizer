@@ -1,3 +1,11 @@
-existtest:
-    pattern:  /exlol
+index:
+    pattern:  /calendar/{group}/{start}
     defaults: { _controller: CalendarBundle:Calendar:index }
+
+add:
+    pattern: /calendar/add
+    defaults: { _controller: CalendarBundle:Calendar:add }
+
+remove:
+    pattern: /calendar/remove/{id}
+    defaults: { _controller: CalendarBundle:Calendar:remove }
