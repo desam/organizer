@@ -1,11 +1,15 @@
 index:
-    pattern:  /calendar/{group}/{start}
+    pattern:  /calendar
     defaults: { _controller: CalendarBundle:Calendar:index }
 
 add:
     pattern: /calendar/add
     defaults: { _controller: CalendarBundle:Calendar:add }
 
-remove:
-    pattern: /calendar/remove/{id}
-    defaults: { _controller: CalendarBundle:Calendar:remove }
+delete:
+    pattern: /calendar/delete/{id}
+    defaults: { _controller: CalendarBundle:Calendar:delete }
+
+update:
+    pattern: /calendar/update/{id}
+    defaults: { _controller: CalendarBundle:Calendar:update }

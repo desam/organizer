@@ -14,9 +14,18 @@ class EventForm extends Form
     protected function configure()
     {
         $this->add(new TextField('title'));
-        $this->add(new DateTimeField('from'));
-        $this->add(new DateTimeField('to'));
+
+	//TODO regex ou DateTimeField !
+        /* $this->add(new DateTimeField('from')); */
+        /* $this->add(new DateTimeField('to')); */
+        $this->add(new TextField('from'));
+        $this->add(new TextField('to'));
+
         $this->add(new TextField('location'));
+
+        $this->add(new TextField('refgrp'));
+        $this->add(new TextField('id'));
+	//TODO
         //choice field guest
         //choice field group?
     }

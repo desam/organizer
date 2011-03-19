@@ -12,9 +12,12 @@ ul, li {
 #calendar {
     font-family: "arial", "sans serif";
     text-align: center;
+    height: 800px;
+    width: 100%;
 }
 
-#calendar div.calumn {
+/* Week Calendar - wecal */
+#calendar .calumn {
     border-right: 1px black solid;
     border-top: 1px black solid;
     border-bottom: 1px black solid;
@@ -22,7 +25,7 @@ ul, li {
     width: 13%;
 }
 
-#calendar div.calumn > h5 {
+#calendar .calumn > h5 {
     margin: 8px;
 }
 
@@ -44,5 +47,21 @@ ul, li {
 
 #first_calumn {
     border: 1px black solid;
-    width: inherit !important;
+    width: 45px !important;
+}
+
+/* Month Calendar - mocal */
+#calendar .dayofweek {
+	float: left;
+}
+
+#calendar .daybox {
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+	float: left;
+}
+
+#calendar .daybox li {
+	display: block;
+	height: 10px;
 }

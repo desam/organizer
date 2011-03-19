@@ -3,17 +3,16 @@
 {% block title %}Calendar!{% endblock %}
 
 {% block body %}
-<h4 id="caltitle">From {{ dates[0].format('Y-m-d, D') }} to {{ dates[1].format('Y-m-d, D') }}</h4>
-<p><a id="prev" href=":D">&lt;--</a> <a id="next" href="ㅎㅎ">--&gt;</a></p>
+<h4 id="caltitle">From {{ from.format('Y-m-d, D') }} to {{ to.format('Y-m-d, D') }}</h4>
+
+<p>
+    <a id="prev" href=":D">&lt;--</a>
+    <a id="today" href="~~">Today</a>
+    <a id="next" href="ㅎㅎ">--&gt;</a>
+    <a id="week" href="¬¬">Week</a>
+    <a id="month" href="~~">Month</a>
+</p>
+
 <div id="calendar">
-    <div id="first_calumn" class="calumn">
-        <h5>{{ dates[0].format('Y') }}</h5>
-        <ul>
-            {% for j in 0..23 %}
-            <li class="row">{{ j }}:00</li>
-            <li class="row">{{ j }}:30</li>
-            {% endfor %}
-        </ul>
-    </div>
 </div>
 {% endblock %}
