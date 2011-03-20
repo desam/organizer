@@ -1,858 +1,1353 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE groups SYSTEM "groups.dtd" >
 <groups>
-    <group id="1">
+    <group id="G1">
       <name>name1</name>
-      <description>(1) honeymoon, n.:
-	A short period of doting between dating and debting.
-		-- Ray C. Bandy</description>
+      <description>(1) If it takes a bloodbath, lets get it over with.  No more appeasement.
+		-- Ronald Reagan</description>
+      <user refuser="U1" />
     </group>
 
-    <group id="2">
+    <group id="G2">
       <name>name2</name>
-      <description>(2) Has anyone ever tasted an "end"?  Are they really bitter?</description>
+      <description>(2) Man is the only animal that can remain on friendly terms with the
+victims he intends to eat until he eats them.
+		-- Samuel Butler</description>
+      <user refuser="U1" />
     </group>
 
-    <group id="3">
+    <group id="G3">
       <name>name3</name>
-      <description>(3) Most people have a furious itch to talk about themselves and are restrained
-only by the disinclination of others to listen.  Reserve is an artificial
-quality that is developed in most of us as the result of innumerable rebuffs.
-		-- W.S. Maugham</description>
+      <description>(3) Very few things happen at the right time, and the rest do not happen
+at all.  The conscientious historian will correct these defects.
+		-- Herodotus</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+      <user refuser="U5" />
+      <user refuser="U6" />
+      <user refuser="U7" />
+      <user refuser="U8" />
+      <user refuser="U9" />
     </group>
 
-    <group id="4">
+    <group id="G4">
       <name>name4</name>
-      <description>(4) If the future isn't what it used to be, does that
-mean that the past is subject to change in times to come?</description>
+      <description>(4) "sic transit discus mundi"
+(From the System Administrator's Guide, by Lars Wirzenius)</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
     </group>
 
-    <group id="5">
+    <group id="G5">
       <name>name5</name>
-      <description>(5) Given my druthers, I'd druther not.</description>
+      <description>(5) Ozman's Laws:
+	(1)  If someone says he will do something "without fail," he won't.
+	(2)  The more people talk on the phone, the less money they make.
+	(3)  People who go to conferences are the ones who shouldn't.
+	(4)  Pizza always burns the roof of your mouth.</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+      <user refuser="U5" />
+      <user refuser="U6" />
+      <user refuser="U7" />
     </group>
 
-    <group id="6">
+    <group id="G6">
       <name>name6</name>
-      <description>(6) Galbraith's Law of Human Nature:
-	Faced with the choice between changing one's mind and proving that
-there is no need to do so, almost everybody gets busy on the proof.</description>
-    </group>
-
-    <group id="7">
-      <name>name7</name>
-      <description>(7) Either I'm dead or my watch has stopped.
-		-- Groucho Marx's last words</description>
-    </group>
-
-    <group id="8">
-      <name>name8</name>
-      <description>(8) Q:	Why do the police always travel in threes?
-A:	One to do the reading, one to do the writing, and the other keeps
-	an eye on the two intellectuals.</description>
-    </group>
-
-    <group id="9">
-      <name>name9</name>
-      <description>(9) "They're unfriendly, which is fortunate, really.  They'd be difficult
-to like."
-		-- Avon</description>
-    </group>
-
-    <group id="10">
-      <name>name10</name>
-      <description>(10) If you're like most homeowners, you're afraid that many repairs
-around your home are too difficult to tackle.  So, when your furnace
-explodes, you call in a so-called professional to fix it.  The
-"professional" arrives in a truck with lettering on the sides and deposits a
-large quantity of tools and two assistants who spend the better part of the
-week in your basement whacking objects at random with heavy wrenches, after
-which the "professional" returns and gives you a bill for slightly more
-money than it would cost you to run a successful campaign for the U.S.
-Senate.
-	And that's why you've decided to start doing things yourself. You
-figure, "If those guys can fix my furnace, then so can I.  How difficult can
-it be?"
-	Very difficult.  In fact, most home projects are impossible, which
-is why you should do them yourself.  There is no point in paying other
-people to screw things up when you can easily screw them up yourself for far
-less money.  This article can help you.
-		-- Dave Barry, "The Taming of the Screw"</description>
-    </group>
-
-    <group id="11">
-      <name>name11</name>
-      <description>(11) Please stand for the National Anthem:
-
-	Australians all, let us rejoice,
-	For we are young and free.
-	We've golden soil and wealth for toil
-	Our home is girt by sea.
-	Our land abounds in nature's gifts
-	Of beauty rich and rare.
-	In history's page, let every stage
-	Advance Australia Fair.
-	In joyful strains then let us sing,
-	Advance Australia Fair.
-
-Thank you.  You may resume your seat.</description>
-    </group>
-
-    <group id="12">
-      <name>name12</name>
-      <description>(12) Being a mime means never having to say you're sorry.</description>
-    </group>
-
-    <group id="13">
-      <name>name13</name>
-      <description>(13) :SIG: /sig/ /n./  (also common as a prefix in combining forms)
-   A Special Interest Group, in one of several technical areas,
-   sponsored by the Association for Computing Machinery; well-known
-   ones include SIGPLAN (the Special Interest Group on Programming
-   Languages), SIGARCH (the Special Interest Group for Computer
-   Architecture) and SIGGRAPH (the Special Interest Group for Computer
-   Graphics).  Hackers, not surprisingly, like to overextend this
-   naming convention to less formal associations like SIGBEER (at ACM
-   conferences) and SIGFOOD (at University of Illinois).</description>
-    </group>
-
-    <group id="14">
-      <name>name14</name>
-      <description>(14) :furrfu: // /excl./  [Usenet] Written-only equivalent of
-   "Sheesh!"; it is, in fact, "sheesh" modified by {rot13}.
-   Evolved in mid-1992 as a response to notably silly postings
-   repeating urban myths on the Usenet newsgroup
-   alt.folklore.urban, after some posters complained that
-   "Sheesh!" as a response to {newbie}s was being overused.  See
-   also {FOAF}.</description>
-    </group>
-
-    <group id="15">
-      <name>name15</name>
-      <description>(15) Consider the postage stamp: its usefulness consists in the ability to
-stick to one thing till it gets there.
-		-- Josh Billings</description>
-    </group>
-
-    <group id="16">
-      <name>name16</name>
-      <description>(16) Anything that is good and useful is made of chocolate.</description>
-    </group>
-
-    <group id="17">
-      <name>name17</name>
-      <description>(17) We wish you a Hare Krishna
-We wish you a Hare Krishna
-We wish you a Hare Krishna
-And a Sun Myung Moon!
-		-- Maxwell Smart</description>
-    </group>
-
-    <group id="18">
-      <name>name18</name>
-      <description>(18) :mega-: /me'g*/ /pref./ [SI] See {{quantifiers}}.</description>
-    </group>
-
-    <group id="19">
-      <name>name19</name>
-      <description>(19) It is only people of small moral stature who have to stand on their
-dignity.</description>
-    </group>
-
-    <group id="20">
-      <name>name20</name>
-      <description>(20) :peek: /n.,vt./  (and {poke}) The commands in most
-   microcomputer BASICs for directly accessing memory contents at an
-   absolute address; often extended to mean the corresponding
-   constructs in any {HLL} (peek reads memory, poke modifies it).
-   Much hacking on small, non-MMU micros consists of `peek'ing
-   around memory, more or less at random, to find the location where
-   the system keeps interesting stuff.  Long (and variably accurate)
-   lists of such addresses for various computers circulate (see
-   {{interrupt list, the}}).  The results of `poke's at these
-   addresses may be highly useful, mildly amusing, useless but neat,
-   or (most likely) total {lossage} (see {killer poke}).
-
-   Since a {real operating system} provides useful, higher-level
-   services for the tasks commonly performed with peeks and pokes on
-   micros, and real languages tend not to encourage low-level memory
-   groveling, a question like "How do I do a peek in C?" is
-   diagnostic of the {newbie}.  (Of course, OS kernels often have to
-   do exactly this; a real C hacker would unhesitatingly, if
-   unportably, assign an absolute address to a pointer variable and
-   indirect through it.)</description>
-    </group>
-
-    <group id="21">
-      <name>name21</name>
-      <description>(21) [Norm returns from the hospital.]
-
-Coach:  What's up, Norm?
-Norm:   Everything that's supposed to be.
-		-- Cheers, Diane Meets Mom
-
-Sam:  What's new, Normie?
-Norm: Terrorists, Sam.  They've taken over my stomach.  They're demanding beer.
-		-- Cheers, The Heart is a Lonely Snipehunter
-
-Coach: What'll it be, Normie?
-Norm:  Just the usual, Coach.  I'll have a froth of beer and a snorkel.
-		-- Cheers, King of the Hill</description>
-    </group>
-
-    <group id="22">
-      <name>name22</name>
-      <description>(22) I just need enough to tide me over until I need more.
-		-- Bill Hoest</description>
-    </group>
-
-    <group id="23">
-      <name>name23</name>
-      <description>(23) ___====-_  _-====___
-	      _--~~~#####//      \\#####~~~--_
-	   _-~##########// (    ) \\##########~-_
-	  -############//  :\^^/:  \\############-
-	_~############//   (@::@)   \\############~_
-       ~#############((     \\//     ))#############~
-      -###############\\    (^^)    //###############-
-     -#################\\  / "" \  //#################-
-    -###################\\/      \//###################-
-   _#/:##########/\######(   /\   )######/\##########:\#_
-   :/ :#/\#/\#/\/  \#/\##\  :  :  /##/\#/  \/\#/\#/\#: \:
-   "  :/  V  V  "   V  \#\: :  : :/#/  V   "  V  V  \:  "
-      "   "  "      "   \ : :  : : /   "      "  "   "</description>
-    </group>
-
-    <group id="24">
-      <name>name24</name>
-      <description>(24) Bore, n:
-	A person who talks when you wish him to listen.
-		-- Ambrose Bierce</description>
-    </group>
-
-    <group id="25">
-      <name>name25</name>
-      <description>(25) THE LESSER-KNOWN PROGRAMMING LANGUAGES #10: SIMPLE
-
-SIMPLE is an acronym for Sheer Idiot's Monopurpose Programming Language
-Environment.  This language, developed at the Hanover College for
-Technological Misfits, was designed to make it impossible to write code
-with errors in it.  The statements are, therefore, confined to BEGIN,
-END and STOP.  No matter how you arrange the statements, you can't make
-a syntax error.  Programs written in SIMPLE do nothing useful.  Thus
-they achieve the results of programs written in other languages without
-the tedious, frustrating process of testing and debugging.</description>
-    </group>
-
-    <group id="26">
-      <name>name26</name>
-      <description>(26) A friend of mine is into Voodoo Acupuncture.  You don't have to go.
-You'll just be walking down the street and...  Ooohh, that's much better.
-		-- Steven Wright</description>
-    </group>
-
-    <group id="27">
-      <name>name27</name>
-      <description>(27) You know it's going to be a long day when you get up, shave and shower,
-start to get dressed and your shoes are still warm.
-		-- Dean Webber</description>
-    </group>
-
-    <group id="28">
-      <name>name28</name>
-      <description>(28) Come live with me, and be my love,
-And we will some new pleasures prove
-Of golden sands, and crystal brooks,
-With silken lines, and silver hooks.
-		-- John Donne</description>
-    </group>
-
-    <group id="29">
-      <name>name29</name>
-      <description>(29) Mistrust first impulses; they are always right.</description>
-    </group>
-
-    <group id="30">
-      <name>name30</name>
-      <description>(30) Nothing succeeds like the appearance of success.
-		-- Christopher Lascl</description>
-    </group>
-
-    <group id="31">
-      <name>name31</name>
-      <description>(31) Do your part to help preserve life on Earth -- by trying to preserve your own.</description>
-    </group>
-
-    <group id="32">
-      <name>name32</name>
-      <description>(32) :kremvax: /krem-vaks/ /n./  [from the then large number of
-   {Usenet} {VAXen} with names of the form foovax]
-   Originally, a fictitious Usenet site at the Kremlin, announced on
-   April 1, 1984 in a posting ostensibly originated there by Soviet
-   leader Konstantin Chernenko.  The posting was actually forged by
-   Piet Beertema as an April Fool's joke.  Other fictitious sites
-   mentioned in the hoax were moskvax and {kgbvax}.  This was
-   probably the funniest of the many April Fool's forgeries
-   perpetrated on Usenet (which has negligible security against them),
-   because the notion that Usenet might ever penetrate the Iron
-   Curtain seemed so totally absurd at the time.
-
-   In fact, it was only six years later that the first genuine site in
-   Moscow, demos.su, joined Usenet.  Some readers needed
-   convincing that the postings from it weren't just another prank.
-   Vadim Antonov, senior programmer at Demos and the major poster from
-   there up to mid-1991, was quite aware of all this, referred to it
-   frequently in his own postings, and at one point twitted some
-   credulous readers by blandly asserting that he *was* a
-   hoax!
-
-   Eventually he even arranged to have the domain's gateway site
-   named kremvax, thus neatly turning fiction into fact
-   and demonstrating that the hackish sense of humor transcends
-   cultural barriers.  [Mr. Antonov also contributed the
-   Russian-language material for this lexicon. --ESR]
-
-   In an even more ironic historical footnote, kremvax became an
-   electronic center of the anti-communist resistance during the
-   bungled hard-line coup of August 1991.  During those three days the
-   Soviet UUCP network centered on kremvax became the only
-   trustworthy news source for many places within the USSR.  Though
-   the sysops were concentrating on internal communications,
-   cross-border postings included immediate transliterations of Boris
-   Yeltsin's decrees condemning the coup and eyewitness reports of the
-   demonstrations in Moscow's streets.  In those hours, years of
-   speculation that totalitarianism would prove unable to maintain its
-   grip on politically-loaded information in the age of computer
-   networking were proved devastatingly accurate -- and the original
-   kremvax joke became a reality as Yeltsin and the new Russian
-   revolutionaries of `glasnost' and `perestroika' made
-   kremvax one of the timeliest means of their outreach to the
-   West.</description>
-    </group>
-
-    <group id="33">
-      <name>name33</name>
-      <description>(33) Stuckness shouldn't be avoided.  It's the psychic predecessor of all
-real understanding.  An egoless acceptance of stuckness is a key to an
-understanding of all Quality, in mechanical work as in other endeavors.
-		-- R. Pirsig, "Zen and the Art of Motorcycle Maintenance"</description>
-    </group>
-
-    <group id="34">
-      <name>name34</name>
-      <description>(34) The one charm of marriage is that it makes a life of deception a neccessity.
-		-- Oscar Wilde</description>
-    </group>
-
-    <group id="35">
-      <name>name35</name>
-      <description>(35) Nothing endures but change.
-		-- Heraclitus
-	[Yeah, yeah, "Everything changes but change itself." --JFK Ed.]</description>
-    </group>
-
-    <group id="36">
-      <name>name36</name>
-      <description>(36) Once, there was NO fun ... This was before MENU planning, FASHION
-statements or NAUTILUS equipment ... Then, in 1985 ... FUN was
-completely encoded in this tiny MICROCHIP ... It contain 14,768 vaguely
-amusing SIT-COM pilots!!  We had to wait FOUR BILLION years but we
-finally got JERRY LEWIS, MTV and a large selection of creme-filled
-snack cakes!</description>
-    </group>
-
-    <group id="37">
-      <name>name37</name>
-      <description>(37) Necessity is a mother.</description>
-    </group>
-
-    <group id="38">
-      <name>name38</name>
-      <description>(38) Ask your boss to reconsider -- it's so difficult to take "Go to hell"
-for an answer.</description>
-    </group>
-
-    <group id="39">
-      <name>name39</name>
-      <description>(39) Economies of scale:
-	The notion that bigger is better.  In particular, that if you want
-	a certain amount of computer power, it is much better to buy one
-	biggie than a bunch of smallies.  Accepted as an article of faith
-	by people who love big machines and all that complexity.  Rejected
-	as an article of faith by those who love small machines and all
-	those limitations.</description>
-    </group>
-
-    <group id="40">
-      <name>name40</name>
-      <description>(40) A lie is an abomination unto the Lord and a very present help in time of
-trouble.
-		-- Adlai Stevenson</description>
-    </group>
-
-    <group id="41">
-      <name>name41</name>
-      <description>(41) :perfect programmer syndrome: /n./  Arrogance; the egotistical
-   conviction that one is above normal human error.  Most frequently
-   found among programmers of some native ability but relatively
-   little experience (especially new graduates; their perceptions may
-   be distorted by a history of excellent performance at solving
-   {toy problem}s).  "Of course my program is correct, there is no
-   need to test it."  "Yes, I can see there may be a problem here,
-   but *I'll* never type `rm -r /' while in {root
-   mode}."</description>
-    </group>
-
-    <group id="42">
-      <name>name42</name>
-      <description>(42) San Francisco isn't what it used to be, and it never was.
-		-- Herb Caen</description>
-    </group>
-
-    <group id="43">
-      <name>name43</name>
-      <description>(43) Genius is pain.
-		-- John Lennon</description>
-    </group>
-
-    <group id="44">
-      <name>name44</name>
-      <description>(44) algorithm, n.:
-	Trendy dance for hip programmers.</description>
-    </group>
-
-    <group id="45">
-      <name>name45</name>
-      <description>(45) While having never invented a sin, I'm trying to perfect several.</description>
-    </group>
-
-    <group id="46">
-      <name>name46</name>
-      <description>(46) We were so poor we couldn't afford a watchdog.
-If we heard a noise at night, we'd bark ourselves.
-		-- Crazy Jimmy</description>
-    </group>
-
-    <group id="47">
-      <name>name47</name>
-      <description>(47) Did you ever wonder what you'd say to God if He sneezed?</description>
-    </group>
-
-    <group id="48">
-      <name>name48</name>
-      <description>(48) You now have Asian Flu.</description>
-    </group>
-
-    <group id="49">
-      <name>name49</name>
-      <description>(49) QOTD:
-	"Oh, no, no...  I'm not beautiful.  Just very, very pretty."</description>
-    </group>
-
-    <group id="50">
-      <name>name50</name>
-      <description>(50) Majority, n.:
-	That quality that distinguishes a crime from a law.</description>
-    </group>
-
-    <group id="51">
-      <name>name51</name>
-      <description>(51) Nowlan's Theory:
-	He who hesitates is not only lost, but several miles from
-	the next freeway exit.</description>
-    </group>
-
-    <group id="52">
-      <name>name52</name>
-      <description>(52) A doctoral student from Buckingham
-Wrote his thesis on cunts and on fucking'em.
-	But a dropout from paree
-	Taught him Gamahuchee
-So he added a footnote on sucking 'em.</description>
-    </group>
-
-    <group id="53">
-      <name>name53</name>
-      <description>(53) :ELIZA effect: /*-li:'z* *-fekt'/ /n./  [AI community] The
-   tendency of humans to attach associations to terms from prior
-   experience.  For example, there is nothing magic about the symbol
-   `+' that makes it well-suited to indicate addition; it's just
-   that people associate it with addition.  Using `+' or `plus'
-   to mean addition in a computer language is taking advantage of the
-   ELIZA effect.
-
-   This term comes from the famous ELIZA program by Joseph Weizenbaum,
-   which simulated a Rogerian psychotherapist by rephrasing many of
-   the patient's statements as questions and posing them to the
-   patient.  It worked by simple pattern recognition and substitution
-   of key words into canned phrases.  It was so convincing, however,
-   that there are many anecdotes about people becoming very
-   emotionally caught up in dealing with ELIZA.  All this was due to
-   people's tendency to attach to words meanings which the computer
-   never put there.  The ELIZA effect is a {Good Thing} when
-   writing a programming language, but it can blind you to serious
-   shortcomings when analyzing an Artificial Intelligence system.
-   Compare {ad-hockery}; see also {AI-complete}.</description>
-    </group>
-
-    <group id="54">
-      <name>name54</name>
-      <description>(54) The objective of all dedicated employees should be to thoroughly analyze
-all situations, anticipate all problems prior to their occurrence, have
-answers for these problems, and move swiftly to solve these problems
-when called upon.
-	However...
-When you are up to your ass in alligators it is difficult to remind
-yourself your initial objective was to drain the swamp.</description>
-    </group>
-
-    <group id="55">
-      <name>name55</name>
-      <description>(55) Gordon's first law:
-	If a research project is not worth doing, it is not worth doing
-well.</description>
-    </group>
-
-    <group id="56">
-      <name>name56</name>
-      <description>(56) Don't steal... the IRS hates competition!</description>
-    </group>
-
-    <group id="57">
-      <name>name57</name>
-      <description>(57) That that is is that that is not is not.</description>
-    </group>
-
-    <group id="58">
-      <name>name58</name>
-      <description>(58) *** System shutdown message from root ***
-
-System going down in 60 seconds</description>
-    </group>
-
-    <group id="59">
-      <name>name59</name>
-      <description>(59) Remove me from this land of slaves,
-Where all are fools, and all are knaves,
-Where every knave and fool is bought, 
-Yet kindly sells himself for nought;
-		-- Jonathan Swift</description>
-    </group>
-
-    <group id="60">
-      <name>name60</name>
-      <description>(60) :clone: /n./  1. An exact duplicate: "Our product is a clone of
-   their product."  Implies a legal reimplementation from
-   documentation or by reverse-engineering.  Also connotes lower
-   price.  2. A shoddy, spurious copy: "Their product is a clone of
-   our product."  3. A blatant ripoff, most likely violating
-   copyright, patent, or trade secret protections: "Your product is a
-   clone of my product."  This use implies legal action is pending.
-   4. `PC clone:' a PC-BUS/ISA or EISA-compatible 80x86-based
-   microcomputer (this use is sometimes spelled `klone' or
-   `PClone').  These invariably have much more bang for the buck
-   than the IBM archetypes they resemble.  5. In the construction
-   `Unix clone': An OS designed to deliver a Unix-lookalike
-   environment without Unix license fees, or with additional
-   `mission-critical' features such as support for real-time
-   programming.  6. /v./ To make an exact copy of something.  "Let me
-   clone that" might mean "I want to borrow that paper so I can make
-   a photocopy" or "Let me get a copy of that file before you
-   {mung} it".</description>
-    </group>
-
-    <group id="61">
-      <name>name61</name>
-      <description>(61) :off the trolley: /adj./  Describes the behavior of a program
-   that malfunctions and goes catatonic, but doesn't actually
-   {crash} or abort.  See {glitch}, {bug}, {deep space}.</description>
-    </group>
-
-    <group id="62">
-      <name>name62</name>
-      <description>(62) I use technology in order to hate it more properly.
-		-- Nam June Paik</description>
-    </group>
-
-    <group id="63">
-      <name>name63</name>
-      <description>(63) "Well, that was a piece of cake, eh K-9?"
-
-"Piece of cake, Master?  Radial slice of baked confection ... coefficient of
-relevance to Key of Time: zero."
-		-- Dr. Who</description>
-    </group>
-
-    <group id="64">
-      <name>name64</name>
-      <description>(64) It is better for civilization to be going down the drain than to be
-coming up it.
-		-- Henry Allen</description>
-    </group>
-
-    <group id="65">
-      <name>name65</name>
-      <description>(65) Where do I find the time for not reading so many books?
-		-- Karl Kraus</description>
-    </group>
-
-    <group id="66">
-      <name>name66</name>
-      <description>(66) Let's organize this thing and take all the fun out of it.</description>
-    </group>
-
-    <group id="67">
-      <name>name67</name>
-      <description>(67) If you put tomfoolery into a computer, nothing comes out but tomfoolery.
-But this tomfoolery, having passed through a very expensive machine,
-is somehow enobled and no-one dare criticise it.
-		-- Pierre Gallois</description>
-    </group>
-
-    <group id="68">
-      <name>name68</name>
-      <description>(68) I met my latest girl friend in a department store.  She was looking at
-clothes, and I was putting Slinkys on the escalators.
-		-- Steven Wright</description>
-    </group>
-
-    <group id="69">
-      <name>name69</name>
-      <description>(69) There was a young lady who said,
-As her bridegroom got into the bed,
-	"I'm tired of this stunt,
-	That they do with one's cunt,
-You can get up my bottom instead."</description>
-    </group>
-
-    <group id="70">
-      <name>name70</name>
-      <description>(70) When a woman gives me a present I have always two surprises:
-first is the present, and afterward, having to pay for it.
-		-- Donnay</description>
-    </group>
-
-    <group id="71">
-      <name>name71</name>
-      <description>(71) Recession is when your neighbor loses his job. Depression is when you
-lose your job.  These economic downturns are very difficult to predict,
-but sophisticated econometric modeling houses like Data Resources and
-Chase Econometrics have successfully predicted 14 of the last 3 recessions.</description>
-    </group>
-
-    <group id="72">
-      <name>name72</name>
-      <description>(72) Never have children, only grandchildren.
-		-- Gore Vidal</description>
-    </group>
-
-    <group id="73">
-      <name>name73</name>
-      <description>(73) You should make a point of trying every experience once -- except
-incest and folk-dancing.
-		-- A. Bax, "Farewell My Youth"</description>
-    </group>
-
-    <group id="74">
-      <name>name74</name>
-      <description>(74) There is no fear in love; but perfect love casteth out fear.</description>
-    </group>
-
-    <group id="75">
-      <name>name75</name>
-      <description>(75) Life is a serious burden, which no thinking, humane person would
-wantonly inflict on someone else.
-		-- Clarence Darrow</description>
-    </group>
-
-    <group id="76">
-      <name>name76</name>
-      <description>(76) I shall come to you in the night and we shall see who is stronger --
-a little girl who won't eat her dinner or a great big man with cocaine
-in his veins.
-		-- Sigmund Freud, in a letter to his fiancee</description>
-    </group>
-
-    <group id="77">
-      <name>name77</name>
-      <description>(77) Climate and Surgery
-	R C Gilchrist, who was shot by J Sharp twelve days ago, and who
-received a derringer ball in the right breast, and who it was supposed at
-the time could not live many hours, was on the street yesterday and the
-day before -- walking several blocks at a time.  To those who design to be
-riddled with bullets or cut to pieces with Bowie-knives, we cordially
-recommend our Sacramento climate and Sacramento surgery.
-		-- Sacramento Daily Union, September 11, 1861</description>
-    </group>
-
-    <group id="78">
-      <name>name78</name>
-      <description>(78) What they say:			What they mean:
-
-New				Different colors from previous version.
-All New				Not compatible with previous version.
-Exclusive			Nobody else has documentation.
-Unmatched			Almost as good as the competition.
-Design Simplicity		The company wouldn't give us any money.
-Fool-proof Operation		All parameters are hard-coded.
-Advanced Design			Nobody really understands it.
-Here At Last			Didn't get it done on time.
-Field Tested			We don't have any simulators.
-Years of Development		Finally got one to work.
-Unprecedented Performance	Nothing ever ran this slow before.
-Revolutionary			Disk drives go 'round and 'round.
-Futuristic			Only runs on a next generation supercomputer.
-No Maintenance			Impossible to fix.
-Performance Proven		Worked through Beta test.
-Meets Tough Quality Standards	It compiles without errors.
-Satisfaction Guaranteed		We'll send you another pack if it fails.
-Stock Item			We shipped it before and can do it again.</description>
-    </group>
-
-    <group id="79">
-      <name>name79</name>
-      <description>(79) When you're not looking at it, this fortune is written in FORTRAN.</description>
-    </group>
-
-    <group id="80">
-      <name>name80</name>
-      <description>(80) Al didn't smile for forty years.  You've got to admire a man like that.
-		-- from "Mary Hartman, Mary Hartman"</description>
-    </group>
-
-    <group id="81">
-      <name>name81</name>
-      <description>(81) Bing's Rule:
-	Don't try to stem the tide -- move the beach.</description>
-    </group>
-
-    <group id="82">
-      <name>name82</name>
-      <description>(82) Life is a gamble at terrible odds, if it was a bet you wouldn't take it.
-		-- Tom Stoppard, "Rosencrantz and Guildenstern are Dead"</description>
-    </group>
-
-    <group id="83">
-      <name>name83</name>
-      <description>(83) Q:	How many marketing people does it take to change a lightbulb?
-A:	I'll have to get back to you on that.</description>
-    </group>
-
-    <group id="84">
-      <name>name84</name>
-      <description>(84) :crash and burn: /vi.,n./  A spectacular crash, in the mode of
-   the conclusion of the car-chase scene in the movie "Bullitt"
-   and many subsequent imitators (compare {die horribly}).  Sun-3
-   monitors losing the flyback transformer and lightning strikes on
-   VAX-11/780 backplanes are notable crash and burn generators.  The
-   construction `crash-and-burn machine' is reported for a computer
-   used exclusively for alpha or {beta} testing, or reproducing
-   bugs (i.e., not for development).  The implication is that it
-   wouldn't be such a disaster if that machine crashed, since only the
-   testers would be inconvenienced.</description>
-    </group>
-
-    <group id="85">
-      <name>name85</name>
-      <description>(85) Psychology.  Mind over matter.
-Mind under matter?  It doesn't matter.
-Never mind.</description>
-    </group>
-
-    <group id="86">
-      <name>name86</name>
-      <description>(86) :scream and die: /v./  Syn. {cough and die}, but connotes
-   that an error message was printed or displayed before the program
-   crashed.</description>
-    </group>
-
-    <group id="87">
-      <name>name87</name>
-      <description>(87) Qvid me anxivs svm?</description>
-    </group>
-
-    <group id="88">
-      <name>name88</name>
-      <description>(88) You k'n hide de fier, but w'at you gwine do wid de smoke?
-		-- Joel Chandler Harris, proverbs of Uncle Remus</description>
-    </group>
-
-    <group id="89">
-      <name>name89</name>
-      <description>(89) Real computer scientists don't write code.  They occasionally tinker with
-`programming systems', but those are so high level that they hardly count 
-(and rarely count accurately; precision is for applications).</description>
-    </group>
-
-    <group id="90">
-      <name>name90</name>
-      <description>(90) He that composes himself is wiser than he that composes a book.
+      <description>(6) A  truly great man will neither trample on a worm nor sneak to an emperor.
 		-- B. Franklin</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
     </group>
 
-    <group id="91">
+    <group id="G7">
+      <name>name7</name>
+      <description>(7) Fortune Documents the Great Legal Decisions:
+
+It is a rule of evidence deduced from the experience of mankind and
+supported by reason and authority that positive testimony is entitled to
+more weight than negative testimony, but by the latter term is meant
+negative testimony in its true sense and not positive evidence of a
+negative, because testimony in support of a negative may be as positive
+as that in support of an affirmative.
+		-- 254 Pac. Rep. 472.</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+      <user refuser="U5" />
+      <user refuser="U6" />
+      <user refuser="U7" />
+      <user refuser="U8" />
+    </group>
+
+    <group id="G8">
+      <name>name8</name>
+      <description>(8) Women's virtue is man's greatest invention.
+		-- Cornelia Otis Skinner</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+    </group>
+
+    <group id="G9">
+      <name>name9</name>
+      <description>(9) Carol's head ached as she trailed behind the unsmiling Calibrees
+along the block of booths.  She chirruped at Kennicott, "Let's be wild!
+Let's ride on the merry-go-round and grab a gold ring!"
+	Kennicott considered it, and mumbled to Calibree, "Think you folks
+would like to stop and try a ride on the merry-go-round?"
+	Calibree considered it, and mumbled to his wife, "Think you'd like
+to stop and try a ride on the merry-go-round?"
+	Mrs. Calibree smiled in a washed-out manner, and sighed, "Oh no,
+I don't believe I care to much, but you folks go ahead and try it."
+	Calibree stated to Kennicott, "No, I don't believe we care to a
+whole lot, but you folks go ahead and try it."
+	Kennicott summarized the whole case against wildness: "Let's try
+it some other time, Carrie."
+	She gave it up.
+		-- Sinclair Lewis, "Main Street"</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+      <user refuser="U5" />
+      <user refuser="U6" />
+      <user refuser="U7" />
+      <user refuser="U8" />
+      <user refuser="U9" />
+    </group>
+
+    <group id="G10">
+      <name>name10</name>
+      <description>(10) To err is human, to forgive unusual.</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+      <user refuser="U5" />
+      <user refuser="U6" />
+      <user refuser="U7" />
+      <user refuser="U8" />
+    </group>
+
+    <group id="G11">
+      <name>name11</name>
+      <description>(11) ***
+  *******
+ *********
+ ****** Confucious say: "Is stuffy inside fortune cookie."
+  *******
+    ***</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+    </group>
+
+    <group id="G12">
+      <name>name12</name>
+      <description>(12) Weiner's Law of Libraries:
+	There are no answers, only cross references.</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+      <user refuser="U5" />
+    </group>
+
+    <group id="G13">
+      <name>name13</name>
+      <description>(13) A lady who signs herself "Vexed"
+Writes to say she believes she's been hexed:
+	"I don't mind my shins
+	Being stuck full of pins,
+But I fear I am coming unsexed."
+		-- Edward Gorey</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+    </group>
+
+    <group id="G14">
+      <name>name14</name>
+      <description>(14) The wind doth taste so bitter sweet,
+	Like Jaspar wine and sugar,
+It must have blown through someone's feet,
+	Like those of Caspar Weinberger.
+		-- P. Opus</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+      <user refuser="U5" />
+    </group>
+
+    <group id="G15">
+      <name>name15</name>
+      <description>(15) "It's easier said than done."
+
+... and if you don't believe it, try proving that it's easier done than
+said, and you'll see that "it's easier said that `it's easier done than
+said' than it is done", which really proves that "it's easier said than
+done".</description>
+      <user refuser="U1" />
+    </group>
+
+    <group id="G16">
+      <name>name16</name>
+      <description>(16) A hearty young fellow named Yost
+Once had an affair with a ghost.
+	At the height of the spasm
+	The poor ectoplasm
+Cried, "Goodie, I feel it... almost."</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+    </group>
+
+    <group id="G17">
+      <name>name17</name>
+      <description>(17) For there are moments when one can neither think nor feel.  And if one can
+neither think nor feel, she thought, where is one?
+		-- Virginia Woolf, "To the Lighthouse"
+
+	[Quoted in "VMS Internals and Data Structures", V4.4, when
+	 referring to powerfail recovery.]</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+      <user refuser="U5" />
+      <user refuser="U6" />
+      <user refuser="U7" />
+    </group>
+
+    <group id="G18">
+      <name>name18</name>
+      <description>(18) I THINK THEY SHOULD CONTINUE the policy of not giving a Nobel Prize for
+paneling.
+		-- Jack Handley, The New Mexican, 1988.</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+      <user refuser="U5" />
+      <user refuser="U6" />
+    </group>
+
+    <group id="G19">
+      <name>name19</name>
+      <description>(19) Linux - Why use Windows, since there is a door?</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+      <user refuser="U5" />
+      <user refuser="U6" />
+      <user refuser="U7" />
+    </group>
+
+    <group id="G20">
+      <name>name20</name>
+      <description>(20) Any great truth can -- and eventually will -- be expressed as a cliche
+-- a cliche is a sure and certain way to dilute an idea.  For instance,
+my grandmother used to say, "The black cat is always the last one off
+the fence."  I have no idea what she meant, but at one time, it was
+undoubtedly true.
+		-- Solomon Short</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+      <user refuser="U5" />
+      <user refuser="U6" />
+      <user refuser="U7" />
+      <user refuser="U8" />
+    </group>
+
+    <group id="G21">
+      <name>name21</name>
+      <description>(21) The street preacher looked so baffled
+When I asked him why he dressed
+With forty pounds of headlines 
+Stapled to his chest.
+But he cursed me when I proved to him
+I said, "Not even you can hide.
+You see, you're just like me.
+I hope you're satisfied."
+		-- Bob Dylan</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+      <user refuser="U5" />
+      <user refuser="U6" />
+      <user refuser="U7" />
+      <user refuser="U8" />
+    </group>
+
+    <group id="G22">
+      <name>name22</name>
+      <description>(22) If only Dionysus were alive!  Where would he eat?
+		-- Woody Allen</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+    </group>
+
+    <group id="G23">
+      <name>name23</name>
+      <description>(23) Law of Communications:
+	The inevitable result of improved and enlarged communications
+	between different levels in a hierarchy is a vastly increased
+	area of misunderstanding.</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+    </group>
+
+    <group id="G24">
+      <name>name24</name>
+      <description>(24) Anything is possible, unless it's not.</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+      <user refuser="U5" />
+      <user refuser="U6" />
+      <user refuser="U7" />
+      <user refuser="U8" />
+    </group>
+
+    <group id="G25">
+      <name>name25</name>
+      <description>(25) system-independent, adj.:
+	Works equally poorly on all systems.</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+      <user refuser="U5" />
+      <user refuser="U6" />
+      <user refuser="U7" />
+      <user refuser="U8" />
+      <user refuser="U9" />
+    </group>
+
+    <group id="G26">
+      <name>name26</name>
+      <description>(26) When a fellow says, "It ain't the money but the principle of the thing,"
+it's the money.
+		-- Kim Hubbard</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+      <user refuser="U5" />
+      <user refuser="U6" />
+      <user refuser="U7" />
+      <user refuser="U8" />
+      <user refuser="U9" />
+    </group>
+
+    <group id="G27">
+      <name>name27</name>
+      <description>(27) FORTUNE DISCUSSES THE OBSCURE FILMS: #12
+
+O.E.D.:				David Lean, 1969, 3 hours 30 min.
+
+	Lean's version of the Oxford Dictionary has been accused of
+	shallowness in its treatment of a complete work.  Omar Sharif
+	tends to overact as aardvark, but Alec Guiness is solid in
+	the role of abbacy.  As usual, the photography is stunning.
+	With Julie Christie.</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+      <user refuser="U5" />
+      <user refuser="U6" />
+      <user refuser="U7" />
+      <user refuser="U8" />
+    </group>
+
+    <group id="G28">
+      <name>name28</name>
+      <description>(28) Governor Tarkin.  I should have expected to find you holding Vader's
+leash.  I thought I recognized your foul stench when I was brought on
+board.
+		-- Princess Leia Organa</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+      <user refuser="U5" />
+      <user refuser="U6" />
+      <user refuser="U7" />
+    </group>
+
+    <group id="G29">
+      <name>name29</name>
+      <description>(29) Two is not equal to three, even for large values of two.</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+      <user refuser="U5" />
+      <user refuser="U6" />
+    </group>
+
+    <group id="G30">
+      <name>name30</name>
+      <description>(30) A man who carries a cat by its tail learns something he can learn
+in no other way.</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+      <user refuser="U5" />
+      <user refuser="U6" />
+      <user refuser="U7" />
+      <user refuser="U8" />
+    </group>
+
+    <group id="G31">
+      <name>name31</name>
+      <description>(31) There was a young man named Rex
+Who really was small for his sex.
+	When tried for exposure
+	The judge's disclosure
+Was "de minimus non curat lex."</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+      <user refuser="U5" />
+      <user refuser="U6" />
+      <user refuser="U7" />
+      <user refuser="U8" />
+      <user refuser="U9" />
+    </group>
+
+    <group id="G32">
+      <name>name32</name>
+      <description>(32) :shelfware: /shelf'weir/ /n./  Software purchased on a whim (by
+   an individual user) or in accordance with policy (by a corporation
+   or government agency), but not actually required for any particular
+   use.  Therefore, it often ends up on some shelf.</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+    </group>
+
+    <group id="G33">
+      <name>name33</name>
+      <description>(33) Did you hear that two rabbits escaped from the zoo and so far they have
+only recaptured 116 of them?</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+      <user refuser="U5" />
+    </group>
+
+    <group id="G34">
+      <name>name34</name>
+      <description>(34) A witty saying proves nothing.
+		-- Voltaire</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+    </group>
+
+    <group id="G35">
+      <name>name35</name>
+      <description>(35) Several years ago, some smart businessmen had an idea: Why not build a
+big store where a do-it-yourselfer could get everything he needed at
+reasonable prices?  Then they decided, nah, the hell with that, let's
+build a home center.  And before long home centers were springing up
+like crabgrass all over the United States.
+		-- Dave Barry, "The Taming of the Screw"</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+      <user refuser="U5" />
+      <user refuser="U6" />
+      <user refuser="U7" />
+    </group>
+
+    <group id="G36">
+      <name>name36</name>
+      <description>(36) It's not reality or how you perceive things that's important -- it's
+what you're taking for it...</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+    </group>
+
+    <group id="G37">
+      <name>name37</name>
+      <description>(37) Croll's Query:
+	If tin whistles are made of tin, what are foghorns made of?</description>
+      <user refuser="U1" />
+    </group>
+
+    <group id="G38">
+      <name>name38</name>
+      <description>(38) Be careful when a loop exits to the same place from side and bottom.</description>
+      <user refuser="U1" />
+    </group>
+
+    <group id="G39">
+      <name>name39</name>
+      <description>(39) More are taken in by hope than by cunning.
+		-- Vauvenargues</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+      <user refuser="U5" />
+      <user refuser="U6" />
+      <user refuser="U7" />
+    </group>
+
+    <group id="G40">
+      <name>name40</name>
+      <description>(40) Old men are fond of giving good advice to console
+themselves for their inability to set a bad example.
+		-- La Rochefoucauld, "Maxims"</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+      <user refuser="U5" />
+    </group>
+
+    <group id="G41">
+      <name>name41</name>
+      <description>(41) Why don't you fix your little problem... and light this candle?
+		-- Alan Shepherd, the first man into space, Gemini program</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+      <user refuser="U5" />
+      <user refuser="U6" />
+      <user refuser="U7" />
+    </group>
+
+    <group id="G42">
+      <name>name42</name>
+      <description>(42) "Even the best of friends cannot attend each other's funeral."
+		-- Kehlog Albran, "The Profit"</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+      <user refuser="U5" />
+      <user refuser="U6" />
+    </group>
+
+    <group id="G43">
+      <name>name43</name>
+      <description>(43) WRITE-PROTECT TAB:
+	A small sticker created to cover the unsightly notch carelessly
+	left by disk manufacturers.  The use of the tab creates an error
+	message once in a while, but its aesthetic value far outweighs
+	the momentary inconvenience.
+		-- Robb Russon</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+      <user refuser="U5" />
+    </group>
+
+    <group id="G44">
+      <name>name44</name>
+      <description>(44) The best audience is intelligent, well-educated and a little drunk.
+		-- Maurice Baring</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+    </group>
+
+    <group id="G45">
+      <name>name45</name>
+      <description>(45) Oh, when I was in love with you,
+	Then I was clean and brave,
+And miles around the wonder grew
+	How well did I behave.
+
+And now the fancy passes by,
+	And nothing will remain,
+And miles around they'll say that I
+	Am quite myself again.
+		-- A. E. Housman</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+    </group>
+
+    <group id="G46">
+      <name>name46</name>
+      <description>(46) If you wish to be happy for one hour, get drunk.
+If you wish to be happy for three days, get married.
+If you wish to be happy for a month, kill your pig and eat it.
+If you wish to be happy forever, learn to fish.
+		-- Chinese Proverb</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+    </group>
+
+    <group id="G47">
+      <name>name47</name>
+      <description>(47) Weinberg's First Law:
+	Progress is only made on alternate Fridays.</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+    </group>
+
+    <group id="G48">
+      <name>name48</name>
+      <description>(48) To err is human, to forgive, beyond the scope of the Operating System.</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+    </group>
+
+    <group id="G49">
+      <name>name49</name>
+      <description>(49) I just got off the phone with Sonny Barger [President of the Hell's Angels].
+He wants me to appear as a character witness for him at his murder trial
+and said he'd be glad to appear as a character witness on my behalf if I
+ever needed one.  Needless to say, I readily agreed.
+		-- Thomas King Forcade, publisher of "High Times"</description>
+      <user refuser="U1" />
+    </group>
+
+    <group id="G50">
+      <name>name50</name>
+      <description>(50) Meskimen's Law:
+	There's never time to do it right, but there's always time to
+	do it over.</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+      <user refuser="U5" />
+      <user refuser="U6" />
+    </group>
+
+    <group id="G51">
+      <name>name51</name>
+      <description>(51) A horse breeder has his young colts bottle-fed after they're three
+days old.  He heard that a foal and his mummy are soon parted.
+	A crow perched himself on a telephone wire.  He was going to make a
+long-distance caw.
+	A musical reviewer admitted he always praised the first show of a
+new theatrical season.  "Who am I to stone the first cast?"
+	A hard-luck actor who appeared in one colossal disaster after another
+finally got a break, a broken leg to be exact.  Someone pointed out that it's
+the first time the poor fellow's been in the same cast for more than a week.</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+    </group>
+
+    <group id="G52">
+      <name>name52</name>
+      <description>(52) I BET WHEN NEANDERTHAL KIDS would make a snowman, someone would always
+end up saying, "Don't forget the thick heavy brows."  Then they would get
+embarrassed because they remembered they had the big hunky brows too, and
+they'd get mad and eat the snowman.
+		-- Jack Handley, The New Mexican, 1988.</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+    </group>
+
+    <group id="G53">
+      <name>name53</name>
+      <description>(53) Clairvoyant, n.:
+	A person, commonly a woman, who has the power of seeing that
+which is invisible to her patron -- namely, that he is a blockhead.
+		-- Ambrose Bierce</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+    </group>
+
+    <group id="G54">
+      <name>name54</name>
+      <description>(54) I'd rather have two girls at 21 each than one girl at 42.
+		-- W.C. Fields</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+    </group>
+
+    <group id="G55">
+      <name>name55</name>
+      <description>(55) A gentleman, otherwise meek,
+Detested with passion the leek;
+	When offered one out
+	He dealt such a clout
+To the maid, she was down for a week.
+		-- Edward Gorey</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+      <user refuser="U5" />
+      <user refuser="U6" />
+      <user refuser="U7" />
+      <user refuser="U8" />
+      <user refuser="U9" />
+      <user refuser="U10" />
+    </group>
+
+    <group id="G56">
+      <name>name56</name>
+      <description>(56) As with most fine things, chocolate has its season.  There is a simple memory
+aid that you can use to determine whether it is the correct time to order
+chocolate dishes: Any month whose name contains the letter A, E, or U is the
+proper time for chocolate.
+		-- Sandra Boynton, "Chocolate: The Consuming Passion"</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+      <user refuser="U5" />
+      <user refuser="U6" />
+      <user refuser="U7" />
+    </group>
+
+    <group id="G57">
+      <name>name57</name>
+      <description>(57) In the garden of Eden lay Adam,
+Complacently stroking his madam
+	And loud was his mirth
+	For on all of the earth
+There were only two balls and he had'em.</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+    </group>
+
+    <group id="G58">
+      <name>name58</name>
+      <description>(58) Learned men are the cisterns of knowledge, not the fountainheads.</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+    </group>
+
+    <group id="G59">
+      <name>name59</name>
+      <description>(59) Now, it we had this sort of thing:
+  yield -a     for yield to all traffic
+  yield -t     for yield to trucks
+  yield -f     for yield to people walking (yield foot)
+  yield -d t*  for yield on days starting with t
+...you'd have a lot of dead people at intersections, and traffic jams you
+wouldn't believe...
+(Discussion in comp.os.linux.misc on the intuitiveness of commands.)</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+      <user refuser="U5" />
+      <user refuser="U6" />
+      <user refuser="U7" />
+    </group>
+
+    <group id="G60">
+      <name>name60</name>
+      <description>(60) :cargo cult programming: /n./  A style of (incompetent)
+   programming dominated by ritual inclusion of code or program
+   structures that serve no real purpose.  A cargo cult programmer
+   will usually explain the extra code as a way of working around some
+   bug encountered in the past, but usually neither the bug nor the
+   reason the code apparently avoided the bug was ever fully
+   understood (compare {shotgun debugging}, {voodoo
+   programming}).
+
+   The term `cargo cult' is a reference to aboriginal religions that
+   grew up in the South Pacific after World War II.  The practices of
+   these cults center on building elaborate mockups of airplanes and
+   military style landing strips in the hope of bringing the return of
+   the god-like airplanes that brought such marvelous cargo during the
+   war.  Hackish usage probably derives from Richard Feynman's
+   characterization of certain practices as "cargo cult science" in
+   his book "Surely You're Joking, Mr. Feynman!" (W. W. Norton
+   &amp; Co, New York 1985, ISBN 0-393-01921-7).</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+      <user refuser="U5" />
+    </group>
+
+    <group id="G61">
+      <name>name61</name>
+      <description>(61) You are wise, witty, and wonderful, but you spend too much time reading
+this sort of trash.</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+    </group>
+
+    <group id="G62">
+      <name>name62</name>
+      <description>(62) :scrool: /skrool/ /n./  [from the pioneering Roundtable chat
+   system in Houston ca. 1984; prob. originated as a typo for
+   `scroll'] The log of old messages, available for later perusal or
+   to help one get back in synch with the conversation.  It was
+   originally called the `scrool monster', because an early version
+   of the roundtable software had a bug where it would dump all 8K of
+   scrool on a user's terminal.</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+    </group>
+
+    <group id="G63">
+      <name>name63</name>
+      <description>(63) Cheese -- milk's leap toward immortality.
+		-- Clifton Fadiman, "Any Number Can Play"</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+      <user refuser="U5" />
+      <user refuser="U6" />
+      <user refuser="U7" />
+    </group>
+
+    <group id="G64">
+      <name>name64</name>
+      <description>(64) It's hard to outrun dead people because they don't have to breathe.
+		-- Hokey, describing "Night of the Living Dead"</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+      <user refuser="U5" />
+      <user refuser="U6" />
+      <user refuser="U7" />
+      <user refuser="U8" />
+    </group>
+
+    <group id="G65">
+      <name>name65</name>
+      <description>(65) Why I Can't Go Out With You:
+
+I'd LOVE to, but...
+	-- I have to floss my cat.
+	-- I've dedicated my life to linguini.
+	-- I need to spend more time with my blender.
+	-- It wouldn't be fair to the other Beautiful People.
+	-- It's my night to pet the dog/ferret/goldfish/radio.
+	-- I'm going downtown to try on some gloves.
+	-- I have to check the freshness dates on my dairy products.
+	-- I'm due at the bakery to watch the buns rise.
+	-- I have an appointment with a cuticle specialist.
+	-- I have some really hard words to look up.</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+    </group>
+
+    <group id="G66">
+      <name>name66</name>
+      <description>(66) A physicist is an atoms way of knowing about atoms.
+		-- George Wald</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+      <user refuser="U5" />
+      <user refuser="U6" />
+      <user refuser="U7" />
+      <user refuser="U8" />
+      <user refuser="U9" />
+    </group>
+
+    <group id="G67">
+      <name>name67</name>
+      <description>(67) Why do so many foods come packaged in plastic?
+It's quite uncanny.</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+      <user refuser="U5" />
+    </group>
+
+    <group id="G68">
+      <name>name68</name>
+      <description>(68) May the bluebird of happiness twiddle your bits.</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+      <user refuser="U5" />
+      <user refuser="U6" />
+    </group>
+
+    <group id="G69">
+      <name>name69</name>
+      <description>(69) :copy protection: /n./  A class of methods for preventing
+   incompetent pirates from stealing software and legitimate customers
+   from using it.  Considered silly.</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+      <user refuser="U5" />
+      <user refuser="U6" />
+      <user refuser="U7" />
+      <user refuser="U8" />
+      <user refuser="U9" />
+      <user refuser="U10" />
+    </group>
+
+    <group id="G70">
+      <name>name70</name>
+      <description>(70) Kites rise highest against the wind -- not with it.
+		-- Winston Churchill</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+    </group>
+
+    <group id="G71">
+      <name>name71</name>
+      <description>(71) Air Force Inertia Axiom:
+	Consistency is always easier to defend than correctness.</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+    </group>
+
+    <group id="G72">
+      <name>name72</name>
+      <description>(72) The wise shepherd never trusts his flock to a smiling wolf.</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+    </group>
+
+    <group id="G73">
+      <name>name73</name>
+      <description>(73) Speak softly and carry a +6 two-handed sword.</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+      <user refuser="U5" />
+      <user refuser="U6" />
+    </group>
+
+    <group id="G74">
+      <name>name74</name>
+      <description>(74) Let me put it this way: today is going to be a learning experience.</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+      <user refuser="U5" />
+      <user refuser="U6" />
+      <user refuser="U7" />
+      <user refuser="U8" />
+      <user refuser="U9" />
+    </group>
+
+    <group id="G75">
+      <name>name75</name>
+      <description>(75) Thus spake the master programmer:
+	"Time for you to leave."
+		-- Geoffrey James, "The Tao of Programming"</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+      <user refuser="U5" />
+      <user refuser="U6" />
+      <user refuser="U7" />
+      <user refuser="U8" />
+      <user refuser="U9" />
+    </group>
+
+    <group id="G76">
+      <name>name76</name>
+      <description>(76) NOTE: No warranties, either express or implied, are hereby given. All
+software is supplied as is, without guarantee.  The user assumes all
+responsibility for damages resulting from the use of these features,
+including, but not limited to, frustration, disgust, system abends, disk
+head-crashes, general malfeasance, floods, fires, shark attack, nerve
+gas, locust infestation, cyclones, hurricanes, tsunamis, local
+electromagnetic disruptions, hydraulic brake system failure, invasion,
+hashing collisions, normal wear and tear of friction surfaces, comic
+radiation, inadvertent destruction of sensitive electronic components,
+windstorms, the Riders of Nazgul, infuriated chickens, malfunctioning
+mechanical or electrical sexual devices, premature activation of the
+distant early warning system, peasant uprisings, halitosis, artillery
+bombardment, explosions, cave-ins, and/or frogs falling from the sky.</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+      <user refuser="U5" />
+      <user refuser="U6" />
+      <user refuser="U7" />
+      <user refuser="U8" />
+    </group>
+
+    <group id="G77">
+      <name>name77</name>
+      <description>(77) A woman, especially if she have the misfortune
+of knowing anything, should conceal it as well as she can.
+		-- Jane Austen</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+      <user refuser="U5" />
+      <user refuser="U6" />
+      <user refuser="U7" />
+      <user refuser="U8" />
+      <user refuser="U9" />
+    </group>
+
+    <group id="G78">
+      <name>name78</name>
+      <description>(78) Bare feet magnetize sharp metal objects so they point upward from the
+floor -- especially in the dark.</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+      <user refuser="U5" />
+      <user refuser="U6" />
+    </group>
+
+    <group id="G79">
+      <name>name79</name>
+      <description>(79) Once upon a time there was a beautiful young girl taking a stroll 
+through the woods.  All at once she saw an extremely ugly bull frog seated 
+on a log and to her amazement the frog spoke to her.  "Maiden," croaked the
+frog, "would you do me a favor?  This will be hard for you to believe, but
+I was once a handsome, charming prince and then a mean, ugly old witch cast
+a spell over me and turned me into a frog."
+	"Oh, what a pity!", exclaimed the girl.  "I'll do anything I can to
+help you break such a spell."
+	"Well," replied the frog, "the only way that this spell can be
+taken away is for some lovely young woman to take me home and let me spend
+the night under her pillow."
+	The young girl took the ugly frog home and placed him beneath her
+pillow that night when she retired.  When she awoke the next morning, sure
+enough, there beside her in bed was a very young, handsome man, clearly of
+royal blood.  And so they lived happily ever after, except that to this day
+her father and mother still don't believe her story.</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+      <user refuser="U5" />
+      <user refuser="U6" />
+      <user refuser="U7" />
+      <user refuser="U8" />
+      <user refuser="U9" />
+    </group>
+
+    <group id="G80">
+      <name>name80</name>
+      <description>(80) I have often regretted my speech, never my silence.
+		-- Publilius Syrus</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+      <user refuser="U5" />
+      <user refuser="U6" />
+      <user refuser="U7" />
+      <user refuser="U8" />
+      <user refuser="U9" />
+    </group>
+
+    <group id="G81">
+      <name>name81</name>
+      <description>(81) "We demand rigidly defined areas of doubt and uncertainty!"
+		-- Vroomfondel</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+      <user refuser="U5" />
+      <user refuser="U6" />
+      <user refuser="U7" />
+      <user refuser="U8" />
+      <user refuser="U9" />
+    </group>
+
+    <group id="G82">
+      <name>name82</name>
+      <description>(82) No snowflake in an avalanche ever feels responsible.</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+    </group>
+
+    <group id="G83">
+      <name>name83</name>
+      <description>(83) SUN Microsystems:
+	The Network IS the Load Average.</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+      <user refuser="U5" />
+      <user refuser="U6" />
+      <user refuser="U7" />
+      <user refuser="U8" />
+      <user refuser="U9" />
+    </group>
+
+    <group id="G84">
+      <name>name84</name>
+      <description>(84) What we wish, that we readily believe.
+		-- Demosthenes</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+      <user refuser="U5" />
+      <user refuser="U6" />
+      <user refuser="U7" />
+      <user refuser="U8" />
+    </group>
+
+    <group id="G85">
+      <name>name85</name>
+      <description>(85) No group of professionals meets except to
+conspire against the public at large.
+		-- Mark Twain</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+      <user refuser="U5" />
+      <user refuser="U6" />
+    </group>
+
+    <group id="G86">
+      <name>name86</name>
+      <description>(86) We're only in it for the volume.
+		-- Black Sabbath</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+      <user refuser="U5" />
+      <user refuser="U6" />
+      <user refuser="U7" />
+    </group>
+
+    <group id="G87">
+      <name>name87</name>
+      <description>(87) Nothing ever becomes real till it is experienced -- even a
+proverb is no proverb to you till your life has illustrated it.
+		-- John Keats</description>
+      <user refuser="U1" />
+    </group>
+
+    <group id="G88">
+      <name>name88</name>
+      <description>(88) When users see one GUI as beautiful,
+other user interfaces become ugly.
+When users see some programs as winners,
+other programs become lossage.
+
+Pointers and NULLs reference each other.
+High level and assembler depend on each other.
+Double and float cast to each other.
+High-endian and low-endian define each other.
+While and until follow each other.
+
+Therefore the Guru 
+programs without doing anything
+and teaches without saying anything.
+Warnings arise and he lets them come;
+processes are swapped and he lets them go.
+He has but doesn't possess,
+acts but doesn't expect.
+When his work is done, he deletes it.
+That is why it lasts forever.</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+      <user refuser="U5" />
+      <user refuser="U6" />
+      <user refuser="U7" />
+    </group>
+
+    <group id="G89">
+      <name>name89</name>
+      <description>(89) Bore, n.:
+	A person who talks when you wish him to listen.
+		-- Ambrose Bierce, "The Devil's Dictionary"</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+    </group>
+
+    <group id="G90">
+      <name>name90</name>
+      <description>(90) :tayste: /tayst/  /n./ Two bits; also as {taste}.
+   Syn. {crumb}, {quarter}.  See {nybble}.</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+    </group>
+
+    <group id="G91">
       <name>name91</name>
-      <description>(91) The decision doesn't have to be logical; it was unanimous.</description>
+      <description>(91) Damn, I need a Coke!
+		-- Dr. William DeVries
+		[after implanting the first artificial human heart]</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
     </group>
 
-    <group id="92">
+    <group id="G92">
       <name>name92</name>
-      <description>(92) If I'm over the hill, why is it I don't recall ever being on top?
-		-- Jerry Muscha</description>
+      <description>(92) Theorem: a cat has nine tails.
+Proof:
+	No cat has eight tails. A cat has one tail more than no cat.
+	Therefore, a cat has nine tails.</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+      <user refuser="U5" />
+      <user refuser="U6" />
+      <user refuser="U7" />
+      <user refuser="U8" />
     </group>
 
-    <group id="93">
+    <group id="G93">
       <name>name93</name>
-      <description>(93) An Argentine gaucho named Bruno
-Who said, "Fucking is one thing I do know.
-	Women are fine
-	And sheep are divine
-But llamas are numero uno."</description>
+      <description>(93) To accuse others for one's own misfortunes is a sign of want of education.
+To accuse oneself shows that one's education has begun.  To accuse neither
+oneself nor others shows that one's education is complete.
+		-- Epictetus</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+      <user refuser="U5" />
     </group>
 
-    <group id="94">
+    <group id="G94">
       <name>name94</name>
-      <description>(94) I poured spot remover on my dog.  Now he's gone.
-		-- Steven Wright</description>
+      <description>(94) Hail to the sun god
+He's such a fun god
+Ra! Ra! Ra!</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+      <user refuser="U5" />
+      <user refuser="U6" />
+      <user refuser="U7" />
+      <user refuser="U8" />
     </group>
 
-    <group id="95">
+    <group id="G95">
       <name>name95</name>
-      <description>(95) mathematician, n.:
-	Some one who believes imaginary things appear right before your _i's.</description>
+      <description>(95) Numeric stability is probably not all that important when you're guessing.</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+      <user refuser="U5" />
     </group>
 
-    <group id="96">
+    <group id="G96">
       <name>name96</name>
-      <description>(96) You can't cheat the phone company.</description>
+      <description>(96) TAURUS (Apr 20 - May 20)
+	You are practical and persistent.  You have a dogged determination
+	and work like hell.  Most people think you are stubborn and bull
+	headed.  You are a Communist.</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
     </group>
 
-    <group id="97">
+    <group id="G97">
       <name>name97</name>
-      <description>(97) Stop searching forever.  Happiness is unattainable.</description>
+      <description>(97) Whoever would lie usefully should lie seldom.</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
     </group>
 
-    <group id="98">
+    <group id="G98">
       <name>name98</name>
-      <description>(98) Scott's second Law:
-	When an error has been detected and corrected, it will be found
-to have been wrong in the first place.
-
-Corollary:
-	After the correction has been found in error, it will be
-impossible to fit the original quantity back into the equation.</description>
+      <description>(98) Love is the delusion that one woman differs from another.
+		-- H.L. Mencken</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+      <user refuser="U5" />
     </group>
 
-    <group id="99">
+    <group id="G99">
       <name>name99</name>
-      <description>(99) Do you think that illiterate people get the full effect of alphabet soup?</description>
+      <description>(99) Well begun is half done.
+		-- Aristotle</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+      <user refuser="U5" />
+      <user refuser="U6" />
+      <user refuser="U7" />
+      <user refuser="U8" />
+      <user refuser="U9" />
     </group>
 
-    <group id="100">
+    <group id="G100">
       <name>name100</name>
-      <description>(100) I met my latest girl friend in a department store.  She was looking at
-clothes, and I was putting Slinkys on the escalators.
-		-- Steven Wright</description>
+      <description>(100) Do not worry about which side your
+bread is buttered on: you eat BOTH sides.</description>
+      <user refuser="U1" />
+      <user refuser="U2" />
+      <user refuser="U3" />
+      <user refuser="U4" />
+      <user refuser="U5" />
+      <user refuser="U6" />
+      <user refuser="U7" />
+      <user refuser="U8" />
     </group>
 
 </groups>

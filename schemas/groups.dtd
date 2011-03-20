@@ -2,10 +2,13 @@
 
 <!ELEMENT groups (group*)>
 
-<!ELEMENT group (name, description)>
+<!ELEMENT group (name, description, user*)>
 <!ATTLIST group
-  id IDREF #REQUIRED
+  id ID #REQUIRED
 >
 
 <!ELEMENT name (#PCDATA)>
 <!ELEMENT description (#PCDATA)>
+<!ELEMENT user EMPTY>
+<!ATTLIST user
+          refuser CDATA #REQUIRED>

@@ -4,15 +4,15 @@
 
 <!ELEMENT event (title, from, to, location, guest*)>
 <!ATTLIST event
-  id IDREF #REQUIRED
-  refgrp IDREF #REQUIRED
+  id ID #REQUIRED
+  refgrp CDATA #REQUIRED
 >
 
 <!ELEMENT title (#PCDATA)>
 <!ELEMENT from (#PCDATA)>
 <!ELEMENT to (#PCDATA)>
 <!ELEMENT location (#PCDATA)>
-<!ELEMENT guest>
+<!ELEMENT guest EMPTY>
 <!ATTLIST guest
-  refuser IDREF #REQUIRED
+  refuser CDATA #REQUIRED
 >

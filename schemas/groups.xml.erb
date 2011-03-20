@@ -2,9 +2,12 @@
 <!DOCTYPE groups SYSTEM "groups.dtd" >
 <groups>
   <% 1.upto 100 do |i| -%>
-    <group id="<%= i %>">
+    <group id="G<%= i %>">
       <name>name<%= i %></name>
       <description>(<%= i %>) <%= `fortune | xml esc`.strip %></description>
+      <% 0.upto (rand() * 10).to_i do |i| -%>
+      <user refuser="U<%= i+1 %>" />
+      <% end -%>
     </group>
 
   <% end -%>

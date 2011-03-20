@@ -9,29 +9,29 @@
 
   # everyday from d1 to d2
   d1.step(d2, 1) do |d| %>
-    <event refgrp="<%= rand(2) + 1 %>" id="<%= i %>">
+    <event refgrp="G<%= rand(2) + 1 %>" id="E<%= i %>">
       <title><%= `fortune | xml esc`.strip.split.shift(5).join(' ') %></title>
       <from><%= d.strftime('%Y-%m-%d %H:%M') %></from>
       <to><%= (d + Date::Delta.hours(3)).strftime('%Y-%m-%d %H:%M') %></to>
       <location>location<%= rand(3) %></location>
       <% if rand() < 0.2 %>
-        <guest refuser="<%= rand(100) %>" />
+        <guest refuser="U<%= rand(100) %>" />
         <% if rand() < 0.7 %>
-          <guest refuser="<%= rand(100) %>" />
+          <guest refuser="U<%= rand(100) %>" />
         <% end %>
       <% end %>
     </event>
 
     <% d += Date::Delta.hours(5) %>
-    <event refgrp="<%= rand(2) + 1 %>" id="<%= i + 1 %>">
+    <event refgrp="G<%= rand(2) + 1 %>" id="E<%= i + 1 %>">
       <title><%= `fortune | xml esc`.strip.split.shift(5).join(' ') %></title>
       <from><%= d.strftime('%Y-%m-%d %H:%M') %></from>
       <to><%= (d + Date::Delta.hours(3)).strftime('%Y-%m-%d %H:%M') %></to>
       <location>location<%= rand(3) %></location>
       <% if rand() < 0.2 %>
-      <guest refuser="<%= rand(100) %>" />
+      <guest refuser="U<%= rand(100) %>" />
       <% if rand() < 0.7 %>
-      <guest refuser="<%= rand(100) %>" />
+      <guest refuser="U<%= rand(100) %>" />
       <% end %>
       <% end %>
     </event>

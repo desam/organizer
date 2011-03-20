@@ -3,7 +3,7 @@
 <!DOCTYPE users SYSTEM "users.dtd" >
 <users>
   <% 1.upto 100 do |i| %>
-    <user id="<%= i %>">
+    <user id="U<%= i %>">
       <login>usr<%= i %></login>
       <password><%= OpenSSL::Digest::SHA512.hexdigest('pw' + i.to_s) %></password>
       <firstname>firstname<%= i %></firstname>
