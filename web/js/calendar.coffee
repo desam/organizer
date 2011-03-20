@@ -1,5 +1,5 @@
 if !currentDate then currentDate = new Date()
-if !currentGroup then currentGroup = 1
+if !currentGroup then currentGroup = 'G1'
 
 Calendarw = ->
   self = this

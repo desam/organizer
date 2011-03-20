@@ -12,7 +12,7 @@
     <xsl:template match="event">
         <xsl:if test="position() > 1">,</xsl:if>
         {
-          "id": <xsl:value-of select="@id" />
+          "id": "<xsl:value-of select="@id" />"
           , "title": "<xsl:value-of select="title" />"
           , "from": "<xsl:value-of select="from" />"
           , "to": "<xsl:value-of select="to" />"

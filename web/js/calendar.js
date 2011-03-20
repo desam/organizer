@@ -4,7 +4,7 @@
     currentDate = new Date();
   }
   if (!currentGroup) {
-    currentGroup = 1;
+    currentGroup = 'G1';
   }
   Calendarw = function() {
     var self;
