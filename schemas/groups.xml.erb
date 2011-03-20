@@ -6,7 +6,7 @@
       <name>name<%= i %></name>
       <description>(<%= i %>) <%= `fortune | xml esc`.strip %></description>
       <% 0.upto (rand() * 10).to_i do |i| -%>
-      <user refuser="U<%= i+1 %>" />
+      <user refuser="U<%= (rand() * 99).to_i + 1 %>" />
       <% end -%>
     </group>
 
