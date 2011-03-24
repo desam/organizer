@@ -1,0 +1,19 @@
+Login:
+    pattern: /login
+    defaults: { _controller: UserBundle:User:login }
+
+Deconnexion:
+    pattern: /deconnexion
+    defaults: { _controller: UserBundle:User:deconnexion }
+    
+UserIndex: 
+    pattern: /index
+    defaults: { _controller: UserBundle:User:login }    
+    
+Adduser:    
+    pattern: /adduser
+    defaults: { _controller: UserBundle:User:addUser }
+    
+Edituser:
+    pattern: /edituser
+    defaults: { _controller: UserBundle:User:editUser }
