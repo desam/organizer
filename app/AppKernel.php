@@ -23,6 +23,7 @@ class AppKernel extends Kernel
             // register your bundles
             new Application\HelloBundle\HelloBundle(),
             new Application\CalendarBundle\CalendarBundle(),
+			new Application\UserBundle\UserBundle(),
         );
 
         if ($this->isDebug()) {

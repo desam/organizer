@@ -7,3 +7,7 @@ hello:
 
 calendar:
     resource: @CalendarBundle/Resources/config/routing.yml
+
+
+User:
+    resource: @UserBundle/Resources/config/routing.yml	
