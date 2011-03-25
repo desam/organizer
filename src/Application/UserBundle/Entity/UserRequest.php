@@ -33,7 +33,8 @@ class UserRequest
     protected $mail;
     
     /**
-     * @validation:NotBlank       
+     * @validation:NotBlank  
+     * @validation:Regex("/^\d{2}-\d{2}-\d{2}-\d{2}-\d{2}$/")   
      */
     protected $phone;
     
@@ -101,37 +102,22 @@ class UserRequest
         $this->phone = $phone;
     }
     
-    public function getPath(){
-        // $dir = realpath(__DIR__);
-        // return substr($dir, 0, -33).'web\uploads\avatar\\';
-        return '/projet/web/uploads/avatar/';
-    }
-  
-    
-    public function getAvatar()
-    {
+    public function getAvatar()    {
         
         return $this->avatar;
     }
 	
-	public function setAvatar($image)
-    {           
-        $dir = realpath(__DIR__ . './../Resources/uploadsAvatar');              
+	public function setAvatar($image)    
+    {             
+        $dir = realpath(__DIR__ . './../../../../web/uploads/avatar');         
         $filename = uniqid() . '.png';
         $imagine = new Imagine\Gd\Imagine();
         $image = $imagine->open($image);
         $image->thumbnail(new Imagine\Image\Box(240, $image->getSize()->getHeight()), Imagine\ImageInterface::THUMBNAIL_INSET)
             ->crop(new Imagine\Image\Point(0, 0), new Imagine\Image\Box(240, 198))
-            ->save($dir . '/' . $filename);        
-                    
-        $source = $dir . '\\' . $filename;
-        $dest = substr($source, 0, -69).'\web\uploads\avatar\\'.$filename;
-            
-        $s1 = str_replace ( '\\' , '/',$source);
-        $d1 = str_replace ( '\\' , '/',$dest);
-        if(copy($s1, $d1)){
-            $this->avatar = $filename;
-        }        
+            ->save($dir . '/' . $filename);                                    
+        $this->avatar = $filename;
+        
     }	
     
   
@@ -168,9 +154,7 @@ class UserRequest
         $this->setFirstName($xml[0]->firstname);
         $this->setSurName($xml[0]->surname);
         $this->setMail($xml[0]->mail);
-        $this->setPhone($xml[0]->phone);
-        // $imagePath = $xml[0]->avatar;    
-        // $this->setAvatar($imagePath);    
+        $this->setPhone($xml[0]->phone);      
     }
     
     public function editUser($id){

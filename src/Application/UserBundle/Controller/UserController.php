@@ -64,14 +64,23 @@ class UserController extends Controller{
         $id = substr($id, 1);        
         $userXML = $UserRequest->getUser($id);   
         
+        $validator = $this->container->get('validator');
+        
+        // die($validator->validate($UserRequest));
+           
+        
+        
         $UserRequest->setAttributes($userXML);        
         $form = UserForm::create($this->get('form.context'), 'User');
-        $form->bind($this->get('request'), $UserRequest);                    
+        $form->bind($this->get('request'), $UserRequest); 
+        
         if ($form->isValid()) {
            $UserRequest->editUser($id);
-           return $this->render('UserBundle:User:UserIndex.html.twig',
-           array('firstname'=>$UserRequest->getFirstName(), 'surname'=>$UserRequest->getSurName(),
-           'image'=>$UserRequest->getPath().$UserRequest->getAvatar()));
+           return $this->render('UserBundle:User:UserIndex.html.twig', array(
+                'firstname'=>$UserRequest->getFirstName(),
+                'surname'=>$UserRequest->getSurName(),
+                'image'=>$UserRequest->getAvatar()
+            ));
         }       
         return $this->render('UserBundle:User:Edit.html.twig', array('form' => $form));
     }
@@ -80,13 +89,12 @@ class UserController extends Controller{
     public function deconnexionAction(){
         $session = $this->get('request')->getSession(); 
         $session->remove('id');          
-        $LoginRequest = new LoginRequest();
-		$form = LoginForm::create($this->get('form.context'),'event');		
-		$form->bind($this->get('request'), $LoginRequest);		        
-        return $this->render('UserBundle:Login:Login.html.twig',array('form' => $form));     
+        return $this->forward('UserBundle:User:login');       
     }
     
-    
+    public function createGroupAction(){
+        
+    }
     
     
 }

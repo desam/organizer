@@ -1,0 +1,4 @@
+Application\UserBundle\Entity\UserRequest:
+    properties:
+        phone:
+            - Regex: /^\d{2}-\d{2}-\d{2}-\d{2}-\d{2}$/
