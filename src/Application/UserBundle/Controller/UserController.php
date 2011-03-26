@@ -24,15 +24,31 @@ class UserController extends Controller{
             if($LoginRequest->toLogin() == true){                   
                 $session = $this->get('request')->getSession();                
                 $session->set('id','_'.$LoginRequest->getUserId());                 
-                return $this->render('UserBundle:User:UserIndex.html.twig',
-                array('firstname'=>$LoginRequest->getFirstName(), 
-                'surname'=>$LoginRequest->getSurName(),
-                'image'=>$LoginRequest->getAvatar()));
+                return $this->forward('UserBundle:User:index');
+                // return $this->render('UserBundle:User:UserIndex.html.twig',
+                // array('firstname'=>$LoginRequest->getFirstName(), 
+                // 'surname'=>$LoginRequest->getSurName(),
+                // 'image'=>$LoginRequest->getAvatar()));
             }
-        }
-        
-         return $this->render('UserBundle:Login:Login.html.twig', array('form' => $form));        
+        }        
+        return $this->render('UserBundle:Login:Login.html.twig', array('form' => $form));        
     }
+    
+    
+    public function indexAction(){
+        $UserRequest = new UserRequest();     
+        $session = $this->get('request')->getSession();        
+        $id = $session->get('id');   
+        $id = substr($id, 1);
+        $userXML = $UserRequest->getUser($id);        
+        
+        return $this->render('UserBundle:User:UserIndex.html.twig',
+            array('firstname'=>$userXML[0]->firstname, 
+            'surname'=>$userXML[0]->surname,
+            'image'=>$userXML[0]->avatar));    
+        
+    }
+    
     
     public function addUserAction()
 	{                
@@ -40,12 +56,12 @@ class UserController extends Controller{
 		$form = UserForm::create($this->get('form.context'),'event');		
 		$form->bind($this->get('request'), $UserRequest);			
 		if ($form->isValid()) {				
-			$UserRequest->addUser();    
+			$UserRequest->addUser();                
             $form = LoginForm::create($this->get('form.context'),'login');		    
             return $this->render('UserBundle:Login:Login.html.twig',array('form' => $form));    
-		}else{
-            return $this->render('UserBundle:User:Add.html.twig',array('form' => $form));
-            
+		}
+        else{        
+            return $this->render('UserBundle:User:Add.html.twig',array('form' => $form));            
         }		
 		
 	}
@@ -83,11 +99,7 @@ class UserController extends Controller{
         $session = $this->get('request')->getSession(); 
         $session->remove('id');          
         return $this->forward('UserBundle:User:login');       
-    }
-    
-    public function createGroupAction(){
-        
-    }
+    } 
     
     
 }

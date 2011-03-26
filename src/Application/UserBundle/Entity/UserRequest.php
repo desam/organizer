@@ -133,6 +133,7 @@
         $xml = simplexml_load_string($result["XML"]);         
         return $xml;
     }
+    
 
     public function setAttributes($xml){
         $this->setLogin($xml[0]->login);      

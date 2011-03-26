@@ -3,16 +3,134 @@
 {% block title %}Calendar!{% endblock %}
 
 {% block body %}
-<h4 id="caltitle">From {{ from.format('Y-m-d, D') }} to {{ to.format('Y-m-d, D') }}</h4>
+<div id="logo">
+  <img src="{{ asset('uploads/groupavatar/') }}1.jpg" />
+</div>
+<h1 id="name">
+  Miage M1 Classique
+</h1>
+<div id="toolbox">
+    <span id="username">
+      Willy
+    </span>
+    <span id="options">
+      <a>
+        <img src="{{ asset('images/cog.png') }}" />
+      </a>
+    </span>
+</div>
+<div id="calsection">
+  <p>
+    <span id="caltitle">From {{ from.format('Y-m-d, D') }} to {{ to.format('Y-m-d, D') }}</span>
+    <span id="calcontrol">
+      <a id="prev" href=":D">&lt;--</a>
+      <a id="today" href="~~">Today</a>
+      <a id="next" href="ㅎㅎ">--&gt;</a>
+      <a id="week" href="¬¬">Week</a>
+      <a id="month" href="~~">Month</a>
+    </span>
+  </p>
 
-<p>
-    <a id="prev" href=":D">&lt;--</a>
-    <a id="today" href="~~">Today</a>
-    <a id="next" href="ㅎㅎ">--&gt;</a>
-    <a id="week" href="¬¬">Week</a>
-    <a id="month" href="~~">Month</a>
-</p>
+  <div id="token" style="display:none">
+    {{ token }}
+  </div>
 
-<div id="calendar">
+  <div id="calendar">
+  </div>
+</div>
+<div id="artsection">
+  <ul id="articles">
+      <li class="articles">
+        <a>The louder he talked of his honour, the f</a>
+        <p>
+          It's not the men in my life, but the life in my men that counts.
+		  -- Mae West...
+        </p>
+        <hr />
+      </li>
+      <li class="articles">
+        <a>Got a dictionary?  I want to know the mea</a>
+        <p>
+Judges, as a class, display, in the matter of arranging alimony, that
+reckless generosity which is found only in men who are giving away
+someone else's...
+          </p>
+        <hr />
+      </li>
+      <li class="articles">
+        <a>Actor:	"I'm a smash hit.  Why, yesterday </a>
+        <p>
+You can't get there from here....
+          </p>
+        <hr />
+      </li>
+      <li class="articles">
+        <a>If God wanted us to be brave, why did he </a>
+        <p>
+My favorite sandwich is peanut butter, baloney, cheddar cheese, lettuce
+and mayonnaise on toasted bread with catsup on the side.
+		-- Senator Hubert Hu...
+          </p>
+        <hr />
+        
+      </li>
+      <li class="articles">
+        <a>There is always someone worse off than yo</a>
+        <p>
+Fortune finishes the great quotations, #17
+
+	"This bud of love, by summer's ripening breath,
+	May prove a beauteous flower when next we meet."
+	Juliet,...
+          </p>
+        <hr />
+      </li>
+      <li class="articles">
+        <a>101 USES FOR A DEAD MICROPROCESSOR</a>
+        <p>
+We're mortal -- which is to say, we're ignorant, stupid, and sinful --
+but those are only handicaps.  Our pride is that nevertheless, now and
+then, we ...
+          </p>
+        <hr />
+	(1)  
+      </li>
+      <li class="articles">
+        <a>A crusader's wife slipped from the garris</a>
+        <p>
+LIBRA (Sep. 23 to Oct. 22)
+	Your desire for justice and truth will be overshadowed by your desire
+	for filthy lucre and a decent meal.  Be gracious and...
+          </p>
+        <hr />
+      </li>
+      <li class="articles">
+        <a>In the beginning was the Tao.  The Tao ga</a>
+        <p>
+The solution of problems is the most characteristic and peculiar sort
+of voluntary thinking.
+		-- William James...
+          </p>
+        <hr />
+      </li>
+      <li class="articles">
+        <a>A master programmer passed a novice progr</a>
+        <p>
+He thought of Musashi, the Sword Saint, standing in his garden more than
+three hundred years ago. "What is the 'Body of a rock'?" he was asked.
+In answ...
+          </p>
+        <hr />
+      </li>
+      <li class="articles">
+        <a>You never know what is enough until you k</a>
+        <p>
+VIRGO (Aug 23 - Sept 22)
+	You are the logical type and hate disorder.  This nitpicking is
+	sickening to your friends.  You are cold and unemotional and...
+          </p>
+        <hr />
+      </li>
+  </ul>
 </div>
 {% endblock %}

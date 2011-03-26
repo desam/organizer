@@ -15,7 +15,7 @@ class EventForm extends Form
     {
         $this->add(new TextField('title'));
 
-	//TODO regex ou DateTimeField !
+        //TODO regex ou DateTimeField !
         /* $this->add(new DateTimeField('from')); */
         /* $this->add(new DateTimeField('to')); */
         $this->add(new TextField('from'));
@@ -25,7 +25,7 @@ class EventForm extends Form
 
         $this->add(new TextField('refgrp'));
         $this->add(new TextField('id'));
-	//TODO
+        //TODO
         //choice field guest
         //choice field group?
     }

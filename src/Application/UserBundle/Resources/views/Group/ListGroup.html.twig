@@ -1,0 +1,27 @@
+{% extends 'UserBundle::layout.html.twig' %}
+
+{% block title %}Liste des groupes{% endblock %}
+
+{% block content %}
+<h1> Group Lists </h1>
+    
+    
+    
+    {% for group in form %}
+    </br>
+    Name: 
+    {{ group.name }}
+    </br>
+    Description :
+    {{ group.description }}    
+    </br>
+    {{group.attributes().id}}
+    </br>
+    <a href="{{ path('Editgroup')}}?gid={{group.attributes().id}}">Editer groupe</a></li>
+    </br>
+    <a href="{{ path('Deletegroup')}}?gid={{group.attributes().id}}">Supprimer groupe</a></li>
+    <hr/>
+    {% endfor %}   
+
+
+{% endblock %}

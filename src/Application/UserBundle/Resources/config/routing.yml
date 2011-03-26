@@ -17,3 +17,20 @@ Adduser:
 Edituser:
     pattern: /edituser
     defaults: { _controller: UserBundle:User:editUser }
+    
+Creategroup:
+    pattern: /creategroup
+    defaults: { _controller: UserBundle:Group:createGroup }
+
+Listgroup:    
+    pattern: /listgroup
+    defaults: { _controller: UserBundle:Group:listGroup }    
+    
+Editgroup:
+    pattern: /editgroup
+    defaults: { _controller: UserBundle:Group:editGroup }
+    
+Deletegroup:
+    pattern: /deletegroup
+    defaults: { _controller: UserBundle:Group:deleteGroup }
+    
