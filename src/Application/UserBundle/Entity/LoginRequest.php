@@ -66,11 +66,7 @@ class LoginRequest
         $this->surname = $sn;
     }
     
-    public function getPath(){
-        // $dir = realpath(__DIR__);
-        // return substr($dir, 0, -33).'web\uploads\avatar\\';
-        return '/projet/web/uploads/avatar/';
-    }
+    
     
     public function getAvatar(){
         return $this->avatar;

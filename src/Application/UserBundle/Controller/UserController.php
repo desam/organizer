@@ -1,13 +1,14 @@
 <?php
-
 namespace Application\UserBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Application\UserBundle\Entity\eXist;
-use Application\UserBundle\Entity\LoginRequest;
 use Application\UserBundle\Entity\LoginForm;
-use Application\UserBundle\Entity\UserRequest;
 use Application\UserBundle\Entity\UserForm;
+use Application\UserBundle\Entity\LoginRequest;
+
+use Application\UserBundle\Entity\UserRequest;
+
 
 
 
@@ -17,20 +18,20 @@ class UserController extends Controller{
     public function loginAction(){        
 		$LoginRequest = new LoginRequest();
 		$form = LoginForm::create($this->get('form.context'),'event');		
-		$form->bind($this->get('request'), $LoginRequest);	
-		if ($form->isValid()){				
+		$form->bind($this->get('request'), $LoginRequest);	        
+		if ($form->isValid()){		
             
-            if($LoginRequest->toLogin() == true){                               
+            if($LoginRequest->toLogin() == true){                   
                 $session = $this->get('request')->getSession();                
                 $session->set('id','_'.$LoginRequest->getUserId());                 
                 return $this->render('UserBundle:User:UserIndex.html.twig',
                 array('firstname'=>$LoginRequest->getFirstName(), 
                 'surname'=>$LoginRequest->getSurName(),
-                'image'=>$LoginRequest->getPath().$LoginRequest->getAvatar()));
+                'image'=>$LoginRequest->getAvatar()));
             }
         }
         
-        return $this->render('UserBundle:Login:Login.html.twig', array('form' => $form));        
+         return $this->render('UserBundle:Login:Login.html.twig', array('form' => $form));        
     }
     
     public function addUserAction()
@@ -52,23 +53,15 @@ class UserController extends Controller{
     public function editUserAction(){        
         
         $session = $this->get('request')->getSession();        
+        
         if($session->get('id') == null){
-            $LoginRequest = new LoginRequest();
-            $form = LoginForm::create($this->get('form.context'),'event');		
-            $form->bind($this->get('request'), $LoginRequest);				
-            return $this->render('UserBundle:Login:Login.html.twig',array('form' => $form));     
+           return $this->forward('UserBundle:User:login');       
         }               
         
         $UserRequest = new UserRequest();     
         $id = $session->get('id');   
         $id = substr($id, 1);        
-        $userXML = $UserRequest->getUser($id);   
-        
-        $validator = $this->container->get('validator');
-        
-        // die($validator->validate($UserRequest));
-           
-        
+        $userXML = $UserRequest->getUser($id);          
         
         $UserRequest->setAttributes($userXML);        
         $form = UserForm::create($this->get('form.context'), 'User');

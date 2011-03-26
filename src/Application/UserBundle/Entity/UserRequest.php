@@ -1,114 +1,100 @@
 <?php
-namespace Application\UserBundle\Entity;
+    namespace Application\UserBundle\Entity;
 
-use Imagine;
-use Symfony\Component\Finder\Finder;
+    use Imagine;
+    use Symfony\Component\Finder\Finder;
 
-class UserRequest
-{
-	/**
+    class UserRequest{
+    
+    /**
      * @validation:NotBlank
      */
     protected $login;
 
-	/**
+    /**
      * @validation:NotBlank
      */
     protected $pass;
-    
+
     /**
      * @validation:NotBlank
      */
     protected  $firstname;
-    
+
     /**
      * @validation:NotBlank
      */
     protected $surname;
-    
+
     /**
      * @validation:Email
      * @validation:NotBlank
      */
     protected $mail;
-    
+
     /**
      * @validation:NotBlank  
      * @validation:Regex("/^\d{2}-\d{2}-\d{2}-\d{2}-\d{2}$/")   
      */
     protected $phone;
-    
+
      
     protected $avatar;
-    
-    
-    public function setLogin($login)
-    {
+
+
+    public function setLogin($login){
         $this->login = $login;
     }
-	
-	public function setPass($pass)
-    {
+
+    public function setPass($pass){
         $this->pass = $pass;
     }
 
-    public function getLogin()
-    {
+    public function getLogin(){
         return $this->login;
     }
-	
-	public function getPass()
-    {
+
+    public function getPass(){
         return $this->pass;
     }
 
-    public function getFirstName()
-    {
+    public function getFirstName(){
         return $this->firstname;
     }
-	
-	public function setFirstName( $firstname)
-    {
+
+    public function setFirstName( $firstname){
         $this->firstname = $firstname;
     }  
-    
-    public function getSurName()
-    {
+
+    public function getSurName(){
         return $this->surname;
     }
-	
-	public function setSurName( $surname)
-    {
+
+    public function setSurName( $surname){
         $this->surname = $surname;
     }
-    
-    public function getMail()
-    {
+
+    public function getMail(){
         return $this->mail;
     }
-	
-	public function setMail( $mail)
-    {
+
+    public function setMail( $mail){
         $this->mail = $mail;
     }
-    
-    public function getPhone()
-    {
+
+    public function getPhone(){
         return $this->phone;
     }
-	
-	public function setPhone( $phone)
-    {
+
+    public function setPhone( $phone){
         $this->phone = $phone;
     }
-    
-    public function getAvatar()    {
-        
+
+    public function getAvatar(){        
         return $this->avatar;
     }
-	
-	public function setAvatar($image)    
-    {             
+
+    public function setAvatar($image){             
         $dir = realpath(__DIR__ . './../../../../web/uploads/avatar');         
         $filename = uniqid() . '.png';
         $imagine = new Imagine\Gd\Imagine();
@@ -116,11 +102,10 @@ class UserRequest
         $image->thumbnail(new Imagine\Image\Box(240, $image->getSize()->getHeight()), Imagine\ImageInterface::THUMBNAIL_INSET)
             ->crop(new Imagine\Image\Point(0, 0), new Imagine\Image\Box(240, 198))
             ->save($dir . '/' . $filename);                                    
-        $this->avatar = $filename;
-        
+        $this->avatar = $filename;        
     }	
-    
-  
+
+
     public function addUser(){        
         $db = new eXist();	
         $db->connect() or die ($db->getError());	        
@@ -136,10 +121,10 @@ class UserRequest
             </user>
             into document("/db/orga/users.xml")//users ';
         $result = $db->xquery($query) or 
-	    (preg_match('/No data found/', $db->getError()) or
-	     die($db->getError()));           
+        (preg_match('/No data found/', $db->getError()) or
+         die($db->getError()));           
     }
-    
+
     public function getUser($id){
         $db = new eXist();	
         $db->connect() or die ($db->getError());	
@@ -148,7 +133,7 @@ class UserRequest
         $xml = simplexml_load_string($result["XML"]);         
         return $xml;
     }
-    
+
     public function setAttributes($xml){
         $this->setLogin($xml[0]->login);      
         $this->setFirstName($xml[0]->firstname);
@@ -156,7 +141,7 @@ class UserRequest
         $this->setMail($xml[0]->mail);
         $this->setPhone($xml[0]->phone);      
     }
-    
+
     public function editUser($id){
         $db = new eXist();	
         $db->connect() or die ($db->getError());        
@@ -171,9 +156,10 @@ class UserRequest
                 <avatar>'.$this->getAvatar().'</avatar>
             </user>';
         $result = $db->xquery($query) or
-	    (preg_match('/No data found/', $db->getError()) or
-	     die($db->getError()));    
+        (preg_match('/No data found/', $db->getError()) or
+         die($db->getError()));    
     }
     
+
 }
 ?>

@@ -19,3 +19,4 @@ class GroupRequest
     public $emails = array();
     
     
+ }   
