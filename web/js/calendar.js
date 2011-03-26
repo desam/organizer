@@ -34,7 +34,7 @@
       }
       caldiv.html(cal);
       first = $('#first_calumn');
-      return caldiv.find('.calumn').width(Math.floor((caldiv.outerWidth() - first.outerWidth() - this.days) / this.days)).droppable({
+      return caldiv.find('.calumn').width(Math.floor((caldiv.outerWidth() - first.outerWidth() - this.days - 1) / this.days)).droppable({
         drop: function(event, obj) {
           return self.updateMovedEvent(obj, this);
         }

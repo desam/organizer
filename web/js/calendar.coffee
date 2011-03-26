@@ -44,7 +44,7 @@ Calendarw = ->
     # TODO use relative measures (% instead of px)
     # resizing columns
     caldiv.find('.calumn')
-      .width(Math.floor((caldiv.outerWidth() - first.outerWidth() - @days) / @days))
+      .width(Math.floor((caldiv.outerWidth() - first.outerWidth() - @days - 1) / @days))
       .droppable({
         drop: (event, obj) ->
           self.updateMovedEvent(obj, this)
