@@ -1,31 +1,88 @@
 (function() {
-  var Calendarm, Calendarw, currentDate, currentGroup;
+  var Calendarm, Calendarw, caldiv, currentDate, currentGroup, token, url;
   if (!currentDate) {
     currentDate = new Date();
   }
   if (!currentGroup) {
     currentGroup = 'G1';
   }
+  caldiv = $('#calendar');
+  token = $('#token').text().trim();
+  url = window.location.pathname.slice(0, window.location.pathname.lastIndexOf('/') + 1);
   Calendarw = function() {
     var self;
     self = this;
     this.days = 7;
+    this.draw = function() {
+      var cal, d, days, first, i, timeslots, _ref;
+      days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+      timeslots = "";
+      for (i = 0; i <= 47; i++) {
+        timeslots += "<li class=\"row\"></li>";
+      }
+      cal = "";
+      cal += "<div id=\"first_calumn\" class=\"calumn\">        <h5>" + (currentDate.getFullYear()) + "</h5>        <ul>";
+      for (i = 0; i <= 23; i++) {
+        cal += "<li class=\"row\">" + i + ":00</li>";
+        cal += "<li class=\"row\"></li>";
+      }
+      cal += '</ul></div>';
+      for (i = 0, _ref = this.days - 1; (0 <= _ref ? i <= _ref : i >= _ref); (0 <= _ref ? i += 1 : i -= 1)) {
+        d = new Date(currentDate);
+        d.setDate(d.getDate() + i);
+        cal += "<div class=\"calumn\" data-date=\"" + (d.nice()) + "\">              <h5>" + days[d.getDay()] + " " + (d.getDate()) + "</h5>              <ul>" + timeslots + "</ul>              </div>";
+      }
+      caldiv.html(cal);
+      first = $('#first_calumn');
+      return caldiv.find('.calumn').width(Math.floor((caldiv.outerWidth() - first.outerWidth() - this.days) / this.days)).droppable({
+        drop: function(event, obj) {
+          return self.updateMovedEvent(obj, this);
+        }
+      });
+    };
     this.distributeEvents = function(data) {
-      var daydiv, divs, event, hour, index, markup, _i, _len, _results;
+      var daydiv, divs, ebpadding, event, eventbox, eventboxSpan, hour, index, li, markup, newheight, newwidth, tohour, ul, _i, _len;
       divs = $('#calendar > div').not('#first_calumn');
-      markup = '<strong>${title}</strong><br />\
+      markup = '<div class="eventbox" data-id="${id}"><strong>${title}</strong><br />\
         <span class="info">\
-                at ${from.split(" ")[1]}\
+                from ${from.split(" ")[1]} to ${to.split(" ")[1]}\
                 in ${location}\
-        </span>';
+        </span></div>';
       $.template("event", markup);
-      _results = [];
       for (_i = 0, _len = data.length; _i < _len; _i++) {
         event = data[_i];
         daydiv = self.bi(event, divs);
-        _results.push(daydiv != null ? (hour = event.from.split(" ")[1].split(":"), index = hour[0] * 2, hour[1] !== '00' ? index += 1 : void 0, $.tmpl("event", event).appendTo(daydiv.find('ul').children()[index])) : void 0);
+        if (daydiv != null) {
+          hour = event.from.split(" ")[1].split(":");
+          index = hour[0] * 2;
+          if (hour[1] !== '00') {
+            index += 1;
+          }
+          tohour = event.to.split(" ")[1].split(":");
+          eventbox = $($.tmpl("event", event));
+          ul = daydiv.find('ul');
+          li = $(ul.children()[index]);
+          eventbox.insertBefore(ul);
+          eventboxSpan = ((tohour[0] - hour[0]) * 60 + parseInt(tohour[1]) - hour[1]) / 30;
+          ebpadding = parseInt(eventbox.css('padding-top')) + parseInt(eventbox.css('padding-bottom'));
+          newheight = eventboxSpan * (li.outerHeight() + parseInt(li.css('margin-bottom'))) - ebpadding;
+          eventbox.height(newheight);
+          newwidth = li.outerWidth() - (eventbox.outerWidth() - eventbox.width());
+          eventbox.width(newwidth - 10);
+          eventbox.offset({
+            top: li.offset().top
+          });
+        }
       }
-      return _results;
+      return $('.eventbox').draggable({
+        grid: [divs.outerWidth(), caldiv.find('li.row').outerHeight()]
+      }).resizable({
+        handles: 'n,s',
+        grid: [divs.outerWidth(), caldiv.find('li.row').outerHeight()],
+        stop: function(event, ui) {
+          return self.updateResizedEvent(ui);
+        }
+      });
     };
     this.bi = function(event, divs) {
       var edate, elem, max, mid, min, value;
@@ -61,7 +118,6 @@
       return self.refresh();
     };
     this.refresh = function() {
-      self = this;
       self.refreshTitle();
       self.draw();
       return self.refreshEvents();
@@ -70,7 +126,7 @@
       if (range == null) {
         range = 7;
       }
-      return $.getJSON('calendar', {
+      return $.getJSON(url + 'calendar', {
         "from": currentDate.nice(),
         "range": range,
         "group": currentGroup
@@ -88,38 +144,57 @@
       pattern = /to \d{4}-\d{2}-\d{2}/;
       return t.innerHTML = t.innerHTML.replace(pattern, "to " + (to.nice()));
     };
-    this.draw = function() {
-      var cal, calDiv, d, days, first, i, timeslots, _ref;
-      days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-      timeslots = "";
-      for (i = 1; i <= 24; i++) {
-        timeslots += '<li class="row"></li><li class="row"></li>';
-      }
-      cal = "";
-      cal += "<div id=\"first_calumn\" class=\"calumn\">        <h5>" + (currentDate.getFullYear()) + "</h5>        <ul>";
-      for (i = 0; i <= 23; i++) {
-        cal += "<li class=\"row\">" + i + ":00</li>";
-        cal += "<li class=\"row\">" + i + ":30</li>";
-      }
-      cal += '</ul></div>';
-      for (i = 0, _ref = this.days - 1; (0 <= _ref ? i <= _ref : i >= _ref); (0 <= _ref ? i += 1 : i -= 1)) {
-        d = new Date(currentDate);
-        d.setDate(d.getDate() + i);
-        cal += "<div class=\"calumn\" data-date=\"" + (d.nice()) + "\">              <h5>" + days[d.getDay()] + " " + (d.getDate()) + "</h5>              <ul>" + timeslots + "</ul>              </div>";
-      }
-      calDiv = $('#calendar');
-      calDiv.html(cal);
-      first = $('#first_calumn');
-      return calDiv.find('.calumn').width((calDiv.outerWidth() - first.outerWidth() - this.days) / this.days);
+    this.updateMovedEvent = function(obj) {
+      var dates, event;
+      event = obj.draggable.tmplItem();
+      dates = self.getEventboxDate(obj);
+      event.data.from = dates.newfrom;
+      event.data.to = dates.newto;
+      event.data.refgrp = currentGroup;
+      event.data._token = token;
+      return $.post(url + ("/calendar/update/" + event.data.id), {
+        event: event.data
+      });
+    };
+    this.updateResizedEvent = function(obj) {
+      var dates, event;
+      event = obj.helper.tmplItem();
+      dates = self.getEventboxDate(obj);
+      event.data.from = dates.newfrom;
+      event.data.to = dates.newto;
+      event.data.refgrp = currentGroup;
+      event.data._token = token;
+      return $.post(url + ("/calendar/update/" + event.data.id), {
+        event: event.data
+      });
+    };
+    this.getEventboxDate = function(obj) {
+      var firstday, hoffset, hour, newdate, newfrom, newto, voffset;
+      firstday = caldiv.find('.calumn').not('#first_calumn').first();
+      hoffset = Math.floor((obj.position.left - firstday.offset().left) / firstday.width());
+      newdate = firstday.nextAll().andSelf().eq(hoffset).data('date');
+      voffset = Math.floor(obj.position.top - caldiv.find('ul').offset().top) / 25;
+      hour = Math.floor(voffset / 2) % 24;
+      hour = hour < 10 ? '0' + hour : hour;
+      newfrom = "" + newdate + " " + hour + ":" + (Math.floor(voffset) % 2 ? '30' : '00');
+      voffset += Math.floor(obj.helper.outerHeight() / 25);
+      hour = Math.floor(voffset / 2) % 24;
+      hour = hour < 10 ? '0' + hour : hour;
+      newto = "" + newdate + " " + hour + ":" + (Math.floor(voffset) % 2 ? '30' : '00');
+      return {
+        newto: newto,
+        newfrom: newfrom
+      };
     };
     return false;
   };
   Calendarm = function() {
+    var self;
     this.columns = 7;
     this.rows = 5;
+    self = this;
     this.distributeEvents = function(data) {
-      var daydiv, divs, event, self, _i, _len, _results;
-      self = this;
+      var daydiv, divs, event, _i, _len, _results;
       divs = $('#calendar .daybox');
       _results = [];
       for (_i = 0, _len = data.length; _i < _len; _i++) {
@@ -130,7 +205,7 @@
       return _results;
     };
     this.draw = function() {
-      var boxheight, boxwidth, cal, calDiv, d, days, i, _ref, _ref2;
+      var boxheight, boxwidth, cal, d, days, i, _ref, _ref2;
       days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
       cal = "";
       for (i = 0, _ref = this.columns - 1; (0 <= _ref ? i <= _ref : i >= _ref); (0 <= _ref ? i += 1 : i -= 1)) {
@@ -143,26 +218,21 @@
         cal += "          <div class=\"daybox\" data-date=\"" + (d.nice()) + "\">          <span class=\"dayofmonth\">" + (d.getDate()) + "</span>          <ul></ul>          </div>";
       }
       cal += '</div>';
-      calDiv = $('#calendar');
-      calDiv.html(cal);
-      boxwidth = (calDiv.outerWidth() - this.columns) / this.columns;
-      boxheight = (calDiv.outerHeight() - this.rows) / this.rows;
-      calDiv.find('.dayofweek').width(boxwidth);
-      calDiv.find('.daybox').width(boxwidth);
-      return calDiv.find('.daybox').height(boxheight);
+      caldiv.html(cal);
+      boxwidth = (caldiv.outerWidth() - this.columns) / this.columns;
+      boxheight = (caldiv.outerHeight() - this.rows) / this.rows;
+      caldiv.find('.dayofweek').width(boxwidth);
+      caldiv.find('.daybox').width(boxwidth);
+      return caldiv.find('.daybox').height(boxheight);
     };
     this.refreshEvents = function(range) {
       return Calendarm.prototype.refreshEvents(35);
     };
     this.prevRange = function() {
-      var self;
-      self = this;
       currentDate.setDate(currentDate.getDate() - this.columns * this.rows);
       return self.refresh();
     };
     this.nextRange = function() {
-      var self;
-      self = this;
       currentDate.setDate(currentDate.getDate() + this.columns * this.rows);
       return self.refresh();
     };

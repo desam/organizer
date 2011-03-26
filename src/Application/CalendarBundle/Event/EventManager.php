@@ -15,17 +15,17 @@ class EventManager
 {
     static public function getByGroupAndDate($group, $start, $end)
     {
-	$db = new eXist();
-	$db->connect() or die($db->getError());
+        $db = new eXist();
+        $db->connect() or die($db->getError());
 
-	$query = '
+        $query = '
             <results>
-            { 
+            {
                 for $e in document("orga/events.xml")//event[
                     @refgrp = "'. $group .'"
                     and from >= "'. $start .'"
                     and to <= "'. $end .'"]
-                return 
+                return
                 <event>
                     {$e/@*}
                     <title>{replace($e/title, \'"\', \'\\\"\')}</title>
@@ -36,139 +36,139 @@ class EventManager
             }
             </results>
         ';
-            
-	$result = $db->xquery($query) or die($db->getError());
-	// $db->disconnect() or die($db->getError());
 
-	return $result['XML'];
+        $result = $db->xquery($query) or die($db->getError());
+        // $db->disconnect() or die($db->getError());
+
+        return $result['XML'];
     }
 
     static public function getByID($id)
     {
-	$db = new eXist();
-	$db->connect() or die($db->getError());
+        $db = new eXist();
+        $db->connect() or die($db->getError());
 
-	$query = '
+        $query = '
             <results>
-            { 
+            {
                 for $e in document("orga/events.xml")//event[@id = '. $id .']
                 return $e
             }
             </results>
         ';
-            
-	$result = $db->xquery($query) or die($db->getError());
-	// $db->disconnect() or die($db->getError());
 
-	return $result['XML'];
+        $result = $db->xquery($query) or die($db->getError());
+        // $db->disconnect() or die($db->getError());
+
+        return $result['XML'];
     }
-    
+
     static public function insert($event)
     {
-	$db = new eXist();
-	$db->connect() or die($db->getError());
+        $db = new eXist();
+        $db->connect() or die($db->getError());
 
-	$query = '
+        $query = '
             update insert '. $event .'
             into document("orga/events.xml")/events
             ';
 
-	$result = $db->xquery($query) or die($db->getError());
-	$db->disconnect() or die($db->getError());
+        $result = $db->xquery($query) or die($db->getError());
+        $db->disconnect() or die($db->getError());
 
-	return $result['XML'];
+        return $result['XML'];
     }
 
     static public function deleteByID($id)
     {
-	$db = new eXist();
-	$db->connect() or die($db->getError());
+        $db = new eXist();
+        $db->connect() or die($db->getError());
 
-	$query = '
+        $query = '
             update delete document("orga/events.xml")//event[@id = "'. $id .'"]
             ';
 
-	$result = $db->xquery($query) or
-	    (preg_match('/No data found/', $db->getError()) or
-	     die($db->getError()));
-	/* $db->disconnect() or die($db->getError()); */
+        $result = $db->xquery($query) or
+            (preg_match('/No data found/', $db->getError()) or
+             die($db->getError()));
+        /* $db->disconnect() or die($db->getError()); */
 
-	return $result['XML'];
+        return $result['XML'];
     }
 
     static public function updateByID($id, $new)
     {
-	$db = new eXist();
-	$db->connect() or die($db->getError());
+        $db = new eXist();
+        $db->connect() or die($db->getError());
 
-	$query = '
+        $query = '
             update replace document("orga/events.xml")//event[@id = "'. $id .'"]
             with '. $new .'
             ';
 
-	$result = $db->xquery($query) or
-	    (preg_match('/No data found/', $db->getError()) or
-	     die($db->getError()));
+        $result = $db->xquery($query) or
+            (preg_match('/No data found/', $db->getError()) or
+             die($db->getError()));
 
-	/* $db->disconnect() or die($db->getError()); */
+        /* $db->disconnect() or die($db->getError()); */
 
-	return $result['XML'];
+        return $result['XML'];
     }
 
     static public function toJSON($data)
     {
-	//loading XML docs
-	$xml = simplexml_load_string($data);
-	$xsl = simplexml_load_file(dirname(__FILE__).
-				   '/../Resources/views/xsl/calendar.xsl');
+        //loading XML docs
+        $xml = simplexml_load_string($data);
+        $xsl = simplexml_load_file(dirname(__FILE__).
+                                   '/../Resources/views/xsl/calendar.xsl');
 
-	//transforming
-	$processor = new \XSLTProcessor();
-	$processor->importStyleSheet($xsl);
+        //transforming
+        $processor = new \XSLTProcessor();
+        $processor->importStyleSheet($xsl);
 
-	return $processor->transformToXML($xml);
+        return $processor->transformToXML($xml);
     }
 
     //TODO make it recursive ?
     //FIXME second parameter defines the attributes to look for ?
     static public function hash2xml($hash)
     {
-	$children = '';
-	$attributes = '';
+        $children = '';
+        $attributes = '';
 
-	//building attributes and children
-	foreach ($hash as $k => $v) {
-	    if (!isset($v)) continue;
+        //building attributes and children
+        foreach ($hash as $k => $v) {
+            if (!isset($v)) continue;
 
-	    if ($k === 'id' or $k === 'refgrp')
-		$attributes .= "$k=\"$v\" ";
-	    else
-		$children .= "\n  <$k>$v</$k>";
-	}
+            if ($k === 'id' or $k === 'refgrp')
+                $attributes .= "$k=\"$v\" ";
+            else
+                $children .= "\n  <$k>$v</$k>";
+        }
 
-	$xml  = "<event $attributes>";
-	$xml .= $children . "\n";
-	$xml .= '</event>';
+        $xml  = "<event $attributes>";
+        $xml .= $children . "\n";
+        $xml .= '</event>';
 
-	return $xml;
+        return $xml;
     }
 
     //TODO make it recursive ?
     static public function xml2hash($xml)
     {
-	$event = simplexml_load_string($xml)->event[0];
+        $event = simplexml_load_string($xml)->event[0];
 
-	$hash = array();
-	if (!isset($event)) return $hash;
-	
-	foreach($event->attributes() as $k => $v) {
-	    $hash[$k] = (string)$v;
-	}
+        $hash = array();
+        if (!isset($event)) return $hash;
 
-	foreach($event->children() as $k => $v) {
-	    $hash[$k] = (string)$v;
-	}
+        foreach($event->attributes() as $k => $v) {
+            $hash[$k] = (string)$v;
+        }
 
-	return $hash;
+        foreach($event->children() as $k => $v) {
+            $hash[$k] = (string)$v;
+        }
+
+        return $hash;
     }
 }

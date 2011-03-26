@@ -3,16 +3,34 @@
 {% block title %}Calendar!{% endblock %}
 
 {% block body %}
-<h4 id="caltitle">From {{ from.format('Y-m-d, D') }} to {{ to.format('Y-m-d, D') }}</h4>
+<div id="logo">
+  <img src="{{ asset('web/uploads/groupavatar') }}1.png" />
+</div>
+<div id="name">
+</div>
+<div id="toolbox">
+    <div>
+    </div>
+    <div>
+    </div>
+</div>
+<div id="calsection">
+  <p>
+    <span id="caltitle">From {{ from.format('Y-m-d, D') }} to {{ to.format('Y-m-d, D') }}</span>
+    <span id="calcontrol">
+      <a id="prev" href=":D">&lt;--</a>
+      <a id="today" href="~~">Today</a>
+      <a id="next" href="ㅎㅎ">--&gt;</a>
+      <a id="week" href="¬¬">Week</a>
+      <a id="month" href="~~">Month</a>
+    </span>
+  </p>
 
-<p>
-    <a id="prev" href=":D">&lt;--</a>
-    <a id="today" href="~~">Today</a>
-    <a id="next" href="ㅎㅎ">--&gt;</a>
-    <a id="week" href="¬¬">Week</a>
-    <a id="month" href="~~">Month</a>
-</p>
+  <div id="token" style="display:none">
+    {{ token }}
+  </div>
 
-<div id="calendar">
+  <div id="calendar">
+  </div>
 </div>
 {% endblock %}

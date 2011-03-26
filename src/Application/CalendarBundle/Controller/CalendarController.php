@@ -7,6 +7,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Application\CalendarBundle\Event\EventManager;
 use Application\CalendarBundle\Event\EventForm;
 use Application\CalendarBundle\Event\EventRequest;
+use Symfony\Component\Form\CsrfProvider\SessionCsrfProvider;
 
 class CalendarController extends Controller
 {
@@ -32,11 +33,17 @@ class CalendarController extends Controller
             return $response;
         }
 
+        $form = EventForm::create($this->get('form.context'), 'event');
+        $token = $form->get($form->getCsrfFieldName())->getDisplayedData();
+        /* $provider = new SessionCsrfProvider($this->get('session'), 'xpathrocks'); */
+        /* $token = $provider->generateCsrfToken('Application\CalendarBundle\Event\EventForm'); */
+
         return $this->render('CalendarBundle:Calendar:index.twig.html',
-            array(
-                'from' => $from,
-                'to' => $to,
-            ));
+                             array(
+                                   'from' => $from,
+                                   'to' => $to,
+                                   'token' => $token,
+                                   ));
     }
 
     public function addAction()
@@ -48,26 +55,26 @@ class CalendarController extends Controller
             $form->bind($this->get('request'), $eventRequest);
 
             if($form->isValid()) {
-		$event = EventManager::hash2xml($eventRequest->toHash());
+                $event = EventManager::hash2xml($eventRequest->toHash());
 
-		EventManager::insert($event);
+                EventManager::insert($event);
                 return $this->redirect('/');
             }
         }
 
         return $this->render('CalendarBundle:Calendar:newevent.twig.html',
-            array(
-                'form' => $form
-            ));
+                             array(
+                                   'form' => $form
+                                   ));
     }
 
     public function deleteAction($id)
     {
         EventManager::deleteByID($id);
         return $this->forward('CalendarBundle:Calendar:index',
-            array(
-                'removed' => $id
-            ));
+                              array(
+                                    'removed' => $id
+                                    ));
     }
 
     //TODO check permissions
@@ -80,22 +87,22 @@ class CalendarController extends Controller
             $form->bind($this->get('request'), $eventRequest);
 
             if($form->isValid()) {
-		$event = EventManager::hash2xml($eventRequest->toHash());
+                $event = EventManager::hash2xml($eventRequest->toHash());
 
-		EventManager::updateByID($id, $event);
+                EventManager::updateByID($id, $event);
                 return $this->redirect('/');
             }
         } else { //GET
-	    $e = EventManager::getByID($id);
-	    $hash = EventManager::xml2hash($e);
+            $e = EventManager::getByID($id);
+            $hash = EventManager::xml2hash($e);
 
-	    $r = EventRequest::fromHash($hash);
-	    $form->bind($this->get('request'), $r);
-	}
+            $r = EventRequest::fromHash($hash);
+            $form->bind($this->get('request'), $r);
+        }
 
         return $this->render('CalendarBundle:Calendar:newevent.twig.html',
-            array(
-                'form' => $form
-            ));
+                             array(
+                                   'form' => $form
+                                   ));
     }
 }

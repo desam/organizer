@@ -1,7 +1,36 @@
 ul, li {
     padding: 0px;
 }
+/*
+ _                         _   
+| | __ _ _   _  ___  _   _| |_ 
+| |/ _` | | | |/ _ \| | | | __|
+| | (_| | |_| | (_) | |_| | |_ 
+|_|\__,_|\__, |\___/ \__,_|\__|
+         |___/                 
+*/
+#logo {
+    height: 100px;
+    width:100px;
+}
 
+#name {
+    height: 100px;
+}
+
+#toolbox {
+    float: right;
+    height: 50px;
+}
+
+/*
+           _                _            
+  ___ __ _| | ___ _ __   __| | __ _ _ __ 
+ / __/ _` | |/ _ \ '_ \ / _` |/ _` | '__|
+| (_| (_| | |  __/ | | | (_| | (_| | |   
+ \___\__,_|_|\___|_| |_|\__,_|\__,_|_|   
+ */
+                                         
 #next, #prev {
     color: inherit;
     font-style: normal;
@@ -9,14 +38,33 @@ ul, li {
     text-decoration: none;
 }
 
-#calendar {
+#calsection {
     font-family: "arial", "sans serif";
     text-align: center;
     height: 800px;
-    width: 100%;
+    width: 80%;
+}
+
+#calsection > p {
+    text-align: left;
+}
+
+#caltitle {
+}
+
+#calcontrol {
+    float: right;
 }
 
 /* Week Calendar - wecal */
+#calendar .eventbox {
+    background: pink;
+    border: 1px solid red;
+    border-radius: 4px 4px 4px 4px;
+    font-size: 0.85em;
+    padding: 5px;
+    position: absolute;
+}
 #calendar .calumn {
     border-right: 1px black solid;
     border-top: 1px black solid;
@@ -32,13 +80,19 @@ ul, li {
 #calendar ul {
     border-top: 1px black solid;
     margin-top: 0px;
-    padding-top: 10px;
 }
 
-#calendar div.calumn li.row {
+#calendar li.row {
     display: block;
-    font-size: 0.9em;
-    height: 25px;
+    font-size: 0.7em;
+    height: 20px;
+    padding-top: 5px;
+    word-wrap: break-word;
+}
+
+#calendar li.row:nth-child(even) {
+    border-bottom: 1px solid lightgrey;
+    margin-bottom: -1px;
 }
 
 #calendar .info {
@@ -52,16 +106,38 @@ ul, li {
 
 /* Month Calendar - mocal */
 #calendar .dayofweek {
-	float: left;
+    float: left;
 }
 
 #calendar .daybox {
-	border-right: 1px solid black;
-	border-bottom: 1px solid black;
-	float: left;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    float: left;
+    font-size: 0.8em;
 }
 
 #calendar .daybox li {
-	display: block;
-	height: 10px;
+    display: block;
+    font-size: 0.9em;
+    height: 10px;
 }
+
+/* jQuery UI Resizable 1.8.11
+*
+* Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+* Dual licensed under the MIT or GPL Version 2 licenses.
+* http://jquery.org/license
+*
+* http://docs.jquery.com/UI/Resizable#theming
+*/
+.ui-resizable { position: relative;}
+.ui-resizable-handle { position: absolute;font-size: 0.1px;z-index: 99999; display: block;}
+.ui-resizable-disabled .ui-resizable-handle, .ui-resizable-autohide .ui-resizable-handle { display: none; }
+.ui-resizable-n { cursor: n-resize; height: 7px; width: 100%; top: -5px; left: 0; }
+.ui-resizable-s { cursor: s-resize; height: 7px; width: 100%; bottom: -5px; left: 0; }
+.ui-resizable-e { cursor: e-resize; width: 7px; right: -5px; top: 0; height: 100%; }
+.ui-resizable-w { cursor: w-resize; width: 7px; left: -5px; top: 0; height: 100%; }
+.ui-resizable-se { cursor: se-resize; width: 12px; height: 12px; right: 1px; bottom: 1px; }
+.ui-resizable-sw { cursor: sw-resize; width: 9px; height: 9px; left: -5px; bottom: -5px; }
+.ui-resizable-nw { cursor: nw-resize; width: 9px; height: 9px; left: -5px; top: -5px; }
+.ui-resizable-ne { cursor: ne-resize; width: 9px; height: 9px; right: -5px; top: -5px;}
