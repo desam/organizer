@@ -2,7 +2,7 @@
     namespace Application\UserBundle\Entity;
 
     use Imagine;
-    use Symfony\Component\Finder\Finder;
+    
 
     class UserRequest{
     

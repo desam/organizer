@@ -28,11 +28,12 @@ twig.config:
 #    mappings:
 #        HelloBundle: ~
 
-## Swiftmailer Configuration
-#swiftmailer.config:
-#    transport:  smtp
-#    encryption: ssl
-#    auth_mode:  login
-#    host:       smtp.gmail.com
-#    username:   xxxxxxxx
-#    password:   xxxxxxxx
+# Swiftmailer Configuration
+swiftmailer.config:
+   transport:  gmail
+   encryption: ssl
+   auth_mode:  login
+   host:       smtp.gmail.com
+   port:       25        
+   username:   miageorganizer@gmail.com
+   password:   miagec1408

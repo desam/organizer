@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT news (news_tuple*)>
+<!ATTLIST news_tuple id ID #REQUIRED>
+<!ATTLIST news_tuple email CDATA #REQUIRED>
+<!ATTLIST news_tuple idref ID #REQUIRED>

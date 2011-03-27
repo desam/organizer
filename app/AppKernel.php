@@ -24,6 +24,7 @@ class AppKernel extends Kernel
             new Application\HelloBundle\HelloBundle(),
             new Application\CalendarBundle\CalendarBundle(),
 			new Application\UserBundle\UserBundle(),
+            new Application\NewsLetterBundle\NewsLetterBundle(),
         );
 
         if ($this->isDebug()) {

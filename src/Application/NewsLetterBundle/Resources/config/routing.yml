@@ -1,0 +1,13 @@
+Addsender:
+    pattern: /addsender
+    defaults: { _controller:NewsLetterBundle:News:addsender }
+
+Deletesender:
+    pattern: /deletesender
+    defaults: { _controller:NewsLetterBundle:News:deletesender } 
+
+sendNews:
+    pattern: /sendnews
+    defaults: { _controller:NewsLetterBundle:News:sendnews } 
+    
+

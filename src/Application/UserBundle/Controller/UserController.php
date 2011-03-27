@@ -3,10 +3,14 @@ namespace Application\UserBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Application\UserBundle\Entity\eXist;
+
 use Application\UserBundle\Entity\LoginForm;
-use Application\UserBundle\Entity\UserForm;
 use Application\UserBundle\Entity\LoginRequest;
 
+use Application\UserBundle\Entity\NewsForm;
+use Application\UserBundle\Entity\NewsRequest;
+
+use Application\UserBundle\Entity\UserForm;
 use Application\UserBundle\Entity\UserRequest;
 
 
@@ -100,6 +104,9 @@ class UserController extends Controller{
         $session->remove('id');          
         return $this->forward('UserBundle:User:login');       
     } 
+    
+    
+    
     
     
 }

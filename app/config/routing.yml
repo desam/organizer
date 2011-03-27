@@ -11,3 +11,6 @@ calendar:
 
 User:
     resource: @UserBundle/Resources/config/routing.yml	
+
+News:
+    resource: @NewsLetterBundle/Resources/config/routing.yml	
