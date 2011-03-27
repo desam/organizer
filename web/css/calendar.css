@@ -1,6 +1,13 @@
 ul, li {
+    list-style: none outside none;
+    margin: 0px;
     padding: 0px;
 }
+
+a {
+    text-decoration: none;
+}
+
 /*
  _                         _   
 | | __ _ _   _  ___  _   _| |_ 
@@ -9,31 +16,42 @@ ul, li {
 |_|\__,_|\__, |\___/ \__,_|\__|
          |___/                 
 */
-#logo > img{
-    border: 3px solid black;
-    height: 150px;
-    position: absolute;
-    top: 0px;
-    width:150px;
+body {
+    background: url('../images/bgpink.png') repeat-x;
 }
 
-#name {
-    font-family: helvetica;
-    font-size: 4em;
-    font-variant: small-caps;
-    height: 150px;
-    margin-left: 200px;
+#organizer {
+    background: url('../images/organizer.png') no-repeat;
+    display: block;
+    left: 10px;
     position: absolute;
-    text-shadow: 1px 2px 1px lightgrey;
+    top: 5px;
+    width: 447px;
+    height: 97px;
+}
+
+#groupname {
+    color: #005689;
+    font-family: helvetica;
+    font-size: 2.5em;
+    height: 70px;
+    left: 10px;
+    letter-spacing: 0.02em;
+    margin-top: 0;
+    position: absolute;
     text-transform: lowercase;
-    top: 0;
+    top: 120px; /* just under #organizer */
 }
 
 #toolbox {
-    border: 1px solid;
+    background: none repeat scroll 0 0 white;
+    border: 2px solid pink;
+    border-radius: 0 0 0 10px;
+    max-width: 25%;
+    padding: 5px 0 5px 10px;
     position: fixed;
-    right: 0px;
-    top: 0px;
+    right: 0;
+    top: 0;
 }
                                          
 #calsection {
@@ -58,25 +76,50 @@ ul, li {
                                   
 */
 #username {
-    display: block;
-    float: left;
+    float: right;
     font-family: helvetica;
     font-size: 3em;
     font-weight: bold;
     height: 70px;
     letter-spacing: 0.02em;
     line-height: 70px;
+    overflow: hidden;
     position: relative;
     text-transform: lowercase;
 }
 
 #options {
-    
+    display: block;
+    float: right;
+    height: 70px;
+    margin: 0;
+    width: 70px;
+    background: url('../images/cog70.png') no-repeat top left;
 }
 
-#options img {
-    height: 70px;
-    width: 70px;
+#options:hover {
+    background: url('../images/cog_hover70.png') no-repeat top left;
+}
+
+#options .menu {
+    display: none;
+    left: 0;
+    padding-right: 10px;
+    position: absolute;
+    text-align: right;
+    top: 100%;
+    width: 90%;
+}
+
+#options:hover .menu {
+    display: block;
+}
+
+#options .menu a {
+    color: #005689;
+    display: block;
+    padding: 4px;
+    text-transform: lowercase;
 }
 
 /*
@@ -94,7 +137,6 @@ ul, li {
 }
 
 #articles li {
-    list-style: none outside none;
     margin-bottom: 15px;
     text-align: justify;
 }
@@ -107,7 +149,10 @@ ul, li {
 }
 
 #articles li p {
-
+    font-family: serif;
+    font-size: 16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 
 /*
@@ -130,6 +175,10 @@ ul, li {
     font-style: normal;
     padding: 10px;
     text-decoration: none;
+}
+
+#today, #month, #week {
+    
 }
 
 #calcontrol {

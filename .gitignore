@@ -4,8 +4,5 @@
 *.swp
 *~
 .DS_Store
-<<<<<<< HEAD
-/web/uploads/avatar/*
-=======
 web/uploads
->>>>>>> 123e7eb3def1bd994100bbaafab02a3065101924
+*#
