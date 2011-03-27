@@ -30,14 +30,22 @@
 </div>
 <div id="groupname">
   M1 Miage classique
+  <ul id="groupcontrol">
+      <li><a href="http://google.com">Calendar</a></li>
+      <li><a href="http://google.com">Articles</a></li>
+      <li><a href="http://google.com">Realtime</a></li>
+  </ul>
 </div>
 <div id="calsection">
   <p>
-    <span id="caltitle">From {{ from.format('Y-m-d, D') }} to {{ to.format('Y-m-d, D') }}</span>
+    <span id="caltitle">
+      From <strong>{{ from.format('Y-m-d, D') }}</strong>
+      to <strong>{{ to.format('Y-m-d, D') }}</strong>
+    </span>
     <span id="calcontrol">
-      <a id="prev" href=":D">&lt;--</a>
+      <a id="prev" href=":D"></a>
       <a id="today" href="~~">Today</a>
-      <a id="next" href="ㅎㅎ">--&gt;</a>
+      <a id="next" href="ㅎㅎ"></a>
       <a id="week" href="¬¬">Week</a>
       <a id="month" href="~~">Month</a>
     </span>

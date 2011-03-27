@@ -18,6 +18,7 @@ a {
 */
 body {
     background: url('../images/bgpink.png') repeat-x;
+    font-family: "lucida grande",arial,sans-serif;
 }
 
 #organizer {
@@ -32,15 +33,15 @@ body {
 
 #groupname {
     color: #005689;
-    font-family: helvetica;
-    font-size: 2.5em;
+    font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+    font-size: 2em;
     height: 70px;
-    left: 10px;
     letter-spacing: 0.02em;
     margin-top: 0;
     position: absolute;
-    text-transform: lowercase;
-    top: 120px; /* just under #organizer */
+    right: 25%;
+    text-transform: capitalize;
+    top: 5px; /* just left to #toolbox */
 }
 
 #toolbox {
@@ -48,15 +49,14 @@ body {
     border: 2px solid pink;
     border-radius: 0 0 0 10px;
     max-width: 25%;
-    padding: 5px 0 5px 10px;
+    padding: 5px 0 0 10px;
     position: fixed;
     right: 0;
     top: 0;
 }
-                                         
+
 #calsection {
-    font-family: "arial", "sans serif";
-    margin-top: 200px;
+    margin-top: 130px;
     text-align: center;
     width: 75%;
 }
@@ -65,6 +65,29 @@ body {
     float: right;
     height: 50px;
     width: 25%;
+}
+
+/*
+                             
+  __ _ _ __ ___  _   _ _ __  
+ / _` | '__/ _ \| | | | '_ \ 
+| (_| | | | (_) | |_| | |_) |
+ \__, |_|  \___/ \__,_| .__/ 
+ |___/                |_|    
+*/
+#groupcontrol {
+    font-size: 16px;
+}
+
+#groupcontrol li a {
+    color: #005689;
+    display: block;
+    float: right;
+    margin-left: 10px;
+}
+
+#groupcontrol li a:hover {
+    text-decoration: underline;
 }
 
 /*
@@ -102,13 +125,14 @@ body {
 }
 
 #options .menu {
+    background: white;
+    border: 2px solid pink;
+    border-radius: 0 0 0 7px;
     display: none;
-    left: 0;
-    padding-right: 10px;
     position: absolute;
+    right: -2px; /* because of #toolbox.border */
     text-align: right;
     top: 100%;
-    width: 90%;
 }
 
 #options:hover .menu {
@@ -116,10 +140,16 @@ body {
 }
 
 #options .menu a {
-    color: #005689;
+    color: black;
     display: block;
-    padding: 4px;
-    text-transform: lowercase;
+    font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+    font-size: 0.9em;
+    padding: 5px;
+    text-transform: capitalize;
+}
+
+#options .menu a:hover {
+    background: #FCE3E6;
 }
 
 /*
@@ -164,6 +194,7 @@ body {
 
  */
 #calsection > p {
+    height: 20px; /* #next, #prev height */
     text-align: left;
 }
 
@@ -171,18 +202,33 @@ body {
 }
 
 #next, #prev {
-    color: inherit;
-    font-style: normal;
-    padding: 10px;
-    text-decoration: none;
+    display: block;
+    float: left;
+    height: 20px;
+    padding-right: 15px;
+    width: 13px;
+}
+
+#next {
+    background: url("../images/arrowr.png") no-repeat scroll 0 0 transparent;
+}
+
+#prev {
+    background: url("../images/arrowl.png") no-repeat scroll 0 0 transparent;
 }
 
 #today, #month, #week {
-    
+    color: #005689;
+    padding-left: 7px;
+}
+
+#today:hover, #month:hover, #week:hover {
+    text-decoration: underline;
 }
 
 #calcontrol {
     float: right;
+    line-height: 20px; /* #next, #prev height */
     position: relative;
     margin-right: 10px;
 }

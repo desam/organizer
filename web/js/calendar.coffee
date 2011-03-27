@@ -9,7 +9,7 @@ Calendarw = ->
   self = this
   @days = 7
 
-  @draw = () ->
+  @draw = ->
     days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
 
     timeslots = ""
@@ -44,7 +44,8 @@ Calendarw = ->
     # TODO use relative measures (% instead of px)
     # resizing columns
     caldiv.find('.calumn')
-      .width(Math.floor((caldiv.outerWidth() - first.outerWidth() - @days - 1) / @days))
+      .width(
+        Math.floor((caldiv.outerWidth() - first.outerWidth() - @days - 1) / @days))
       .droppable({
         drop: (event, obj) ->
           self.updateMovedEvent(obj, this)
@@ -157,15 +158,12 @@ Calendarw = ->
         }, (data) -> self.distributeEvents(data))
 
   @refreshTitle = ->
-    t = document.getElementById('caltitle')
+    t  = $('#caltitle > strong')
     to = new Date(currentDate)
     to.setDate(to.getDate() + @days)
 
-    pattern = /From \d{4}-\d{2}-\d{2}/
-    t.innerHTML = t.innerHTML.replace(pattern, "From #{currentDate.nice()}")
-
-    pattern = /to \d{4}-\d{2}-\d{2}/
-    t.innerHTML = t.innerHTML.replace(pattern, "to #{to.nice()}")
+    t[0].innerHTML = currentDate.nice()
+    t[1].innerHTML = to.nice()
 
 
   # called when an event is drag n' dropped

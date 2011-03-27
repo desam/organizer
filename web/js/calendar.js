@@ -135,14 +135,12 @@
       });
     };
     this.refreshTitle = function() {
-      var pattern, t, to;
-      t = document.getElementById('caltitle');
+      var t, to;
+      t = $('#caltitle > strong');
       to = new Date(currentDate);
       to.setDate(to.getDate() + this.days);
-      pattern = /From \d{4}-\d{2}-\d{2}/;
-      t.innerHTML = t.innerHTML.replace(pattern, "From " + (currentDate.nice()));
-      pattern = /to \d{4}-\d{2}-\d{2}/;
-      return t.innerHTML = t.innerHTML.replace(pattern, "to " + (to.nice()));
+      t[0].innerHTML = currentDate.nice();
+      return t[1].innerHTML = to.nice();
     };
     this.updateMovedEvent = function(obj) {
       var dates, event;
