@@ -1,0 +1,9 @@
+# security:
+#     firewalls:
+#         backend:
+#             pattern:    /.*
+#             http_basic: true
+#             form_login: true
+#             logout:     true
+
+#resource: @OrganizerBundle/Resources/config/routing.yml

@@ -1,0 +1,6 @@
+bloody_login:
+    firewalls:
+        backend:
+            pattern:    /.*
+            form_login: true
+            logout:     true

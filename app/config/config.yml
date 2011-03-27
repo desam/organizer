@@ -1,39 +1,68 @@
-app.config:
+imports:
+    - { resource: parameters.ini }
+    - { resource: security.yml }
+
+framework:
     charset:       UTF-8
     error_handler: null
     csrf_protection:
         enabled: true
-        secret: xpathrocks
+        secret: %csrf_secret%
     router:        { resource: "%kernel.root_dir%/config/routing.yml" }
     validation:    { enabled: true, annotations: true }
     templating:    { engines: ['twig'] } #assets_version: SomeVersionScheme
     session:
-        default_locale: en
+        default_locale: %locale%
         lifetime:       3600
         auto_start:     true
 
 # Twig Configuration
-twig.config:
+twig:
     debug:            %kernel.debug%
     strict_variables: %kernel.debug%
 
-## Doctrine Configuration
-#doctrine.dbal:
-#    dbname:   xxxxxxxx
-#    user:     xxxxxxxx
-#    password: ~
-#    logging:  %kernel.debug%
-#doctrine.orm:
-#    auto_generate_proxy_classes: %kernel.debug%
-#    mappings:
-#        HelloBundle: ~
+# Assetic Configuration
+assetic:
+    debug:          %kernel.debug%
+    use_controller: false
+
+# Doctrine Configuration
+# doctrine:
+#     dbal:
+#         default_connection: default
+#         connections:
+#             default:
+#                 driver:   %database_driver%
+#                 host:     %database_host%
+#                 dbname:   %database_name%
+#                 user:     %database_user%
+#                 password: %database_password%
+
+#     orm:
+#         auto_generate_proxy_classes: %kernel.debug%
+#         default_entity_manager: default
+#         entity_managers:
+#             default:
+#                 mappings:
+#                     AcmeDemoBundle: ~
 
 # Swiftmailer Configuration
-swiftmailer.config:
+swiftmailer:
    transport:  gmail
    encryption: ssl
    auth_mode:  login
    host:       smtp.gmail.com
-   port:       25        
+   port:       25
    username:   miageorganizer@gmail.com
    password:   miagec1408
+
+# Swiftmailer Configuration
+# swiftmailer:
+#     transport: %mailer_transport%
+#     host:      %mailer_host%
+#     username:  %mailer_user%
+#     password:  %mailer_password%
+
+# jms_security_extra:
+#     secure_controllers:  true
+#     secure_all_services: false
