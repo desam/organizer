@@ -34,7 +34,7 @@
 
     /**
      * @validation:NotBlank  
-     * @validation:Regex("/^\d{2}-\d{2}-\d{2}-\d{2}-\d{2}$/")   
+     * @validation:Regex("/^\d{2}\d{2}\d{2}\d{2}\d{2}$/")   
      */
     protected $phone;
 
@@ -95,7 +95,7 @@
     }
 
     public function setAvatar($image){             
-        $dir = realpath(__DIR__ . './../../../../web/uploads/avatar');         
+        $dir = realpath(__DIR__ . '/../../../../web/uploads/avatar');
         $filename = uniqid() . '.png';
         $imagine = new Imagine\Gd\Imagine();
         $image = $imagine->open($image);
