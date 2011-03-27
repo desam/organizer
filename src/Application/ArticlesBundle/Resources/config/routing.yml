@@ -1,0 +1,15 @@
+articles:
+    pattern: /articles/index
+    defaults: { _controller: ArticlesBundle:Articles:getArticles }
+edit:
+    pattern: /articles/edit/{ida}
+    defaults: { _controller: ArticlesBundle:Articles:editArticle }
+delete:
+    pattern: /articles/delete/{ida}
+    defaults: { _controller: ArticlesBundle:Articles:delete }    
+view:
+    pattern: /articles/view/{ida}
+    defaults: { _controller: ArticlesBundle:Articles:viewArticle }
+ajouter:
+    pattern: /articles/ajouter
+    defaults: { _controller: ArticlesBundle:Articles:addArticle }

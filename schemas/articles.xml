@@ -1,40 +1,132 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE articles [
-<!ELEMENT articles (article*)>
-<!ELEMENT article (datepublication, titre, description, corps)>
-<!ATTLIST
-	article id  IDREF #REQUIRED
-			refc IDREF #REQUIRED
-			refu IDREF #REQUIRED>
-<!ELEMENT datepublication (#PCDATA)>
-<!ELEMENT titre (#PCDATA)>
-<!ELEMENT description (#PCDATA)>
-<!ELEMENT corps (#PCDATA)>
-]>
 <articles>
-	<article id="1" refc="1" refu="1">
-		<datepublication>2011-02-22 8:00:00</datepublication>
-		<titre> Forum de l'emploi</titre>
-		<description>speaker is interested in accomplishing the task, but believes that
-		   the opportunity will not arise.</description>
-		<corps>Reviewee hasn't gotten anything right yet, and it is anticipated
-		that this pattern will continue throughout the coming year.</corps>
-	</article>
-	<article id="2" refc="2" refu="1">
-		<datepublication>2011-02-23 8:00:00</datepublication>
-		<titre>Parcours en Licence</titre>
-		<description>speaker is interested in accomplishing the task, but believes that
-		   the opportunity will not arise.</description>
-		<corps>Reviewee hasn't gotten anything right yet, and it is anticipated
-		that this pattern will continue throughout the coming year.</corps>
-	</article>
-	<article id="3" refc="3" refu="2">
-		<datepublication>2011-02-24 8:00:00</datepublication>
-		<titre>D�couverte de l'universit�</titre>
-		<description>The correct answer is (d). You should test your car's horn at least once
-		every hour, and more often at night or in residential neighborhoods.</description>
-		<corps>Vulgate Bible contained so many errors that corrected scraps had to be
-			printed and pasted over them in every copy.  The result provoked wry
-			comments on the rather patchy papal infallibility.</corps>
-	</article>
+    <article id="1" refc="2" refu="1">
+        <datepublication>2011-03-26 : 17:26:24</datepublication>
+        <titre>Facebook lets Users Put Questions in a Bottle</titre>
+        <description>&lt;p&gt;
+	&lt;img alt="" src="http://www.technewsworld.com/images/rw661726/facebook.jpg" style="width: 141px; height: 107px; border-width: 1px; border-style: solid; margin: 5px; float: left;" /&gt;Facebook has opened up its new Questions feature, allowing curious questioners to query their friends and friends&amp;#39; friends on anything, any topic, any time. Facebook filters the answers to bring up those from members&amp;#39; direct circles of friends first. The addition has already caught the eyes of marketers, who see new potential in direct interactions with customers via social media. What is the temperature of the sun? What is free will? Who&amp;#39;s in charge here, anyway? These questions and more -- any question one could possibly imagine, really -- are what &lt;a class="story-keyword-offsite" href="http://www.facebook.com/"&gt;Facebook&amp;#39;s&lt;/a&gt; Questions feature is for. The social network updated Questions Thursday, throwing the general inquiry forum open to the public. Anyone can opt in by going to &lt;a href="http://www.facebook.com/questions" target="_blank"&gt;this link&lt;/a&gt;, Facebook spokesperson Meredith Chin told TechNewsWorld. That will set up the Questions link on their publisher, next to their status, photo and other links.&lt;/p&gt;
+</description>
+        <corps>&lt;p&gt;
+	Facebook members click on the Questions link and input their questions. Their friends, and friends of friends, can post answers.&lt;/p&gt;
+&lt;p&gt;
+	Administrators for businesses with Facebook pages that have opted in to the Questions feature can pose questions to people connected to their Facebook pages and can see the answers, Chin said.&lt;/p&gt;
+&lt;p&gt;
+	That opens up possibilities marketers find exciting.&lt;/p&gt;
+&lt;p&gt;
+	&amp;quot;It will definitely have an impact on brands asking questions directly to their fan base and extended network of friends and aggregating the data,&amp;quot; Henry Wong, CEO of &lt;a href="http://www.adgregate.com/" target="_blank"&gt;Adgregate Markets&lt;/a&gt;, told TechNewsWorld.&lt;/p&gt;
+&lt;p&gt;
+	&amp;quot;We feel recommendations or opinions about products and brands from people you know are the most powerful influencer of purchase decisions,&amp;quot; Matt Compton, CEO of &lt;a href="http://www.shopigniter.com/" target="_blank"&gt;ShopIgniter&lt;/a&gt;, told TechNewsWorld. &amp;quot;Data shows that 90 percent of people trust recommendations of friends above any form of advertising.&amp;quot;&lt;/p&gt;
+&lt;div class="story-advertisement"&gt;
+	&amp;nbsp;&lt;/div&gt;
+&lt;h2 class="subhead"&gt;
+	A Glimpse Into the Questions Feature&lt;/h2&gt;
+&lt;p&gt;
+	Facebook first launched a trial version of the Questions feature in July.&lt;/p&gt;
+&lt;p&gt;
+	&amp;quot;We took the last few months to test and tweak the product to find the optimal experience for people,&amp;quot; Facebook&amp;#39;s Chin stated.&lt;/p&gt;
+&lt;p&gt;
+	When Facebook members ask about something through the Questions feature, they can get replies from their friends and friends of their friends.&lt;/p&gt;
+&lt;p&gt;
+	Facebook filters the answers to bring up those from members&amp;#39; direct circles of friends first. Members can see the rest of the responses by clicking the &amp;quot;Others&amp;quot; tag within the question.&lt;/p&gt;
+&lt;p&gt;
+	Although businesses with Facebook pages can see answers to questions they pose on their pages, Facebook doesn&amp;#39;t include data in its Insights section for this feature, Chin said. It doesn&amp;#39;t share information from the feature with advertisers, she added.&lt;/p&gt;
+&lt;p&gt;
+	Facebook Insights provides Facebook Page owners and developers on the Facebook platform metrics around their content through a dashboard. Only page administrators, application owners, and domain administrators and view Insights data for the properties they own or administer.&lt;/p&gt;
+&lt;p&gt;
+	&amp;quot;I don&amp;#39;t think Facebook necessarily designed this feature with marketers in mind,&amp;quot; Greg Sterling, founding principal at &lt;a class="story-keyword-offsite" href="http://gesterling.wordpress.com/about/"&gt;Sterling Market Intelligence&lt;/a&gt;, told TechNewsWorld. &amp;quot;They certainly will get some data from it, which would be interesting to marketers, but I think they&amp;#39;re just trying to simplify the feature and get more people to participate.&lt;/p&gt;
+&lt;p&gt;
+	&amp;quot;My guess is they don&amp;#39;t have as many users of the feature as they want,&amp;quot; Sterling explained. &amp;quot;If you have a lot of people doing anything online you can throw ads at them.&amp;quot;&lt;/p&gt;
+&lt;h2 class="subhead"&gt;
+	Shadow of the Invisible Hand&lt;/h2&gt;
+&lt;p&gt;
+	In other words, Facebook may ultimately seek to monetize the Questions service.&lt;/p&gt;
+&lt;p&gt;
+	Already, online marketing and advertising firms can see the possibilities offered by the Questions feature.&lt;/p&gt;
+&lt;p&gt;
+	&amp;quot;We are working with an apparel retailer now in implementing this [Questions] feature to ask whether the products being displayed in their Facebook store are hot or not,&amp;quot; Adgregate&amp;#39;s Wong said. &amp;quot;You can imagine the cool things you can do with the answers to this question,&amp;quot; he added.&lt;/p&gt;
+&lt;p&gt;
+	&amp;quot;The Facebook Questions feature reinforces one of our value propositions, which is to help retailers and brands seed, influence and measure advocacy behavior with social badging, referral and loyalty point systems and shareable coupons,&amp;quot; ShopIgniter&amp;#39;s Compton said.&lt;/p&gt;
+&lt;h2 class="subhead"&gt;
+	Keeping Stuff Private&lt;/h2&gt;
+&lt;p&gt;
+	Whether Facebook will face a backlash over privacy issues users of the Questions feature face is not yet clear.&lt;/p&gt;
+&lt;p&gt;
+	Questions asked by members can get distributed to a wider audience if their friends reply because friends of their friends will also get access to the questions.&lt;/p&gt;
+&lt;p&gt;
+	It would be wise to assume there is no privacy, Sterling Market Intelligence&amp;#39;s Sterling suggested. &amp;quot;If you want to ask private questions, you should set up a group or protect your account, and respond only within your friends network,&amp;quot; he elaborated.&lt;/p&gt;
+&lt;p&gt;
+	However, that doesn&amp;#39;t necessarily mean Facebook itself would have to build in additional security.&lt;/p&gt;
+&lt;p&gt;
+	&amp;quot;This Questions feature doesn&amp;#39;t give access to my news feed, just access to my questions or the feed around the questions,&amp;quot; Sterling pointed out. &amp;quot;I don&amp;#39;t think there&amp;#39;s any super-heightened danger here apart from the general privacy and stalking issues that plague Facebook.&amp;quot;&lt;/p&gt;
+</corps>
+    </article>
+    <article id="2" refc="0" refu="1">
+        <datepublication>2011-03-25 : 21:56:32</datepublication>
+        <titre>Des nano-diamants pour soigner le cancer du sein</titre>
+        <description>&lt;p&gt;
+	&lt;strong&gt;&lt;img alt="" src="http://sciences.blogs.liberation.fr/.a/6a00e5500b4a648833014e5fbfc71b970c-pi" style="width: 158px; height: 113px; float: left; border-width: 1px; border-style: solid; margin: 5px;" /&gt;Avec des nanodiamants, un m&amp;eacute;dicament anti-canc&amp;eacute;reux pourrait &amp;ecirc;tre dix fois plus efficace. C&amp;#39;est un article paru hier dans &lt;a href="http://stm.sciencemag.org/" target="_self"&gt;Science Translationnal medicine&lt;/a&gt; qui l&amp;#39;affirme. Il est sign&amp;eacute; d&amp;#39;une &amp;eacute;quipe de biologistes am&amp;eacute;ricains dirig&amp;eacute;e par Dean Ho (Northwestern University, Evanston, Illinois) renforc&amp;eacute;e par un Japonais (NanoCarbon Research Institute, Nagano). Et relate une exp&amp;eacute;rience men&amp;eacute;e avec des souris atteintes de cancer que l&amp;#39;on a soign&amp;eacute; avec une mol&amp;eacute;cule connue et largement utilis&amp;eacute;e - la doxorubicine. Mais cette mol&amp;eacute;cule a &amp;eacute;t&amp;eacute; attach&amp;eacute;e &amp;agrave; de minuscules particules de carbone, du diamant, des nano-diamants donc. L&amp;#39;assemblage permet une efficacit&amp;eacute; accrue du m&amp;eacute;dicament &amp;agrave; dosage similaire, tout en r&amp;eacute;duisant ses effets ind&amp;eacute;sirables. Il pourrait donc autoriser en outre un dosage sup&amp;eacute;rieur &amp;agrave; celui utilis&amp;eacute;.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;
+	&amp;nbsp;&lt;/p&gt;
+</description>
+        <corps>&lt;p&gt;
+	Cet article fait la une du journal (photo &amp;agrave; gauche). Sans effets biologiques, les nano-diamants permettent de surmonter une&lt;strong&gt; chimio-r&amp;eacute;sistance&lt;/strong&gt;.&amp;nbsp; Elle survient lorsque les mol&amp;eacute;cules qui doivent &amp;ecirc;tre d&amp;eacute;livr&amp;eacute;es &amp;agrave; fortes doses pour &amp;ecirc;tre efficaces sont&amp;nbsp;&amp;nbsp; rapidement &lt;strong&gt;&amp;eacute;ject&amp;eacute;s des cellules canc&amp;eacute;reuses&lt;/strong&gt;. Et n&amp;#39;ont pas le temps d&amp;#39;agir.&lt;/p&gt;
+&lt;p&gt;
+	Des &amp;eacute;tudes pr&amp;eacute;c&amp;eacute;dentes avaient d&amp;eacute;j&amp;agrave; montr&amp;eacute; que les particules de nanodiamants circulent ais&amp;eacute;ment &amp;agrave; travers le corps et les membranes cellulaires.&lt;/p&gt;
+&lt;p&gt;
+	Dans ce voyage, elles lib&amp;egrave;rent les anticanc&amp;eacute;reux (&amp;agrave; droite un dessin tir&amp;eacute; de l&amp;#39;article scientifique : mod&amp;egrave;le de nanodiamant avec les mol&amp;eacute;cules anticanc&amp;eacute;reuses attach&amp;eacute;es). Les chercheurs ont surmont&amp;eacute; la chimio-r&amp;eacute;sistance chez des souris ayant des cancers du foie ou du sein. Ils ont inject&amp;eacute; aux souris des &lt;strong&gt;doses normalement mortelles&lt;/strong&gt; de doxorubicine avec des nanodiamants et observ&amp;eacute; que le traitement agissait mieux tout en &amp;eacute;tant moins toxique. La mol&amp;eacute;cule li&amp;eacute;e aux nanodiamants restait dans le sang des souris 10 fois plus longtemps que lorsqu&amp;rsquo;elle &amp;eacute;tait inject&amp;eacute;e seule.&lt;/p&gt;
+&lt;p&gt;
+	Cette &amp;eacute;tude fait partie du champ relativement r&amp;eacute;cent des recherches utilisant des &amp;quot;&lt;strong&gt;&lt;em&gt;nanovecteurs&amp;quot;&lt;/em&gt;&lt;/strong&gt; pour les m&amp;eacute;dicaments. L&amp;#39;un de ses d&amp;eacute;couvreurs est &lt;strong&gt;Patrick Couvreur&lt;/strong&gt;, qui a occup&amp;eacute; la&lt;a href="http://www.college-de-france.fr/default/EN/all/inn_tec2009/index.htm" target="_self"&gt; Chaire d&amp;#39;innovation technologique au Coll&amp;egrave;ge de France en 2009/2010&lt;/a&gt;. Sur le site web du Cnrs, voici u&lt;a href="http://www.cnrs.fr/cw/dossiers/dosnano/decouv/03/03_2_2/04_1.htm" target="_self"&gt;ne page o&amp;ugrave; l&amp;#39;on peut &amp;eacute;couter deux interview&lt;/a&gt; de Patrick Couvreur et visionner deux animations explicatives sur le sujet. Patrick Couvreur a dirig&amp;eacute; durant 12 ans (c&amp;#39;est le maximum), le laboratoire de &amp;quot;pharmacotechnie&amp;quot; &lt;a href="http://www.umr-cnrs8612.u-psud.fr/index.htm" target="_self"&gt;Cnrs/Paris-Sud 11&lt;/a&gt;.&lt;/p&gt;
+</corps>
+    </article>
+    <article id="9" refc="2" refu="1">
+        <datepublication>2011-03-26 : 18:30:58</datepublication>
+        <titre>COnduiteee</titre>
+        <description>&lt;p&gt;
+	ferzerdsfsdfddeeea&lt;/p&gt;
+</description>
+        <corps>&lt;p&gt;
+	fdsfsdfeeaaaaaaaaaaaa&lt;/p&gt;
+</corps>
+    </article>
+    <article id="10" refc="1" refu="1">
+        <datepublication>2011-03-24 : 20:20:33</datepublication>
+        <titre>fdfeerefdszaaaaa</titre>
+        <description>fdsfsdf</description>
+        <corps>fdsf</corps>
+    </article>
+    <article id="11" refc="0" refu="1">
+        <datepublication>2011-03-24 : 20:25:34</datepublication>
+        <titre>testset</titre>
+        <description>
+            <p>
+	tsetset</p>
+        </description>
+        <corps>
+            <p>
+	testset</p>
+        </corps>
+    </article>
+    <article id="12" refc="1" refu="1">
+        <datepublication>2011-03-24 : 20:49:31</datepublication>
+        <titre>Yahoo! se met à la recherche en temps réel</titre>
+        <description>
+            <p>
+	Yahoo! a mis en place ce jeudi une nouvelle version de son moteur de recherche, incluant de nouveaux services visant à contrecarrer les dernières évolutions de Google. "Les gens ne cherchent pas des liens, ils cherchent des réponses", a expliqué Shashi Seth, l'un des responsables de Yahoo!, lors d'une conférence de presse mercredi à San Francisco. Baptisé Search Direct, le nouveau service affiche des suggestions de résultats dans une fenêtre qui se met à jour au fur et à mesure que l'internaute tape sa requête. Google avait mis en place l'an dernier son service de recherche instantanée, qui modifie les résultats au fur et à mesure que l'internaute tape sa recherche.</p>
+        </description>
+        <corps>
+            <p>
+	Mais cette évolution est surtout un alignement sur Bing, le moteur de Microsoft dont Yahoo! utilise la technologie. Bing propose des "boîtes de résultats" spécifiques : lorsque le moteur de recherche détecte, par exemple, qu'une recherche porte sur un film, il met en avant dans ses résultats les horaires de séances. Ces nouvelles fonctionnalités devraient également permettre de créer de nouveaux formats publicitaires, explique Yahoo!. Après avoir signé un partenariat avec Microsoft l'an dernier, qui s'est traduit par des économies de frais d'infrastructures substantielles, Yahoo! n'a cependant pas vu ses résultats progresser au quatrième trimestre 2010. Sa part de marché aux Etats-Unis a diminué d'environ 4 %, selon les chiffres de ComScore, tandis que les parts de Bing et Google progressaient.</p>
+        </corps>
+    </article>
+    <article id="13" refc="0" refu="1">
+        <datepublication>2011-03-27 : 14:42:22</datepublication>
+        <titre>test</titre>
+        <description>sdfsf</description>
+        <corps>fsdfsdf</corps>
+    </article>
+    <article id="14" refc="2" refu="1">
+        <datepublication>2011-03-27 : 14:53:11</datepublication>
+        <titre>fdsvxcddd</titre>
+        <description>sdfffffffffff</description>
+        <corps>vxccccccccccccccd</corps>
+    </article>
 </articles>

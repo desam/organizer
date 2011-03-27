@@ -1,0 +1,23 @@
+
+<div id="articles">
+<h2>Tous les articles </h2>
+<a href="ajouter">Ajouter un Article</a>
+
+{% for article in articles %}
+ <div class="article">
+    <div class="titre">[{{ article.idarticle }}]
+    <a href="view/{{article.idarticle}}">
+    {{ article.titre }}</a> {{ article.datepublication }}
+        <a href="edit/{{article.idarticle}}">Edit</a>
+        <a href="delete/{{article.idarticle}}"
+        onclick="return(confirm('Voulez-vous le supprimer ?'));"> Delete </a>
+    </div>
+    <div class="auteur">Par <i>{{ article.user }}</i></div>
+    <div class="categorie">cat&eacute;gorie {{article.categorie}}</div>
+    <div class="description"> 
+    {{article.description|raw}} 
+    <span><a href="view/{{article.idarticle}}">Lire >></a></span>
+    </div>
+   <br/>
+</div>
+{% endfor %}
