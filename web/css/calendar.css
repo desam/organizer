@@ -18,7 +18,7 @@ a {
 */
 body {
     background: url('../images/bgpink.png') repeat-x;
-    font-family: "lucida grande",arial,sans-serif;
+    font-family: "lucida grande", "lucida sans", "lucida sans unicode", "luxi sans", arial,sans-serif;
 }
 
 #organizer {
@@ -33,7 +33,6 @@ body {
 
 #groupname {
     color: #005689;
-    font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
     font-size: 2em;
     height: 70px;
     letter-spacing: 0.02em;

@@ -1,0 +1,24 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}Editer votre article{% endblock %}
+
+{% block body %}
+<h2>Editer votre article</h2>
+   <form action="#" method="post">
+       {{ form_field(form) }}
+   
+       <input type="submit" value="Envoyer" />
+       <script type="text/javascript">
+                    CKEDITOR.replace( 'EditArticle[description]',
+                        {
+                            skin : 'kama'
+                        });
+       </script>       
+       <script type="text/javascript">
+                    CKEDITOR.replace( 'EditArticle[corps]',
+                        {
+                            skin : 'kama'
+                        });
+        </script>
+   </form>
+{% endblock %}

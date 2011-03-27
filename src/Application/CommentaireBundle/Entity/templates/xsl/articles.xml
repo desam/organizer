@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE articles SYSTEM "articles.dtd">
+<?xml-stylesheet type="text/xsl" href="articles.xsl"?> 
+<articles>
+	<article id="1" refc="1" refu="1">
+		<datepublication>2011-02-22 8:00:00</datepublication>
+		<titre> Forum de l'emploi</titre>
+		<description>speaker is interested in accomplishing the task, but believes that
+		   the opportunity will not arise.</description>
+		<corps>Reviewee hasn't gotten anything right yet, and it is anticipated
+		that this pattern will continue throughout the coming year.</corps>
+	</article>
+	<article id="2" refc="2" refu="1">
+		<datepublication>2011-02-23 8:00:00</datepublication>
+		<titre>Parcours en Licence</titre>
+		<description>speaker is interested in accomplishing the task, but believes that
+		   the opportunity will not arise.</description>
+		<corps>Reviewee hasn't gotten anything right yet, and it is anticipated
+		that this pattern will continue throughout the coming year.</corps>
+	</article>
+	<article id="3" refc="3" refu="2">
+		<datepublication>2011-02-24 8:00:00</datepublication>
+		<titre>D�couverte de l'universit�</titre>
+		<description>The correct answer is (d). You should test your car's horn at least once
+		every hour, and more often at night or in residential neighborhoods.</description>
+		<corps>Vulgate Bible contained so many errors that corrected scraps had to be
+			printed and pasted over them in every copy.  The result provoked wry
+			comments on the rather patchy papal infallibility.</corps>
+	</article>
+</articles>

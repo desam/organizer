@@ -1,0 +1,3 @@
+connexion:
+    pattern: /connexion
+    defaults: { _controller: ConnexionBundle:Connexion:executeQuery }

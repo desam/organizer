@@ -1,0 +1,24 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}{{article.titre}} {% endblock %}
+
+{% block body %}
+<div class="article">
+    <h2>{{article.titre}} </h2>
+    <b>R&eacute;dig&eacute; par {{article.user}} | cat&eacute;gorie: {{article.categorie}}</b>
+    <div class="texte">
+        {{article.description|raw}}
+       {{article.corps|raw}}
+    </div>
+</div>
+<div class="commentaires">
+  <h3>Liste des commentaires</h3> <a href="../../commentaire/add/{{article.idarticle}}">Ajouter un commentaire</a>
+{%for commentaire in commentaires %}
+  <div class="commentaire">
+   <b>{{commentaire.titre|raw}}</b>
+   <i>Soumis par {{commentaire.auteur}} le {{commentaire.datepublication}}</i> 
+   <p>{{commentaire.message|raw}}</p> 
+  </div>
+{% endfor %}
+</div>
+{% endblock %}

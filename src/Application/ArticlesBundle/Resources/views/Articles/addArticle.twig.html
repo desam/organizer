@@ -1,0 +1,23 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}Ajouter un article{% endblock %}
+
+{% block body %}
+<h2>Ajouter un article</h2>
+   <form action="#" method="post">
+       {{ form_field(form) }}
+       <input type="submit" value="Envoyer" />
+       <script type="text/javascript">
+            CKEDITOR.replace('AddArticle[description]',
+                {
+                    skin : 'kama'
+                });
+       </script>       
+       <script type="text/javascript">
+            CKEDITOR.replace('AddArticle[corps]',
+                {
+                    skin : 'kama'
+                });
+        </script> 
+   </form>
+{% endblock %}
