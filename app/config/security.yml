@@ -1,9 +1,21 @@
-# security:
-#     firewalls:
-#         backend:
-#             pattern:    /.*
-#             http_basic: true
-#             form_login: true
-#             logout:     true
+security:
+    encoders:
+            Symfony\Component\Security\Core\User\User: plaintext
+    # providers:
+    #     default:
+    #         entity: { class: SecurityBundle:User, property: username }
+        # certificate:
+        #     users:
+        #         fabien@example.com: { roles: ROLE_USER }
+    providers:
+        main:
+            users:
+                foo: {password: bar, roles: ROLE_USER}
+    firewalls:
+        backend:
+            pattern:    /.*
+            http_basic: true
+            logout:     true
+
 
 #resource: @OrganizerBundle/Resources/config/routing.yml
