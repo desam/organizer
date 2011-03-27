@@ -7,7 +7,12 @@ hello:
 
 calendar:
     resource: @CalendarBundle/Resources/config/routing.yml
-
-
+    
+Articles:
+    resource: @ArticlesBundle/Resources/config/routing.yml
+    
+Commentaire:
+    resource: @CommentaireBundle/Resources/config/routing.yml    
+    
 User:
     resource: @UserBundle/Resources/config/routing.yml	
