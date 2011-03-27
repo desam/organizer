@@ -59,6 +59,23 @@ class GroupRequest
         $xml = simplexml_load_string($result["XML"]);                 
         return $xml;        
     }
+    
+    public function getALLGroups($id){
+        $db = new eXist();	
+        $db->connect() or die ($db->getError());
+        
+        $query ='<results> { for $i in document("/db/orga/groups.xml")//group 
+                let $a:=document("/db/orga/groups.xml")//user[./@refuser="'.$id.'" and ../@id= $i/@id]
+                where count($a)=0 return 
+                <result> {$i/@id} {$i/name} {$i/description} {$i/user} </result>} </results>';
+        
+        $result = $db->xquery($query) or die ($db->getError());  
+
+        
+        
+        $xml = simplexml_load_string($result["XML"]);                 
+        return $xml;                
+    }
    
     public function editGroup($id, $gid){
         $db = new eXist();	
@@ -102,6 +119,32 @@ class GroupRequest
         $query ='for $i in document("/db/orga/groups.xml")//group[@id = "'.$gid.'"] 
             return update delete $i';    
         $result = $db->xquery($query) or (preg_match('/No data found/', $db->getError()) or die($db->getError()));
+    }
+    
+    public function subscribeGroup($id,$gid){
+        $db = new eXist();	
+        $db->connect() or die ($db->getError());	        
+        $query = 'update insert <user refuser="'.$id.'"/> into document("/db/orga/groups.xml")//group[@id="'.$gid.'"]';
+        $result = $db->xquery($query) or (preg_match('/No data found/', $db->getError()) or die($db->getError()));
+    }
+    
+    public function unsubscribeGroup($id,$gid){
+        $db = new eXist();	
+        $db->connect() or die ($db->getError());	        
+        $query ='for $i in document("/db/orga/groups.xml")//group[@id="'.$gid.'"]/user[@refuser="'.$id.'"] return update delete $i';
+        $result = $db->xquery($query) or (preg_match('/No data found/', $db->getError()) or die($db->getError()));    
+    }
+    
+    public function getsubscribedGroups($id){
+        $db = new eXist();	
+        $db->connect() or die ($db->getError());	     
+        
+        $query ='<results> { for $i in document("/db/orga/groups.xml")//group[./user/@refuser="'.$id.'"]
+                return <result> {$i/@id} {$i/name} {$i/description} </result>} </results>';
+        
+        $result = $db->xquery($query) or die ($db->getError());         
+        $xml = simplexml_load_string($result["XML"]);                 
+        return $xml;                                
     }
  }   
  

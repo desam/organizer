@@ -33,4 +33,19 @@ Editgroup:
 Deletegroup:
     pattern: /deletegroup
     defaults: { _controller: UserBundle:Group:deleteGroup }
-    
+
+ListAllgroup:  
+    pattern: /listallgroup
+    defaults: { _controller: UserBundle:Group:listAllGroup }
+
+Listsubscibedgroup:
+    pattern: /Listsubscibedgroup
+    defaults: { _controller: UserBundle:Group:listSubcribedGroup }
+
+Subscribegroup:
+    pattern: /subcribegroup
+    defaults: { _controller: UserBundle:Group:subcribeGroup }
+
+Unsubscribegroup:    
+    pattern: /unsubcribegroup
+    defaults: { _controller: UserBundle:Group:unsubcribeGroup }

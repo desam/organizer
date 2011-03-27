@@ -1,0 +1,26 @@
+{% extends 'UserBundle::layout.html.twig' %}
+
+{% block title %}Liste des groupes{% endblock %}
+
+{% block content %}
+<h1> Group ALL Lists </h1>
+    
+    
+    
+    {% for group in form %}
+    </br>
+    Name: 
+    {{ group.name }}
+    </br>
+    Description :
+    {{ group.description }}    
+    </br>
+    {{group.attributes().id}}
+    </br>
+    <a href="{{ path('Subscribegroup')}}?gid={{group.attributes().id}}">Abonnez au groupe</a></li>
+    </br>
+    
+    {% endfor %}   
+
+
+{% endblock %}

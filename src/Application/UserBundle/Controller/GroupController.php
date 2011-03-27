@@ -87,4 +87,61 @@ class GroupController extends Controller{
     
     }
     
+    public function listAllGroupAction(){
+    
+        $session = $this->get('request')->getSession();              
+        if($session->get('id') == null){
+           return $this->forward('UserBundle:User:login');       
+        } 
+        
+        $GroupRequest = new GroupRequest();	
+        $id = $session->get('id');   
+        $id = substr($id, 1);        
+        $groupXML = $GroupRequest->getALLGroups($id);               
+        return $this->render('UserBundle:Group:ListAllGroup.html.twig',array('form' => $groupXML->result)); 
+        
+    }
+    
+    public function listSubcribedGroupAction(){
+        $session = $this->get('request')->getSession();              
+        if($session->get('id') == null){
+           return $this->forward('UserBundle:User:login');       
+        } 
+        
+        $GroupRequest = new GroupRequest();	
+        $id = $session->get('id');   
+        $id = substr($id, 1);        
+        $groupXML = $GroupRequest->getsubscribedGroups($id);
+        return $this->render('UserBundle:Group:ManageSubscribedGroup.html.twig',array('form' => $groupXML->result)); 
+        
+    }
+    
+    public function subcribeGroupAction(){
+        $gid = $this->get('request')->get('gid');  
+        $session = $this->get('request')->getSession();              
+        if($session->get('id') == null){
+           return $this->forward('UserBundle:User:login');       
+        }
+        $GroupRequest = new GroupRequest();	
+        $id = $session->get('id');   
+        $id = substr($id, 1);        
+        $GroupRequest->subscribeGroup($id,$gid);
+        return $this->forward('UserBundle:Group:listAllGroup');                       
+        
+    }
+    
+    public function unsubcribeGroupAction(){
+        $gid = $this->get('request')->get('gid');  
+        $session = $this->get('request')->getSession();              
+        if($session->get('id') == null){
+           return $this->forward('UserBundle:User:login');       
+        }
+        $GroupRequest = new GroupRequest();	
+        $id = $session->get('id');   
+        $id = substr($id, 1);        
+        $GroupRequest->unsubscribeGroup($id,$gid);
+        return $this->forward('UserBundle:Group:listSubcribedGroup');                       
+        
+    }
+    
 }
