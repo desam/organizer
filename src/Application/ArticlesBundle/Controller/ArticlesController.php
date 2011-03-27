@@ -200,7 +200,6 @@ class ArticlesController extends Controller
     
     public function getIdMaxArticle()
     {
-        $id = 0;
         $query = 'for $a in document("/db/Organizer/articles.xml")/articles
                   return
                   <max>

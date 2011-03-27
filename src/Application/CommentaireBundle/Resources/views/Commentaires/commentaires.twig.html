@@ -2,15 +2,15 @@
 <h3>Tous les commentaires de l'utilisateur {{commentaires.commentaire.auteur}}</h3>
 {% for commentaire in commentaires %}
  <div class="commentaire">
-   <a href="organizer/web/app_dev.php/articles/view/{{commentaire.article.id}}">
-   {{commentaire.article.titre}}</a> 
+   <a href="../../articles/view/{{commentaire.article.id}}">
+   {{commentaire.article.titre}} </a> 
    <div class="titrecoms">
     [{{commentaire.id}}] <strong>{{commentaire.titre|raw}}</strong>
     <i>publi&eacute; &Agrave; {{commentaire.datepublication}}</i>
    </div>
    <div class="message">
-   {{commentaire.message|raw}}
+    {{commentaire.message|raw}}
    </div>
    <br/>
-</div>
+ </div>
 {% endfor %}

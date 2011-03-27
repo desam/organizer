@@ -29,7 +29,6 @@ class CommentaireController extends Controller
     
     public function getIdMaxCommentaire()
     {
-        $id = 0;
         $query = 'for $a in document("/db/Organizer/commentaires.xml")/commentaires
                   return
                   <max>
