@@ -150,7 +150,7 @@
       event.data.to = dates.newto;
       event.data.refgrp = currentGroup;
       event.data._token = token;
-      return $.post(url + ("/calendar/update/" + event.data.id), {
+      return $.post(url + ("calendar/update/" + event.data.id), {
         event: event.data
       });
     };
@@ -162,7 +162,7 @@
       event.data.to = dates.newto;
       event.data.refgrp = currentGroup;
       event.data._token = token;
-      return $.post(url + ("/calendar/update/" + event.data.id), {
+      return $.post(url + ("calendar/update/" + event.data.id), {
         event: event.data
       });
     };

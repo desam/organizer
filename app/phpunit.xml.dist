@@ -6,14 +6,15 @@
          convertErrorsToExceptions="true"
          convertNoticesToExceptions="true"
          convertWarningsToExceptions="true"
-         processIsolation="true"
+         processIsolation="false"
          stopOnFailure="false"
          syntaxCheck="false"
-         bootstrap="../src/autoload.php"
+         bootstrap="bootstrap.php.cache"
 >
   <testsuites>
       <testsuite name="Project Test Suite">
-          <directory>../src/Application/*/Tests</directory>
+          <directory>../src/*/*Bundle/Tests</directory>
+          <directory>../src/*/Bundle/*Bundle/Tests</directory>
       </testsuite>
   </testsuites>
 
@@ -25,10 +26,12 @@
 
   <filter>
       <whitelist>
-          <directory>../src/Application</directory>
+          <directory>../src</directory>
           <exclude>
-              <directory>../src/Application/*/Resources</directory>
-              <directory>../src/Application/*/Tests</directory>
+              <directory>../src/*/*Bundle/Resources</directory>
+              <directory>../src/*/*Bundle/Tests</directory>
+              <directory>../src/*/Bundle/*Bundle/Resources</directory>
+              <directory>../src/*/Bundle/*Bundle/Tests</directory>
           </exclude>
       </whitelist>
   </filter>

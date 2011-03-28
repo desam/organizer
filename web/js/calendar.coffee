@@ -177,7 +177,7 @@ Calendarw = ->
     event.data.refgrp = currentGroup
     event.data._token = token
 
-    $.post(url + "/calendar/update/#{event.data.id}", {event:event.data})
+    $.post(url + "calendar/update/#{event.data.id}", {event:event.data})
 
   # called when an event is resized
   @updateResizedEvent = (obj) ->
@@ -190,7 +190,7 @@ Calendarw = ->
     event.data.refgrp = currentGroup
     event.data._token = token
 
-    $.post(url + "/calendar/update/#{event.data.id}", {event:event.data})
+    $.post(url + "calendar/update/#{event.data.id}", {event:event.data})
 
   # returns a date and an hour in function of the position of obj in the calendar
   @getEventboxDate = (obj) ->

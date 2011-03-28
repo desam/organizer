@@ -1,0 +1,156 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}Calendar!{% endblock %}
+
+{% block body %}
+<a id="organizer" href="{{ path('homepage') }}"></a>
+<div id="toolbox">
+  <div id="options">
+    <ul class="menu">
+      <li>
+        <a href="{{ path('edituser') }}">Editer mon profil</a>
+      </li>
+      <li>
+        <a href="http://google.com">Ajouter un groupe</a>
+      </li>
+      <li>
+        <a href="http://google.com">Ecrire un article</a>
+      </li>
+      <li>
+        <a href="http://google.com">Manger une pomme</a>
+      </li>
+      <li>
+        <a href="{{ path('logout') }}">Logout</a>
+      </li>
+    </ul>
+  </div>
+  <div id="username">
+    {{ user.getUsername() }}
+  </div>
+</div>
+<div id="groupname">
+  M1 Miage classique
+  <ul id="groupcontrol">
+      <li><a href="http://google.com">Calendar</a></li>
+      <li><a href="http://google.com">Articles</a></li>
+      <li><a href="http://google.com">Realtime</a></li>
+  </ul>
+</div>
+<div id="calsection">
+  <p>
+    <span id="caltitle">
+      From <strong>{{ from.format('Y-m-d, D') }}</strong>
+      to <strong>{{ to.format('Y-m-d, D') }}</strong>
+    </span>
+    <span id="calcontrol">
+      <a id="prev" href=":D"></a>
+      <a id="today" href="~~">Today</a>
+      <a id="next" href="ㅎㅎ"></a>
+      <a id="week" href="¬¬">Week</a>
+      <a id="month" href="~~">Month</a>
+    </span>
+  </p>
+
+  <div id="token" style="display:none">
+    {{ token }}
+  </div>
+
+  <div id="calendar">
+  </div>
+</div>
+<div id="artsection">
+  <ul id="articles">
+    <li class="articles">
+      <a>The louder he talked of his honour, the f</a>
+      <p>
+        It's not the men in my life, but the life in my men that counts.
+		-- Mae West...
+      </p>
+      <hr />
+    </li>
+    <li class="articles">
+      <a>Got a dictionary?  I want to know the mea</a>
+      <p>
+        Judges, as a class, display, in the matter of arranging alimony, that
+        reckless generosity which is found only in men who are giving away
+        someone else's...
+      </p>
+      <hr />
+    </li>
+    <li class="articles">
+      <a>Actor:	"I'm a smash hit.  Why, yesterday </a>
+      <p>
+        You can't get there from here....
+      </p>
+      <hr />
+    </li>
+    <li class="articles">
+      <a>If God wanted us to be brave, why did he </a>
+      <p>
+        My favorite sandwich is peanut butter, baloney, cheddar cheese, lettuce
+        and mayonnaise on toasted bread with catsup on the side.
+		-- Senator Hubert Hu...
+      </p>
+      <hr />
+ 
+    </li>
+    <li class="articles">
+      <a>There is always someone worse off than yo</a>
+      <p>
+        Fortune finishes the great quotations, #17
+
+	    "This bud of love, by summer's ripening breath,
+	    May prove a beauteous flower when next we meet."
+	    Juliet,...
+      </p>
+      <hr />
+    </li>
+    <li class="articles">
+      <a>101 USES FOR A DEAD MICROPROCESSOR</a>
+      <p>
+        We're mortal -- which is to say, we're ignorant, stupid, and sinful --
+        but those are only handicaps.  Our pride is that nevertheless, now and
+        then, we ...
+      </p>
+      <hr />
+	  (1)
+    </li>
+    <li class="articles">
+      <a>A crusader's wife slipped from the garris</a>
+      <p>
+        LIBRA (Sep. 23 to Oct. 22)
+	    Your desire for justice and truth will be overshadowed by your desire
+	    for filthy lucre and a decent meal.  Be gracious and...
+      </p>
+      <hr />
+    </li>
+    <li class="articles">
+      <a>In the beginning was the Tao.  The Tao ga</a>
+      <p>
+        The solution of problems is the most characteristic and peculiar sort
+        of voluntary thinking.
+		-- William James...
+      </p>
+      <hr />
+    </li>
+    <li class="articles">
+      <a>A master programmer passed a novice progr</a>
+      <p>
+        He thought of Musashi, the Sword Saint, standing in his garden more than
+        three hundred years ago. "What is the 'Body of a rock'?" he was asked.
+        In answ...
+      </p>
+      <hr />
+    </li>
+    <li class="articles">
+      <a>You never know what is enough until you k</a>
+      <p>
+        VIRGO (Aug 23 - Sept 22)
+	    You are the logical type and hate disorder.  This nitpicking is
+	    sickening to your friends.  You are cold and unemotional and...
+      </p>
+      <hr />
+    </li>
+  </ul>
+</div>
+{% endblock %}

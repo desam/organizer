@@ -12,8 +12,8 @@ class UserForm extends Form
 {
     protected function configure()	
     {	
-        $this->add(new TextField('login', array('max_length' => 30,)));
-		$this->add(new PasswordField('pass', array('max_length' => 30,)));
+        $this->add(new TextField('username', array('max_length' => 30,)));
+		$this->add(new PasswordField('password', array('max_length' => 30,)));
         $this->add(new TextField('firstname', array('max_length' => 30,))); 
         $this->add(new TextField('surname', array('max_length' => 30,)));
         $this->add(new TextField('mail', array('max_length' => 30,)));

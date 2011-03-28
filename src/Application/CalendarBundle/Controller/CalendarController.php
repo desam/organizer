@@ -4,7 +4,6 @@ namespace Application\CalendarBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Response;
-use Application\CalendarBundle\Event\EventManager;
 use Application\CalendarBundle\Event\EventForm;
 use Application\CalendarBundle\Event\EventRequest;
 use Symfony\Component\Form\CsrfProvider\SessionCsrfProvider;
@@ -24,9 +23,9 @@ class CalendarController extends Controller
 
         if($request->isXmlHttpRequest()) {
             $group = $request->query->get('group');
-            $events = EventManager::getByGroupAndDate(
+            $events = $this->get('eventmanager')->getByGroupAndDate(
                 $group, $from->format('Y-m-d'), $to->format('Y-m-d').' 23:59');
-            $events = EventManager::toJSON($events);
+            $events = $this->get('eventmanager')->toJSON($events);
 
             $response = new Response($events);
             $response->headers->set('Content-Type', 'application/json');
@@ -55,9 +54,9 @@ class CalendarController extends Controller
             $form->bind($this->get('request'), $eventRequest);
 
             if($form->isValid()) {
-                $event = EventManager::hash2xml($eventRequest->toHash());
+                $event = $this->get('eventmanager')->hash2xml($eventRequest->toHash());
 
-                EventManager::insert($event);
+                $this->get('eventmanager')->insert($event);
                 return $this->redirect('/');
             }
         }
@@ -70,7 +69,7 @@ class CalendarController extends Controller
 
     public function deleteAction($id)
     {
-        EventManager::deleteByID($id);
+        $this->get('eventmanager')->deleteByID($id);
         return $this->forward('CalendarBundle:Calendar:index',
                               array(
                                     'removed' => $id
@@ -87,14 +86,14 @@ class CalendarController extends Controller
             $form->bind($this->get('request'), $eventRequest);
 
             if($form->isValid()) {
-                $event = EventManager::hash2xml($eventRequest->toHash());
+                $event = $this->get('eventmanager')->hash2xml($eventRequest->toHash());
 
-                EventManager::updateByID($id, $event);
+                $this->get('eventmanager')->updateByID($id, $event);
                 return $this->redirect('/');
             }
         } else { //GET
-            $e = EventManager::getByID($id);
-            $hash = EventManager::xml2hash($e);
+            $e = $this->get('eventmanager')->getByID($id);
+            $hash = $this->get('eventmanager')->xml2hash($e);
 
             $r = EventRequest::fromHash($hash);
             $form->bind($this->get('request'), $r);
