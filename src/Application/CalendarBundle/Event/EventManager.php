@@ -1,22 +1,24 @@
 <?php
 namespace Application\CalendarBundle\Event;
 
-use Application\CalendarBundle\Entity\eXist;
+use existdb\eXist;
 
 /**
  * EventManager
  * Will regroup every query related to event manipulation
  **/
 
-//TODO Refactor/encapsulate $db access..
-//superclass eXistManager, with ->query() ?
-//container symfony ?
 class EventManager
 {
-    static public function getByGroupAndDate($group, $start, $end)
+    protected $db;
+
+    public function __construct(eXist $existdao) {
+        $this->db = $existdao;
+    }
+
+    public function getByGroupAndDate($group, $start, $end)
     {
-        $db = new eXist();
-        $db->connect() or die($db->getError());
+        $this->db->connect() or die($this->db->getError());
 
         $query = '
             <results>
@@ -37,16 +39,15 @@ class EventManager
             </results>
         ';
 
-        $result = $db->xquery($query) or die($db->getError());
-        // $db->disconnect() or die($db->getError());
+        $result = $this->db->xquery($query) or die($this->db->getError());
+        // $this->db->disconnect() or die($this->db->getError());
 
         return $result['XML'];
     }
 
-    static public function getByID($id)
+    public function getByID($id)
     {
-        $db = new eXist();
-        $db->connect() or die($db->getError());
+        $this->db->connect() or die($this->db->getError());
 
         $query = '
             <results>
@@ -57,65 +58,62 @@ class EventManager
             </results>
         ';
 
-        $result = $db->xquery($query) or die($db->getError());
-        // $db->disconnect() or die($db->getError());
+        $result = $this->db->xquery($query) or die($this->db->getError());
+        // $this->db->disconnect() or die($this->db->getError());
 
         return $result['XML'];
     }
 
-    static public function insert($event)
+    public function insert($event)
     {
-        $db = new eXist();
-        $db->connect() or die($db->getError());
+        $this->db->connect() or die($this->db->getError());
 
         $query = '
             update insert '. $event .'
             into document("orga/events.xml")/events
             ';
 
-        $result = $db->xquery($query) or die($db->getError());
-        $db->disconnect() or die($db->getError());
+        $result = $this->db->xquery($query) or die($this->db->getError());
+        $this->db->disconnect() or die($this->db->getError());
 
         return $result['XML'];
     }
 
-    static public function deleteByID($id)
+    public function deleteByID($id)
     {
-        $db = new eXist();
-        $db->connect() or die($db->getError());
+        $this->db->connect() or die($this->db->getError());
 
         $query = '
             update delete document("orga/events.xml")//event[@id = "'. $id .'"]
             ';
 
-        $result = $db->xquery($query) or
-            (preg_match('/No data found/', $db->getError()) or
-             die($db->getError()));
-        /* $db->disconnect() or die($db->getError()); */
+        $result = $this->db->xquery($query) or
+            (preg_match('/No data found/', $this->db->getError()) or
+             die($this->db->getError()));
+        /* $this->db->disconnect() or die($this->db->getError()); */
 
         return $result['XML'];
     }
 
-    static public function updateByID($id, $new)
+    public function updateByID($id, $new)
     {
-        $db = new eXist();
-        $db->connect() or die($db->getError());
+        $this->db->connect() or die($this->db->getError());
 
         $query = '
             update replace document("orga/events.xml")//event[@id = "'. $id .'"]
             with '. $new .'
             ';
 
-        $result = $db->xquery($query) or
-            (preg_match('/No data found/', $db->getError()) or
-             die($db->getError()));
+        $result = $this->db->xquery($query) or
+            (preg_match('/No data found/', $this->db->getError()) or
+             die($this->db->getError()));
 
-        /* $db->disconnect() or die($db->getError()); */
+        /* $this->db->disconnect() or die($this->db->getError()); */
 
         return $result['XML'];
     }
 
-    static public function toJSON($data)
+    public function toJSON($data)
     {
         //loading XML docs
         $xml = simplexml_load_string($data);
@@ -131,7 +129,7 @@ class EventManager
 
     //TODO make it recursive ?
     //FIXME second parameter defines the attributes to look for ?
-    static public function hash2xml($hash)
+    public function hash2xml($hash)
     {
         $children = '';
         $attributes = '';
@@ -154,7 +152,7 @@ class EventManager
     }
 
     //TODO make it recursive ?
-    static public function xml2hash($xml)
+    public function xml2hash($xml)
     {
         $event = simplexml_load_string($xml)->event[0];
 

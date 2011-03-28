@@ -3,12 +3,12 @@
 {% block title %}Calendar!{% endblock %}
 
 {% block body %}
-<a id="organizer" href="http://google.com"></a>
+<a id="organizer" href="{{ path('homepage') }}"></a>
 <div id="toolbox">
   <div id="options">
     <ul class="menu">
       <li>
-        <a href="http://google.com">Editer mon profil</a>
+        <a href="{{ path('edituser') }}">Editer mon profil</a>
       </li>
       <li>
         <a href="http://google.com">Ajouter un groupe</a>
@@ -20,12 +20,12 @@
         <a href="http://google.com">Manger une pomme</a>
       </li>
       <li>
-        <a href="http://google.com">Logout</a>
+        <a href="{{ path('logout') }}">Logout</a>
       </li>
     </ul>
   </div>
   <div id="username">
-    Willy
+    {{ user.getUsername() }}
   </div>
 </div>
 <div id="groupname">
@@ -92,7 +92,7 @@
 		-- Senator Hubert Hu...
       </p>
       <hr />
-      
+ 
     </li>
     <li class="articles">
       <a>There is always someone worse off than yo</a>
@@ -113,7 +113,7 @@
         then, we ...
       </p>
       <hr />
-	  (1)  
+	  (1)
     </li>
     <li class="articles">
       <a>A crusader's wife slipped from the garris</a>

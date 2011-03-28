@@ -13,6 +13,7 @@ $loader->registerNamespaces(array(
     'Zend\\Log'        => __DIR__.'/../vendor/zend-log',
     'Assetic'          => __DIR__.'/../vendor/assetic/src',
     'Imagine'          => __DIR__.'/../vendor/imagine/lib',
+    'existdb'          => __DIR__.'/../vendor',
     'Application'      => __DIR__.'/../src',
     'Bundle'           => __DIR__.'/../src',
 ));

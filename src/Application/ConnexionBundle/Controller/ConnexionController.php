@@ -4,6 +4,7 @@ namespace Application\ConnexionBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Application\ConnexionBundle\Controller\eXist;
 use XSLTProcessor;
+//TODO bitch? SIMPLEXML PLEASE
 use domDocument;
 
 class ConnexionController extends Controller

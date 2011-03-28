@@ -1,4 +1,4 @@
-orgaindex:
+homepage:
    pattern:  /
    defaults: { _controller: OrganizerBundle:Organizer:index }
 

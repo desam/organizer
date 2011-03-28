@@ -1,20 +1,22 @@
-Login:
+_security_login:
     pattern: /login
     defaults: { _controller: UserBundle:User:login }
 
-Deconnexion:
-    pattern: /deconnexion
-    defaults: { _controller: UserBundle:User:deconnexion }
-    
+_security_check:
+    pattern: /login_check
+
+logout:
+    pattern: /logout
+
 UserIndex: 
     pattern: /index
     defaults: { _controller: UserBundle:User:login }    
     
-Adduser:    
-    pattern: /adduser
+register:    
+    pattern: /register
     defaults: { _controller: UserBundle:User:addUser }
     
-Edituser:
+edituser:
     pattern: /edituser
     defaults: { _controller: UserBundle:User:editUser }
     

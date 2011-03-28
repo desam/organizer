@@ -13,6 +13,7 @@ class OrganizerController extends Controller
         $request = $this->get('request');
 
         //must be logged in
+        $user = $this->get('security.context')->getToken()->getUser();
 
         // get calendar from and to dates
         $start = $request->query->get('from');
@@ -31,6 +32,7 @@ class OrganizerController extends Controller
                                    'from' => $from,
                                    'to' => $to,
                                    'token' => $token,
+                                   'user' => $user,
                                    ));
     }
 }

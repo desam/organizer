@@ -1,3 +1,4 @@
+# homepage
 organizer:
     resource: @OrganizerBundle/Resources/config/routing.yml
 
@@ -11,7 +12,7 @@ Commentaire:
     resource: @CommentaireBundle/Resources/config/routing.yml
 
 User:
-    resource: @UserBundle/Resources/config/routing.yml	
+    resource: @UserBundle/Resources/config/routing.yml
 
 News:
-    resource: @NewsLetterBundle/Resources/config/routing.yml	
+    resource: @NewsLetterBundle/Resources/config/routing.yml

@@ -2,43 +2,35 @@
 namespace Application\UserBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Application\UserBundle\Entity\eXist;
-
-use Application\UserBundle\Entity\LoginForm;
-use Application\UserBundle\Entity\LoginRequest;
-
-use Application\UserBundle\Entity\NewsForm;
-use Application\UserBundle\Entity\NewsRequest;
 
 use Application\UserBundle\Entity\UserForm;
-use Application\UserBundle\Entity\User;
+use Application\UserBundle\Entity\XQueryUser;
+use Application\UserBundle\Entity\XQueryUserManager;
+use Symfony\Component\Security\Core\SecurityContext;
 
 
 class UserController extends Controller {
 
     public function loginAction() {
-        $loginRequest = new LoginRequest();
-        $form = LoginForm::create($this->get('form.context'),'login');
-        $form->bind($this->get('request'), $loginRequest);
-
-        if ($form->isValid()) {
-
-            if($loginRequest->toLogin() == true) {
-                $session = $this->get('request')->getSession();
-                $session->set('id', '_'. $loginRequest->getUserId());
-
-                return $this->forward('UserBundle:User:index');
-            }
+        // get the error if any (works with forward and redirect -- see below)
+        if ($this->get('request')->attributes->has(SecurityContext::AUTHENTICATION_ERROR)) {
+            $error = $this->get('request')->attributes->get(SecurityContext::AUTHENTICATION_ERROR);
+        } else {
+            $error = $this->get('request')->getSession()->get(SecurityContext::AUTHENTICATION_ERROR);
         }
-        return $this->render('UserBundle:Login:Login.html.twig', array('form' => $form));        
+
+        return $this->render('UserBundle:Login:login.html.twig',
+                   array(
+                       'last_username' => $this->get('request')->getSession()->get(SecurityContext::LAST_USERNAME),
+                        'error' => $error));
     }
 
     public function indexAction() {
-        $userRequest = new User();
+        $userRequest = new XQueryUser();
         $session     = $this->get('request')->getSession();
         $id          = $session->get('id');
         $id          = substr($id, 1);
-        $userXML     = $userRequest->getUser($id);
+        $userXML     = $this->get('usermanager')->getUser($id);
 
         return $this->render('UserBundle:User:UserIndex.html.twig',
                              array('firstname'=>$userXML[0]->firstname,
@@ -46,56 +38,37 @@ class UserController extends Controller {
                                    'image'=>$userXML[0]->avatar));
     }
 
-
     public function addUserAction() {
-        $userRequest = new User();
-        $form = UserForm::create($this->get('form.context'), 'user');
-        $form->bind($this->get('request'), $userRequest);
+        $newuser = new XQueryUser();
+        $form = UserForm::create($this->get('form.context'), 'newuser');
+        $form->bind($this->get('request'), $newuser);
 
         if ($form->isValid()) {
-            $userRequest->addUser();
-            $form = LoginForm::create($this->get('form.context'),'login');
-            return $this->render('UserBundle:Login:Login.html.twig',array('form' => $form));    
-        }
-        else{
-            return $this->render('UserBundle:User:Add.html.twig',array('form' => $form));            
+            $this->get('usermanager')->addUser($newuser);
+            return $this->forward('UserBundle:User:login');
+
         }
 
+        return $this->render('UserBundle:User:Add.html.twig',
+                                 array('form' => $form));
     }
 
     public function editUserAction() {
+        $user = $this->get('security.context')->getToken()->getUser();
 
-        $session = $this->get('request')->getSession();
-
-        if($session->get('id') == null){
-            return $this->forward('UserBundle:User:login');
-        }
-
-        $UserRequest = new UserRequest();
-        $id = $session->get('id');
-        $id = substr($id, 1);
-        $userXML = $UserRequest->getUser($id);
-
-        $UserRequest->setAttributes($userXML);
-        $form = UserForm::create($this->get('form.context'), 'User');
-        $form->bind($this->get('request'), $UserRequest);
+        $form = UserForm::create($this->get('form.context'), 'edituser');
+        $form->bind($this->get('request'), $user);
 
         if ($form->isValid()) {
-            $UserRequest->editUser($id);
-            return $this->render('UserBundle:User:UserIndex.html.twig', array(
-                                      'firstname'=>$UserRequest->getFirstName(),
-                                      'surname'=>$UserRequest->getSurName(),
-                                      'image'=>$UserRequest->getAvatar()));
+            $this->get('usermanager')->editUser($user);
+            return $this->render('UserBundle:User:UserIndex.html.twig',
+                                 array(
+                                      'firstname'=>$user->getFirstName(),
+                                      'surname'=>$user->getSurName(),
+                                      'image'=>$user->getAvatar()));
         }
-        return $this->render('UserBundle:User:Edit.html.twig', array(
-                                                              'form' => $form));
-    }
 
-
-    public function deconnexionAction(){
-        $session = $this->get('request')->getSession();
-        $session->remove('id');
-
-        return $this->forward('UserBundle:User:login');
+        return $this->render('UserBundle:User:Edit.html.twig',
+                             array('form' => $form));
     }
 }
