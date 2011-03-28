@@ -52,7 +52,7 @@ class eXist
 { 
   protected $_wsdl = "";
   protected $_user = "admin";
-  protected $_password = "admin";
+  protected $_password = "ranga";
   
   protected $_soapClient = null;
   protected $_session = null;
@@ -61,7 +61,7 @@ class eXist
   protected $_debug = false;
   protected $_highlight = false;
   
-  public function __construct($user="admin", $password="admin", $wsdl="http://localhost:8080/exist/services/Query?wsdl")
+  public function __construct($user="admin", $password="ranga", $wsdl="http://localhost:8080/exist/services/Query?wsdl")
   {
 	  $this->_user = $user;
 	  $this->_password = $password;
@@ -283,7 +283,7 @@ class eXist
 
 class eXistAdmin extends  eXist
 { 
-  public function __construct($user="admin", $password="admin", $wsdl="http://localhost:8080/exist/services/Admin?wsdl")
+  public function __construct($user="admin", $password="ranga", $wsdl="http://localhost:8080/exist/services/Admin?wsdl")
   {
 	  $this->_user = $user;
 	  $this->_password = $password;

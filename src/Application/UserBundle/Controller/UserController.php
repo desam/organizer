@@ -55,6 +55,8 @@ class UserController extends Controller {
 
     public function editUserAction() {
         $user = $this->get('security.context')->getToken()->getUser();
+        
+        
 
         $form = UserForm::create($this->get('form.context'), 'edituser');
         $form->bind($this->get('request'), $user);
