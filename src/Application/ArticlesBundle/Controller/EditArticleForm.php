@@ -15,11 +15,15 @@ class EditArticleForm extends Form
     protected function configure()
     {
 		//TODO côté serveur récupérer la date de création de l'article 
-        $this->add(new TextField('Titre', array(
+        $this->add(new TextField('titre', array(
             'max_length' => 100
         )));
-        $this->add(new TextareaField('description'));
-		$this->add(new TextareaField('corps'));
+        
+        $this->add(new TextareaField('description',array(
+            'required' => false,)));
+            
+		$this->add(new TextareaField('corps',array(
+            'required' => false,)));
         
         // Récupère l'objet xml
         $arrayxml = AddArticleForm::getCategories();

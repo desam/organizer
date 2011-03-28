@@ -14,7 +14,8 @@ class CommentaireForm extends Form
     protected function configure()
     {
         $this->add(new TextField('titre', array(
-            'max_length' => 100 )));
-        $this->add(new TextareaField('message'));
+            'max_length' => 100)));
+        $this->add(new TextareaField('message',array(
+            'required' => false,)));
     }
 }

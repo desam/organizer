@@ -1,6 +1,29 @@
+{% extends "OrganizerBundle::layout.html.twig" %}
 
+{% block title %}Liste des articles  {% endblock %}
+
+{% block body %}
 <div id="articles">
 <h2>Tous les articles </h2>
+<form action="" method="post">
+    <a href="/organizer/src/Application/ArticlesBundle/Controller">Lien Test</a>
+    <input type="text" name="searchterm" id="searchterm" size="35" onfocus="Cleandiv('Msgerror');"/>
+    <input type="submit" name="search" value="Search" title="Go !" class="submit" 
+    onclick="return(Checksearch('searchterm','Msgerror'));"/>
+    <div id="Msgerror"> </div>
+    <div id="hint"> </div>
+    <script type="text/javascript">
+        new Ajax.Autocompleter("a","hint","../commentaire/search", 
+                               {
+                                    afterUpdateElement : getSelectedId,
+                                    minChars : 1
+                               });
+        
+        function getSelectedId(text,li){
+          alert(li.id);
+        }
+    </script>
+    </form>
 <a href="ajouter">Ajouter un Article</a>
 
 {% for article in articles %}
@@ -9,15 +32,16 @@
     <a href="view/{{article.idarticle}}">
     {{ article.titre }}</a> {{ article.datepublication }}
         <a href="edit/{{article.idarticle}}">Edit</a>
-        <a href="delete/{{article.idarticle}}"
+        <a href="deletea/{{article.idarticle}}"
         onclick="return(confirm('Voulez-vous le supprimer ?'));"> Delete </a>
     </div>
     <div class="auteur">Par <i>{{ article.user }}</i></div>
     <div class="categorie">cat&eacute;gorie {{article.categorie}}</div>
     <div class="description"> 
-    {{article.description|raw}} 
-    <span><a href="view/{{article.idarticle}}">Lire >></a></span>
+        {{article.description|raw}} 
+        <span><a href="view/{{article.idarticle}}">Lire >></a></span>
     </div>
    <br/>
 </div>
 {% endfor %}
+{% endblock %}

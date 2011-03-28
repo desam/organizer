@@ -9,7 +9,6 @@ class ArticleRequest
     protected $description;
     protected $corps;
     protected $categories;
-    //protected $datepublication;
     
     public function __construct()
     {

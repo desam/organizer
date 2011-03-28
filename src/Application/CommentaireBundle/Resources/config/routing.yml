@@ -4,3 +4,8 @@ commentaire:
 add:
     pattern: /commentaire/add/{ida}
     defaults: { _controller: CommentaireBundle:Commentaire:index }
+delete:
+    pattern: /commentaire/delete/{id}/{idu}
+    defaults: { _controller: CommentaireBundle:Commentaire:deleteCommentaire }
+
+  

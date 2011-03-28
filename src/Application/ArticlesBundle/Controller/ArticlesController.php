@@ -9,9 +9,56 @@ class ArticlesController extends Controller
 {
     public function indexAction()
     {
-    
+        $articleRequest = new ArticleRequest();
+		$form = AddArticleForm::create($this->get('form.context'),'AddArticle');
+        
+        if('POST' === $this->get('request')->getMethod()) 
+        {
+            $form->bind($this->get('request'), $articleRequest);
+            
+            if ($form->isValid())
+            {
+                if(isset($_POST['AddArticle']))
+                {
+                    $news = $_POST['AddArticle'];
+                    if(!empty($news['titre'])&&!empty($news['description'])&&!empty($news['corps']))
+                    {
+                        $articleRequest->send();
+                        $this->createArticleAction($news);
+                        return $this->redirect('index');
+                    }
+                    else
+                        echo '<script>alert("Veuillez remplir tous les champs !")</script>';
+                }
+            }
+        }
+		// Display the form with the values in $contactRequest
+		return $this->render('ArticlesBundle:Articles:addArticle.twig.html', array(
+			'form' => $form));
     }
+    
+        
+    public function createArticleAction($news)
+    {
+        $datep = date("Y-m-d : H:i:s", time());
+        $titre = $news['titre'];
+        $description = htmlentities($news['description']);
+        $corps = htmlentities($news['corps']) ;
+        $idcategorie = $news['categories'];
+        $idarticle = $this->getIdMaxArticle() + 1;
+        
+        $query ='update insert 
+        <article id="'.$idarticle.'" refc="'.$idcategorie.'" refu="1">
+        <datepublication>'.$datep.'</datepublication>
+        <titre>'.$titre.'</titre>
+        <description>'.$description.'</description>
+        <corps>'.$corps.'</corps>
+        </article> into document("/db/Organizer/articles.xml")/articles';
 
+        $connexion = new ConnexionController();
+        $connexion->simpleexecuteAction($query);
+    }
+    
     public function getArticlesAction()
     {    
         $resultat = null;
@@ -46,14 +93,22 @@ class ArticlesController extends Controller
         $articleRequest = new ArticleRequest();
 		$form = EditArticleForm::create($this->get('form.context'),'EditArticle');
         
-        if('POST' === $this->get('request')->getMethod()) {
+        if('POST' === $this->get('request')->getMethod()){
             $form->bind($this->get('request'), $articleRequest);
 
             if ($form->isValid()) {
-                $articleRequest->send();
-                $node = $this->getArticleFromForm($ida);
-                $this->updateArticleAction($ida,$node);
-                return $this->redirect('../index');
+                if(!empty($_POST['EditArticle']))
+                {
+                    $article = $_POST['EditArticle'];               
+                    if(!empty($article['titre'])&&!empty($article['description'])
+                        &&!empty($article['corps'])) 
+                    {
+                        $articleRequest->send();
+                        $node = $this->getArticleFromForm($article,$ida);
+                        $this->updateArticleAction($ida,$node);
+                        return $this->redirect('../index');
+                    }
+                }
             }
        }
        else { // GET
@@ -86,35 +141,29 @@ class ArticlesController extends Controller
         return $xml;
     }
     
-    public function getArticleFromForm($ida)
+    public function getArticleFromForm($article, $ida)
     {
-        $article = $_POST['EditArticle'];
-        
-        if(!empty($_POST['EditArticle'])&&!empty($article['Titre'])
-            &&!empty($article['description'])&&!empty($article['corps']))
-        {
-            $datep = date("Y-m-d : H:i:s", time());
-            $titre = $article['Titre'];
-            $description = htmlentities($article['description']);
-            $corps = htmlentities($article['corps']);
-            $idcategorie = $article['categories'];
+        $datep = date("Y-m-d : H:i:s", time());
+        $titre = $article['titre'];
+        $description = htmlentities($article['description']);
+        $corps = htmlentities($article['corps']);
+        $idcategorie = $article['categories'];
             
-            $nodearticle='<article id="'.$ida.'" refc="'.$idcategorie.'" refu="1">
+        $nodearticle='<article id="'.$ida.'" refc="'.$idcategorie.'" refu="1">
                           <datepublication>'.$datep.'</datepublication>
                           <titre>'.$titre.'</titre>
                           <description>'.$description.'</description>
                           <corps>'.$corps.'</corps>
                           </article>';
                           
-            return $nodearticle;
-         }
+        return $nodearticle; 
     }
         
     public function updateArticleAction($ida,$node)
     {
         $query='update replace document("/db/Organizer/articles.xml")//article[@id = "'. $ida.'"]
                 with '. $node .'';
-        
+       // echo $query;
         $conn = new ConnexionController();
         $result = $conn->simpleexecuteAction($query);
     }
@@ -176,28 +225,7 @@ class ArticlesController extends Controller
                                                                                     'commentaires' =>$arrayxml2));           
     }
     
-    
-     public function addArticleAction()
-    {
-		$articleRequest = new ArticleRequest();
-		$form = AddArticleForm::create($this->get('form.context'),'AddArticle');
-        
-        if('POST' === $this->get('request')->getMethod()) 
-        {
-            $form->bind($this->get('request'), $articleRequest);
-            
-            if ($form->isValid())
-            {
-                $articleRequest->send();
-                $this->createArticleAction();
-                return $this->redirect('index');
-            }
-        }
-		// Display the form with the values in $contactRequest
-		return $this->render('ArticlesBundle:Articles:addArticle.twig.html', array(
-			'form' => $form));
-    }
-    
+
     public function getIdMaxArticle()
     {
         $query = 'for $a in document("/db/Organizer/articles.xml")/articles
@@ -212,34 +240,7 @@ class ArticlesController extends Controller
 
         return $xml;
     }
-    
-    public function createArticleAction()
-    {
-        if(!empty($_POST['AddArticle'])) {
-            $news = $_POST['AddArticle'];
-            if(!empty($news['Titre'])&&!empty($news['description'])&&!empty($news['corps'])){
-                $datep = date("Y-m-d : H:i:s", time());
-                $titre = htmlentities($news['Titre']);
-                $description = htmlentities($news['description']);
-                $corps = htmlentities($news['corps']) ;
-                $idcategorie = $news['categories'];
-                $idarticle = $this->getIdMaxArticle() + 1;
-                
-                $query ='update insert 
-                <article id="'.$idarticle.'" refc="'.$idcategorie.'" refu="1">
-                <datepublication>'.$datep.'</datepublication>
-                <titre>'.$titre.'</titre>
-                <description>'.$description.'</description>
-                <corps>'.$corps.'</corps>
-                </article> into document("/db/Organizer/articles.xml")/articles';
 
-                $connexion = new ConnexionController();
-                $connexion->simpleexecuteAction($query);
-            }
-        }
-        else 
-            echo "L'un des champs fournis est vide";
-    }
     
     public function getInfoArticle($ida)
     {
@@ -276,7 +277,5 @@ class ArticlesController extends Controller
                          "categories" => $categories);
         
     }
-
-        
     
 }
