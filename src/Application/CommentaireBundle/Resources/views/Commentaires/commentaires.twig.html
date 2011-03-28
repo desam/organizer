@@ -1,9 +1,12 @@
 <div id="articles">
-<h3>Tous les commentaires de l'utilisateur {{commentaires.commentaire.auteur}}</h3>
+<h3>Tous les commentaires de l'utilisateur {{commentaires.commentaire.auteur.name}}</h3>
+<i>Cette page sera accessible uniquement par l'utilisateur concern&eacute;</i>
 {% for commentaire in commentaires %}
  <div class="commentaire">
    <a href="../../articles/view/{{commentaire.article.id}}">
-   {{commentaire.article.titre}} </a> 
+   {{commentaire.article.titre}} </a>
+    <a href="../delete/{{commentaire.id}}/{{commentaire.auteur.idauteur}}" 
+     onclick="return(confirm('Voulez-vous le supprimer ?'));"> [Delete]</a>
    <div class="titrecoms">
     [{{commentaire.id}}] <strong>{{commentaire.titre|raw}}</strong>
     <i>publi&eacute; &Agrave; {{commentaire.datepublication}}</i>
