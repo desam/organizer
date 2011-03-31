@@ -1,5 +1,13 @@
 (function() {
   var Calendarm, Calendarw, caldiv, currentDate, currentGroup, token, url;
+  var __hasProp = Object.prototype.hasOwnProperty, __extends = function(child, parent) {
+    for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; }
+    function ctor() { this.constructor = child; }
+    ctor.prototype = parent.prototype;
+    child.prototype = new ctor;
+    child.__super__ = parent.prototype;
+    return child;
+  };
   if (!currentDate) {
     currentDate = new Date();
   }
@@ -9,11 +17,11 @@
   caldiv = $('#calendar');
   token = $('#token').text().trim();
   url = window.location.pathname.slice(0, window.location.pathname.lastIndexOf('/') + 1);
-  Calendarw = function() {
-    var self;
-    self = this;
-    this.days = 7;
-    this.draw = function() {
+  Calendarw = (function() {
+    function Calendarw() {
+      this.days = 7;
+    }
+    Calendarw.prototype.draw = function() {
       var cal, d, days, first, i, timeslots, _ref;
       days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
       timeslots = "";
@@ -36,11 +44,11 @@
       first = $('#first_calumn');
       return caldiv.find('.calumn').width(Math.floor((caldiv.outerWidth() - first.outerWidth() - this.days - 1) / this.days)).droppable({
         drop: function(event, obj) {
-          return self.updateMovedEvent(obj, this);
+          return this.updateMovedEvent(obj, this);
         }
       });
     };
-    this.distributeEvents = function(data) {
+    Calendarw.prototype.distributeEvents = function(data) {
       var daydiv, divs, ebpadding, event, eventbox, eventboxSpan, hour, index, li, markup, newheight, newwidth, tohour, ul, _i, _len;
       divs = $('#calendar > div').not('#first_calumn');
       markup = '<div class="eventbox" data-id="${id}"><strong>${title}</strong><br />\
@@ -51,7 +59,7 @@
       $.template("event", markup);
       for (_i = 0, _len = data.length; _i < _len; _i++) {
         event = data[_i];
-        daydiv = self.bi(event, divs);
+        daydiv = this.bi(event, divs);
         if (daydiv != null) {
           hour = event.from.split(" ")[1].split(":");
           index = hour[0] * 2;
@@ -80,11 +88,11 @@
         handles: 'n,s',
         grid: [divs.outerWidth(), caldiv.find('li.row').outerHeight()],
         stop: function(event, ui) {
-          return self.updateResizedEvent(ui);
+          return this.updateResizedEvent(ui);
         }
       });
     };
-    this.bi = function(event, divs) {
+    Calendarw.prototype.bi = function(event, divs) {
       var edate, elem, max, mid, min, value;
       value = event.from.split(" ")[0];
       min = 0;
@@ -109,23 +117,25 @@
       }
       return null;
     };
-    this.nextRange = function() {
+    Calendarw.prototype.nextRange = function() {
       currentDate.setDate(currentDate.getDate() + this.days);
-      return self.refresh();
+      return this.refresh();
     };
-    this.prevRange = function() {
-      currentDate.setDate(currentDate.getDate() - this.days);
-      return self.refresh();
+    Calendarw.prototype.prevRange = function() {
+      currentDate.setDate(currentDate.getDate() - days);
+      return this.refresh();
     };
-    this.refresh = function() {
-      self.refreshTitle();
-      self.draw();
-      return self.refreshEvents();
+    Calendarw.prototype.refresh = function() {
+      this.refreshTitle();
+      this.draw();
+      return this.refreshEvents();
     };
-    this.refreshEvents = function(range) {
+    Calendarw.prototype.refreshEvents = function(range) {
+      var self;
       if (range == null) {
         range = 7;
       }
+      self = this;
       return $.getJSON(url + 'calendar', {
         "from": currentDate.nice(),
         "range": range,
@@ -134,7 +144,7 @@
         return self.distributeEvents(data);
       });
     };
-    this.refreshTitle = function() {
+    Calendarw.prototype.refreshTitle = function() {
       var t, to;
       t = $('#caltitle > strong');
       to = new Date(currentDate);
@@ -142,10 +152,10 @@
       t[0].innerHTML = currentDate.nice();
       return t[1].innerHTML = to.nice();
     };
-    this.updateMovedEvent = function(obj) {
+    Calendarw.prototype.updateMovedEvent = function(obj) {
       var dates, event;
       event = obj.draggable.tmplItem();
-      dates = self.getEventboxDate(obj);
+      dates = this.getEventboxDate(obj);
       event.data.from = dates.newfrom;
       event.data.to = dates.newto;
       event.data.refgrp = currentGroup;
@@ -154,10 +164,10 @@
         event: event.data
       });
     };
-    this.updateResizedEvent = function(obj) {
+    Calendarw.prototype.updateResizedEvent = function(obj) {
       var dates, event;
       event = obj.helper.tmplItem();
-      dates = self.getEventboxDate(obj);
+      dates = this.getEventboxDate(obj);
       event.data.from = dates.newfrom;
       event.data.to = dates.newto;
       event.data.refgrp = currentGroup;
@@ -166,7 +176,7 @@
         event: event.data
       });
     };
-    this.getEventboxDate = function(obj) {
+    Calendarw.prototype.getEventboxDate = function(obj) {
       var firstday, hoffset, hour, newdate, newfrom, newto, voffset;
       firstday = caldiv.find('.calumn').not('#first_calumn').first();
       hoffset = Math.floor((obj.position.left - firstday.offset().left) / firstday.width());
@@ -184,25 +194,27 @@
         newfrom: newfrom
       };
     };
-    return false;
-  };
-  Calendarm = function() {
-    var self;
-    this.columns = 7;
-    this.rows = 5;
-    self = this;
-    this.distributeEvents = function(data) {
+    false;
+    return Calendarw;
+  })();
+  Calendarm = (function() {
+    __extends(Calendarm, Calendarw);
+    function Calendarm() {
+      this.columns = 7;
+      this.rows = 5;
+    }
+    Calendarm.prototype.distributeEvents = function(data) {
       var daydiv, divs, event, _i, _len, _results;
       divs = $('#calendar .daybox');
       _results = [];
       for (_i = 0, _len = data.length; _i < _len; _i++) {
         event = data[_i];
-        daydiv = self.bi(event, divs);
+        daydiv = this.bi(event, divs);
         _results.push(daydiv != null ? daydiv.find('ul').append("<li>" + event.title + "</li>") : void 0);
       }
       return _results;
     };
-    this.draw = function() {
+    Calendarm.prototype.draw = function() {
       var boxheight, boxwidth, cal, d, days, i, _ref, _ref2;
       days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
       cal = "";
@@ -219,26 +231,26 @@
       caldiv.html(cal);
       boxwidth = (caldiv.outerWidth() - this.columns) / this.columns;
       boxheight = (caldiv.outerHeight() - this.rows) / this.rows;
+      console.log(boxheight, caldiv.outerHeight(), this.rows);
       caldiv.find('.dayofweek').width(boxwidth);
       caldiv.find('.daybox').width(boxwidth);
       return caldiv.find('.daybox').height(boxheight);
     };
-    this.refreshEvents = function(range) {
-      return Calendarm.prototype.refreshEvents(35);
+    Calendarm.prototype.refreshEvents = function() {
+      return Calendarm.__super__.refreshEvents.call(this, 35);
     };
-    this.prevRange = function() {
+    Calendarm.prototype.prevRange = function() {
       currentDate.setDate(currentDate.getDate() - this.columns * this.rows);
-      return self.refresh();
+      return this.refresh();
     };
-    this.nextRange = function() {
+    Calendarm.prototype.nextRange = function() {
       currentDate.setDate(currentDate.getDate() + this.columns * this.rows);
-      return self.refresh();
+      return this.refresh();
     };
-    return false;
-  };
-  Calendarm.prototype = new Calendarw();
+    false;
+    return Calendarm;
+  })();
   $(document).ready(function() {
-    var cal;
     Date.prototype.nice = function() {
       var day, month, year;
       year = this.getFullYear();
@@ -252,8 +264,6 @@
       }
       return "" + year + "-" + month + "-" + day;
     };
-    cal = new Calendarw();
-    cal.refresh();
     $('#next').bind('click', function(event) {
       cal.nextRange();
       return false;
@@ -263,19 +273,22 @@
       return false;
     });
     $('#week').bind('click', function(event) {
+      var cal;
       cal = new Calendarw();
       cal.refresh();
       return false;
     });
     $('#month').bind('click', function(event) {
+      var cal;
       cal = new Calendarm();
       cal.refresh();
       return false;
     });
-    return $('#today').bind('click', function(event) {
+    $('#today').bind('click', function(event) {
       currentDate = new Date();
       cal.refresh();
       return false;
     });
+    return $('#week').click();
   });
 }).call(this);

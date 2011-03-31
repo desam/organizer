@@ -5,11 +5,11 @@ caldiv = $('#calendar')
 token = $('#token').text().trim()
 url = window.location.pathname.slice(0, window.location.pathname.lastIndexOf('/') + 1)
 
-Calendarw = ->
-  self = this
-  @days = 7
+class Calendarw
+  constructor: ->
+    @days = 7
 
-  @draw = ->
+  draw: ->
     days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
 
     timeslots = ""
@@ -37,7 +37,6 @@ Calendarw = ->
               <ul>#{timeslots}</ul>
               </div>"
 
-
     caldiv.html(cal)
 
     first = $('#first_calumn')
@@ -48,10 +47,10 @@ Calendarw = ->
         Math.floor((caldiv.outerWidth() - first.outerWidth() - @days - 1) / @days))
       .droppable({
         drop: (event, obj) ->
-          self.updateMovedEvent(obj, this)
+          @updateMovedEvent(obj, this)
       })
 
-  @distributeEvents = (data) ->
+  distributeEvents: (data) ->
     divs = $('#calendar > div').not('#first_calumn')
 
     # creating microtemplate "event"
@@ -66,7 +65,7 @@ Calendarw = ->
     # find daydiv[@date = event.from],
     # append it to this daydiv
     for event in data
-      daydiv = self.bi(event, divs)
+      daydiv = @bi(event, divs)
 
       # success, column found.. now the row..
       if daydiv?
@@ -107,10 +106,10 @@ Calendarw = ->
       handles: 'n,s',
       grid: [divs.outerWidth(), caldiv.find('li.row').outerHeight()],
       stop: (event, ui) ->
-        self.updateResizedEvent(ui)
+        @updateResizedEvent(ui)
     })
 
-  @bi = (event, divs) ->
+  bi: (event, divs) ->
     # binary search
     value = event.from.split(" ")[0]
     min = 0
@@ -134,22 +133,23 @@ Calendarw = ->
 
     return null
 
-  @nextRange = ->
+  nextRange: ->
     currentDate.setDate(currentDate.getDate() + @days)
-    self.refresh()
+    @refresh()
 
-  @prevRange = ->
-    currentDate.setDate(currentDate.getDate() - @days)
-    self.refresh()
+  prevRange: ->
+    currentDate.setDate(currentDate.getDate() - days)
+    @refresh()
 
-  @refresh = ->
-    self.refreshTitle()
+  refresh: ->
+    @refreshTitle()
     # TODO redraw the WHOLE calendar everytime? i dont think so
-    self.draw()
-    self.refreshEvents()
+    @draw()
+    @refreshEvents()
 
-  @refreshEvents = (range) ->
+  refreshEvents: (range) ->
     range = 7 unless range?
+    self = this
 
     $.getJSON(url + 'calendar', {
         "from": currentDate.nice(),
@@ -157,7 +157,7 @@ Calendarw = ->
         "group": currentGroup
         }, (data) -> self.distributeEvents(data))
 
-  @refreshTitle = ->
+  refreshTitle: ->
     t  = $('#caltitle > strong')
     to = new Date(currentDate)
     to.setDate(to.getDate() + @days)
@@ -167,10 +167,10 @@ Calendarw = ->
 
 
   # called when an event is drag n' dropped
-  @updateMovedEvent = (obj) ->
+  updateMovedEvent: (obj) ->
     event = obj.draggable.tmplItem()
 
-    dates = self.getEventboxDate(obj)
+    dates = @getEventboxDate(obj)
 
     event.data.from   = dates.newfrom
     event.data.to     = dates.newto
@@ -180,10 +180,10 @@ Calendarw = ->
     $.post(url + "calendar/update/#{event.data.id}", {event:event.data})
 
   # called when an event is resized
-  @updateResizedEvent = (obj) ->
+  updateResizedEvent: (obj) ->
     event = obj.helper.tmplItem()
 
-    dates = self.getEventboxDate(obj)
+    dates = @getEventboxDate(obj)
 
     event.data.from   = dates.newfrom
     event.data.to     = dates.newto
@@ -193,7 +193,7 @@ Calendarw = ->
     $.post(url + "calendar/update/#{event.data.id}", {event:event.data})
 
   # returns a date and an hour in function of the position of obj in the calendar
-  @getEventboxDate = (obj) ->
+  getEventboxDate: (obj) ->
     firstday = caldiv.find('.calumn').not('#first_calumn').first()
 
     # which day? get the horizontal distance from the firstday
@@ -224,21 +224,21 @@ Calendarw = ->
   false
 
 
-Calendarm = ->
-  @columns = 7
-  @rows = 5
-  self = this
+class Calendarm extends Calendarw
+  constructor: ->
+    @columns = 7
+    @rows = 5
 
-  @distributeEvents = (data) ->
+  distributeEvents: (data) ->
     divs = $('#calendar .daybox')
 
     for event in data
-      daydiv = self.bi(event, divs)
+      daydiv = @bi(event, divs)
 
       if daydiv?
         daydiv.find('ul').append("<li>#{event.title}</li>")
 
-  @draw = () ->
+  draw: ->
     days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
 
     cal = ""
@@ -266,25 +266,24 @@ Calendarm = ->
     boxwidth = (caldiv.outerWidth() - @columns) / @columns
     boxheight = (caldiv.outerHeight() - @rows) / @rows
 
+    console.log(boxheight, caldiv.outerHeight(), @rows)
+
     caldiv.find('.dayofweek').width(boxwidth)
     caldiv.find('.daybox').width(boxwidth)
     caldiv.find('.daybox').height(boxheight)
 
-  @refreshEvents = (range) ->
-    Calendarm.prototype.refreshEvents(35)
+  refreshEvents: ->
+    super 35
 
-  @prevRange = ->
+  prevRange: ->
     currentDate.setDate(currentDate.getDate() - @columns * @rows)
-    self.refresh()
+    @refresh()
 
-  @nextRange = ->
+  nextRange: ->
     currentDate.setDate(currentDate.getDate() + @columns * @rows)
-    self.refresh()
+    @refresh()
 
   false
-
-Calendarm.prototype = new Calendarw()
-
 
 $(document).ready ->
   # TODO where can i put this ? ^-^
@@ -295,9 +294,6 @@ $(document).ready ->
     day = this.getDate()
     day = "0#{day}" if day < 10
     return "#{year}-#{month}-#{day}"
-
-  cal = new Calendarw()
-  cal.refresh()
 
   $('#next').bind 'click', (event) ->
     cal.nextRange()
@@ -321,3 +317,5 @@ $(document).ready ->
     currentDate = new Date()
     cal.refresh()
     return false
+
+  $('#week').click()
