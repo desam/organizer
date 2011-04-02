@@ -1,0 +1,18 @@
+{% extends "OrganizerBundle::layout.html.twig" %}
+
+{% block headextended %}
+<link type="text/css" rel="stylesheet" href="{{ asset('css/chat.css') }}">
+{% endblock %}
+
+{% block body %}
+<div id="chat">
+    <div id="chatwindow">
+    </div>
+    <input type="text" id="chatinput" />
+</div>
+{% endblock %}
+
+{% block js %}
+<script type="text/javascript" src="http://localhost:8888/faye.js"></script>
+<script type="text/javascript" src="{{ asset('js/chat.js') }}"></script>
+{% endblock %}

@@ -1,0 +1,32 @@
+/*
+      _           _   
+  ___| |__   __ _| |_ 
+ / __| '_ \ / _` | __|
+| (__| | | | (_| | |_ 
+ \___|_| |_|\__,_|\__|
+*/
+
+
+#chatsection {
+    bottom: 10px;
+    display: none;
+    position: relative;
+}
+
+#chatwindow {
+    overflow: auto;
+}
+
+#chatwindow .chatmessage {
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+#chatinput {
+    bottom: 5px;
+    font-size: 1.1em;
+    line-height: 1.1em;
+    margin-top: 15px;
+    position: fixed;
+    width: 75%;
+}

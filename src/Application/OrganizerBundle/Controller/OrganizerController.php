@@ -33,6 +33,7 @@ class OrganizerController extends Controller
                                    'to' => $to,
                                    'token' => $token,
                                    'user' => $user,
+                                   'server' => $_SERVER['HTTP_HOST'],
                                    ));
     }
 }

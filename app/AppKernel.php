@@ -20,6 +20,7 @@ class AppKernel extends Kernel
 
             // register your bundles
             new Application\CalendarBundle\CalendarBundle(),
+            new Application\ChatBundle\ChatBundle(),
             new Application\NewsLetterBundle\NewsLetterBundle(),
             new Application\UserBundle\UserBundle(),
             new Application\CommentaireBundle\CommentaireBundle(),

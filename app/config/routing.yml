@@ -5,6 +5,9 @@ organizer:
 calendar:
     resource: @CalendarBundle/Resources/config/routing.yml
 
+chat:
+    resource: @ChatBundle/Resources/config/routing.yml
+
 Articles:
     resource: @ArticlesBundle/Resources/config/routing.yml
 
