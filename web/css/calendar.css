@@ -5,6 +5,7 @@ ul, li {
 }
 
 a {
+    color: #005689;
     text-decoration: none;
 }
 
@@ -52,18 +53,66 @@ body {
     position: fixed;
     right: 0;
     top: 0;
+    z-index: 9999;
 }
 
-#calsection {
-    margin-top: 130px;
-    text-align: center;
+#mainwrapper {
+    margin-top: 130px; /* header */
+    margin-right: 170px; /* widgets */
+    position: relative;
+}
+
+#main {
     width: 100%;
 }
 
 #artsection {
-    float: right;
-    height: 50px;
-    width: 0%;
+    /* float: right; */
+    /* height: 50px; */
+    display: none;
+    width: 100%;
+}
+/*
+          _     _            _       
+__      _(_) __| | __ _  ___| |_ ___ 
+\ \ /\ / / |/ _` |/ _` |/ _ \ __/ __|
+ \ V  V /| | (_| | (_| |  __/ |_\__ \
+  \_/\_/ |_|\__,_|\__, |\___|\__|___/
+                  |___/              
+*/
+
+#widgets {
+    border: solid 2px pink;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    position: absolute;
+    right: 0px;
+    top: 74px; /* just below toolbox */
+    width: 150px;
+}
+#widgets li {
+    position: relative;
+}
+
+#widgets .widget {
+    background-position: center !important;
+    display: block;
+    height: 150px;
+    position: relative;
+}
+
+#widgets .widget:hover {
+    background-color: #FCE3E6;
+}
+
+#widgets .widget span {
+    bottom: 7px;
+    position: absolute;
+    right: 7px;
+}
+
+#chatwidget {
+    background: url('../images/chat_bubble.png') no-repeat;
 }
 
 /*
@@ -192,6 +241,17 @@ body {
  \___\__,_|_|\___|_| |_|\__,_|\__,_|_|   
 
  */
+#calsection {
+    text-align: center;
+    width: 100%;
+}
+
+#calendar {
+    max-height: 500px;
+    overflow-y: scroll;
+    position: relative;
+}
+
 #calsection > p {
     height: 20px; /* #next, #prev height */
     text-align: left;

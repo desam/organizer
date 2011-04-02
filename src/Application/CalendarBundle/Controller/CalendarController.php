@@ -34,8 +34,6 @@ class CalendarController extends Controller
 
         $form = EventForm::create($this->get('form.context'), 'event');
         $token = $form->get($form->getCsrfFieldName())->getDisplayedData();
-        /* $provider = new SessionCsrfProvider($this->get('session'), 'xpathrocks'); */
-        /* $token = $provider->generateCsrfToken('Application\CalendarBundle\Event\EventForm'); */
 
         return $this->render('CalendarBundle:Calendar:index.twig.html',
                              array(
@@ -70,10 +68,7 @@ class CalendarController extends Controller
     public function deleteAction($id)
     {
         $this->get('eventmanager')->deleteByID($id);
-        return $this->forward('CalendarBundle:Calendar:index',
-                              array(
-                                    'removed' => $id
-                                    ));
+        return new Response("Removed event $id");
     }
 
     //TODO check permissions
@@ -89,19 +84,9 @@ class CalendarController extends Controller
                 $event = $this->get('eventmanager')->hash2xml($eventRequest->toHash());
 
                 $this->get('eventmanager')->updateByID($id, $event);
-                return $this->redirect('/');
+                return new Response("Updated $id");
             }
-        } else { //GET
-            $e = $this->get('eventmanager')->getByID($id);
-            $hash = $this->get('eventmanager')->xml2hash($e);
-
-            $r = EventRequest::fromHash($hash);
-            $form->bind($this->get('request'), $r);
         }
-
-        return $this->render('CalendarBundle:Calendar:newevent.twig.html',
-                             array(
-                                   'form' => $form
-                                   ));
+        return $this->redirect('/');
     }
 }

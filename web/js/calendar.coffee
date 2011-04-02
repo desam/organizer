@@ -42,12 +42,13 @@ class Calendarw
     first = $('#first_calumn')
     # TODO use relative measures (% instead of px)
     # resizing columns
+    self = this
     caldiv.find('.calumn')
       .width(
         Math.floor((caldiv.outerWidth() - first.outerWidth() - @days - 1) / @days))
       .droppable({
         drop: (event, obj) ->
-          @updateMovedEvent(obj, this)
+          self.updateMovedEvent(obj, this)
       })
 
   distributeEvents: (data) ->
@@ -98,6 +99,7 @@ class Calendarw
 
         eventbox.offset({top: li.offset().top})
 
+    self = this
     $('.eventbox')
     .draggable({
       grid: [divs.outerWidth(), caldiv.find('li.row').outerHeight()],
@@ -106,8 +108,19 @@ class Calendarw
       handles: 'n,s',
       grid: [divs.outerWidth(), caldiv.find('li.row').outerHeight()],
       stop: (event, ui) ->
-        @updateResizedEvent(ui)
+        self.updateResizedEvent(ui)
     })
+    .attr('tabindex', 0)
+    .click( -> this.focus())
+    .keydown (e) ->
+      if e.keyCode == 8 or e.keyCode == 46
+        $this = $(this)
+        event = $this.tmplItem()
+
+        $.post(url + "calendar/delete/#{event.data.id}")
+        $this.remove()
+
+        return false
 
   bi: (event, divs) ->
     # binary search
@@ -138,7 +151,7 @@ class Calendarw
     @refresh()
 
   prevRange: ->
-    currentDate.setDate(currentDate.getDate() - days)
+    currentDate.setDate(currentDate.getDate() - @days)
     @refresh()
 
   refresh: ->
@@ -149,8 +162,8 @@ class Calendarw
 
   refreshEvents: (range) ->
     range = 7 unless range?
-    self = this
 
+    self = this
     $.getJSON(url + 'calendar', {
         "from": currentDate.nice(),
         "range": range,
@@ -266,8 +279,6 @@ class Calendarm extends Calendarw
     boxwidth = (caldiv.outerWidth() - @columns) / @columns
     boxheight = (caldiv.outerHeight() - @rows) / @rows
 
-    console.log(boxheight, caldiv.outerHeight(), @rows)
-
     caldiv.find('.dayofweek').width(boxwidth)
     caldiv.find('.daybox').width(boxwidth)
     caldiv.find('.daybox').height(boxheight)
@@ -294,6 +305,8 @@ $(document).ready ->
     day = this.getDate()
     day = "0#{day}" if day < 10
     return "#{year}-#{month}-#{day}"
+
+  cal = null
 
   $('#next').bind 'click', (event) ->
     cal.nextRange()

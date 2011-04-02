@@ -22,7 +22,7 @@
       this.days = 7;
     }
     Calendarw.prototype.draw = function() {
-      var cal, d, days, first, i, timeslots, _ref;
+      var cal, d, days, first, i, self, timeslots, _ref;
       days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
       timeslots = "";
       for (i = 0; i <= 47; i++) {
@@ -42,14 +42,15 @@
       }
       caldiv.html(cal);
       first = $('#first_calumn');
+      self = this;
       return caldiv.find('.calumn').width(Math.floor((caldiv.outerWidth() - first.outerWidth() - this.days - 1) / this.days)).droppable({
         drop: function(event, obj) {
-          return this.updateMovedEvent(obj, this);
+          return self.updateMovedEvent(obj, this);
         }
       });
     };
     Calendarw.prototype.distributeEvents = function(data) {
-      var daydiv, divs, ebpadding, event, eventbox, eventboxSpan, hour, index, li, markup, newheight, newwidth, tohour, ul, _i, _len;
+      var daydiv, divs, ebpadding, event, eventbox, eventboxSpan, hour, index, li, markup, newheight, newwidth, self, tohour, ul, _i, _len;
       divs = $('#calendar > div').not('#first_calumn');
       markup = '<div class="eventbox" data-id="${id}"><strong>${title}</strong><br />\
         <span class="info">\
@@ -82,13 +83,25 @@
           });
         }
       }
+      self = this;
       return $('.eventbox').draggable({
         grid: [divs.outerWidth(), caldiv.find('li.row').outerHeight()]
       }).resizable({
         handles: 'n,s',
         grid: [divs.outerWidth(), caldiv.find('li.row').outerHeight()],
         stop: function(event, ui) {
-          return this.updateResizedEvent(ui);
+          return self.updateResizedEvent(ui);
+        }
+      }).attr('tabindex', 0).click(function() {
+        return this.focus();
+      }).keydown(function(e) {
+        var $this;
+        if (e.keyCode === 8 || e.keyCode === 46) {
+          $this = $(this);
+          event = $this.tmplItem();
+          $.post(url + ("calendar/delete/" + event.data.id));
+          $this.remove();
+          return false;
         }
       });
     };
@@ -122,7 +135,7 @@
       return this.refresh();
     };
     Calendarw.prototype.prevRange = function() {
-      currentDate.setDate(currentDate.getDate() - days);
+      currentDate.setDate(currentDate.getDate() - this.days);
       return this.refresh();
     };
     Calendarw.prototype.refresh = function() {
@@ -231,7 +244,6 @@
       caldiv.html(cal);
       boxwidth = (caldiv.outerWidth() - this.columns) / this.columns;
       boxheight = (caldiv.outerHeight() - this.rows) / this.rows;
-      console.log(boxheight, caldiv.outerHeight(), this.rows);
       caldiv.find('.dayofweek').width(boxwidth);
       caldiv.find('.daybox').width(boxwidth);
       return caldiv.find('.daybox').height(boxheight);
@@ -251,6 +263,7 @@
     return Calendarm;
   })();
   $(document).ready(function() {
+    var cal;
     Date.prototype.nice = function() {
       var day, month, year;
       year = this.getFullYear();
@@ -264,6 +277,7 @@
       }
       return "" + year + "-" + month + "-" + day;
     };
+    cal = null;
     $('#next').bind('click', function(event) {
       cal.nextRange();
       return false;
@@ -273,13 +287,11 @@
       return false;
     });
     $('#week').bind('click', function(event) {
-      var cal;
       cal = new Calendarw();
       cal.refresh();
       return false;
     });
     $('#month').bind('click', function(event) {
-      var cal;
       cal = new Calendarm();
       cal.refresh();
       return false;
