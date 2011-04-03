@@ -42,6 +42,7 @@ class Calendarw
     cal += "</tbody></table>"
     caldiv.html(cal)
 
+    self = this
     caldiv.find('.calumn')
       .droppable({
         drop: (event, ui) ->

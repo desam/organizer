@@ -22,7 +22,7 @@
       this.days = 7;
     }
     Calendarw.prototype.draw = function() {
-      var cal, d, days, i, timeslots, _ref;
+      var cal, d, days, i, self, timeslots, _ref;
       days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
       timeslots = "";
       for (i = 0; i <= 47; i++) {
@@ -42,6 +42,7 @@
       }
       cal += "</tbody></table>";
       caldiv.html(cal);
+      self = this;
       return caldiv.find('.calumn').droppable({
         drop: function(event, ui) {
           var realpos;
