@@ -219,7 +219,7 @@ class Calendarw
     firstday = calumns.first()
 
     # which day? get the horizontal distance from the firstday
-    hoffset = Math.floor((obj.offset.left - firstday.offset().left) / firstday.width())
+    hoffset = Math.floor((obj.helper.offset().left - firstday.offset().left) / firstday.width())
 
     # so... what day is it?
     newdate = calumns.eq(hoffset).data('date')

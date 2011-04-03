@@ -308,6 +308,7 @@ __      _(_) __| | __ _  ___| |_ ___
     border-right: 1px black solid;
     border-top: 1px black solid;
     border-bottom: 1px black solid;
+    width: 14%;
 }
 
 #calendar .calumn > h5 {
@@ -339,7 +340,7 @@ __      _(_) __| | __ _  ___| |_ ___
 
 #first_calumn {
     border: 1px black solid;
-    width: 45px !important;
+    width: 2% !important;
 }
 
 /* Month Calendar - mocal */

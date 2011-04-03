@@ -202,7 +202,7 @@
       var calumns, firstday, hoffset, hour, newdate, newfrom, newto, voffset;
       calumns = caldiv.find('.calumn').not('#first_calumn');
       firstday = calumns.first();
-      hoffset = Math.floor((obj.offset.left - firstday.offset().left) / firstday.width());
+      hoffset = Math.floor((obj.helper.offset().left - firstday.offset().left) / firstday.width());
       newdate = calumns.eq(hoffset).data('date');
       voffset = Math.floor(obj.position.top) / 25;
       hour = Math.floor(voffset / 2) % 24;
