@@ -2,7 +2,7 @@
 
 <!ELEMENT groups (group*)>
 
-<!ELEMENT group (name, description, user*)>
+<!ELEMENT group (name, description, user*,avatar)>
 <!ATTLIST group
   id ID #REQUIRED
 >
@@ -12,3 +12,4 @@
 <!ELEMENT user EMPTY>
 <!ATTLIST user
           refuser CDATA #REQUIRED>
+<!ELEMENT avatar (#PCDATA)>          
