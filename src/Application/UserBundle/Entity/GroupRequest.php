@@ -1,6 +1,8 @@
 <?php
 namespace Application\UserBundle\Entity;
 
+use Imagine;
+
 class GroupRequest
 {
 	/**
@@ -35,6 +37,24 @@ class GroupRequest
         $this->groupdescription = $name;
     }
     
+    public function getAvatar() {
+        return $this->avatar;
+    }
+    
+    public function setAvatar($image) {
+        $dir      = realpath(__DIR__ . '/../../../../web/uploads/avatar');
+        $filename = uniqid() . '.png';
+        $imagine  = new Imagine\Gd\Imagine();
+
+        $image = $imagine->open($image);
+        $image->thumbnail(new Imagine\Image\Box(240, $image->getSize()->getHeight()), Imagine\ImageInterface::THUMBNAIL_INSET)
+            ->crop(new Imagine\Image\Point(0, 0), new Imagine\Image\Box(240, 198))
+            ->save($dir . '/' . $filename);
+
+        $this->avatar = $filename;
+    }
+    
+    
     public function getGroups($id){
         $db = new eXist();	
         $db->connect() or die ($db->getError());
@@ -53,7 +73,7 @@ class GroupRequest
         $db->connect() or die ($db->getError());
 
         $query ='for $i in document("/db/orga/groups.xml")//group[./user/@refuser="'.$id.'" and @id="'.$gid.'"]
-                return <result> {$i/name} {$i/description} </result>';        
+                return <result> {$i/name} {$i/description} {$i/avatar} </result>';        
         
         $result = $db->xquery($query) or die ($db->getError());         
         $xml = simplexml_load_string($result["XML"]);                 
@@ -67,7 +87,7 @@ class GroupRequest
         $query ='<results> { for $i in document("/db/orga/groups.xml")//group 
                 let $a:=document("/db/orga/groups.xml")//user[./@refuser="'.$id.'" and ../@id= $i/@id]
                 where count($a)=0 return 
-                <result> {$i/@id} {$i/name} {$i/description} {$i/user} </result>} </results>';
+                <result> {$i/@id} {$i/name} {$i/description} {$i/user} {$i/avatar} </result>} </results>';
         
         $result = $db->xquery($query) or die ($db->getError());  
 
@@ -86,6 +106,7 @@ class GroupRequest
                 <name>'.$this->getGroupName().'</name> 
                 <description>'.$this->getGroupDescription().'</description>
                 <user refuser="'.$id.'"/> 
+                <avatar>'.$this->getAvatar().'</avatar>
             </group>';        
         
         $result = $db->xquery($query) or
@@ -96,7 +117,7 @@ class GroupRequest
     
     public function setAttributes($xml){        
         $this->setGroupName($xml[0]->name);
-        $this->setGroupDescription($xml[0]->description);
+        $this->setGroupDescription($xml[0]->description);        
     }
        
     
@@ -108,6 +129,7 @@ class GroupRequest
                     <name>'.$this->getGroupName().'</name>
                     <description>'.$this->getGroupDescription().'</description>
                     <user refuser="'.$id.'"/>
+                    <avatar>'.$this->getAvatar().'</avatar>
                 </group>
                 into document("/db/orga/groups.xml")//groups';                       
         $result = $db->xquery($query) or (preg_match('/No data found/', $db->getError()) or die($db->getError()));           
