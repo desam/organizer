@@ -1,14 +1,11 @@
 (function() {
-  var adjustChatWindow, chatdiv, chatinput, chatwindow, client, newMessage;
+  var chatdiv, chatinput, chatwindow, client, newMessage;
   client = new Faye.Client("http://" + http_host + ":8888/faye", {
     timeout: 120
   });
   chatdiv = $('#chat');
   chatwindow = $('#chatwindow');
   chatinput = $('#chatinput');
-  adjustChatWindow = function() {
-    return chatwindow.height(chatinput.offset().top - chatwindow.offset().top);
-  };
   newMessage = function(message) {
     var scroll;
     if (chatwindow[0].scrollHeight - chatwindow.scrollTop() === chatwindow.outerHeight()) {
@@ -26,9 +23,6 @@
     if (!(window.username != null)) {
       window.username = 'unnamed';
     }
-    $('#chatwidget').click(function() {
-      return adjustChatWindow();
-    });
     chatinput.keydown(function(e) {
       if (e.keyCode === 13 && $(this).val() !== '') {
         client.publish('/chat', {

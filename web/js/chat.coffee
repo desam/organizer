@@ -4,10 +4,6 @@ chatdiv = $('#chat')
 chatwindow = $('#chatwindow')
 chatinput = $('#chatinput')
 
-# adjust chatwindow to viewport
-adjustChatWindow = ->
-  chatwindow.height(chatinput.offset().top - chatwindow.offset().top)
-
 # on new message, add msg to dom and scroll down if needed
 newMessage = (message) ->
   if chatwindow[0].scrollHeight - chatwindow.scrollTop() == chatwindow.outerHeight()
@@ -23,10 +19,6 @@ newMessage = (message) ->
 $(document).ready ->
   # unnamed is the default nickname (should not happen)
   if not window.username? then window.username = 'unnamed'
-
-  # adjust chat window to viewport
-  $('#chatwidget').click ->
-    adjustChatWindow()
 
   # key to send msg
   chatinput.keydown (e) ->

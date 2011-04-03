@@ -16,9 +16,9 @@ class Calendarw
     for i in [0 .. 47]
       timeslots += "<li class=\"row\"></li>"
 
-    cal = ""
+    cal = "<table><tbody>"
     # drawing first column (hours)
-    cal += "<div id=\"first_calumn\" class=\"calumn\">
+    cal += "<td id=\"first_calumn\" class=\"calumn\">
         <h5>#{currentDate.getFullYear()}</h5>
         <ul>"
 
@@ -26,33 +26,35 @@ class Calendarw
       cal += "<li class=\"row\">#{i}:00</li>"
       cal += "<li class=\"row\"></li>"
 
-    cal += '</ul></div>'
+    # closing td#first_calumn
+    cal += '</ul></td>'
 
     # drawing other columns
     for i in [0 .. @days - 1]
       d = new Date(currentDate)
       d.setDate(d.getDate() + i)
-      cal += "<div class=\"calumn\" data-date=\"#{d.nice()}\">
+      cal += "<td class=\"calumn\" data-date=\"#{d.nice()}\">
               <h5>#{days[d.getDay()]} #{d.getDate()}</h5>
               <ul>#{timeslots}</ul>
-              </div>"
+              </td>"
 
+    # closing table
+    cal += "</tbody></table>"
     caldiv.html(cal)
 
-    first = $('#first_calumn')
-    # TODO use relative measures (% instead of px)
-    # resizing columns
-    self = this
     caldiv.find('.calumn')
-      .width(
-        Math.floor((caldiv.outerWidth() - first.outerWidth() - @days - 1) / @days))
       .droppable({
-        drop: (event, obj) ->
-          self.updateMovedEvent(obj, this)
+        drop: (event, ui) ->
+          # make sure it's on the grid
+          realpos = Math.round(ui.position.top / 25) * 25
+          ui.draggable.css('top', realpos)
+          ui.position.top = realpos
+
+          self.updateMovedEvent(ui, this)
       })
 
   distributeEvents: (data) ->
-    divs = $('#calendar > div').not('#first_calumn')
+    divs = $('.calumn').not('#first_calumn')
 
     # creating microtemplate "event"
     markup = '<div class="eventbox" data-id="${id}"><strong>${title}</strong><br />
@@ -81,7 +83,7 @@ class Calendarw
         ul = daydiv.find('ul')
         li = $(ul.children()[index])
 
-        eventbox.insertBefore(ul)
+        eventbox.appendTo(ul)
 
         # how many timeslots to span ?
         # A timeslot covers 30min
@@ -102,12 +104,18 @@ class Calendarw
     self = this
     $('.eventbox')
     .draggable({
-      grid: [divs.outerWidth(), caldiv.find('li.row').outerHeight()],
+      containment: "#calendar"
+      , grid: [divs.outerWidth(), caldiv.find('li.row').outerHeight()]
     })
     .resizable({
       handles: 'n,s',
       grid: [divs.outerWidth(), caldiv.find('li.row').outerHeight()],
       stop: (event, ui) ->
+        # make sure it's on the grid
+        realpos = Math.round(ui.position.top / 25) * 25
+        ui.element.css('top', realpos)
+        ui.position.top = realpos
+
         self.updateResizedEvent(ui)
     })
     .attr('tabindex', 0)
@@ -178,7 +186,6 @@ class Calendarw
     t[0].innerHTML = currentDate.nice()
     t[1].innerHTML = to.nice()
 
-
   # called when an event is drag n' dropped
   updateMovedEvent: (obj) ->
     event = obj.draggable.tmplItem()
@@ -207,16 +214,17 @@ class Calendarw
 
   # returns a date and an hour in function of the position of obj in the calendar
   getEventboxDate: (obj) ->
-    firstday = caldiv.find('.calumn').not('#first_calumn').first()
+    calumns = caldiv.find('.calumn').not('#first_calumn')
+    firstday = calumns.first()
 
     # which day? get the horizontal distance from the firstday
-    hoffset = Math.floor((obj.position.left - firstday.offset().left) / firstday.width())
+    hoffset = Math.floor((obj.offset.left - firstday.offset().left) / firstday.width())
 
     # so... what day is it?
-    newdate = firstday.nextAll().andSelf().eq(hoffset).data('date')
+    newdate = calumns.eq(hoffset).data('date')
 
     # when does the event start? get the vertical distance from the first row
-    voffset = Math.floor(obj.position.top - caldiv.find('ul').offset().top) / 25
+    voffset = Math.floor(obj.position.top) / 25
 
     # so... what time is it?
     hour = Math.floor(voffset / 2) % 24
@@ -331,4 +339,5 @@ $(document).ready ->
     cal.refresh()
     return false
 
+  # init to week view
   $('#week').click()

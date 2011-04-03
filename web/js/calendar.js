@@ -22,36 +22,39 @@
       this.days = 7;
     }
     Calendarw.prototype.draw = function() {
-      var cal, d, days, first, i, self, timeslots, _ref;
+      var cal, d, days, i, timeslots, _ref;
       days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
       timeslots = "";
       for (i = 0; i <= 47; i++) {
         timeslots += "<li class=\"row\"></li>";
       }
-      cal = "";
-      cal += "<div id=\"first_calumn\" class=\"calumn\">        <h5>" + (currentDate.getFullYear()) + "</h5>        <ul>";
+      cal = "<table><tbody>";
+      cal += "<td id=\"first_calumn\" class=\"calumn\">        <h5>" + (currentDate.getFullYear()) + "</h5>        <ul>";
       for (i = 0; i <= 23; i++) {
         cal += "<li class=\"row\">" + i + ":00</li>";
         cal += "<li class=\"row\"></li>";
       }
-      cal += '</ul></div>';
+      cal += '</ul></td>';
       for (i = 0, _ref = this.days - 1; (0 <= _ref ? i <= _ref : i >= _ref); (0 <= _ref ? i += 1 : i -= 1)) {
         d = new Date(currentDate);
         d.setDate(d.getDate() + i);
-        cal += "<div class=\"calumn\" data-date=\"" + (d.nice()) + "\">              <h5>" + days[d.getDay()] + " " + (d.getDate()) + "</h5>              <ul>" + timeslots + "</ul>              </div>";
+        cal += "<td class=\"calumn\" data-date=\"" + (d.nice()) + "\">              <h5>" + days[d.getDay()] + " " + (d.getDate()) + "</h5>              <ul>" + timeslots + "</ul>              </td>";
       }
+      cal += "</tbody></table>";
       caldiv.html(cal);
-      first = $('#first_calumn');
-      self = this;
-      return caldiv.find('.calumn').width(Math.floor((caldiv.outerWidth() - first.outerWidth() - this.days - 1) / this.days)).droppable({
-        drop: function(event, obj) {
-          return self.updateMovedEvent(obj, this);
+      return caldiv.find('.calumn').droppable({
+        drop: function(event, ui) {
+          var realpos;
+          realpos = Math.round(ui.position.top / 25) * 25;
+          ui.draggable.css('top', realpos);
+          ui.position.top = realpos;
+          return self.updateMovedEvent(ui, this);
         }
       });
     };
     Calendarw.prototype.distributeEvents = function(data) {
       var daydiv, divs, ebpadding, event, eventbox, eventboxSpan, hour, index, li, markup, newheight, newwidth, self, tohour, ul, _i, _len;
-      divs = $('#calendar > div').not('#first_calumn');
+      divs = $('.calumn').not('#first_calumn');
       markup = '<div class="eventbox" data-id="${id}"><strong>${title}</strong><br />\
         <span class="info">\
                 from ${from.split(" ")[1]} to ${to.split(" ")[1]}\
@@ -71,7 +74,7 @@
           eventbox = $($.tmpl("event", event));
           ul = daydiv.find('ul');
           li = $(ul.children()[index]);
-          eventbox.insertBefore(ul);
+          eventbox.appendTo(ul);
           eventboxSpan = ((tohour[0] - hour[0]) * 60 + parseInt(tohour[1]) - hour[1]) / 30;
           ebpadding = parseInt(eventbox.css('padding-top')) + parseInt(eventbox.css('padding-bottom'));
           newheight = eventboxSpan * (li.outerHeight() + parseInt(li.css('margin-bottom'))) - ebpadding;
@@ -85,11 +88,16 @@
       }
       self = this;
       return $('.eventbox').draggable({
+        containment: "#calendar",
         grid: [divs.outerWidth(), caldiv.find('li.row').outerHeight()]
       }).resizable({
         handles: 'n,s',
         grid: [divs.outerWidth(), caldiv.find('li.row').outerHeight()],
         stop: function(event, ui) {
+          var realpos;
+          realpos = Math.round(ui.position.top / 25) * 25;
+          ui.element.css('top', realpos);
+          ui.position.top = realpos;
           return self.updateResizedEvent(ui);
         }
       }).attr('tabindex', 0).click(function() {
@@ -190,11 +198,12 @@
       });
     };
     Calendarw.prototype.getEventboxDate = function(obj) {
-      var firstday, hoffset, hour, newdate, newfrom, newto, voffset;
-      firstday = caldiv.find('.calumn').not('#first_calumn').first();
-      hoffset = Math.floor((obj.position.left - firstday.offset().left) / firstday.width());
-      newdate = firstday.nextAll().andSelf().eq(hoffset).data('date');
-      voffset = Math.floor(obj.position.top - caldiv.find('ul').offset().top) / 25;
+      var calumns, firstday, hoffset, hour, newdate, newfrom, newto, voffset;
+      calumns = caldiv.find('.calumn').not('#first_calumn');
+      firstday = calumns.first();
+      hoffset = Math.floor((obj.offset.left - firstday.offset().left) / firstday.width());
+      newdate = calumns.eq(hoffset).data('date');
+      voffset = Math.floor(obj.position.top) / 25;
       hour = Math.floor(voffset / 2) % 24;
       hour = hour < 10 ? '0' + hour : hour;
       newfrom = "" + newdate + " " + hour + ":" + (Math.floor(voffset) % 2 ? '30' : '00');
