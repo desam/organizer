@@ -252,6 +252,8 @@ __      _(_) __| | __ _  ___| |_ ___
 }
 
 #calendar > table {
+    border-collapse: collapse;
+    table-layout: fixed;
     width: 100%;
 }
 
@@ -303,12 +305,14 @@ __      _(_) __| | __ _  ___| |_ ___
     font-size: 0.85em;
     padding: 5px;
     position: absolute;
+    z-index: 10000;
 }
 #calendar .calumn {
     border-right: 1px black solid;
     border-top: 1px black solid;
     border-bottom: 1px black solid;
-    width: 14%;
+    padding: 0px;
+    width: 13%;
 }
 
 #calendar .calumn > h5 {
@@ -340,7 +344,7 @@ __      _(_) __| | __ _  ___| |_ ___
 
 #first_calumn {
     border: 1px black solid;
-    width: 2% !important;
+    width: 9% !important;
 }
 
 /* Month Calendar - mocal */
